@@ -1,4 +1,4 @@
-var Path = require('path');
+let Path = require('path');
 let Hapi = require('hapi');
 
 let server = new Hapi.Server({
@@ -24,7 +24,7 @@ server.route({
   method: 'GET',
   path: '/{name}',
   handler: function (request, reply) {
-    reply('Test ' + encodeURIComponent(request.params.name) + '!');
+    reply('Test ' + encodeURIComponent(request.params.name) + '!!');
   }
 });
 
