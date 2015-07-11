@@ -28,6 +28,17 @@ server.route({
   }
 });
 
+
+server.route({
+    method: 'GET',
+    path: '/js/{filename}',
+    handler: {
+        file: function (request) {
+            return 'js/' + request.params.filename;
+        }
+    }
+});
+
 server.start(function () {
   console.log('Server running at:', server.info.uri);
 });
