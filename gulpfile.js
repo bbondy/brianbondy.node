@@ -18,7 +18,7 @@ const SRC_ROOT = './src/';
 const DIST_ROOT = './dist/';
 const DIST_ROOT_PUBLIC_JS = './dist/public/js';
 const DIST_EXT = './dist/public/js/ext/';
-const DIST_CSS_ROOT = './dist/css';
+const DIST_CSS_ROOT = './dist/public/css';
 const TEST_ROOT = './test/';
 
 const DEFAULT_PORT = 8000;
@@ -63,9 +63,9 @@ gulp.task('lint', function() {
  */
 gulp.task('less', function () {
   return gulp.src([
-      SRC_ROOT + 'less/**/*.less',
+      SRC_ROOT + 'public/less/**/*.less',
       // These are imported by font-awesome.less
-      '!' + SRC_ROOT + 'less/font-awesome/!(font-awesome).less',
+      '!' + SRC_ROOT + 'public/less/font-awesome/!(font-awesome).less',
     ])
     .pipe(changed(DIST_CSS_ROOT, {extension: '.css'}))
     .pipe(sourcemaps.init())
@@ -91,8 +91,8 @@ gulp.task('copy-web-app', function() {
   return gulp.src([
       SRC_ROOT + '**',
       '!' + SRC_ROOT + '/**/js/*.js', // JS files are handled by babel, so don't copy them.
-      '!' + SRC_ROOT + 'less/**', // LESS files are handled by less, so don't copy them.
-      '!' + SRC_ROOT + 'less'
+      '!' + SRC_ROOT + 'public/less/**', // LESS files are handled by less, so don't copy them.
+      '!' + SRC_ROOT + 'public/less'
     ])
     .pipe(gulp.dest(DIST_ROOT));
 });
