@@ -20,6 +20,7 @@ server.route({
   }
 });
 
+/*
 server.route({
   method: 'GET',
   path: '/{name}',
@@ -27,16 +28,17 @@ server.route({
     reply('Test ' + encodeURIComponent(request.params.name) + '!!');
   }
 });
+*/
 
-
+// Serve everythign else from the public folder
 server.route({
-    method: 'GET',
-    path: '/js/{filename}',
-    handler: {
-        file: function (request) {
-            return 'js/' + request.params.filename;
-        }
+  method: 'GET',
+  path: '/{path*}',
+  handler: {
+    directory: {
+      path: './'
     }
+  }
 });
 
 server.start(function () {

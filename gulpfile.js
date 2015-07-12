@@ -12,7 +12,8 @@ var fs = require('fs');
 
 const SRC_ROOT = './src/';
 const DIST_ROOT = './dist/';
-const DIST_EXT = './dist/js/ext/';
+const DIST_ROOT_PUBLIC_JS = './dist/public/js';
+const DIST_EXT = './dist/public/js/ext/';
 const DIST_CSS_ROOT = './dist/css';
 const TEST_ROOT = './test/';
 
@@ -73,7 +74,7 @@ gulp.task('install', ['copy-web-app', 'copy-node-modules']);
 gulp.task('copy-web-app', function() {
   return gulp.src([
       SRC_ROOT + '**',
-      '!' + SRC_ROOT + 'js/*.js', // JS files are handled by babel, so don't copy them.
+      '!' + SRC_ROOT + '/**/js/*.js', // JS files are handled by babel, so don't copy them.
       '!' + SRC_ROOT + 'less/**', // LESS files are handled by less, so don't copy them.
       '!' + SRC_ROOT + 'less'
     ])
@@ -84,6 +85,7 @@ gulp.task('copy-node-modules', function() {
  return gulp.src([
       './node_modules/react/dist/react.js',
       './node_modules/immutable/dist/immutable.js',
+      './node_modules/requirejs/require.js',
     ])
     .pipe(gulp.dest(DIST_EXT));
 });
@@ -91,18 +93,15 @@ gulp.task('copy-node-modules', function() {
 /**
  * Converts javascript to es5. This allows us to use harmony classes and modules.
  */
-gulp.task('babel', function() {
+gulp.task('babel-node', function() {
   var files = [
     SRC_ROOT + 'server.js',
-    SRC_ROOT + 'js/*.js',
-    SRC_ROOT + 'js/**/*.js',
-    '!' + SRC_ROOT + 'js/ext/*.js' // do not process external files
   ];
   try {
     return gulp.src(files)
       .pipe(changed(DIST_ROOT + 'js/'))
       .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.init())
-      .pipe(babel().on('error', function(e) {
+      .pipe(babel({ modules: 'common'} ).on('error', function(e) {
         this.emit('end');
       }))
       .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
@@ -114,10 +113,33 @@ gulp.task('babel', function() {
 });
 
 /**
+ * Converts javascript to es5. This allows us to use harmony classes and modules.
+ */
+gulp.task('babel-web', function() {
+  var files = [
+    SRC_ROOT + 'public/js/**/*.js',
+    '!' + SRC_ROOT + 'public/js/ext/*.js' // do not process external files
+  ];
+  try {
+    return gulp.src(files)
+      .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.init())
+      .pipe(babel({ modules: 'amd'} ).on('error', function(e) {
+        this.emit('end');
+      }))
+      .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
+      .pipe(gulp.dest(DIST_ROOT_PUBLIC_JS));
+
+  } catch (e) {
+    console.log('Got error in babel', e);
+  }
+});
+
+
+/**
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['clobber'], ['copy-web-app', 'copy-node-modules', 'babel', 'lint', 'less'], cb);
+  runSequence(['clobber'], ['copy-web-app', 'copy-node-modules', 'babel-node', 'babel-web', 'lint', 'less'], cb);
 });
 
 /**
