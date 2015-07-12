@@ -10,6 +10,10 @@ var runSequence = require('run-sequence');
 var nodemon = require('nodemon');
 var fs = require('fs');
 
+var babelify = require('babelify');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+
 const SRC_ROOT = './src/';
 const DIST_ROOT = './dist/';
 const DIST_ROOT_PUBLIC_JS = './dist/public/js';
@@ -19,6 +23,18 @@ const TEST_ROOT = './test/';
 
 const DEFAULT_PORT = 8000;
 const DEFAULT_HOST = 'localhost';
+
+gulp.task('bundle-js', function() {
+  browserify({
+    entries: './src/public/js/init.js',
+    debug: true
+  })
+  .transform(babelify)
+  .bundle()
+  .pipe(source('bundle.js'))
+  .pipe(gulp.dest('./dist/public/js'));
+});
+
 
 gulp.task('start-server', function () {
   nodemon({
@@ -86,6 +102,7 @@ gulp.task('copy-node-modules', function() {
       './node_modules/react/dist/react.js',
       './node_modules/immutable/dist/immutable.js',
       './node_modules/requirejs/require.js',
+      './node_modules/react-router/umd/ReactRouter.js',
     ])
     .pipe(gulp.dest(DIST_EXT));
 });
@@ -113,33 +130,10 @@ gulp.task('babel-node', function() {
 });
 
 /**
- * Converts javascript to es5. This allows us to use harmony classes and modules.
- */
-gulp.task('babel-web', function() {
-  var files = [
-    SRC_ROOT + 'public/js/**/*.js',
-    '!' + SRC_ROOT + 'public/js/ext/*.js' // do not process external files
-  ];
-  try {
-    return gulp.src(files)
-      .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.init())
-      .pipe(babel({ modules: 'amd'} ).on('error', function(e) {
-        this.emit('end');
-      }))
-      .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
-      .pipe(gulp.dest(DIST_ROOT_PUBLIC_JS));
-
-  } catch (e) {
-    console.log('Got error in babel', e);
-  }
-});
-
-
-/**
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['clobber'], ['copy-web-app', 'copy-node-modules', 'babel-node', 'babel-web', 'lint', 'less'], cb);
+  runSequence(['clobber'], ['copy-web-app', 'copy-node-modules', 'babel-node', 'bundle-js', 'lint', 'less'], cb);
 });
 
 /**

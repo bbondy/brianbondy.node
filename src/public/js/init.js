@@ -1,4 +1,3 @@
-import React from 'js/ext/react.js';
-import Main from 'js/main.js';
+import React from 'react';
+import Router from 'react-router';
 
-React.render(<Main/>, document.body);
