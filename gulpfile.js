@@ -15,6 +15,8 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
 const SRC_ROOT = './src/';
+const SRC_ROOT_PUBLIC_LESS = './src/public/less/';
+const SRC_ROOT_PUBLIC_JS = './src/public/js/';
 const DIST_ROOT = './dist/';
 const DIST_ROOT_PUBLIC_JS = './dist/public/js';
 const DIST_EXT = './dist/public/js/ext/';
@@ -63,7 +65,7 @@ gulp.task('lint', function() {
  */
 gulp.task('less', function () {
   return gulp.src([
-      SRC_ROOT + 'public/less/**/*.less',
+      SRC_ROOT_PUBLIC_LESS + '**/*.less',
       // These are imported by font-awesome.less
       '!' + SRC_ROOT + 'public/less/font-awesome/!(font-awesome).less',
     ])
@@ -133,7 +135,7 @@ gulp.task('babel-node', function() {
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['clobber'], ['copy-web-app', 'copy-node-modules', 'babel-node', 'bundle-js', 'lint', 'less'], cb);
+  runSequence(['copy-web-app', 'copy-node-modules', 'babel-node', 'bundle-js', 'lint', 'less'], cb);
 });
 
 /**
@@ -141,8 +143,14 @@ gulp.task('build', function(cb) {
  */
 gulp.task('watch', function() {
   gulp.watch([
-    SRC_ROOT + '**/*',
-  ], ['build']);
+    SRC_ROOT + 'server.js',
+  ], ['babel-node']);
+  gulp.watch([
+    SRC_ROOT_PUBLIC_JS + '**/*',
+  ], ['bundle-js']);
+  gulp.watch([
+    SRC_ROOT_PUBLIC_LESS + '**/*',
+  ], ['less']);
   gulp.watch([TEST_ROOT + '**/*'], ['lint']);
 });
 
