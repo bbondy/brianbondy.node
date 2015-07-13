@@ -51,7 +51,8 @@ gulp.task('start-server', function () {
  */
 gulp.task('lint', function() {
   return gulp.src([
-      SRC_ROOT + 'js/**/*.js',
+      SRC_ROOT + 'server.js',
+      SRC_ROOT + 'public/js/**/*.js',
       TEST_ROOT + '**/*.js',
       '!' + SRC_ROOT + 'js/ext/*.js',
     ])
