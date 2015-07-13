@@ -1,17 +1,15 @@
 import React from 'react';
-import Router from 'react-router';
-
-let RouteHandler = Router.RouteHandler;
+import {RouteHandler, Link} from 'react-router';
 
 class TopBar extends React.Component {
   render() {
     return <ul className='tobBar'>
-      <li><a href='/'>Blog</a></li>
-      <li><a href='/projects'>Projects</a></li>
-      <li><a href='/resume'>Resume</a></li>
-      <li><a href='/other'>Other</a></li>
-      <li><a href='/about'>About</a></li>
-      <li><a href='/contact'>Contact</a></li>
+      <li><Link to="blog-index">Blog</Link></li>
+      <li><Link to='projects'>Projects</Link></li>
+      <li><Link to='resume'>Resume</Link></li>
+      <li><Link to='other'>Other</Link></li>
+      <li><Link to='about'>About</Link></li>
+      <li><Link to='contact'>Contact</Link></li>
       <li className='social'><a href='https://twitter.com/brianbondy' target='_blank'><span className='fa fa-twitter'/></a></li>
       <li className='social'><a href='/feeds/rss/' target='_blank'><span className='fa fa-rss'/></a></li>
       <li className='social'><a href='https://github.com/bbondy' target='_blank'><span className='fa fa-github'/></a></li>

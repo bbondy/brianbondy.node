@@ -21,11 +21,11 @@ let routes =
     <Route path='blog' handler={Blog}>
      <Route path=':id' handler={BlogPost}/>
     </Route>
-    <Route path='projects' handler={Projects}/>
-    <Route path='resume' handler={Resume}/>
-    <Route path='other' handler={Other}/>
-    <Route path='about' handler={About}/>
-    <Route path='contact' handler={Contact}/>
+    <Route name='projects' path='projects' handler={Projects}/>
+    <Route name='resume' path='resume' handler={Resume}/>
+    <Route name='other' path='other' handler={Other}/>
+    <Route name='about' path='about' handler={About}/>
+    <Route name='contact' path='contact' handler={Contact}/>
   </Route>;
 
 window.addEventListener('load', () => {
