@@ -83,7 +83,7 @@ gulp.task('less', function () {
 /**
  * Setup steps after an npm install.
  */
-gulp.task('install', ['copy-web-app', 'copy-node-modules']);
+gulp.task('install', ['copy-web-app']);
 
 
 /**
@@ -97,16 +97,6 @@ gulp.task('copy-web-app', function() {
       '!' + SRC_ROOT + 'public/less'
     ])
     .pipe(gulp.dest(DIST_ROOT));
-});
-
-gulp.task('copy-node-modules', function() {
- return gulp.src([
-      './node_modules/react/dist/react.js',
-      './node_modules/immutable/dist/immutable.js',
-      './node_modules/requirejs/require.js',
-      './node_modules/react-router/umd/ReactRouter.js',
-    ])
-    .pipe(gulp.dest(DIST_EXT));
 });
 
 /**
@@ -135,7 +125,7 @@ gulp.task('babel-node', function() {
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['copy-web-app', 'copy-node-modules', 'babel-node', 'bundle-js', 'lint', 'less'], cb);
+  runSequence(['copy-web-app', 'babel-node', 'bundle-js', 'lint', 'less'], cb);
 });
 
 /**
