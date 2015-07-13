@@ -13,24 +13,22 @@ import BlogPost from './blogPost.js';
 
 let Route = Router.Route;
 let DefaultRoute = Router.DefaultRoute;
-let RouteHandler = Router.RouteHandler;
 
 // declare our routes and their hierarchy
-let routes = (
+let routes =
   <Route handler={Main}>
-    <DefaultRoute name="blog-index" handler={Blog}/>
-    <Route path="blog" handler={Blog}>
-     <Route path=":id" handler={BlogPost}/>
+    <DefaultRoute name='blog-index' handler={Blog}/>
+    <Route path='blog' handler={Blog}>
+     <Route path=':id' handler={BlogPost}/>
     </Route>
-    <Route path="projects" handler={Projects}/>
-    <Route path="resume" handler={Resume}/>
-    <Route path="other" handler={Other}/>
-    <Route path="about" handler={About}/>
-    <Route path="contact" handler={Contact}/>
-  </Route>
-);
+    <Route path='projects' handler={Projects}/>
+    <Route path='resume' handler={Resume}/>
+    <Route path='other' handler={Other}/>
+    <Route path='about' handler={About}/>
+    <Route path='contact' handler={Contact}/>
+  </Route>;
 
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   Router.run(routes, Router.HistoryLocation, (Root) => {
     React.render(<Root/>, document.body);
   });
