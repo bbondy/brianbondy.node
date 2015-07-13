@@ -6,18 +6,18 @@ let RouteHandler = Router.RouteHandler;
 class TopBar extends React.Component {
   render() {
     return <ul className='tobBar'>
-      <li><a>Blog</a></li>
-      <li><a>Projects</a></li>
-      <li><a>Resume</a></li>
-      <li><a>Other</a></li>
-      <li><a>About</a></li>
-      <li><a>Contact</a></li>
-      <li className='social fa fa-twitter'></li>
-      <li className='social fa fa-rss'></li>
-      <li className='social fa fa-github'></li>
-      <li className='social fa fa-linkedin'></li>
-      <li className='social fa fa-youtube-play'></li>
-      <li className='social fa fa fa-stack-overflow'></li>
+      <li><a href='/'>Blog</a></li>
+      <li><a href='/#/projects'>Projects</a></li>
+      <li><a href='/#/resume'>Resume</a></li>
+      <li><a href='/#/other'>Other</a></li>
+      <li><a href='/#/about'>About</a></li>
+      <li><a href='/#/contact'>Contact</a></li>
+      <li className='social'><a href='https://twitter.com/brianbondy'><span className='fa fa-twitter'/></a></li>
+      <li className='social'><a href='/feeds/rss/'><span className='fa fa-rss'/></a></li>
+      <li className='social'><a href='https://github.com/bbondy'><span className='fa fa-github'/></a></li>
+      <li className='social'><a href='http://ca.linkedin.com/in/bbondy'><span className='fa fa-linkedin'/></a></li>
+      <li className='social'><a href='https://www.youtube.com/user/bbondy'><span className='fa fa-youtube-play'/></a></li>
+      <li className='social'><a href='http://stackoverflow.com/users/3153/brian-r-bondy'><span className='fa fa fa-stack-overflow'/></a></li>
     </ul>;
   }
 }
