@@ -20,15 +20,13 @@ server.route({
   }
 });
 
-/*
 server.route({
   method: 'GET',
   path: '/{name}',
   handler: function (request, reply) {
-    reply('Test ' + encodeURIComponent(request.params.name) + '!!');
+    reply.file('index.html');
   }
 });
-*/
 
 // Serve everythign else from the public folder
 server.route({

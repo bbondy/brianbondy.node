@@ -8,15 +8,17 @@ import Contact from './contact.js';
 import Other from './other.js';
 import Resume from './resume.js';
 import Projects from './projects.js';
-import Blog from './blogPost.js';
+import Blog from './blog.js';
 import BlogPost from './blogPost.js';
 
 let Route = Router.Route;
+let DefaultRoute = Router.DefaultRoute;
 let RouteHandler = Router.RouteHandler;
 
 // declare our routes and their hierarchy
 let routes = (
   <Route handler={Main}>
+    <DefaultRoute name="blog-index" handler={Blog}/>
     <Route path="blog" handler={Blog}>
      <Route path=":id" handler={BlogPost}/>
     </Route>
