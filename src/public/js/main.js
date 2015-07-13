@@ -6,7 +6,7 @@ let RouteHandler = Router.RouteHandler;
 class TopBar extends React.Component {
   render() {
     return <ul className='tobBar'>
-      <li><a href='/'>Blog</a></li>
+      <li><a href='/#/'>Blog</a></li>
       <li><a href='/#/projects'>Projects</a></li>
       <li><a href='/#/resume'>Resume</a></li>
       <li><a href='/#/other'>Other</a></li>
