@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "good": "^6.3.0",
+    "good-console": "^5.0.2",
     "hapi": "^8.8.0",
     "immutable": "^3.7.4",
     "react": "^0.13.3",
