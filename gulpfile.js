@@ -15,13 +15,22 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 
 const SRC_ROOT = './src/';
+const SRC_ROOT_PUBLIC = './src/public/';
 const SRC_ROOT_PUBLIC_LESS = './src/public/less/';
 const SRC_ROOT_PUBLIC_JS = './src/public/js/';
 const DIST_ROOT = './dist/';
+const DIST_ROOT_PUBLIC = './dist/public';
 const DIST_ROOT_PUBLIC_JS = './dist/public/js';
 const DIST_EXT = './dist/public/js/ext/';
 const DIST_CSS_ROOT = './dist/public/css';
 const TEST_ROOT = './test/';
+
+const COPY_WEB_APP_FILES = [
+  SRC_ROOT_PUBLIC + '**',
+  '!' + SRC_ROOT_PUBLIC + '/**/js/*.js', // JS files are handled by babel, so don't copy them.
+  '!' + SRC_ROOT_PUBLIC_LESS + 'less/**', // LESS files are handled by less, so don't copy them.
+  '!' + SRC_ROOT_PUBLIC_LESS,
+];
 
 const DEFAULT_PORT = 8000;
 const DEFAULT_HOST = 'localhost';
@@ -91,13 +100,8 @@ gulp.task('install', ['copy-web-app']);
  * Copy all non-js directory app source/assets/components.
  */
 gulp.task('copy-web-app', function() {
-  return gulp.src([
-      SRC_ROOT + '**',
-      '!' + SRC_ROOT + '/**/js/*.js', // JS files are handled by babel, so don't copy them.
-      '!' + SRC_ROOT + 'public/less/**', // LESS files are handled by less, so don't copy them.
-      '!' + SRC_ROOT + 'public/less'
-    ])
-    .pipe(gulp.dest(DIST_ROOT));
+  return gulp.src(COPY_WEB_APP_FILES)
+    .pipe(gulp.dest(DIST_ROOT_PUBLIC));
 });
 
 /**
@@ -143,6 +147,7 @@ gulp.task('watch', function() {
     SRC_ROOT_PUBLIC_LESS + '**/*',
   ], ['less']);
   gulp.watch([TEST_ROOT + '**/*'], ['lint']);
+  gulp.watch(COPY_WEB_APP_FILES, ['copy-web-app'])
 });
 
 /**
