@@ -29,6 +29,14 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/blog/{name}',
+  handler: function (request, reply) {
+    reply.file('index.html');
+  }
+});
+
 // Serve everythign else from the public folder
 server.route({
   method: 'GET',
