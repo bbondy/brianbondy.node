@@ -37,6 +37,22 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/api/blog/{id}',
+  handler: function (request, reply) {
+    // TODO fetch real data
+    let blogPost = {
+      title: 'Test title',
+      body: 'Test **body**!\n\n- test one\n- test two',
+      lastModified: new Date(),
+      created: new Date(),
+    };
+    reply(blogPost).code(200);
+  }
+});
+
+
 // Serve everythign else from the public folder
 server.route({
   method: 'GET',
