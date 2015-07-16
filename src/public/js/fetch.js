@@ -12,7 +12,18 @@ var getJSON = url => {
   });
 };
 
+/**
+ * Fetch a single blog post
+ */
 export function fetchBlogPost(id) {
   return getJSON(`/api/blog/${id}`);
+}
 
+
+/**
+ * Fetch a bunch of blog posts
+ */
+export function fetchBlogPost() {
+  // TODO: Add various filters
+  return getJSON(`/api/blog`);
 }
