@@ -23,7 +23,7 @@ export function fetchBlogPost(id) {
 /**
  * Fetch a bunch of blog posts
  */
-export function fetchBlogPost() {
+export function fetchBlogPosts() {
   // TODO: Add various filters
   return getJSON(`/api/blog`);
 }
