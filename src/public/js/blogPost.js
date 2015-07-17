@@ -1,6 +1,7 @@
 import React from 'react';
 import DocumentTitle from './documentTitle.js';
 import {fetchBlogPost} from './fetch.js';
+import * as Markdown from 'markdown';
 
 export default class BlogPost extends React.Component {
   constructor() {
@@ -23,7 +24,7 @@ export default class BlogPost extends React.Component {
       BlogPost {this.props.params.id}!
       <div>{this.state.blogPost.title}</div>
       <div>{this.state.blogPost.created}</div>
-      <div>{this.state.blogPost.body}</div>
+      <div dangerouslySetInnerHTML={{__html: Markdown.markdown.toHTML(this.state.blogPost.body)}}/>
     </div>;
   }
 }
