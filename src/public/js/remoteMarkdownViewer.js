@@ -14,6 +14,6 @@ export default class About extends React.Component {
       this.setState({markdownText}));
   }
   render() {
-     return <div dangerouslySetInnerHTML={{__html: Markdown.markdown.toHTML(this.state.markdownText)}}/>
+     return <div dangerouslySetInnerHTML={{__html: Markdown.markdown.toHTML(this.state.markdownText)}}/>;
   }
 }
