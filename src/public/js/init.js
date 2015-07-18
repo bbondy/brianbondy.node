@@ -23,8 +23,12 @@ let routes =
     <Route name='about' path='about' handler={RemoteMarkdownViewer}/>
     <Route name='contact' path='contact' handler={RemoteMarkdownViewer}/>
     <Route name='compression' path='compression' handler={RemoteMarkdownViewer}/>
+
     <Route name='faq' path='faq' handler={RemoteMarkdownViewer}/>
     <Route name='links' path='links' handler={RemoteMarkdownViewer}/>
+    <Route name='math' path='math' handler={RemoteMarkdownViewer}/>
+    <Route name='books' path='books' handler={RemoteMarkdownViewer}/>
+    <Route name='articles' path='articles' handler={RemoteMarkdownViewer}/>
   </Route>;
 
 window.addEventListener('load', () => {

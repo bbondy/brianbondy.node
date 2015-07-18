@@ -39,6 +39,15 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/other/{name}',
+  handler: function (request, reply) {
+    reply.file('index.html');
+  }
+});
+
+
+server.route({
+  method: 'GET',
   path: '/api/blog/{id}',
   handler: function (request, reply) {
     // TODO fetch real data
