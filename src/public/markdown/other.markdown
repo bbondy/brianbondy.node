@@ -12,4 +12,3 @@
 - [Mozilla](/mozilla)
 - [Stack Exchange](/stackexchange)
 - [University Classes](/universityClasses)
-- [What's my IP](/whatsMyIP)
