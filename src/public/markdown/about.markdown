@@ -1,6 +1,6 @@
 #About
 
-##General **Information**
+##General Information
 
 I live in Windsor, Ontario, Canada where I lived (other than University) since I was born on March 01, 1981.
 
