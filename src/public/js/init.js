@@ -3,13 +3,9 @@ import Router from 'react-router';
 
 import Main from './main.js';
 
-import About from './about.js';
-import Contact from './contact.js';
-import Other from './other.js';
-import Resume from './resume.js';
-import Projects from './projects.js';
 import Blog from './blog.js';
 import BlogPost from './blogPost.js';
+import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
 
 let Route = Router.Route;
 let DefaultRoute = Router.DefaultRoute;
@@ -21,11 +17,12 @@ let routes =
     <Route path='blog' handler={Blog}>
      <Route path=':id' handler={BlogPost}/>
     </Route>
-    <Route name='projects' path='projects' handler={Projects}/>
-    <Route name='resume' path='resume' handler={Resume}/>
-    <Route name='other' path='other' handler={Other}/>
-    <Route name='about' path='about' handler={About}/>
-    <Route name='contact' path='contact' handler={Contact}/>
+    <Route name='projects' path='projects' handler={RemoteMarkdownViewer}/>
+    <Route name='resume' path='resume' handler={RemoteMarkdownViewer}/>
+    <Route name='other' path='other' handler={RemoteMarkdownViewer}/>
+    <Route name='about' path='about' handler={RemoteMarkdownViewer}/>
+    <Route name='contact' path='contact' handler={RemoteMarkdownViewer}/>
+    <Route name='compression' path='compression' handler={RemoteMarkdownViewer}/>
   </Route>;
 
 window.addEventListener('load', () => {
