@@ -27,6 +27,7 @@ let routes =
 
     <Route name='compression' path='compression' handler={RemoteMarkdownViewer}/>
     <Route name='faq' path='faq' handler={RemoteMarkdownViewer}/>
+    <Route name='khanacademy' path='khanacademy' handler={RemoteMarkdownViewer}/>
     <Route name='links' path='links' handler={RemoteMarkdownViewer}/>
     <Route name='math' path='math' handler={RemoteMarkdownViewer}/>
     <Route name='books' path='books' handler={RemoteMarkdownViewer}/>
@@ -37,6 +38,7 @@ let routes =
 
     <Redirect from="other/compression" to="compression" />
     <Redirect from="other/faq" to="faq" />
+    <Redirect from="other/khanacademy" to="khanacademy" />
     <Redirect from="other/links" to="links" />
     <Redirect from="other/books" to="books" />
     <Redirect from="other/articles" to="articles" />

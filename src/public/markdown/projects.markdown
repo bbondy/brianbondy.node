@@ -2,13 +2,13 @@
 
 Listed below are some of the projects I've worked on throughout my career.
 
-###[abp-filter-parser](https://www.npmjs.com/package/abp-filter-parser)
+###AdBlock Pro Filter Parser ([abp-filter-parser](https://www.npmjs.com/package/abp-filter-parser))
 javaScript Adblock Plus filter parser for lists like EasyList.
 
-###[babel-jsm-plugin](https://www.npmjs.com/package/babel-jsm-plugin)
+###Babael JSM module formatter ([babel-jsm-plugin](https://www.npmjs.com/package/babel-jsm-plugin))
 Babel plugin for converting ES6 modules into JavaScript code modules (JSM).
 
-###[simple-ec2](https://www.npmjs.com/package/simple-ec2)
+###Simple AWS EC2 wrapper library ([simple-ec2](https://www.npmjs.com/package/simple-ec2))
 Simple AWS SDK wrapper library for starting, stopping, listing, and executing commands on EC2 instances.
 
 ###[Khan Academy app for FirefoxOS](https://github.com/bbondy/khan-academy-fxos)
@@ -17,13 +17,13 @@ Lead and primary developer for the Khan Academy app for Firefox OS.
 ###[Code Firefox](https://github.com/bbondy/codefirefox)
 Created and maintain a video and exercise based site for teaching contributors how to contribute to Firefox.
 
-###[codecheck.js](https://github.com/bbondy/codecheckjs)
+###JS abstract syntax tree grader ([codecheck.js](https://github.com/bbondy/codecheckjs))
 Check JavaScript code structure against a set of goals in JavaScript.
 
 ###[Khan Academy app for Windows 8](https://github.com/Khan/khan-windows)
 Contributed a significant amount of contributions to the Khan Academy Modern UI Windows Store app.
 
-###Firefox
+###Gecko / Firefox
 I contribute to Firefox, and as of July 06, 2011 I work full time on Firefox. I work mostly on Windows related code in C++, but also XUL, XBL, Javascript, CSS, Python, and more.
 
 ###ROBOBAK
