@@ -8,6 +8,7 @@ import BlogPost from './blogPost.js';
 import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
 
 let Route = Router.Route;
+let Redirect = Router.Redirect;
 let DefaultRoute = Router.DefaultRoute;
 
 // declare our routes and their hierarchy
@@ -29,6 +30,11 @@ let routes =
     <Route name='math' path='math' handler={RemoteMarkdownViewer}/>
     <Route name='books' path='books' handler={RemoteMarkdownViewer}/>
     <Route name='articles' path='articles' handler={RemoteMarkdownViewer}/>
+
+    <Redirect from="other/faq" to="faq" />
+    <Redirect from="other/links" to="links" />
+    <Redirect from="other/books" to="books" />
+    <Redirect from="other/articles" to="articles" />
   </Route>;
 
 window.addEventListener('load', () => {
