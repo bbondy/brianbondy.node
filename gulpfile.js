@@ -26,8 +26,9 @@ const DIST_CSS_ROOT = './dist/public/css';
 const TEST_ROOT = './test/';
 
 const COPY_WEB_APP_FILES = [
+  SRC_ROOT_PUBLIC + '**/*',
   SRC_ROOT_PUBLIC + '**',
-  '!' + SRC_ROOT_PUBLIC + '/**/js/*.js', // JS files are handled by babel, so don't copy them.
+  '!' + SRC_ROOT_PUBLIC + '**/js/*.js', // JS files are handled by babel, so don't copy them.
   '!' + SRC_ROOT_PUBLIC_LESS + 'less/**', // LESS files are handled by less, so don't copy them.
   '!' + SRC_ROOT_PUBLIC_LESS,
 ];
