@@ -1,0 +1,16 @@
+#Other
+
+- [Advice](/other/advice/)
+- [Articles](/other/articles/)
+- [Books](/other/books/)
+- [Braille](/other/braille/)
+- [Compression](/compression/)
+- [F.A.Q.](/other/faq/)
+- [Khan Academy](/khanacademy)
+- [Links](/other/links/)
+- [Mathematics](/math/)
+- [Morse Code](/other/morseCode/)
+- [Mozilla](/mozilla)
+- [Stack Exchange](/stackexchange)
+- [University Classes](/other/universityClasses/)
+- [What's my IP](/other/whatsMyIP/)
