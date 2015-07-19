@@ -62,6 +62,7 @@ gulp.task('start-server', function () {
 gulp.task('lint', function() {
   return gulp.src([
       SRC_ROOT + 'server.js',
+      SRC_ROOT + 'blogPostManifest.js',
       SRC_ROOT + 'public/js/**/*.js',
       TEST_ROOT + '**/*.js',
       '!' + SRC_ROOT + 'js/ext/*.js',
@@ -111,6 +112,7 @@ gulp.task('copy-web-app', function() {
 gulp.task('babel-node', function() {
   var files = [
     SRC_ROOT + 'server.js',
+    SRC_ROOT + 'blogPostManifest.js',
   ];
   try {
     return gulp.src(files)
@@ -140,6 +142,7 @@ gulp.task('build', function(cb) {
 gulp.task('watch', function() {
   gulp.watch([
     SRC_ROOT + 'server.js',
+    SRC_ROOT + 'blogPostManifest.js',
   ], ['babel-node']);
   gulp.watch([
     SRC_ROOT_PUBLIC_JS + '**/*',
