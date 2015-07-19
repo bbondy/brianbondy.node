@@ -1,0 +1,99 @@
+[StackOverflow][0] users sorted by reputation are now available for Twitter, LinkedIn, and Facebook!
+
+![Social icons][img_1]
+
+A few days ago I blogged about a list of StackOverflow (and related StackExchange sites) users sorted by reputation who had twitter accounts.   
+
+A couple days later I added extra info to those lists showing the following, followers, last tweet date, and twitter description. 
+
+Today I added a couple more list types: LinkedIn, and Facebook.
+
+**StackOverflow**  
+- [Twitter][t1] &nbsp;&nbsp; - [LinkedIn][l1] &nbsp;&nbsp; - [Facebook][f1]
+
+**ServerFault**  
+- [Twitter][t2] &nbsp;&nbsp; - [LinkedIn][l2] &nbsp;&nbsp; - [Facebook][f2]  
+
+**SuperUser**  
+- [Twitter][t3] &nbsp;&nbsp; - [LinkedIn][l3] &nbsp;&nbsp; - [Facebook][f3]
+
+**Game Development**  
+- [Twitter][t4] &nbsp;&nbsp; - [LinkedIn][l4] &nbsp;&nbsp; - [Facebook][f4]
+
+**Webmasters**  
+- [Twitter][t5] &nbsp;&nbsp; - [LinkedIn][l5] &nbsp;&nbsp; - [Facebook][f5]
+
+**Web Applications**  
+- [Twitter][t6] &nbsp;&nbsp; - [LinkedIn][l6] &nbsp;&nbsp; - [Facebook][f6]
+
+**Ubuntu**  
+- [Twitter][t7] &nbsp;&nbsp; - [LinkedIn][l7] &nbsp;&nbsp; - [Facebook][f7]
+
+**Statistical Analysis**  
+- [Twitter][t8] &nbsp;&nbsp; - [LinkedIn][l8] &nbsp;&nbsp; - [Facebook][f8]
+
+**StackApps**  
+- [Twitter][t9] &nbsp;&nbsp; - [LinkedIn][l9] &nbsp;&nbsp; - [Facebook][f9]
+
+**Photography**  
+- [Twitter][t10] &nbsp;&nbsp; - [LinkedIn][l10] &nbsp;&nbsp; - [Facebook][f10]
+
+**Mathematics**  
+- [Twitter][t11] &nbsp;&nbsp; - [LinkedIn][l11] &nbsp;&nbsp; - [Facebook][f11]
+
+**Cooking**  
+- [Twitter][t12] &nbsp;&nbsp; - [LinkedIn][l12] &nbsp;&nbsp; - [Facebook][f12]
+
+**Gaming**  
+- [Twitter][t13] &nbsp;&nbsp; - [LinkedIn][l13] &nbsp;&nbsp; - [Facebook][f13]
+
+Across all sites users are 2x more likely to have their twitter info vs. their LinkedIn info.
+  
+Likewise across all sites users are 2x more likely to have their LinkedIn info vs. their facebook info. 
+
+[0]: http://www.stackoverflow.com/
+[t1]: http://www.brianbondy.com/stackexchange-twitter/stackoverflow
+[t2]: http://www.brianbondy.com/stackexchange-twitter/serverfault
+[t3]: http://www.brianbondy.com/stackexchange-twitter/superuser
+[t4]: http://www.brianbondy.com/stackexchange-twitter/gamedevelopment
+[t5]: http://www.brianbondy.com/stackexchange-twitter/webmasters
+[t6]: http://www.brianbondy.com/stackexchange-twitter/webapplications
+[t7]: http://www.brianbondy.com/stackexchange-twitter/ubuntu
+[t8]: http://www.brianbondy.com/stackexchange-twitter/statisticalanalysis
+[t9]: http://www.brianbondy.com/stackexchange-twitter/stackapps
+[t10]: http://www.brianbondy.com/stackexchange-twitter/photography
+[t11]: http://www.brianbondy.com/stackexchange-twitter/mathematics
+[t12]: http://www.brianbondy.com/stackexchange-twitter/cooking
+[t13]: http://www.brianbondy.com/stackexchange-twitter/gaming
+
+
+[l1]: http://www.brianbondy.com/stackexchange-linkedin/stackoverflow
+[l2]: http://www.brianbondy.com/stackexchange-linkedin/serverfault
+[l3]: http://www.brianbondy.com/stackexchange-linkedin/superuser
+[l4]: http://www.brianbondy.com/stackexchange-linkedin/gamedevelopment
+[l5]: http://www.brianbondy.com/stackexchange-linkedin/webmasters
+[l6]: http://www.brianbondy.com/stackexchange-linkedin/webapplications
+[l7]: http://www.brianbondy.com/stackexchange-linkedin/ubuntu
+[l8]: http://www.brianbondy.com/stackexchange-linkedin/statisticalanalysis
+[l9]: http://www.brianbondy.com/stackexchange-linkedin/stackapps
+[l10]: http://www.brianbondy.com/stackexchange-linkedin/photography
+[l11]: http://www.brianbondy.com/stackexchange-linkedin/mathematics
+[l12]: http://www.brianbondy.com/stackexchange-linkedin/cooking
+[l13]: http://www.brianbondy.com/stackexchange-linkedin/gaming
+
+
+[f1]: http://www.brianbondy.com/stackexchange-facebook/stackoverflow
+[f2]: http://www.brianbondy.com/stackexchange-facebook/serverfault
+[f3]: http://www.brianbondy.com/stackexchange-facebook/superuser
+[f4]: http://www.brianbondy.com/stackexchange-facebook/gamedevelopment
+[f5]: http://www.brianbondy.com/stackexchange-facebook/webmasters
+[f6]: http://www.brianbondy.com/stackexchange-facebook/webapplications
+[f7]: http://www.brianbondy.com/stackexchange-facebook/ubuntu
+[f8]: http://www.brianbondy.com/stackexchange-facebook/statisticalanalysis
+[f9]: http://www.brianbondy.com/stackexchange-facebook/stackapps
+[f10]: http://www.brianbondy.com/stackexchange-facebook/photography
+[f11]: http://www.brianbondy.com/stackexchange-facebook/mathematics
+[f12]: http://www.brianbondy.com/stackexchange-facebook/cooking
+[f13]: http://www.brianbondy.com/stackexchange-facebook/gaming
+
+[img_1]: http://www.brianbondy.com/static/img/blogpost_107/socialIcons.png
