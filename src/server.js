@@ -1,6 +1,15 @@
 let Path = require('path');
 let Hapi = require('hapi');
 var Good = require('good');
+var blogPosts = require('./blogPostManifest.js');
+var fs = require('fs');
+var _ = require('underscore');
+
+console.log('-1');
+blogPosts.forEach(blogPost =>
+  blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
+console.log('-2');
+
 
 let server = new Hapi.Server({
   connections: {
@@ -50,13 +59,8 @@ server.route({
   method: 'GET',
   path: '/api/blog/{id}',
   handler: function (request, reply) {
-    // TODO fetch real data
-    let blogPost = {
-      title: 'Test title',
-      body: 'Test **body**!\n\n- test one\n- test two',
-      lastModified: new Date(),
-      created: new Date(),
-    };
+    let blogPost = _(blogPosts).find(blogPost =>
+      blogPost.id === Number(request.params.id))
     reply(blogPost).code(200);
   }
 });
@@ -65,18 +69,6 @@ server.route({
   method: 'GET',
   path: '/api/blog',
   handler: function (request, reply) {
-    // TODO fetch real data
-    let blogPosts = [{
-      title: 'Test title1',
-      body: 'Test **body1**!\n\n- test one\n- test two',
-      lastModified: new Date(),
-      created: new Date(),
-    }, {
-      title: 'Test title2',
-      body: 'Test **body2**!\n\n- test one\n- test two',
-      lastModified: new Date(),
-      created: new Date(),
-    }];
     reply(blogPosts).code(200);
   }
 });
