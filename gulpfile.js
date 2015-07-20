@@ -54,15 +54,28 @@ gulp.task('start-server', function () {
     ext: 'js html',
     env: { 'NODE_ENV': 'development' }
   })
-})
+});
 
 /**
  * Runs linters on all javascript files found in the src dir.
  */
-gulp.task('lint', function() {
+gulp.task('lint-node', function() {
   return gulp.src([
       SRC_ROOT + 'server.js',
       SRC_ROOT + 'blogPostManifest.js',
+    ])
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(gutil.noop());
+});
+
+
+
+/**
+ * Runs linters on all javascript files found in the src dir.
+ */
+gulp.task('lint-js', function() {
+  return gulp.src([
       SRC_ROOT + 'public/js/**/*.js',
       TEST_ROOT + '**/*.js',
       '!' + SRC_ROOT + 'js/ext/*.js',
@@ -133,7 +146,7 @@ gulp.task('babel-node', function() {
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['copy-web-app', 'babel-node', 'bundle-js', 'lint', 'less'], cb);
+  runSequence(['copy-web-app', 'babel-node', 'bundle-js', 'lint-node', 'lint-js', 'less'], cb);
 });
 
 /**
@@ -143,14 +156,14 @@ gulp.task('watch', function() {
   gulp.watch([
     SRC_ROOT + 'server.js',
     SRC_ROOT + 'blogPostManifest.js',
-  ], ['babel-node']);
+  ], ['lint-node', 'babel-node']);
   gulp.watch([
     SRC_ROOT_PUBLIC_JS + '**/*',
-  ], ['bundle-js']);
+  ], ['lint-js', 'bundle-js']);
   gulp.watch([
     SRC_ROOT_PUBLIC_LESS + '**/*',
   ], ['less']);
-  gulp.watch([TEST_ROOT + '**/*'], ['lint']);
+  gulp.watch([TEST_ROOT + '**/*'], ['lint-js']);
   gulp.watch(COPY_WEB_APP_FILES, ['copy-web-app'])
 });
 
