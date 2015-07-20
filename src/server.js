@@ -5,11 +5,8 @@ var blogPosts = require('./blogPostManifest.js');
 var fs = require('fs');
 var _ = require('underscore');
 
-console.log('-1');
 blogPosts.forEach(blogPost =>
   blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
-console.log('-2');
-
 
 let server = new Hapi.Server({
   connections: {
@@ -40,6 +37,14 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/other/{name}',
+  handler: function (request, reply) {
+    reply.file('index.html');
+  }
+});
+
+server.route({
+  method: 'GET',
   path: '/blog/{name}',
   handler: function (request, reply) {
     reply.file('index.html');
@@ -48,19 +53,24 @@ server.route({
 
 server.route({
   method: 'GET',
-  path: '/other/{name}',
+  path: '/api/blog/posted/{year}',
   handler: function (request, reply) {
-    reply.file('index.html');
+    server.log('info', 'howdy');
+    let filteredBlogPosts = _(blogPosts).groupBy(blogPost =>
+      blogPost.created.getFullYear())[request.params.year];
+    if (filteredBlogPosts === undefined) {
+      filteredBlogPosts = [];
+    }
+    reply(filteredBlogPosts).code(200);
   }
 });
-
 
 server.route({
   method: 'GET',
   path: '/api/blog/{id}',
   handler: function (request, reply) {
-    let blogPost = _(blogPosts).find(blogPost =>
-      blogPost.id === Number(request.params.id))
+    let blogPost = _(blogPosts).find(post =>
+      post.id === Number(request.params.id));
     reply(blogPost).code(200);
   }
 });

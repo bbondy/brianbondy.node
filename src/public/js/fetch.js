@@ -44,7 +44,11 @@ export function fetchMarkdown(id) {
 /**
  * Fetch a bunch of blog posts
  */
-export function fetchBlogPosts() {
+export function fetchBlogPosts(year) {
   // TODO: Add various filters
-  return getJSON(`/api/blog`);
+  if (year === undefined) {
+    return getJSON(`/api/blog`);
+  } else {
+    return getJSON(`/api/blog/posted/${year}`);
+  }
 }
