@@ -18,6 +18,9 @@ reloadData();
 
 let server = new Hapi.Server({
   connections: {
+    router: {
+      stripTrailingSlash: false,
+    },
     routes: {
       files: {
         relativeTo: Path.join(__dirname, 'public')
