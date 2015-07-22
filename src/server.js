@@ -70,6 +70,15 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/blog/modified/{year}',
+  handler: function (request, reply) {
+    reply.redirect(`/blog/posted/${request.params.year}`);
+  }
+});
+
+
+server.route({
+  method: 'GET',
   path: '/blog/posted/{year}',
   handler: function (request, reply) {
     reply.file('index.html');
