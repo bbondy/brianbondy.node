@@ -53,6 +53,14 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/blog/posted/{year}',
+  handler: function (request, reply) {
+    reply.file('index.html');
+  }
+});
+
+server.route({
+  method: 'GET',
   path: '/api/blog/posted/{year}',
   handler: function (request, reply) {
     server.log('info', 'howdy');

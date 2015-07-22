@@ -5,6 +5,7 @@ import Main from './main.js';
 
 import Blog from './blog.js';
 import BlogPost from './blogPost.js';
+import BlogPostList from './blogPostList.js';
 import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
 
 let Route = Router.Route;
@@ -17,6 +18,8 @@ let routes =
     <DefaultRoute name='blog-index' handler={Blog}/>
     <Route path='blog' handler={Blog}>
      <Route path=':id' handler={BlogPost}/>
+     <Route path='posted/:year' handler={BlogPostList}/>
+     <Route path='modified/:year' handler={BlogPostList}/>
     </Route>
 
     <Route name='projects' path='projects' handler={RemoteMarkdownViewer}/>
