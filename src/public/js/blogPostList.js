@@ -27,7 +27,12 @@ export default class BlogPostList extends React.Component {
       <DocumentTitle title='Blog Posts in ${this.props.params.year}'/>
       {
         this.state.blogPosts.map(blogPost =>
-          <BlogPost title={blogPost.title} body={blogPost.body} created={blogPost.created}/>)
+          <BlogPost title={blogPost.title}
+            body={blogPost.body}
+            created={blogPost.created}
+            tags={blogPost.tags}
+            id={blogPost.id}
+          />)
       }
     </div>;
   }
