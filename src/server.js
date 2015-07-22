@@ -1,15 +1,20 @@
 let Path = require('path');
 let Hapi = require('hapi');
 var Good = require('good');
-var blogPosts = require('./blogPostManifest.js');
 var fs = require('fs');
 var _ = require('underscore');
+var blogPosts, blogPostsByYear;
 
-blogPosts.forEach(blogPost =>
-  blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
+function reloadData() {
+  delete require.cache[require.resolve('./blogPostManifest.js')];
+  blogPosts = require('./blogPostManifest.js');
+  blogPosts.forEach(blogPost =>
+    blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
+  blogPostsByYear = _(blogPosts).groupBy(blogPost =>
+    blogPost.created.getFullYear());
+}
 
-let blogPostsByYear = _(blogPosts).groupBy(blogPost =>
-  blogPost.created.getFullYear());
+reloadData();
 
 let server = new Hapi.Server({
   connections: {
@@ -43,6 +48,15 @@ server.route({
   path: '/other/{name}',
   handler: function (request, reply) {
     reply.file('index.html');
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/refresh',
+  handler: function (request, reply) {
+    reloadData();
+    reply.redirect('/');
   }
 });
 
