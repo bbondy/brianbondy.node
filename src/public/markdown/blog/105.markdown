@@ -1,10 +1,10 @@
-Wondering who to follow on twitter to keep up to date on technology? 
+Wondering who to follow on twitter to keep up to date on technology?
 
 I mined the latest StackOverflow (SO) data dump for all users with twitter accounts, then calculated each user's top tags based on most votes, and finally sorted the lists by user reputation.
 
 **The end result is that you can now easily stay connected with the people in your Stack Exchange community.**
 
-Here is a screenshot of what the SO list looks like, containing over 2300 Twitter accounts: 
+Here is a screenshot of what the SO list looks like, containing over 2300 Twitter accounts:
 
 [![Screenshot of the twitter list][img1]][1]
 
@@ -28,10 +28,10 @@ You can view the lists here:
 - [Cooking][12]
 - [Gaming][13]
 
-**Updates:**
+##Updates:
 
 - Created real twitter lists which are self updating via the Twitter API.  You can access these twitter lists from the lists linked above.  Note: Twitter has a limit of 500 users per list so I include only the top 500 users.
-- Removed some meta tags for the "Known By" list such as "mistakes" so that I don't show anyone as being known for mistakes :) 
+- Removed some meta tags for the "Known By" list such as "mistakes" so that I don't show anyone as being known for mistakes :)
 - Fixed a bug with non StackOverflow sites linking to the StackOverflow user pages.
 - Added better parsing to find twitter URLs
 - Added filtering of bad twitter URLs
@@ -53,4 +53,3 @@ You can view the lists here:
 [13]: http://www.brianbondy.com/stackexchange-twitter/gaming
 
 [img1]: http://www.brianbondy.com/static/img/blogpost_105/twitterSEScreenshot.png
-

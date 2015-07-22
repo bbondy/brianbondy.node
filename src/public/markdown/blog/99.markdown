@@ -9,4 +9,3 @@ I also setup email notifications for myself so I get emailed whenever a new comm
 For the news item I also set `rel="nofollow"` so any link posted won't count for search engine optimization (SEO).
 
 [1]: https://akismet.com
-

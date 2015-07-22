@@ -1,6 +1,6 @@
 If you haven't heard of [Khan Academy][26] yet, you need to start reading more news.   I first heard of Khan Academy when they were announced as a winner of [Google's Project 10^100][28] and have been telling people and tweeting about them ever since.  I didn't start looking into how their development process works until last night though.
 
-Khan Academy is a non profit company started by Salman Khan with the mission of educating the world. 
+Khan Academy is a non profit company started by Salman Khan with the mission of educating the world.
 Sal himself has created over 2,000 videos on a range of topics from history to mathematics and everything in between.  The videos are nothing short of amazing and are broken down into 10 minute chunks which was originally because of the youtube limit imposed on Sal.
 
 Shantanu is the President and COO of the Khan Academy and also has a strong mathematical background like Sal.
@@ -20,12 +20,12 @@ GAE has a great [GAE getting started guide][12] if you are interested.  I was.
 
 
 
-GAE works off of a datastore which is automatically replicated and scaled and is based on [BigTable][21] and hence [Google Filesystem (GFS)][22].  GAE does not allow for you to host a relational database. 
+GAE works off of a datastore which is automatically replicated and scaled and is based on [BigTable][21] and hence [Google Filesystem (GFS)][22].  GAE does not allow for you to host a relational database.
 Instead of using SQL to tie into the datastore and having write access to your filesystem, you need to use the Google Query Language (GQL).
 GQL looks exactly like SQL but you can't do joins and you can't select partial entities from your queries.  You must either select just the keys or the entire entity.
 
-GAE applications such as Khan make use of caching so that the datastore does not need to be contacted on each page load. 
-This caching is typically handled with the [memcache][37] service included in GAE API.  Typically each model that you have would save to the memcache when you write the model to the datastore, and it would try to retrieve the object from the memcache before getting it from the datastore. 
+GAE applications such as Khan make use of caching so that the datastore does not need to be contacted on each page load.
+This caching is typically handled with the [memcache][37] service included in GAE API.  Typically each model that you have would save to the memcache when you write the model to the datastore, and it would try to retrieve the object from the memcache before getting it from the datastore.
 
 Khan Academy does expose an [HTTP JSON API][11] but only for getting a list of playlists and videos per playlist.  
 It would be great to see additional APIs for read only access to the energy and badge system.
@@ -50,13 +50,13 @@ HTML5 is used by Khan Academy proved by their HTML doctype declaration; however,
 By simply making input boxes like so: `<input type="number">` this would mean that all popular mobile phones would display a numeric keypad by default right away.  All browsers default to `type="text"` if the `type` specified is unknown by old browsers that don't understand HTML5.
 
 Sal himself started the code but I would imagine most of his time is spent creating the actual content videos, handling press, and doing thousands of other things today.
-Dean Brettle and Omar Rizwan are also notable developers (sorry if I missed others).  Dean amongst other things handles release management, and created the scratch pad used in exercises. 
-Omar has contributed at least 16 exercise modules. Jason Rosoff ([Jason's blog][23], [@jasonrr][24]) is also extremely involved in the project and is known as the lead designer also doing some coding.  Marcia Lee ([@marcia_lee][36]) is a recent hire and makes frequent commits. 
+Dean Brettle and Omar Rizwan are also notable developers (sorry if I missed others).  Dean amongst other things handles release management, and created the scratch pad used in exercises.
+Omar has contributed at least 16 exercise modules. Jason Rosoff ([Jason's blog][23], [@jasonrr][24]) is also extremely involved in the project and is known as the lead designer also doing some coding.  Marcia Lee ([@marcia_lee][36]) is a recent hire and makes frequent commits.
 
 
 If you are interested in helping with the Khan Academy project you can get started by:
 
-- Reading the [Khan developer's guide][13] 
+- Reading the [Khan developer's guide][13]
 - Taking a look at the [open issues][14] or the [full issue list][15]
 - Checkout the project: <strike>`http://khanacademy.googlecode.com/svn/trunk`</strike> `https://khanacademy.kilnhg.com/Repo/Website/Group/stable`
 - Create a new module from the list of [modules pending development][35]

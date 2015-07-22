@@ -1,4 +1,4 @@
-Since [my company was acquired][4], I needed to get my website off of the new company's servers. 
+Since [my company was acquired][4], I needed to get my website off of the new company's servers.
 My site was built with [Django][6], and I didn't want to have to pay for hosting.  
 
 <img style='float:left;padding-right:10px;padding-bottom:10px' width="64" height="64" src='http://www.brianbondy.com/static/img/blogpost_115/gae-icon.png'>
@@ -16,15 +16,15 @@ In particular I had to re-code the blogs database, comments, tags, and syndicati
 
 In addition, the Django administration console didn't work since it relies heavily on the database back-end.  I made a small administration section myself using Django forms.
 
-GQL by the way looks exactly like SQL, but doesn't allow joins, and can't select partial entities which exist in your datastore. 
+GQL by the way looks exactly like SQL, but doesn't allow joins, and can't select partial entities which exist in your datastore.
 
 
 GAE doesn't support Django 1.3 yet, so I used 1.2 and the [Google App Engine Django project][1].  The Google App Engine Django project interops GAE with Django easily.  I was using Django 0.96 on my old site so this was already an improvement.
 The Google App Engine Django project is a great project which allows access to many Django features including using manage.py, sending mail, and Django's test framework.
 
-The only downside of GAE is that if Google ever stops offering their service, I'd need to go through another conversion. 
+The only downside of GAE is that if Google ever stops offering their service, I'd need to go through another conversion.
 There are already several replacement systems though which  implement the same platform that you can host yourself, although I've heard all are still missing some functionality.
- 
+
 After watching the launch videos of [Google App Engine at Google Campfire (6 part video)][3], I was surprised to hear that [Guido van Rossum][2] works on the Google App Engine team.
 Apparently 50% of his time is still spent working on managing the [Python language][8] itself.
 

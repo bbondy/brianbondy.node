@@ -1,14 +1,14 @@
 [StackExchange][1] is a group of Q&A sites created by [StackOverflow (SO)][2].
 
 But exactly which part of the new StackExchange Q&A sites are new users and which part of are shared from StackOverflow?
-  
-I mined the November 2010 data dump [again][3] and came up with some interesting stats. 
+
+I mined the November 2010 data dump [again][3] and came up with some interesting stats.
 
 To figure out the common percentage between StackOverflow and other sites, I created lists of in memory users for each site, and then figured out which users had the same email hash.  A user across sites with the same email hash can be considered the same user.
 
-I knew before doing this analysis that the percentage of common users to StackExchange users would be high because of the relative size of the StackOverflow community.  I do fully expect for this 73% to decrease for future data dumps though and it will be interesting to re-run these stats and compare when the next data dump comes out. 
+I knew before doing this analysis that the percentage of common users to StackExchange users would be high because of the relative size of the StackOverflow community.  I do fully expect for this 73% to decrease for future data dumps though and it will be interesting to re-run these stats and compare when the next data dump comes out.
 
-**Here are the statistics per site:**
+##Here are the statistics per site:
 
 - **Cooking:** 2630 of 3155 in common (83.36%)
 - **Game Development:** 2497 of 2938 in common (84.99%)
@@ -27,7 +27,7 @@ I knew before doing this analysis that the percentage of common users to StackEx
 
 Of particular interest are the sites with a very high common percentage and some overlapping questions like the WebMasters StackExchange site.  
 
-**Update:**
+##Update:
 
 What percentage of SO users come from the other sites? I checked the registration dates and a surprising 5% of SO accounts come from the other sites.  This doesn't change the result much above though.  Almost all of these 5% of distinct accounts come from Ask Ubuntu, Super User, and Server Fault.
 

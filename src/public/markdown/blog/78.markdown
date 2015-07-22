@@ -38,11 +38,11 @@ Here's how to overload the logical OR operator:
         {
           return b || a.b;
         }
-    
+
       bool b;
     };
 
-What we have above is an overloaded operator for logical OR and it takes in 2 different A types. 
+What we have above is an overloaded operator for logical OR and it takes in 2 different A types.
 
 So what happens if you stick a bool value on the right hand side of a value with type A?  It will give you a compiling error.
 

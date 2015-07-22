@@ -1,7 +1,7 @@
 <p>★★★☆☆ (<span itemprop="rating">3</span> stars out of 5)</p>
 
 The book [97 Things Every Programmer Should Know][1] was edited by [Kevlin Henney][4] and has no single author.
-Instead of a typical book with one, two or three authors, this book has almost 1 author per topic covered. 
+Instead of a typical book with one, two or three authors, this book has almost 1 author per topic covered.
 The book does re-use some authors across topics, so naturally there are not quite 97 contributors.
 
 Each of the 97 chapters in the book covers one topic, each topic being 2 pages long.
@@ -11,9 +11,9 @@ As expected with dozens of contributors for the book, I had various opinions whi
 
 - I completely agreed with some points
 - I completely disagreed with some points
-- Other topics I found were acceptable points but really didn't matter as much as the author thought 
+- Other topics I found were acceptable points but really didn't matter as much as the author thought
 
-It was nice to have so many varying contributors and perspectives, all from successful and knowledgeable authors; However, personally 
+It was nice to have so many varying contributors and perspectives, all from successful and knowledgeable authors; However, personally
 I prefer reading from a single author or very small group of authors.
 
 I found it a little annoying that the description of who was giving the advise on each topic wasn't inline with the topic for each chapter.  

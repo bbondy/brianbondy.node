@@ -9,10 +9,10 @@ Here are some initial Firefox startup optimizations I've done with some lite pro
 
 - [bug 724177][724177] - 30-50ms (5%) Firefox startup speed optimization on Windows in nsLocalFileWin
 - [bug 724256][724256] - Optimize move file calls on Windows, saving about 2ms per call (1 call on startup)
-- [bug 722225][722225] - Firefox startup speed by ~5% (-70ms) on Windows by optimizing D3D10CreateDevice1 
+- [bug 722225][722225] - Firefox startup speed by ~5% (-70ms) on Windows by optimizing D3D10CreateDevice1
 - [bug 722315][722315] - Firefox startup speed by by ~5% (-76ms) on Windows by lazy loading CLSID_DragDropHelper
 - [bug 724203][724203] - Optimize nsLocalFile::IsDirectory on Windows by 50% giving 5ms startup improvement
-- [bug 724207][724207] - Save 15-20ms on startup from unused file attributes fetch when opening files 
+- [bug 724207][724207] - Save 15-20ms on startup from unused file attributes fetch when opening files
 - [bug 692255][692255] - Find a way to get rid of prefetch files on Windows for faster startup
 - [bug 725444][725444] - 10-15ms main thread startup optimization in Windows AudioSession
 
@@ -24,7 +24,7 @@ There are many ways, the first I will talk about is Xperf.
 
 
 ---
-**Xperf**
+##Xperf
 
 One way to identify optimization bottlenecks on Windows is to use [Xperf][1].
 Xperf is a great way to find both IO bottlenecks and CPU usage bottlenecks.
@@ -35,7 +35,7 @@ It can tell you which files use the most IO, what the IO patterns are, which fun
 
 ---
 
-**Built in Mozilla profiler**
+##Built in Mozilla profiler
 
 
 Another way to find optimizations is to use [Benoit's profiler (SPS)][2]. Currently it works well on Mac, and Windows is nearly completed.
@@ -48,7 +48,7 @@ It far surpasses the tools I've been using to find the bugs and fixes above.
 
 ---
 
-**Custom profiler**
+##Custom profiler
 
 I haven't seen how the Mozilla built-in profiler is implemented, but I suspect that this custom profiler is a simplified version of the Mozilla profiler's Pseudostack mode.
 
@@ -59,10 +59,10 @@ These functions allow you to get very detailed timing results.
 
 For any function you want to profile you simply add the PROFILE_FUNCTION() macro to the start of the function.  I usually start by adding this to each non-trivial function in a file.
 
-Once you've found a function that takes a non trivial amount of time you can start to dig deeper into other functions inside of the function until you find the root cause. 
+Once you've found a function that takes a non trivial amount of time you can start to dig deeper into other functions inside of the function until you find the root cause.
 
 But sometimes a function has a lot of code and you aren't sure what the slow part of the function is.
-For this I use a second macro PROFILE_STR("FunctionName:N") where N is a number I increment evenly spaced out. 
+For this I use a second macro PROFILE_STR("FunctionName:N") where N is a number I increment evenly spaced out.
 The string can be anything, I just use that normally.
 
 These macros just create an object.  The constructor of the object stores the start time, the destructor of the object gets the end time.  
@@ -71,7 +71,7 @@ The destructor also uses the function name or string as a lookup in a global map
 
 There is a third macro I was using to dump the results to a file at particular events I wanted to focus on, like first paint, or when the session is restored.
 
-One thing you have to look out for with this method is if you happen to put the calls in a recursive function. 
+One thing you have to look out for with this method is if you happen to put the calls in a recursive function.
 In that case it will appear to be a bigger bottleneck because the first call will include the full length of time of all calls that contain it.  
 All of the inner calls will add onto that.
 
@@ -81,7 +81,7 @@ The output of this function is made when the third macro to dump the results is 
 
 ---
 
-**Verifying startup results**
+##Verifying startup results
 
 If you're working on Firefox, a good way to verify that your speed optimization made a difference is to use the [about:startup extension][4].
 
@@ -107,4 +107,3 @@ Here is an example after one of the patches above:
 [724207]: https://bugzilla.mozilla.org/show_bug.cgi?id=724207
 [692255]: https://bugzilla.mozilla.org/show_bug.cgi?id=692255
 [725444]: https://bugzilla.mozilla.org/show_bug.cgi?id=725444
-

@@ -10,8 +10,8 @@ A few months ago, I was approached by a Mozilla technical recruiter and after ca
 
 Several months later, reading [John Resig][3]'s (creator of jQuery) advice, I reconsidered and took the job.
 
-> It’s been an incredible experience working with everyone at Mozilla. 
-> The company is easily one of the most developer-friendly organizations I can imagine, with some of the smartest coders in the world. 
+> It’s been an incredible experience working with everyone at Mozilla.
+> The company is easily one of the most developer-friendly organizations I can imagine, with some of the smartest coders in the world.
 > Mozilla is hiring across the board – I strongly encourage you to apply if you’re looking for one of the best jobs you’ve ever had.
 
 <img src='/static/img/blogpost_118/firefox-logo.png' style='float:left;padding-right:20px;'>
@@ -22,11 +22,11 @@ I'll be working as a contractor at Mozilla with the title of Platform Engineer. 
 
 ---
 
-**Why I chose Mozilla**
+##Why I chose Mozilla
 
 A few reasons why I chose Mozilla:
 
-- Much of the web's technology and innovation was developed at least in part by Mozilla. 
+- Much of the web's technology and innovation was developed at least in part by Mozilla.
 - The Internet wouldn't be what it is today without Mozilla.
 - They are a relatively small and open source organization; your work will be seen.
 - They support openness and stand behind their beliefs to deliver a free and open web.

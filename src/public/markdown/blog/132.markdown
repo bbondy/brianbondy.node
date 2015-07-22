@@ -24,7 +24,7 @@ The following topics (and more) are covered:
   - Partial templates
   - Working with persistent storage
   - Working with files
-  - MVC pattern 
+  - MVC pattern
 
 You won't go deep into any one topic; however, the book gives you just enough information to know where to go from there.
 I'd recommend this book to anyone with some JavaScript experience that wants to know what Node is all about.

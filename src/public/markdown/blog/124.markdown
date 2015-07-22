@@ -18,13 +18,13 @@ Here's a screenshot of that error message:
 I assume once this registration problem is fixed it'll launch the Desktop mode and then launch the email client.
 It would be nice to have a metro interface for Thunderbird as well.
 
-Perhaps even a metro style compose email window application only for when a user is browsing in tablet full screen mode and they click to send an email with their default email client. 
+Perhaps even a metro style compose email window application only for when a user is browsing in tablet full screen mode and they click to send an email with their default email client.
 
 ---
 
-**Related Bug:**
+##Related Bug:
 
-- [Bug 686836][2] - Launching default email client in Windows 8 results in error 
+- [Bug 686836][2] - Launching default email client in Windows 8 results in error
 
 [1]: http://www.brianbondy.com/blog/id/123/windows-8-and-firefox-first-looks
 

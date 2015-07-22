@@ -1,16 +1,16 @@
-<img src='http://www.brianbondy.com/static/img/blogpost_118/firefox-logo.png' style='position:relative;top:-5px;float:left;padding-right:10px'>Mozilla's [rapid release process][1] allows us to deliver features, speed optimizations, memory reductions, and much more... faster. 
+<img src='http://www.brianbondy.com/static/img/blogpost_118/firefox-logo.png' style='position:relative;top:-5px;float:left;padding-right:10px'>Mozilla's [rapid release process][1] allows us to deliver features, speed optimizations, memory reductions, and much more... faster.
 Keeping up to date fast is an essential need for the ever changing web.
 
 There is a new release of Firefox every 6 weeks instead of every year. Even with this shortened release cycle, these releases still include major enhancements.  These faster updates are possible because Mozilla is growing significantly, and the community of Mozillians at large is growing month over month.  
 
 The rapid release process has some very positive side effects, like delivering new web technologies faster, and attracting world class developers who like to see their code ship fast.
-But rapid releases also have some negative side effects. 
+But rapid releases also have some negative side effects.
 
 One of the negative side effects is that minor annoyances with software updates suddenly become much more noticeable. Most users don't want to think about software updates nor version numbers and now they are being forced to do so every six weeks.
 
 ---
 
-**One such minor annoyance is User Account Control (UAC):**
+##One such minor annoyance is User Account Control (UAC):
 
 Starting with Windows Vista Microsoft introduced UAC, and with it users across the world see this familiar dialog when doing any operation that requires administrative access: <br>  
 <img src='http://www.brianbondy.com/static/img/blogpost_125/UAC.png'>
@@ -18,16 +18,16 @@ Starting with Windows Vista Microsoft introduced UAC, and with it users across t
 UAC in particular makes every process run with limited permissions, and if you want to do something like write into `Program Files`, then the user has to give permissions to the application to do this.
 This makes things like automated software updates hard to do without user interaction.  If we don't have access to write into `Program Files` to perform an update, then we have to ask for elevated permissions.  We ask for elevated permissions today when applying updates.
 
-If a user with administrative access gives permissions to Firefox one time via a UAC prompt, and that user has automatic updates on, then 
+If a user with administrative access gives permissions to Firefox one time via a UAC prompt, and that user has automatic updates on, then
 there is no reason we should continue to ask them to elevate the permissions each and every time we want to apply an update.  The user has already explicitly given permission to do it.
 
-If this worries you, just remember that you can change your mind at any time by configuring silent updates on the `Options > Advanced > Update` tab. 
+If this worries you, just remember that you can change your mind at any time by configuring silent updates on the `Options > Advanced > Update` tab.
 
 The feature page for this task is located here: [Remove requirement for the Windows UAC dialog when applying an update][rs4].  I am the lead developer on this UAC task and the estimated target is the first quarter of 2012.
 
 ---
 
-**What's being done to solve the UAC annoyance:**
+##What's being done to solve the UAC annoyance:
 
 There are several ways to tackle this issue.  For example, some browsers that offer silent software updates will install into the user's application data folder and hence do not have this problem.  We could do the same, but we chose not to because it can be an administrative headache for some people who manage updates themselves and have to maintain an installation for every user.
 
@@ -39,15 +39,15 @@ This means that an optional component will be installed that automates the softw
 
 ---
 
-**Only one Firefox service:**
+##Only one Firefox service:
 
 There are four different Firefox development channels you can use.  At any time there is a [Firefox Release channel][2], [Beta channel][3], [Aurora channel][4], and [Nightly builds channel][5].  These channels give you access to Firefox releases at different stages of the development cycle.
 
-A user can have multiple installations across channels, but only one Firefox service will exist in Windows Services. 
+A user can have multiple installations across channels, but only one Firefox service will exist in Windows Services.
 
 ---
 
-**Firefox service as an optional component:**
+##Firefox service as an optional component:
 
 The Firefox service will be an optional component.  It doesn't need to be installed, and if it is stopped or disabled, updates will work as they did before in every other recent Firefox release.
 
@@ -55,7 +55,7 @@ A user can also uninstall the Firefox service at any time.  Updates will continu
 
 ---
 
-**Other uses of the Firefox service:**
+##Other uses of the Firefox service:
 
 <img src='http://www.brianbondy.com/static/img/blogpost_125/services.png' style='float:right;padding-left:5px;position:relative;top:-15px;'>
 Having a Windows service installed means that we can investigate other integration and maintenance points.  The possibilities are very exciting.
@@ -64,7 +64,7 @@ The Windows service may be used later on for a wider selection of maintenance re
 
 ---
 
-**High level overview of other new Silent update features**
+##High level overview of other new Silent update features
 
 Above I mostly talked about silent updates on Windows, but there are other update issues being addressed in several new features across all platforms.  This section was originally written by [Robert Strong][rs10] with help from Chris Lee, and Lawrence Mandel and describes these features.
 
@@ -85,7 +85,7 @@ All of the [silent update work can be tracked on the wiki][rs11].
 
 ---
 
-**Other Mozilla products:**
+##Other Mozilla products:
 
 <img src='http://www.brianbondy.com/static/img/blogpost_125/thunderbird.png' style='float:right;padding-left:5px;position:relative;top:-15px;'>
 
@@ -95,7 +95,7 @@ Every feature described in this post either applies to or can be done for other 
 
 ---
 
-**Platform Integration team:**
+##Platform Integration team:
 
 <img src='http://www.brianbondy.com/static/img/blogpost_125/windows_linux_mac_small3.png' style='float:left;margin-right:10px;position:relative;top:-7px;'>
 

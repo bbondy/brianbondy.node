@@ -1,11 +1,11 @@
-**What are abstract functions?**
+##What are abstract functions?
 
-Abstract functions, are functions who's implementation is not yet specified.    
+Abstract functions, are functions who's implementation is not yet specified.
 
 They are useful because:
 
 - They allow you to define an interface without defining an implementation.  
-- A base class may not have a specific default definition for a function, but you know that derived types will. 
+- A base class may not have a specific default definition for a function, but you know that derived types will.
 
 In C++ both interfaces, and abstract classes are done via pure virtual functions.  Pure virtual functions simply say that derived types must override the function.  The base type can have a default  implementation (that the derived types can use by calling the base function directly) but the base functions typically have no implementation at all.
 
@@ -13,7 +13,7 @@ In C# there are different constructs for interfaces (`interface`) and undefined 
 
 This post discusses what pure virtual function call errors are, and how they work across the following languages: C++, C#, and Python.
 
-**What is a pure virtual function call error?**
+##What is a pure virtual function call error?
 
 Pure virtual function call errors could potentially happen, in a programming language that allows you to create partially implemented classes.  Although not all programming languages can have pure virtual function call errors.
 
@@ -21,8 +21,8 @@ Pure virtual function call errors occur when a call is made to a pure virtual fu
 
 ---
 
-**Can C++ have pure virtual function errors?**
- 
+##Can C++ have pure virtual function errors?
+
 Yes.
 
 Consider the order of construction for the following C++ code:
@@ -37,11 +37,11 @@ Consider the order of construction for the following C++ code:
 
     class Dog : public Animal
     {
-    public: 
+    public:
       virtual void Speak() { }
     };
 
-    //.... 
+    //....
     Dog leia;
 
 When you create an instance of `Dog` the following happens:
@@ -67,7 +67,7 @@ Here is a code sample that will produce a pure virtual function runtime error in
     	{
     		Speak();
     	}
-    	Animal() 
+    	Animal()
     	{
     		SpeakPlease();
     	}
@@ -75,7 +75,7 @@ Here is a code sample that will produce a pure virtual function runtime error in
 
     class Dog : public Animal
     {
-    public: 
+    public:
     	virtual void Speak() { }
     };
 
@@ -90,11 +90,11 @@ Here is a code sample that will produce a pure virtual function runtime error in
 
 ---
 
-**Can C# have pure virtual function errors?**
+##Can C# have pure virtual function errors?
 
 No.
 
-C# allows you to create pure virtual functions by using the abstract keyword on each of your abstract function/methods. 
+C# allows you to create pure virtual functions by using the abstract keyword on each of your abstract function/methods.
 And if you have even one abstract function/method in your class you must also use abstract before your class declaration.
 
 C# gets around pure virtual function calls though, but arguably in a worse way.
@@ -130,7 +130,7 @@ C# gets around pure virtual function calls though, but arguably in a worse way.
 
 ---
 
-**Can Python have pure virtual function errors?**
+##Can Python have pure virtual function errors?
 
 Kind of, and only if you follow certain conventions.
 
@@ -143,13 +143,13 @@ This is to say pure virtual function support is defined in Python simply by conv
 Therefore unlike C++ and C#, you can create objects of a class that have some of it's functions/methods as abstract.
 In that sence you can have pure virtual function errors (via NotImplementedError exceptions)
 
-But Python works like C# in the sense that even before the derived type is constructed, it will call into it. 
+But Python works like C# in the sense that even before the derived type is constructed, it will call into it.
 The end result is that it throws an exception that can be caught.
 
 
     class Animal(object):
       def __init__(self):
-        print("Constructing animal")    
+        print("Constructing animal")
         self.Speak()
       def Speak(self):
         raise NotImplementedError
@@ -161,7 +161,7 @@ The end result is that it throws an exception that can be caught.
         super(Dog, self).__init__()
         print("Constructing Dog")
       def Speak(self):
-        print("Woof!")    
+        print("Woof!")
       def __del__(self):
         print("Destructing dog")
         super(Dog, self).__del__()
@@ -171,5 +171,4 @@ The end result is that it throws an exception that can be caught.
 
 ---
 
-Next time you get an error like: `"R6025 Pure virtual function call"`, perhaps you will wonder less about the source of the error. 
-
+Next time you get an error like: `"R6025 Pure virtual function call"`, perhaps you will wonder less about the source of the error.

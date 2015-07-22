@@ -5,14 +5,14 @@ A common mistake people make in C++ is thinking that arrays and pointers are the
 
 These 2 lines are very different.  
 
-The first is a pointer to a string literal.  The string literal is in read only memory.   Changing p[i] for any index i is undefined.    
+The first is a pointer to a string literal.  The string literal is in read only memory.   Changing p[i] for any index i is undefined.
 
-The second is a char array initialized with 'h', 'e', 'l', 'l', 'o', '\\0'. 
+The second is a char array initialized with 'h', 'e', 'l', 'l', 'o', '\\0'.
 Changing q[i] for any index i in the range 0..5 is fine.
 
 Consequently:
 
-    assert(sizeof(p) == sizeof(char*)); 
+    assert(sizeof(p) == sizeof(char*));
     assert(sizeof(q) != sizeof(char*));
     assert(sizeof(q) == 6);
 
@@ -26,7 +26,7 @@ Not only are pointers and arrays 2 different things completely, but you can also
 
     //Compiling error, Can't convert a pointer to 12 elements to a pointer to a char
     char *p2 = &sz;
-    
+
     //This is the correct way to create a pointer to an array
     char (*x)[12] = &sz;
 

@@ -8,7 +8,7 @@ Pressing the Start/Windows keyboard button will take you between the 2 interface
 
 ---
 
-**Firefox on Windows 8:**
+##Firefox on Windows 8:
 
 The first thing I did was install Firefox.  
 
@@ -31,11 +31,11 @@ Full screen mode in Firefox works the same as previous versions currently.  If y
 
 ---
 
-**Internet Explorer Tablet Mode:**
+##Internet Explorer Tablet Mode:
 
 If you start Internet Explorer from the tablet mode you'll see a full screen app with no switch to Desktop.  It has a nice interface and allows you to pin any web page to your Tablet interface as a tile.
 
-The problem with this is that even know I set Firefox as my default browser, through the Windows interface, it still launches IE for these shortcut tiles. 
+The problem with this is that even know I set Firefox as my default browser, through the Windows interface, it still launches IE for these shortcut tiles.
 
 Here is a tile created on the far left from a pinned page in IE of the mozilla.org page:
 
@@ -44,19 +44,19 @@ Here is a tile created on the far left from a pinned page in IE of the mozilla.o
 
 ---
 
-**Work to be done for Firefox on Windows 8:**
+##Work to be done for Firefox on Windows 8:
 
 
 There's probably a ton, but here are a few things that come to mind:
 
 - We need to support the VS2011 developer tools for MozillaBuild
 - It would be nice to not need to switch to Desktop to launch the browser.
-- Platform integration for apps seems very important.  We should be showing up as tiles for web applications that launch Firefox full screen. 
+- Platform integration for apps seems very important.  We should be showing up as tiles for web applications that launch Firefox full screen.
 - The Firefox tile can be leveraged to have more functionality built into it.
 
 ---
 
-**Related bugs:**
+##Related bugs:
 
 - [Bug 686835][1] - Investigate using XPCOM in a metro style application, and providing Firefox as a Metro app
 - [Bug 686837][3] - Add VS2011 support for mozilla-build
@@ -68,4 +68,3 @@ There's probably a ton, but here are a few things that come to mind:
 [3]: https://bugzilla.mozilla.org/show_bug.cgi?id=686837
 [4]: https://bugzilla.mozilla.org/show_bug.cgi?id=686839
 [5]: https://bugzilla.mozilla.org/show_bug.cgi?id=686840
-

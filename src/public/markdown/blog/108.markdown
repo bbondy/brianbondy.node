@@ -124,4 +124,3 @@ Here is the full StackExchange social network user lists:
 [2]: http://programmers.stackexchange.com/
 [3]: http://tex.stackexchange.com/
 [4]: http://cstheory.stackexchange.com/
-

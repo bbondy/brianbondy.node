@@ -1,6 +1,6 @@
 Several months ago I decided that this website needed a revamping.  
 
-The work since that thought is finally being released today.  The work on the site is still slowly in progress, but I feel that enough of the site is done to be better than the last site. 
+The work since that thought is finally being released today.  The work on the site is still slowly in progress, but I feel that enough of the site is done to be better than the last site.
 
 [![Powered by Django][9]][8]
 

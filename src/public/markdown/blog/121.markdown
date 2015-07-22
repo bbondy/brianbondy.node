@@ -4,7 +4,7 @@ We see the http a URL scheme, just about every day:
 
 The `http` part in the example above is the URL scheme.
 
-But there are also dozens of other URL schemes, including: ftp, mailto, irc, smb, chrome, about, snmp, and data. 
+But there are also dozens of other URL schemes, including: ftp, mailto, irc, smb, chrome, about, snmp, and data.
 This post talks about one called the [data URL scheme][1].
 
 The data URL scheme, amongst other things, allows you to embed images into your HTML pages.
@@ -32,7 +32,7 @@ There are also many other uses of the data URL scheme mentioned below.
 
 ---
 
-**Uses of the data URI scheme:**
+##Uses of the data URI scheme:
 
 You may have noticed that sometimes emails with images don't have a separate attachment.
 You can use the data URI scheme inside HTML email messages without having a separate image attachment.
@@ -42,17 +42,16 @@ You can do this with [&lt;canvas&gt;.toDataURL][3]
 
 ---
 
-**How it relates to me:**
+##How it relates to me:
 
 I recently improved the BMP and ICO decoder (refactoring plus adding support for PNG ICOs) for Firefox.
-I also have to implement BMP and ICO encoders so that we can have better shell integration with Windows 7. 
+I also have to implement BMP and ICO encoders so that we can have better shell integration with Windows 7.
 
 A side effect of doing these ICO and BMP encoders is that Firefox will support BMP and ICO generation via the `<canvas>.toDataURL('image/ico')` and `<canvas>.toDataURL('image/bmp')`.
-This makes Firefox a pretty good image conversion program. 
-This also makes it possible for example, for a web page developer to implement a [favicon][4] creator without server side code.  No other browsers currently implement BMP and ICO mime types for canvas exporting. 
+This makes Firefox a pretty good image conversion program.
+This also makes it possible for example, for a web page developer to implement a [favicon][4] creator without server side code.  No other browsers currently implement BMP and ICO mime types for canvas exporting.
 
 [1]: http://en.wikipedia.org/wiki/Data_URI_scheme
 [2]: http://www.ietf.org/rfc/rfc2397
 [3]: http://www.w3.org/TR/html5/the-canvas-element.html#dom-canvas-todataurl
 [4]: http://en.wikipedia.org/wiki/Favicon
-

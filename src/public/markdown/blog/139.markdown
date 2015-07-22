@@ -5,4 +5,3 @@ Wondering what the Windows 8 Metro UI will look and feel like? See the great wor
 [1]: http://stephenhorlander.com/
 [2]: http://yuanwong.com/
 [3]: http://blog.mozilla.org/ux/2012/05/video-sketching-firefox-metro-start-page/
-

@@ -2,9 +2,9 @@
 
 ![Social icons][img_1]
 
-A few days ago I blogged about a list of StackOverflow (and related StackExchange sites) users sorted by reputation who had twitter accounts.   
+A few days ago I blogged about a list of StackOverflow (and related StackExchange sites) users sorted by reputation who had twitter accounts.
 
-A couple days later I added extra info to those lists showing the following, followers, last tweet date, and twitter description. 
+A couple days later I added extra info to those lists showing the following, followers, last tweet date, and twitter description.
 
 Today I added a couple more list types: LinkedIn, and Facebook.
 
@@ -48,8 +48,8 @@ Today I added a couple more list types: LinkedIn, and Facebook.
 - [Twitter][t13] &nbsp;&nbsp; - [LinkedIn][l13] &nbsp;&nbsp; - [Facebook][f13]
 
 Across all sites users are 2x more likely to have their twitter info vs. their LinkedIn info.
-  
-Likewise across all sites users are 2x more likely to have their LinkedIn info vs. their facebook info. 
+
+Likewise across all sites users are 2x more likely to have their LinkedIn info vs. their facebook info.
 
 [0]: http://www.stackoverflow.com/
 [t1]: http://www.brianbondy.com/stackexchange-twitter/stackoverflow

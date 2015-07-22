@@ -19,7 +19,7 @@ And you will need to always prefix string, vector and map with `std::` unless yo
     using namespace std;
 
 
-**Here is an example on how to use STL strings:**
+##Here is an example on how to use STL strings:
 
     string s = “hi”;//s holds "hi"
     s += “ Brian”;//s now holds “hi Brian”
@@ -40,7 +40,7 @@ So for example:
 
 In the example above s.c_str() will now hold the binary data from both calls. You no longer have to worry about forgetting to delete binary data that you allocate.  If you created pBinaryData and pMoreBinaryData on the heap, you can delete[] them after the call to append.  Anything that you put in a string will have it's own memory, you don't need to worry about freeing it.
 
-**Here is an example on how to use STL vectors: **
+##Here is an example on how to use STL vectors:
 
 You use a vector to store a list of values.  A value can be a number, string, or any other class object that you create.  This list can grow to any number of elements, unlike an array.
 
@@ -62,7 +62,7 @@ You use a vector to store a list of values.  A value can be a number, string, or
 
 Notice how I wrote vector<string>, that means a vector that holds strings.  You could have also wrote vector<int>, or vector<AnyOtherType>.
 
-**Vector of your own class objects:**
+##Vector of your own class objects:
 
     class Cat
     {
@@ -85,7 +85,7 @@ Notice how I wrote vector<string>, that means a vector that holds strings.  You 
     assert(vMyCats.size() == 1);
     //vMyCats holds a vector of Cat objects.  Each cat has 3 strings and 1 integer.
 
-**Here is an example on how to use STL maps: **
+##Here is an example on how to use STL maps:
 
 You use a map to store a lookup table.  i.e. to associate something with something else.
 
@@ -96,7 +96,7 @@ You use a map to store a lookup table.  i.e. to associate something with somethi
     string strFirstName = myMap[“firstName”];
     assert(strFirstName == "brian");
 
-You can use a map with other things then a string:  map<FROM, TO> myMap; 
+You can use a map with other things then a string:  map<FROM, TO> myMap;
 
 FROM can be any type, for example int, Cat, string,  
 TO can be any type, for example int, Cat, string

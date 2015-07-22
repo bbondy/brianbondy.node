@@ -6,6 +6,6 @@ To implement Django tagging inside my site, I did need to make a slight model ch
 
 I made each tag into a link which bring you to all posts on the site about the specified tag.  Also you can find a Tags link on the right hand bar which displays the list of tags in use and how many posts each tag has.
 
-The Django tagging framework has many other features which I didn't use, but from what I used it's a great and very easy to use library. 
+The Django tagging framework has many other features which I didn't use, but from what I used it's a great and very easy to use library.
 
 [1]: http://code.google.com/p/django-tagging/

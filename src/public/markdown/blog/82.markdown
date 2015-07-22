@@ -9,7 +9,7 @@ The IA64 processor was called the Itanium.  It was a huge flop because of proble
 
 With x64 you can install both Windows 32 bit or Windows 64 bit.  With IA64 you can only install the IA64 Windows.   You can run 32-bit apps on all variants.  For the 64-bit Windows versions you can run the applications through an emulator that works transparently called Windows 32 on Windows 64 (WOW64)
 
-The same does not hold for 32-bit drivers though.  WOW64 is only for user mode applications. 
+The same does not hold for 32-bit drivers though.  WOW64 is only for user mode applications.
 
 On 64-bit machines there are actually 2 different registries.  A 32-bit registry and a 64-bit registry.  They are treated as different registries by 32-bit and 64-bit applications but the 32-bit registry is just a subkey for the 64-bit registry. Windows will automatically route an application to the proper registry depending on if it’s 32-bit or 64-bit.
 
@@ -31,4 +31,3 @@ These 2 directories are for 32-bit apps and drivers only, they use 32-bit emulat
 So developing for 64-bit machines can get a little tricky if you actually want it to run as a 64-bit program.  If it's running as a 32-bit program, then your ints will still be 4 bytes, and everything else you hold true will also still hold.  
 
 Right now, when I want to make a 64-bit program, I use a makefile instead of using Visual Studio directly.  You can use different NSIS .exes to generate the different installers. I suggest to build each project with 3 different versions of NSIS. Then if you want to, you can build a 32-bit installer wrapper that combines each of your installers.
-

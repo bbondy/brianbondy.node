@@ -11,7 +11,7 @@ Had IE7 included SVG support, the internet would be a different, better place. M
 Does your browser support SVG?
 If you can't see [this][1] than go get firefox [here][2]
 
-Note that you can get SVG plug-ins from Corel Corporation and Adobe, but IE should have included built in support for it. Maybe adobe paid them off so that SVG wouldn't be a competitor to Flash and Microsoft's newer crappier similar product to flash. 
+Note that you can get SVG plug-ins from Corel Corporation and Adobe, but IE should have included built in support for it. Maybe adobe paid them off so that SVG wouldn't be a competitor to Flash and Microsoft's newer crappier similar product to flash.
 
 [1]: http://croczilla.com/svg/samples/rect2/rect2.svg
 [2]: http://www.getfirefox.com/

@@ -5,14 +5,14 @@ I purchased the [Programming Google App Engine][2] book by Dan Sanderson because
 <img src='http://www.brianbondy.com/static/img/blogpost_114/book.png' width='180' height='236'>
 
 GAE is a platform and set of services for building web applications.  
-GAE scales your web application automatically as long as you work within their set of restrictions such as using a non relational datastore. 
+GAE scales your web application automatically as long as you work within their set of restrictions such as using a non relational datastore.
 
 Although the [online GAE doc][1] has great coverage and documentation, I wanted something which could provide a little more depth.
-Looking up things as you need them in the GAE docs doesn't give you a high level global understanding of what's possible and how to do it. 
+Looking up things as you need them in the GAE docs doesn't give you a high level global understanding of what's possible and how to do it.
 
 I am left feeling confident coding for GAE after reading this book.  The author has a great understanding of GAE and does a great job of explaining everything clearly.  I was never bored when reading this book and the examples were great dealing with game avatars.
 
-After reading this book you will be ready to take on a GAE project to solidify the knowledge you learnt. 
+After reading this book you will be ready to take on a GAE project to solidify the knowledge you learnt.
 You will have a great understanding of GAE runtime, datastore, index design, datastore transactions, memcache, queues, scheduled tasks, webapp module, django on GAE, remote API, bulk data operations, incoming/outgoing email, incoming/outgoing XMPP and more.
 
 You will also understand exactly what will never be possible on this platform (such as writing to the filesystem), and what will one day be possible (such as different languages and runtimes).
@@ -28,4 +28,3 @@ I hope future editions will include coverage on OAuth, Prospective Search, DoS P
 [1]: http://code.google.com/appengine/docs/python/overview.html
 [2]: http://oreilly.com/catalog/9780596522735
 [3]: http://code.google.com/appengine/
-

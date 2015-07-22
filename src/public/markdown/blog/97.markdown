@@ -10,5 +10,5 @@ The sliding and collapsing effects are basically done with a single line of jQue
 
 You can also optionally pass in a duration or 'fast' and 'slow' keywords to the `slideToggle` function.  Some other cool cross browser things you can do with jQuery are: adding animated effects, Making XML HTTP (AJAX) requests, DOM navigation, DOM manipulation, drag and drop, complex client side operations, and validation.
 
-[1]: http://docs.djangoproject.com/en/dev/ref/contrib/comments/ 
+[1]: http://docs.djangoproject.com/en/dev/ref/contrib/comments/
 [2]: http://en.wikipedia.org/wiki/CAPTCHA

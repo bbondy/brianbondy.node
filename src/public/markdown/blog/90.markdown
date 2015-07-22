@@ -12,7 +12,7 @@ A rope is a special case of a binary tree data structure where each leaf node ho
 
 A left child that is a leaf is the left part of a string.  A right child that is a leaf node is the right part of the string.   To get the whole string you process the left child then the right child.
 
-You can concatenate 2 ropes easily by creating a common root node and joining them together. 
+You can concatenate 2 ropes easily by creating a common root node and joining them together.
 
 Example:
 
@@ -29,19 +29,19 @@ Then I combine both of those ropes:
      - Left Child: "Hello"
      - Right Child: " World"
 
-Now if we want to make an `insertion` into the middle of the stirng: "Hello Great World" we simply made a new node and join the leaf node "Hello" with this new node " Great".   
+Now if we want to make an `insertion` into the middle of the stirng: "Hello Great World" we simply made a new node and join the leaf node "Hello" with this new node " Great".
 
     RootNode:
       LeftChild:
        - LeftChild: "Hello"
        - RightChild: " Great"
       RightChild: " World"
-     
+
 
 To get the full string you simply process the tree from the root node, following the left subtree first.
 
-Appending becomes an O(1) operation.  Indexing becomes O(logn), and printing everything is just as efficient, other than the rope having a constant factor overhead. 
+Appending becomes an O(1) operation.  Indexing becomes O(logn), and printing everything is just as efficient, other than the rope having a constant factor overhead.
 
 If you are implementing your own rope data structure from scratch you can actually take advantage of the non leaf nodes.   They can be used for any type of hierarchical data that would apply to all of its children.  For example, perhaps special formatting.  Getting a whole item's format would simply involve getting the parent of the nodes all the way up to the root.  
 
-You could also do things like make each leaf node a single word.  Then you could implement a spell check pretty easily without having to process each node to find the distinct words in each node. 
+You could also do things like make each leaf node a single word.  Then you could implement a spell check pretty easily without having to process each node to find the distinct words in each node.

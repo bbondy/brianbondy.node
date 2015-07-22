@@ -7,7 +7,7 @@ We're in the process of implementing shared profiles.
 
 ---
 
-**What is a profile?**
+##What is a profile?
 
 A profile in Firefox stores all of your personal settings, including: bookmarks, preferences, extensions, passwords, history, and more.
 
@@ -18,7 +18,7 @@ We'll be sharing profiles from both applications, but there are some exceptions:
 
 ---
 
-**What are the upsides of having a shared profile?**
+##What are the upsides of having a shared profile?
 
 Sharing a single profile would allow you to instantly retain bookmarks, login status, cookies, and other profile data between environments.
 
@@ -28,7 +28,7 @@ Another task highly related to sharing a single profile is adding a "Relaunch in
 
 ---
 
-**Are there any downsides to having a shared profile?**
+##Are there any downsides to having a shared profile?
 
 Yes, but we believe them to be corner case issues that the user can work around, see below.
 
@@ -45,11 +45,11 @@ If you really want to you can, but surely you don't need to use both Desktop and
 
 The opposite argument is also true for touch.  Most of the time when using touch you'll want to use the Metro browser, but there are special cases where you'll want to switch, like if you need an addon or plugin to take effect.
 
-For users who really want to run both at the same time, they can force the use of a different profile using the -ProfileManager command line argument from Desktop Firefox. 
+For users who really want to run both at the same time, they can force the use of a different profile using the -ProfileManager command line argument from Desktop Firefox.
 
 ---
 
-**Will having a shared profile change the release date?**
+##Will having a shared profile change the release date?
 
 Having a shared profile is not expected to change the release of Metro Firefox.
 A smooth async panning and zooming experience is being worked on before we want to release, and during that time we're implementing shared profiles.
@@ -58,13 +58,13 @@ The switch to Desktop / Metro feature may not retain all opened tabs and filled 
 
 ---
 
-**Where is this work being tracked?**
+##Where is this work being tracked?
 
 Shared profile work is being tracked in [bug 924860][924860].
 
 ---
 
-**Other implementation details**
+##Other implementation details
 
 - Browser chrome cache (not HTTP content cache) will be stored separately to avoid unexpected startup problems. Both browsers use the same User-Agent.
 - We'll be using session restore to accomplish the Metro -> Desktop and Desktop -> Metro switch should time permit.
@@ -75,23 +75,23 @@ Shared profile work is being tracked in [bug 924860][924860].
 
 ---
 
-**Current progress**
+##Current progress
 
 If you'd like to see general progress of Metro Firefox you should use either the [Nightly][nightly] or [Aurora][aurora] builds.
 
 Current progress for profile sharing can be seen in [Oak builds][oak] (Not recommended for general use).  These patches will also move to mozilla-central (Nightly builds) after QA'ing is done to ensure there is no harm to the Desktop profile.
- 
+
 The completed list of tasks related to this feature so far include:
 
 - Shared base app name which implies a shared profile
 - Relaunch in Desktop feature (From the Metro browser)
 - Relaunch in Metro feature (From the Desktop browser)
 - Split preference files within the same profile
-- Split startup cache files within the same profile 
+- Split startup cache files within the same profile
 
 ---
 
-**Feedback**
+##Feedback
 
 Constructive feedback is appreciated and wanted. Please feel free to leave a comment here or post in the profile sharing tracking bug: [Bug 924860][924860].
 
@@ -100,5 +100,3 @@ Constructive feedback is appreciated and wanted. Please feel free to leave a com
 [oak]: http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-oak/firefox-28.0a1.en-US.win32.installer.exe
 [nightly]: http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-central/firefox-28.0a1.en-US.win32.installer.exe
 [aurora]: https://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-aurora/firefox-27.0a2.en-US.win32.installer-stub.exe
-
-

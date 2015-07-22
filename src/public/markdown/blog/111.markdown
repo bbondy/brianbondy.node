@@ -1,10 +1,10 @@
 Believe it or not the Windows 1.0 taskbar looked very similar to the Windows 7 taskbar.  But it obviously didn't have anywhere near same functionality.
 
-**Windows 1.0:**
+##indows 1.0:
 
 <img src='http://www.brianbondy.com/static/img/blogpost_111/Windows1Taskbar.png' width='480' height='263'>
 
-**Windows 7:**
+##Windows 7:
 
 <img src='http://www.brianbondy.com/static/img/blogpost_111/Windows7Taskbar.png' width='480' height='300'>
 
@@ -12,7 +12,7 @@ The [Windows 7 taskbar is pretty awesome][15].  And it has some great functional
 
 ---
 
-**The 5 features...**
+##The 5 features...
 
 **1) Application progress in the taskbar:** Progress for anything with visual displays of errors and warnings.
 
@@ -22,14 +22,14 @@ The [Windows 7 taskbar is pretty awesome][15].  And it has some great functional
 **2) Overlay icons:** Small icons within your icon for any type of user notification (below shows the online status as an overlay)
 
 <img src='http://www.brianbondy.com/static/img/blogpost_111/Windows7TaskbarOverlayImages.png' width='97' height='50'>
- 
+
 **3) Custom thumbnail preview groupings:** Thumbnail previews across processes or within a single process with tabs
 
 <img src='http://www.brianbondy.com/static/img/blogpost_111/TaskbarGroupings.png' width='480' height='147'>
 
 **4) Taskbar action buttons (Thumbnail toolbars):** Buttons inside the taskbar icon's thumbnail preview
 
-<img src='http://www.brianbondy.com/static/img/blogpost_111/Windows7ThumbnailPreviews.png' width='298' height='249'> 
+<img src='http://www.brianbondy.com/static/img/blogpost_111/Windows7ThumbnailPreviews.png' width='298' height='249'>
 
 **5) Jump lists:** Easily create shortcuts to different startup types and other custom actions.
 
@@ -37,7 +37,7 @@ The [Windows 7 taskbar is pretty awesome][15].  And it has some great functional
 
 ---
 
-**Before you start...**
+##Before you start...
 
 Before jumping into the interesting stuff, you need to get notified that the taskbar button was created.
 
@@ -139,8 +139,8 @@ Application IDs can be associated with individual Windows.  An application ID is
 
 The default application ID for a window is the same as the application ID for the process to which the Window belongs.
 Applications with the same application ID are grouped to the same taskbar icon.
- 
-You can set the application ID of a process using the Win32 API [SetCurrentProcessExplicitAppUserModelID][17] 
+
+You can set the application ID of a process using the Win32 API [SetCurrentProcessExplicitAppUserModelID][17]
 You can set the application ID of a window using the Win32 API [SHGetPropertyStoreForWindow][18] and then calling functions on the return result which is of type `IPropertyStore`.
 
 Application IDs are assigned dynamically so they can be changed at any time which means you could do some pretty interesting things.
@@ -150,7 +150,7 @@ Application IDs are assigned dynamically so they can be changed at any time whic
 **4) Taskbar action buttons (Thumbnail toolbars):**
 
 Thumbnail toolbars allow you to add functionality and buttons available to the user without switching their current application.
-For example Windows Media Player adds previous, pause, and next button support. 
+For example Windows Media Player adds previous, pause, and next button support.
 To do this you create an array of [THUMBBUTTON][19] structures.
 
 When a thumbnail button is clicked you receive a WM_COMMAND message with the high word of the wParam set to THBN_CLICKED and the low word set the button ID.
@@ -174,7 +174,7 @@ Each button can have either an individual icon being used or a bitmap from the t
     wcscpy(thbButtons[1].szTip, L"Button 2");
 
     //Add the buttons to the thumbnail window
-    m_pTaskBarlist->ThumbBarAddButtons(hTab1, _countof(thbButtons), thbButtons); 
+    m_pTaskBarlist->ThumbBarAddButtons(hTab1, _countof(thbButtons), thbButtons);
 
 Each tab thumbnail preview can have its own set of thumbnail buttons.
 
@@ -218,7 +218,7 @@ You can customize the tasks area which is a set of actions.
 You can also customize the destination area which is a list of Recent items or Frequent items.
 
 The recent items is calculated for you automatically as long as your application is the default handler for the associated document type.  If you want to add somethign to the list you can use the Win32 API [SHAddToRecentDocs][9].
- 
+
 You can customize custom areas of the jump list, for example Chrome includes a "Most visited section" and a "Recently closed" section.
 
 Custom destinations are controlled by: [ICustomDestinationList][10].  
@@ -226,7 +226,7 @@ Custom destinations are controlled by: [ICustomDestinationList][10].
 
 ---
 
-**A couple other things you can do:**
+##A couple other things you can do:
 
 You can customize your taskbar thumbnails by specifying a clipped rectangle of your window:
 
@@ -234,7 +234,7 @@ You can customize your taskbar thumbnails by specifying a clipped rectangle of y
     m_pTaskBarlist->SetThumbnailClip(GetSafeHwnd(), &r);
 
 You can set a tooltip for your thumbnail previews as follows:
- 
+
     m_pTaskBarlist->SetThumbnailTooltip(GetSafeHwnd(), L"Test1");
 
 Or if you have multiple tab thumbnail previews:
@@ -244,16 +244,16 @@ Or if you have multiple tab thumbnail previews:
 
 ---
 
-**What about managed code?**
+##What about managed code?
 
 There are a couple of good resources for tying into the taskbar API from managed languages:
 
 - [The Windows API Code Pack for the Microsoft .NET Framework][11]:  Provides a library that can be used to access new features such as the Taskbar API in Windows 7.
-- [Windows 7 taskbar Interop Sample library][12]: Supplies more features if not available above 
+- [Windows 7 taskbar Interop Sample library][12]: Supplies more features if not available above
 
 ---
 
-**Other reading:**
+##Other reading:
 
 - [Introducing the Taskbar APIs][4] (Nice introductory alternative tutorial covering some different things than I have above)
 - [ITaskbarList3 Interface][13] (The gateway to most of the above features)
@@ -278,6 +278,3 @@ There are a couple of good resources for tying into the taskbar API from managed
 [17]: http://msdn.microsoft.com/en-us/library/dd378422(v=vs.85).aspx
 [18]: http://msdn.microsoft.com/en-us/library/dd378430%28v=vs.85%29.aspx
 [19]: http://msdn.microsoft.com/en-us/library/dd391559%28v=vs.85%29.aspx
-
-
-

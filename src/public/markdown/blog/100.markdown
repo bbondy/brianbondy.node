@@ -17,14 +17,14 @@ To understand how all of the above works, you need to understand the concept of 
 
 Some of the below may be a little heavy, but it's worth learning it to see how Windows really works.
 
-**A gentle introduction to Sessions:**
+##A gentle introduction to Sessions:
 
 Each program you have on your computer, when run is considered a process.
 A process is a program which is being executed.  Each process is the program code, a collection of threads, and other resources relating to the program.
 
 Each process in Windows belongs to a single user who started that process, and each process also belongs to something called a Session.
 Each Session in Windows hosts a collection of processes, windows, Window Stations, Desktops, and several other resources.  Window Stations and Desktops will be covered later in this post.
-  
+
 You can see a list of all of the processes on your computer by going into Task Manager (taskmgr.exe) and clicking on the "Processes" tab.
 In this list you can see the Username of the user who started the process and also the Session that the process belongs to.
 By default Windows will not show you the Session each process belongs to but you can easily see it by clicking on the View menu item and then "Select Columns..."
@@ -32,10 +32,10 @@ Turn on the option "Session ID".
 
 Each process belongs to exactly 1 Session and each Session has a Session ID which identifies it.
 You cannot change a process' Session after the process is started.
-In Task Manager you will see at least 1 Session if you are using an operating system below Windows Vista 
+In Task Manager you will see at least 1 Session if you are using an operating system below Windows Vista
 and you will see at least 2 Sessions if you are using an operating system of Vista or above.
 
-In Windows you are not limited to that initial number of Sessions though. 
+In Windows you are not limited to that initial number of Sessions though.
 There can be many different Sessions, there is a limit that can be reached but we'll say for the sake of conversation that you can potentially have infinite Sessions.
 
 If you're using Vista or above, the first Session, Session 0 is where all of the NT services are started.
@@ -69,8 +69,8 @@ So to recap, so far we understand that inside your Windows operating system (OS)
     - ...  
     - Process M.N  
 
-**How Vista changes how Sessions work:**
- 
+##How Vista changes how Sessions work:
+
 Before Windows Vista, the first logged in user and the NT services shared the first Session which was Session 0.
 This Session was also allowed to be interactive.
 
@@ -90,15 +90,15 @@ How Sessions worked Post-Vista with 3 logged on users:
 
 The difference of the 2 diagrams being that the first logged on user has his own Session in the Post-Vista diagram.
 
-**Window Stations:**
+##Window Stations:
 
 Each Session contains a collection of Window Stations, a clipboard, and more.
-Each Window station has a name unique to the Session it belongs to.  Meaning within a Session each Window Station is unique.  But across Sessions two Window Stations can share a name but they are completely distinct.   
-You can think of a Window Station as a security boundary. 
+Each Window station has a name unique to the Session it belongs to.  Meaning within a Session each Window Station is unique.  But across Sessions two Window Stations can share a name but they are completely distinct.
+You can think of a Window Station as a security boundary.
 Once a Window Station is created, you cannot change the Session that it belongs to.
 
 Each process belongs to a single Window Station but unlike Sessions vs. Processes, a single process can change its Window Station after startup time.
- 
+
 The following Win32 API can be used to deal with Window Stations:
 [GetProcessWindowStation][11], [SetProcessWindowStation][14], [CreateWindowStation][15], and [OpenWindowStation][16].
 
@@ -139,7 +139,7 @@ So to recap , so far we understand that inside your Windows OS you have the foll
     - WinstaN  
         - Some Processes
 
-**Windows Desktops**
+##Windows Desktops
 
 Each Window Station contains a collection of Desktops.
 A Desktop is loaded into kernel memory space and is a logical display surface.
@@ -149,10 +149,10 @@ Each Windows Desktop belongs to a single Session and also a single Window Statio
 
 Only one Desktop at a time can be active (displayed) per Session.  And by definition it must belong to WinSta0.  The active Desktop is called the input Desktop.   One can always get a handle to the active Desktop within ones own Session by calling [OpenInputDesktop][5]
 
-WinSta0 has 3 Desktops loaded: 
+WinSta0 has 3 Desktops loaded:
 
 1. Winlogon (the logon screen)
-2. Default (the user Desktop) 
+2. Default (the user Desktop)
 3. ScreenSaver
 
 There is a 4th Desktop on Vista and higher called the "Secure Desktop" which is used by default in UAC prompts.
@@ -231,7 +231,7 @@ So to recap , so far we understand that inside your Windows OS you have the foll
         - Some other Desktops  
             - Some processes
 
-**Mysterious checkbox in the services tab (Optional Read)**
+##Mysterious checkbox in the services tab (Optional Read)
 
 There is a little mysterious checkbox that appears in the property page of each of your services called "Allow services to interact with Desktop".
 
@@ -243,13 +243,13 @@ If this checkbox is ON, then a new Session is created and a new Window Station c
 
 If this checkbox is OFF, and the service tries to display a GUI, nothing will happen to any visible Desktop.  The service gets started in Session 0.  The GUI calls will succeed but no GUI will ever be shown.
 
-**Windows Handles**
+##Windows Handles
 
-Windows inside the Windows OS are children of Desktop objects. 
+Windows inside the Windows OS are children of Desktop objects.
 
 A Window is any GUI element and is usually identified by a Windows handle (HWND).  It is important to understand where Windows Handles fit into the whole picture because then you can understand what you can do across Desktops and what you cannot do across Desktops.
 
-**Communication across Sessions**
+##Communication across Sessions
 
 Depending on the type of communication, inter-Session communication is possible.
 
@@ -263,18 +263,18 @@ The proper way to display a GUI for service code now is to do some kind of inter
 
 A second way to display a GUI from a service is to simply launch the process within another user's Session inside Winsta0 and the Default Desktop.
 
-**Communication across Desktops**
+##Communication across Desktops
 
 Windows messages are not possible across Desktops.  Windows messages are only possible within the same Desktop.  As confirmed here: [Inter-Desktop communication via message passing is not possible][10].  
 
-This means that Windows Hooks which allow you to monitor and get notifications for any message from another process can only be installed at a Desktop Level.    
+This means that Windows Hooks which allow you to monitor and get notifications for any message from another process can only be installed at a Desktop Level.
 
 So a key logger for example wouldn't be allowed to have access to what is typed when a computer is locked in a different Desktop.
 
 After enumerating the Desktops you can enumerate the windows inside each Desktop.  
 You can use the Win323 API [EnumDesktopWindows][19] to enumerate these Desktop windows.  The purpose of me telling you this is that this function takes in a handle to a Desktop and it returns to you a handle to the Windows inside that Desktop.  This reinforces what I've been saying about Windows being children of Desktops.
 
-**How to circumvent all security in Windows**
+##How to circumvent all security in Windows
 
 It is actually possible to do anything you want in Windows in any Session, Window Station, or Desktop.  The solution is to build a service running on your computer running as the Local System Account.  
 
@@ -295,7 +295,7 @@ As long as this service is running elevated via a manifest file, it can obtain t
     }
 
 
-**Tying it all together**
+##Tying it all together
 
 Now is the fun part when we can now answer each of the questions in turn:
 
@@ -308,8 +308,8 @@ This also means that there are many such login screens across Sessions and many 
 > What is so special about UAC anyway?  How do they lock and dim the whole screen? Does it really protect me?
 
 When you get a UAC prompt, by default what happens is you switch from the Default Desktop to the Secure Desktop.
-UAC takes a screenshot of your Default Desktop, applies a dim to that image and then displays it behind the UAC window. 
-The UAC window is part of the Secure Desktop 
+UAC takes a screenshot of your Default Desktop, applies a dim to that image and then displays it behind the UAC window.
+The UAC window is part of the Secure Desktop
 The user can actually set if UAC prompts should run under the current Desktop (less secure) or the Secure Desktop.
 
 > Why don't software key loggers work anymore to capture a locked computer's password?
@@ -331,7 +331,7 @@ Easy, each user has its own Session, and each Session contains everything else. 
 
 > How does Terminal Services or Remote Desktop work?
 
-Terminal Services and Remote Desktop work by either giving you access to an already open Session, or creation a new Session. 
+Terminal Services and Remote Desktop work by either giving you access to an already open Session, or creation a new Session.
 Each Session can be in a connected or disconnected state.
 
 > Why does your remote computer control software probably suck?
@@ -359,7 +359,7 @@ Since some of the changes weren't made in time, Windows Vista took the hit for l
 
 I'm not claiming Vista was perfect, it was far from it; however, Vista took more of a hit than it deserved.
 
-**Further reading**
+##Further reading
 
 - For further reading you can read a technical paper on [Sessions, Desktops, and Window Stations][6] and also visit the various MSDN articles linked in this article.
 

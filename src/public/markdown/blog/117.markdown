@@ -2,10 +2,10 @@
 
 
 I thought it would be interesting to calculate the average age of users on each StackExchange site, and even more interesting to see each tag within those sites.
-I did a caculation using the April 2011 data dump and came up with the following data. 
+I did a caculation using the April 2011 data dump and came up with the following data.
 I call the statistic the `Expected age of a tag` because it is calculated using the [Expected Value][expected_value].
 
-**Observations:** 
+##Observations:
 
 - The expected age of the whole StackOverflow site is ~30 years old.
 - On StackOverlow the tag with the youngest expected age is 26 years old, the tag with the oldest is 36.  I was surprised they were so close together.
@@ -14,7 +14,7 @@ I call the statistic the `Expected age of a tag` because it is calculated using 
 - A funny one, on ServerFault one of the tags with the oldest expected age is `old-hardware`.  Apparently older people know more about `old-hardware` than anything else.
 - I'm not sure if this is true, but perhaps the tags with younger ages are more cutting edge.  For example vb6 and COBOL have ages of over 36 on Programmers SE.  I don't think this assertion is true in general though.
 
-And as for the other sites, the expected age is: 
+And as for the other sites, the expected age is:
 
 - [Android][2]: 30.02 years old.
 - [Apple][3]: 30.50 years old.
@@ -42,37 +42,37 @@ And as for the other sites, the expected age is:
 - [Wordpress][25]: 30.32 years old
 
 You can see the [per user tag data][28] by clicking on the site name in the above list.
-  
-You could probably say that the StackExchange network could use younger contributors. 
-I've said this before, but I think it would be advantageous for the StackExchange team to do some events at Universities. 
-When I previously helped with some Microsoft events at [University of Waterloo][26] (Top Computer Science University in Canada, and one of the top in the world) several students didn't know what StackOverflow was. 
+
+You could probably say that the StackExchange network could use younger contributors.
+I've said this before, but I think it would be advantageous for the StackExchange team to do some events at Universities.
+When I previously helped with some Microsoft events at [University of Waterloo][26] (Top Computer Science University in Canada, and one of the top in the world) several students didn't know what StackOverflow was.
 
 
-**How I made the calculations per tag**
+##How I made the calculations per tag
 
 The below calculations were calculated with the April 2011 [StackOverflow][1] data dump.
 
 What I calculated was the average age per tag each answer comes from for each StackExchange site.
 
-To do this calculation I calculated the `Expected Age` of each site. 
+To do this calculation I calculated the `Expected Age` of each site.
 
-> Expected Age = Summation over each age X of: P(X) * X 
+> Expected Age = Summation over each age X of: P(X) * X
 
 Where `P(X)` is the probability that a user of age `X` will answer a given question.  You can calculate this probability by summing the number of answers by each age, divided by the total number of answers within that tag.
 
 I also only considered the top 3000 tags.  The top tags may not match up exactly since I only consider tags if the answerer has an age specified in their profile.
 
-**Other attempts at these stats**
+##Other attempts at these stats
 
 I initially tried to do this statistic by weighing each age by the reputation of each user, but it turned out to not generate interesting data.
-The problem was that the data was weighted heavily to only include the top 1% or so of users. 
+The problem was that the data was weighted heavily to only include the top 1% or so of users.
 
-**Limitations of this study**
+##Limitations of this study
 
 - Several users don't enter their age in their profile, so no answers from a user without an age specified counts.
 - Users that are very young and users that are very old may be more unlikely to enter their age.
-- Each user may be counted more than once, since I only count +1 for each age that answers a questions. 
-- Some users may be entering fake age values, although I ignored age values out of an acceptable range. 
+- Each user may be counted more than once, since I only count +1 for each age that answers a questions.
+- Some users may be entering fake age values, although I ignored age values out of an acceptable range.
 - We are talking about averages here, so this doesn't mean there aren't a lot of younger and older contributors.  
   For example if an average is 20 years old, there could be an equal amount of 10 and 30 year olds answering, or there could be only 20 year olds answering.
 
@@ -105,9 +105,3 @@ The problem was that the data was weighted heavily to only include the top 1% or
 [26]: http://uwaterloo.ca/
 [27]: http://www.stackexchange.com/
 [28]: http://www.brianbondy.com/stackexchange/#expected-age
-
-
-
-
-
-
