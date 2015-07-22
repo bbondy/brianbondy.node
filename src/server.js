@@ -8,6 +8,9 @@ var _ = require('underscore');
 blogPosts.forEach(blogPost =>
   blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
 
+let blogPostsByYear = _(blogPosts).groupBy(blogPost =>
+  blogPost.created.getFullYear());
+
 let server = new Hapi.Server({
   connections: {
     routes: {
@@ -63,13 +66,7 @@ server.route({
   method: 'GET',
   path: '/api/blog/posted/{year}',
   handler: function (request, reply) {
-    server.log('info', 'howdy');
-    let filteredBlogPosts = _(blogPosts).groupBy(blogPost =>
-      blogPost.created.getFullYear())[request.params.year];
-    if (filteredBlogPosts === undefined) {
-      filteredBlogPosts = [];
-    }
-    reply(filteredBlogPosts).code(200);
+    reply(blogPostsByYear[request.params.year] || []).code(200);
   }
 });
 
