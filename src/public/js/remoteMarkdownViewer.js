@@ -1,6 +1,6 @@
 import React from 'react';
 import {fetchMarkdown} from './fetch.js';
-import * as Markdown from 'markdown';
+import marked from './marked';
 
 export default class About extends React.Component {
   constructor() {
@@ -22,7 +22,7 @@ export default class About extends React.Component {
   }
   render() {
     return <div dangerouslySetInnerHTML={{
-      __html: Markdown.markdown.toHTML(this.state.markdownText)
+      __html: marked(this.state.markdownText)
     }}/>;
   }
 }

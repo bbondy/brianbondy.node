@@ -1,7 +1,7 @@
 import React from 'react';
 import DocumentTitle from './documentTitle.js';
 import {fetchBlogPost} from './fetch.js';
-import * as Markdown from 'markdown';
+import marked from './marked';
 
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
@@ -52,7 +52,7 @@ export default class BlogPost extends React.Component {
       <DocumentTitle title='Blog Post'/>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
       <div className='datePosted'>Posted on: {this.dateString}</div>
-      <div dangerouslySetInnerHTML={{__html: Markdown.markdown.toHTML(this.state.body)}}/>
+      <div dangerouslySetInnerHTML={{__html: marked(this.state.body)}}/>
     </div>;
   }
 }
