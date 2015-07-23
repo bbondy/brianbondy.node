@@ -10,7 +10,10 @@ export default class BlogPostList extends React.Component {
   }
 
   componentWillMount() {
-    fetchBlogPosts(this.props.params.year).then((blogPosts) =>
+    fetchBlogPosts({
+      year: this.props.params.year,
+      tag: this.props.params.tag,
+    }).then((blogPosts) =>
       this.setState({
         blogPosts,
       }));

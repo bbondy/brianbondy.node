@@ -3,7 +3,7 @@ let Hapi = require('hapi');
 var Good = require('good');
 var fs = require('fs');
 var _ = require('underscore');
-var blogPosts, blogPostsByYear;
+var blogPosts, blogPostsByYear, blogPostsByTag;
 
 function reloadData() {
   delete require.cache[require.resolve('./blogPostManifest.js')];
@@ -12,6 +12,13 @@ function reloadData() {
     blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
   blogPostsByYear = _(blogPosts).groupBy(blogPost =>
     blogPost.created.getFullYear());
+  blogPostsByTag = {};
+  _(blogPosts).each(blogPost => {
+    _(blogPost.tags).each(tag => {
+      blogPostsByTag[tag] = blogPostsByTag[tag] || [];
+      blogPostsByTag[tag].push(blogPost);
+    });
+  });
 }
 
 reloadData();
@@ -90,9 +97,25 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/blog/tagged/{tag}',
+  handler: function (request, reply) {
+    reply.file('index.html');
+  }
+});
+
+server.route({
+  method: 'GET',
   path: '/api/blog/posted/{year}',
   handler: function (request, reply) {
     reply(blogPostsByYear[request.params.year] || []).code(200);
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/api/blog/tagged/{tag}',
+  handler: function (request, reply) {
+    reply(blogPostsByTag[request.params.tag] || []).code(200);
   }
 });
 

@@ -21,6 +21,7 @@ let routes =
      <Route path=':id' handler={BlogPost}/>
      <Route path='posted/:year' handler={BlogPostList}/>
      <Route path='modified/:year' handler={BlogPostList}/>
+     <Route path='tagged/:tag' handler={BlogPostList}/>
     </Route>
 
     <Route name='projects' path='projects' handler={RemoteMarkdownViewer}/>
