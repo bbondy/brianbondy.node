@@ -3,7 +3,7 @@ import {RouteHandler, Link} from 'react-router';
 
 class TopBar extends React.Component {
   render() {
-    return <ul className='tobBar'>
+    return <ul className='topBar'>
       <li><Link to="blog-index">Blog</Link></li>
       <li><Link to='projects'>Projects</Link></li>
       <li><Link to='resume'>Resume</Link></li>
@@ -24,8 +24,16 @@ class TopBar extends React.Component {
 export default class Main extends React.Component {
   render() {
     return <div>
+      <img style={{
+        width: 36,
+        float: 'left',
+        paddingTop: 7,
+        marginLeft: 3,
+      }} src='/img/logo.png'/>
       <TopBar/>
-      <RouteHandler/>
+      <div className='mainBody'>
+        <RouteHandler/>
+      </div>
     </div>;
   }
 }
