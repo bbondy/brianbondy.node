@@ -17,6 +17,7 @@ let routes =
   <Route handler={Main}>
     <DefaultRoute name='blog-index' handler={Blog}/>
     <Route path='blog' handler={Blog}>
+     <DefaultRoute handler={BlogPostList}/>
      <Route path=':id' handler={BlogPost}/>
      <Route path='posted/:year' handler={BlogPostList}/>
      <Route path='modified/:year' handler={BlogPostList}/>

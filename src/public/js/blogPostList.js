@@ -10,12 +10,10 @@ export default class BlogPostList extends React.Component {
   }
 
   componentWillMount() {
-    if (this.props.params.year) {
-      fetchBlogPosts(this.props.params.year).then((blogPosts) =>
-        this.setState({
-          blogPosts,
-        }));
-    }
+    fetchBlogPosts(this.props.params.year).then((blogPosts) =>
+      this.setState({
+        blogPosts,
+      }));
   }
 
   render() {

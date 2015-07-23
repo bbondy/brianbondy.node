@@ -1,12 +1,16 @@
 import marked from 'marked';
+import highlight from 'highlight.js';
 marked.setOptions({
   renderer: new marked.Renderer(),
-  highlight: true,
-  gfm: false,
+  gfm: true,
+  tables: true,
   breaks: false,
+  pedantic: false,
   sanitize: false,
   smartLists: true,
   smartypants: false,
+  highlight: function (code) {
+    return highlight.highlightAuto(code).value;
+  }
 });
-
 export default marked;

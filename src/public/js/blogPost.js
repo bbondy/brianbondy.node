@@ -1,7 +1,7 @@
 import React from 'react';
 import DocumentTitle from './documentTitle.js';
 import {fetchBlogPost} from './fetch.js';
-import marked from './marked';
+import marked from './marked.js';
 
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
@@ -39,7 +39,6 @@ export default class BlogPost extends React.Component {
   }
 
   get dateString() {
-    console.log(this.state.created);
     return `${monthNames[this.state.created.getMonth()]} ${this.state.created.getDate()}, ${this.state.created.getFullYear()}`;
   }
 
