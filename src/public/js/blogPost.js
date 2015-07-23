@@ -47,7 +47,7 @@ export default class BlogPost extends React.Component {
       return null;
     }
 
-    return <div>
+    return <div className='blogPost'>
       <DocumentTitle title='Blog Post'/>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
       <div className='datePosted'>Posted on: {this.dateString}</div>
