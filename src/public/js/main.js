@@ -24,12 +24,14 @@ class TopBar extends React.Component {
 export default class Main extends React.Component {
   render() {
     return <div>
-      <img style={{
-        width: 36,
-        float: 'left',
-        paddingTop: 7,
-        marginLeft: 3,
-      }} src='/img/logo.png'/>
+      <a href='/'>
+        <img style={{
+          width: 36,
+          float: 'left',
+          paddingTop: 7,
+          marginLeft: 3,
+        }} src='/img/logo.png'/>
+      </a>
       <TopBar/>
       <div className='mainBody'>
         <RouteHandler/>
