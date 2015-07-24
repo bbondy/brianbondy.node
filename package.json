@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "babel": "^5.8.3",
     "good": "^6.3.0",
     "good-console": "^5.0.2",
     "hapi": "^8.8.0",

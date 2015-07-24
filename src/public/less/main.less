@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  margin: 0 10px;
+  margin: 0;
 }
 
 a {
@@ -8,10 +8,13 @@ a {
 }
 
 .topBar {
+  background-color: #f0f0f0;
   border-bottom: 1px solid rgba(146, 178, 207, 0.3);
   list-style-type: none;
-  padding: 5px 0;
-  margin-left: 50px;
+
+  .topBarLinks {
+    margin-bottom: 0;
+  }
 
   li {
     display: inline-block;
@@ -19,6 +22,10 @@ a {
 
     a {
       color: black;
+
+      &:hover {
+        color: blue;
+      }
     }
 
     &.social {
@@ -61,7 +68,7 @@ h2 {
   padding-top: 10px;
 }
 
-.tag {
+.tag, .yearTag {
   background-color: #eee;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
@@ -79,4 +86,10 @@ h2 {
   font-size: 14px;
   margin-top: -10px;
   padding-bottom: 10px;
+}
+
+.tagContainer {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
 }

@@ -1,9 +1,11 @@
+require('babel/polyfill');
 let Path = require('path');
 let Hapi = require('hapi');
 var Good = require('good');
 var fs = require('fs');
 var _ = require('underscore');
 var blogPosts, blogPostsByYear, blogPostsByTag;
+var tags = {};
 
 function reloadData() {
   delete require.cache[require.resolve('./blogPostManifest.js')];
@@ -15,10 +17,15 @@ function reloadData() {
   blogPostsByTag = {};
   _(blogPosts).each(blogPost => {
     _(blogPost.tags).each(tag => {
+      tags[tag] = (tags[tag] || 0) + 1;
       blogPostsByTag[tag] = blogPostsByTag[tag] || [];
       blogPostsByTag[tag].push(blogPost);
     });
   });
+
+  tags = _(tags).map((count, name) => {
+    return { name, count };
+  }).sort((x, y) => y.count - x.count);
 }
 
 reloadData();
@@ -100,6 +107,15 @@ server.route({
   path: '/blog/tagged/{tag}',
   handler: function (request, reply) {
     reply.file('index.html');
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/api/tags',
+  handler: function (request, reply) {
+    console.log(JSON.stringify(Set));
+    reply(tags).code(200);
   }
 });
 

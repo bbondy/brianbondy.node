@@ -6,6 +6,7 @@ import Main from './main.js';
 import Blog from './blog.js';
 import BlogPost from './blogPost.js';
 import BlogPostList from './blogPostList.js';
+import BlogFilters from './blogFilters.js';
 import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
 
 let Route = Router.Route;
@@ -15,8 +16,9 @@ let DefaultRoute = Router.DefaultRoute;
 // declare our routes and their hierarchy
 let routes =
   <Route handler={Main}>
-    <DefaultRoute name='blog-index' handler={Blog}/>
+    <DefaultRoute name='blog-index' handler={BlogPostList}/>
     <Route path='blog' handler={Blog}>
+     <Route name='blog-filters' path='filters' handler={BlogFilters}/>
      <DefaultRoute handler={BlogPostList}/>
      <Route path=':id' handler={BlogPost}/>
      <Route path='posted/:year' handler={BlogPostList}/>
