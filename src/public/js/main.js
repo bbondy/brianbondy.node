@@ -4,21 +4,24 @@ import {RouteHandler, Link} from 'react-router';
 class TopBar extends React.Component {
   render() {
     return <div className='topBar'>
-      <link to='blog-index'><img src='/img/logo.png'/></link>
+      <Link to='blog-index'><img src='/img/logo.png'/></Link>
       <ul className='topBarLinks'>
-      <li><Link to="blog-index">Blog</Link></li>
-      <li><Link to="blog-filters">Filters</Link></li>
-      <li><Link to='projects'>Projects</Link></li>
-      <li><Link to='resume'>Resume</Link></li>
-      <li><Link to='other'>Other</Link></li>
-      <li><Link to='about'>About</Link></li>
-      <li><Link to='contact'>Contact</Link></li>
-      <li className='social'><a href='https://twitter.com/brianbondy' target='_blank'><span className='fa fa-twitter'/></a></li>
-      <li className='social'><a href='/feeds/rss/' target='_blank'><span className='fa fa-rss'/></a></li>
-      <li className='social'><a href='https://github.com/bbondy' target='_blank'><span className='fa fa-github'/></a></li>
-      <li className='social'><a href='http://ca.linkedin.com/in/bbondy' target='_blank'><span className='fa fa-linkedin'/></a></li>
-      <li className='social'><a href='https://www.youtube.com/user/bbondy' target='_blank'><span className='fa fa-youtube-play'/></a></li>
-      <li className='social'><a href='http://stackoverflow.com/users/3153/brian-r-bondy' target='_blank'><span className='fa fa fa-stack-overflow'/></a></li>
+      <Link to="blog-index"><li>Blog</li></Link>
+      <Link to="blog-filters"><li>Filters</li></Link>
+      <Link to='projects'><li>Projects</li></Link>
+      <Link to='resume'><li>Resume</li></Link>
+      <Link to='other'><li>Other</li></Link>
+      <Link to='about'><li>About</li></Link>
+      <Link to='contact'><li>Contact</li></Link>
+
+      <a href='https://twitter.com/brianbondy' target='_blank'><li className='social'><span className='fa fa-twitter'/></li></a>
+      <a href='/feeds/rss/' target='_blank'><li className='social'><span className='fa fa-rss'/></li></a>
+
+      <a href='https://github.com/bbondy' target='_blank'><li className='social'><span className='fa fa-github'/></li></a>
+
+      <a href='http://ca.linkedin.com/in/bbondy' target='_blank'><li className='social'><span className='fa fa-linkedin'/></li></a>
+      <a href='https://www.youtube.com/user/bbondy' target='_blank'><li className='social'><span className='fa fa-youtube-play'/></li></a>
+      <a href='http://stackoverflow.com/users/3153/brian-r-bondy' target='_blank'><li className='social'><span className='fa fa fa-stack-overflow'/></li></a>
     </ul>
     </div>;
   }
