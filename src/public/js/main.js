@@ -4,12 +4,7 @@ import {RouteHandler, Link} from 'react-router';
 class TopBar extends React.Component {
   render() {
     return <div className='topBar'>
-      <a href='/'>
-        <img style={{
-          width: 36,
-          float: 'left',
-        }} src='/img/logo.png'/>
-      </a>
+      <link to='blog-index'><img src='/img/logo.png'/></link>
       <ul className='topBarLinks'>
       <li><Link to="blog-index">Blog</Link></li>
       <li><Link to="blog-filters">Filters</Link></li>
