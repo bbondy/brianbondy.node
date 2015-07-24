@@ -4,15 +4,13 @@
 To learn from others and help others reach their goals
 
 ##Profiles
+- [Email](mailto:bbondy@gmail.com) - bbondy@gmail.com
+- [Blog](http://www.brianbondy.com) - http://www.brianbondy.com
 - [Github](https://github.com/bbondy) - https://github.com/bbondy
 - [Stackoverflow](http://stackoverflow.com/users/3153/brian-r-bondy) (Top 0.01%) - http://stackoverflow.com/users/3153/brian-r-bondy
-- Microsoft MVP (For Visual C++ July 2010 - July 2011):
+- [Twitter](https://twitter.com/brianbondy) - https://twitter.com/brianbondy
+- [LinkedIn](https://www.linkedin.com/in/bbondy) - https://www.linkedin.com/in/bbondy
 - [Khan Academy](https://www.khanacademy.org/profile/bbondy/) - https://www.khanacademy.org/profile/bbondy/
-- Social:
-  - [Blog](http://www.brianbondy.com) - http://www.brianbondy.com
-  - [Twitter](https://twitter.com/brianbondy) - https://twitter.com/brianbondy
-  - [Email](mailto:bbondy@gmail.com) - bbondy@gmail.com
-
 
 ##Experience
 - **Favorite Languages and APIs**: C, expert level C++ (Templates, STL, boost, COM, MFC, Win32 API, OpenGL, Qt...), JavaScript (Node, client side, app development), Python (Django, pyWin32, list comprehensions, modules, packages, ...), C# (Winforms, WPF, Silverlight, WCF, LINQ, Entity Framework, Remote Objects, Generics, Nullable types, Extension methods, ...), F#, SQL, Matlab, Haskell, Scheme
@@ -104,9 +102,10 @@ To learn from others and help others reach their goals
 - **Pyroflow Archiving**: An alternative to Unix's tar with built in compression
 - **Data Structures**: Several template based data structures, including Adaptive Huffman compression
 
-##Interests and Hobbies
+##Interests, Hobbies, and Other
 
 - Coding: Working on programming projects, learning new technologies
 - Reading: Reviewing O'Reilly and Manning books
 - Music: Piano & guitar
 - Exercise: Marathon runner, Black belt (Shodan) Karate Meibukan Goju Ryu
+- Microsoft MVP (For Visual C++ July 2010 - July 2011):
