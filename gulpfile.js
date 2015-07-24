@@ -129,9 +129,8 @@ gulp.task('babel-node', function() {
   ];
   try {
     return gulp.src(files)
-      .pipe(changed(DIST_ROOT + 'js/'))
       .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.init())
-      .pipe(babel({ modules: 'common'} ).on('error', function(e) {
+      .pipe(babel().on('error', function(e) {
         this.emit('end');
       }))
       .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
