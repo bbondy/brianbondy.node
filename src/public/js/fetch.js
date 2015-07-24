@@ -45,13 +45,16 @@ export function fetchMarkdown(id) {
  * Fetch a bunch of blog posts
  */
 export function fetchBlogPosts(filter) {
-  // TODO: Add various filters
-  if (filter && filter.year) {
-    return getJSON(`/api/blog/posted/${filter.year}`);
-  } else if (filter && filter.tag) {
-    return getJSON(`/api/blog/tagged/${filter.tag}`);
+  let urlParams = '';
+  if (filter.page) {
+    urlParams = `?page=${filter.page}`;
   }
-  return getJSON(`/api/blog`);
+  if (filter && filter.year) {
+    return getJSON(`/api/blog/posted/${filter.year}${urlParams}`);
+  } else if (filter && filter.tag) {
+    return getJSON(`/api/blog/tagged/${filter.tag}${urlParams}`);
+  }
+  return getJSON(`/api/blog${urlParams}`);
 }
 
 /**

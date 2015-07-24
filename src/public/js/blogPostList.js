@@ -13,6 +13,7 @@ export default class BlogPostList extends React.Component {
     fetchBlogPosts({
       year: this.props.params.year,
       tag: this.props.params.tag,
+      page: this.props.params.page,
     }).then((blogPosts) =>
       this.setState({
         blogPosts,

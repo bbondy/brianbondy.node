@@ -6,6 +6,19 @@ var fs = require('fs');
 var _ = require('underscore');
 var blogPosts, blogPostsByYear, blogPostsByTag;
 var tags = {};
+const postsPerPage = 3;
+
+function beginPostIndex(page = 1) {
+  return (page - 1) * postsPerPage;
+}
+
+function endPostIndex(page = 1) {
+  return beginPostIndex(page) + postsPerPage;
+}
+
+function slicePostsForPage(posts, page) {
+  return posts.slice(beginPostIndex(page), endPostIndex(page));
+}
 
 function reloadData() {
   delete require.cache[require.resolve('./blogPostManifest.js')];
@@ -44,28 +57,19 @@ let server = new Hapi.Server({
 });
 server.connection({ port: 3000 });
 
-server.route({
-  method: 'GET',
-  path: '/',
-  handler: function (request, reply) {
-    reply.file('index.html');
-  }
-});
+let indexPaths = ['/{name}', '/other/{name}', '/blog/{id}',
+  '/', '/blog/', '/blog/posted/{year}', '/blog/tagged/{tag}',
+  '/page/{page}', '/blog/page/{page}', '/blog/posted/{year}/page/{page}', '/blog/tagged/{tag}/page/{page}',
+  ];
 
-server.route({
-  method: 'GET',
-  path: '/{name}',
-  handler: function (request, reply) {
-    reply.file('index.html');
-  }
-});
-
-server.route({
-  method: 'GET',
-  path: '/other/{name}',
-  handler: function (request, reply) {
-    reply.file('index.html');
-  }
+indexPaths.forEach(path => {
+  server.route({
+    method: 'GET',
+    path: path,
+    handler: function (request, reply) {
+      reply.file('index.html');
+    }
+  });
 });
 
 server.route({
@@ -79,34 +83,9 @@ server.route({
 
 server.route({
   method: 'GET',
-  path: '/blog/{name}',
-  handler: function (request, reply) {
-    reply.file('index.html');
-  }
-});
-
-server.route({
-  method: 'GET',
   path: '/blog/modified/{year}',
   handler: function (request, reply) {
     reply.redirect(`/blog/posted/${request.params.year}`);
-  }
-});
-
-
-server.route({
-  method: 'GET',
-  path: '/blog/posted/{year}',
-  handler: function (request, reply) {
-    reply.file('index.html');
-  }
-});
-
-server.route({
-  method: 'GET',
-  path: '/blog/tagged/{tag}',
-  handler: function (request, reply) {
-    reply.file('index.html');
   }
 });
 
@@ -123,7 +102,8 @@ server.route({
   method: 'GET',
   path: '/api/blog/posted/{year}',
   handler: function (request, reply) {
-    reply(blogPostsByYear[request.params.year] || []).code(200);
+    let posts = blogPostsByYear[request.params.year] || [];
+    reply(slicePostsForPage(posts, request.query.page)).code(200);
   }
 });
 
@@ -131,7 +111,8 @@ server.route({
   method: 'GET',
   path: '/api/blog/tagged/{tag}',
   handler: function (request, reply) {
-    reply(blogPostsByTag[request.params.tag] || []).code(200);
+    let posts = blogPostsByTag[request.params.tag] || [];
+    reply(slicePostsForPage(posts, request.query.page)).code(200);
   }
 });
 
@@ -149,7 +130,7 @@ server.route({
   method: 'GET',
   path: '/api/blog',
   handler: function (request, reply) {
-    reply(blogPosts).code(200);
+    reply(slicePostsForPage(blogPosts, request.query.page)).code(200);
   }
 });
 

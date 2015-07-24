@@ -21,9 +21,14 @@ let routes =
      <Route name='blog-filters' path='filters' handler={BlogFilters}/>
      <DefaultRoute handler={BlogPostList}/>
      <Route path=':id' handler={BlogPost}/>
+
      <Route path='posted/:year' handler={BlogPostList}/>
-     <Route path='modified/:year' handler={BlogPostList}/>
      <Route path='tagged/:tag' handler={BlogPostList}/>
+
+     <Route path='/page/:page' handler={BlogPostList}/>
+     <Route path='page/:page' handler={BlogPostList}/>
+     <Route path='posted/:year/page/:page' handler={BlogPostList}/>
+     <Route path='tagged/:tag/page/:page' handler={BlogPostList}/>
     </Route>
 
     <Route name='projects' path='projects' handler={RemoteMarkdownViewer}/>
