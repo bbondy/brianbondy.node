@@ -1,4 +1,4 @@
-#Resume
+#Brian R. Bondy's Resume
 
 ##Objective
 To learn from others and help others reach their goals
