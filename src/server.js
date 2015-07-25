@@ -6,6 +6,8 @@ var fs = require('fs');
 var _ = require('underscore');
 var blogPosts, blogPostsByYear, blogPostsByTag;
 var tags = {};
+var RSS = require('rss');
+let feed = '';
 const postsPerPage = 3;
 
 function beginPostIndex(page = 1) {
@@ -21,6 +23,14 @@ function slicePostsForPage(posts, page) {
 }
 
 function reloadData() {
+  feed = new RSS({
+    title: 'Brian R. Bondy\'s Feed',
+    description: 'Blog posts by Brian R. Bondy',
+    'feed_url': 'http://www.brianbondy.com/feeds/rss',
+    'site_url': 'http://www.brianbondy.com',
+    'image_url': 'http://www.brianbondy.com/img/logo.png',
+  });
+
   delete require.cache[require.resolve('./blogPostManifest.js')];
   blogPosts = require('./blogPostManifest.js');
   blogPosts.forEach(blogPost =>
@@ -29,6 +39,14 @@ function reloadData() {
     blogPost.created.getFullYear());
   blogPostsByTag = {};
   _(blogPosts).each(blogPost => {
+    feed.item({
+      title: blogPost.title,
+      description: blogPost.body,
+      guid: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
+      categories: blogPost.tags,
+      author: 'Brian R. Bondy',
+      date: blogPost.created,
+    });
     _(blogPost.tags).each(tag => {
       tags[tag] = (tags[tag] || 0) + 1;
       blogPostsByTag[tag] = blogPostsByTag[tag] || [];
@@ -39,6 +57,7 @@ function reloadData() {
   tags = _(tags).map((count, name) => {
     return { name, count };
   }).sort((x, y) => y.count - x.count);
+
 }
 
 reloadData();
@@ -80,6 +99,15 @@ server.route({
     reply.redirect('/');
   }
 });
+
+server.route({
+  method: 'GET',
+  path: '/feeds/rss',
+  handler: function (request, reply) {
+    reply(feed.xml({indent: true})).tpye('application/rss+xml');
+  }
+});
+
 
 server.route({
   method: 'GET',

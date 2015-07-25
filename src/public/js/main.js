@@ -15,7 +15,7 @@ class TopBar extends React.Component {
       <Link to='contact'><li>Contact</li></Link>
 
       <a href='https://twitter.com/brianbondy' target='_blank'><li className='social'><span className='fa fa-twitter'/></li></a>
-      <a href='/feeds/rss/' target='_blank'><li className='social'><span className='fa fa-rss'/></li></a>
+      <a href='/feeds/rss' target='_blank'><li className='social'><span className='fa fa-rss'/></li></a>
 
       <a href='https://github.com/bbondy' target='_blank'><li className='social'><span className='fa fa-github'/></li></a>
 
