@@ -2,6 +2,7 @@ import React from 'react';
 import DocumentTitle from './documentTitle.js';
 import {fetchBlogPosts} from './fetch.js';
 import BlogPost from './blogPost.js';
+import NavigationButton from './navigationButton.js';
 
 export default class BlogPostList extends React.Component {
   constructor() {
@@ -20,6 +21,33 @@ export default class BlogPostList extends React.Component {
       }));
   }
 
+  urlForPage(page) {
+    var pageSuffix = '';
+    if (page !== 1) {
+      pageSuffix = `/page/${page}`;
+    }
+    if (this.props.params.year) {
+      return `/blog/posted/${this.props.params.year}${pageSuffix}`;
+    } else if (this.props.params.tag) {
+      return `/blog/tagged/${this.props.params.tag}${pageSuffix}`;
+    } else {
+      return `${pageSuffix}`;
+    }
+  }
+
+  get page() {
+    return Number(this.props.params.page || 1);
+  }
+
+  get nextUrl() {
+    console.log(this.props.params.page + 1);
+    return this.urlForPage(this.page + 1);
+  }
+
+  get prevUrl() {
+    return this.urlForPage(this.page - 1);
+  }
+
   render() {
     if (!this.state.blogPosts) {
       return null;
@@ -36,6 +64,10 @@ export default class BlogPostList extends React.Component {
             id={blogPost.id}
           />)
       }
+    { this.page > 1 ?
+    <NavigationButton text='Previous page' src={this.prevUrl}/> : null }
+    { this.state.blogPosts.length === 3 ?
+    <NavigationButton text='Next page' src={this.nextUrl}/> : null }
     </div>;
   }
 }
