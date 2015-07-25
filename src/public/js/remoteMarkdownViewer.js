@@ -11,7 +11,7 @@ export default class About extends React.Component {
   }
   fetch() {
     let src = `${window.location.pathname.substring(1)}.markdown`;
-    fetchMarkdown(src || this.props.src).then((markdownText) =>
+    fetchMarkdown(this.props.src || src).then((markdownText) =>
       this.setState({markdownText}));
   }
   componentWillReceiveProps() {

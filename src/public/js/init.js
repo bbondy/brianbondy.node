@@ -7,6 +7,7 @@ import Blog from './blog.js';
 import BlogPost from './blogPost.js';
 import BlogPostList from './blogPostList.js';
 import BlogFilters from './blogFilters.js';
+import Compression from './compression.js';
 import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
 
 let Route = Router.Route;
@@ -37,7 +38,11 @@ let routes =
     <Route name='about' path='about' handler={RemoteMarkdownViewer}/>
     <Route name='contact' path='contact' handler={RemoteMarkdownViewer}/>
 
-    <Route name='compression' path='compression' handler={RemoteMarkdownViewer}/>
+    <Route name='compression' path='compression' handler={Compression}>
+     <Route path='huffman' handler={RemoteMarkdownViewer}/>
+     <Route path='BWT' handler={RemoteMarkdownViewer}/>
+     <Route path='PPM' handler={RemoteMarkdownViewer}/>
+    </Route>
     <Route name='faq' path='faq' handler={RemoteMarkdownViewer}/>
     <Route name='khanacademy' path='khanacademy' handler={RemoteMarkdownViewer}/>
     <Route name='links' path='links' handler={RemoteMarkdownViewer}/>
