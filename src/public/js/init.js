@@ -8,6 +8,7 @@ import BlogPost from './blogPost.js';
 import BlogPostList from './blogPostList.js';
 import BlogFilters from './blogFilters.js';
 import Compression from './compression.js';
+import Math from './math.js';
 import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
 
 let Route = Router.Route;
@@ -43,10 +44,17 @@ let routes =
      <Route path='BWT' handler={RemoteMarkdownViewer}/>
      <Route path='PPM' handler={RemoteMarkdownViewer}/>
     </Route>
+    <Route name='math' path='math' handler={Math}>
+     <Route path='main' handler={RemoteMarkdownViewer}/>
+     <Route path='pi' handler={RemoteMarkdownViewer}/>
+     <Route path='primes' handler={RemoteMarkdownViewer}/>
+     <Route path='numberTheory' handler={RemoteMarkdownViewer}/>
+     <Route path='graphTheory' handler={RemoteMarkdownViewer}/>
+     <Route path='mathTricks' handler={RemoteMarkdownViewer}/>
+    </Route>
     <Route name='faq' path='faq' handler={RemoteMarkdownViewer}/>
     <Route name='khanacademy' path='khanacademy' handler={RemoteMarkdownViewer}/>
     <Route name='links' path='links' handler={RemoteMarkdownViewer}/>
-    <Route name='math' path='math' handler={RemoteMarkdownViewer}/>
     <Route name='books' path='books' handler={RemoteMarkdownViewer}/>
     <Route name='articles' path='articles' handler={RemoteMarkdownViewer}/>
     <Route name='advice' path='advice' handler={RemoteMarkdownViewer}/>
