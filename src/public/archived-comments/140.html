@@ -1,0 +1,22 @@
+<ul class="comments-list"><li class="comment-item"><div><a href="http://www.winvistaside.de" target="_blank"><img src="http://www.gravatar.com/avatar/587c0207612ea3cdcca321f56906b373?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://www.winvistaside.de">André</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">Moving the UAC slider to the button no longer disables UAC in Windows 8. UAC is still on! This was done because Metro apps CAN'T run if UAC if OFF. If you disable the EnableLUA setting in the registry UAC is off and you have full admin token but all metro apps can't be launched. </p></li><li class="comment-item"><div><a href="http://adblockplus.org/" target="_blank"><img src="http://www.gravatar.com/avatar/7806629160a492b05d21fd738953a4cf?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://adblockplus.org/">Wladimir Palant</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">Could you expand on the last paragraph? I fail to see how this change improves security. Sure, a process that has been compromised (buffer overflow or whatever) won't have highest privileges automatically. But if UAC is off it will be able to request them at any time nevertheless. Effectively, it's the same situation as in Windows 7 with UAC off, only one more step required. And I don't see why malware authors would be afraid of doing that step.</p></li><li class="comment-item"><div><a href="http://neil.rashbrook.org/" target="_blank"><img src="http://www.gravatar.com/avatar/3e42479b6063be4a85f9974d2161dadf?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://neil.rashbrook.org/">Neil Rashbrook</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">Why does it matter whether you use the service or a free elevation?</p></li><li class="comment-item"><div><a href="http://twitter.com/ianmthomasuk" target="_blank"><img src="http://www.gravatar.com/avatar/60748baae1a8abbba1013901be38c0ad?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://twitter.com/ianmthomasuk">Ian Thomas</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">Aren't they basically just removing the ability to turn off UAC? Presumably they can afford to do that now applications have learnt to deal with the UAC restrictions, whereas if they had done it when they launched Vista then lots of applications would have been incompatible.</p></li><li class="comment-item"><div><a href="http://www.brianbondy.com" target="_blank"><img src="http://www.gravatar.com/avatar/47d8644c0ad8d89635fca422dd6d3ab5?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://www.brianbondy.com">Brian R. Bondy</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">&gt; Could you expand on the last paragraph?
+&gt; I fail to see how this change improves security.
+
+It's better to have your non malware process run as medium integrity. Sometimes things can be exploited where arbitrary code cannot be executed, but there is still an exploit to be had.
+
+That's a good point though that if you can run arbitrary code through the exploit, then they are equivalent.
+
+&gt; Why does it matter whether you use the service or a
+&gt; free elevation?
+
+Security has asked that we only use the service when we need to so that updates only run as SYSTEM account when needed. Personally I think it's the same since any admin can install a service and start it which would run as SYSTEM account. Free elevation is a new concept though only introduced in Windows 8 so this hasn't been discussed explicitly.
+
+Maybe the second sentence in the above answer to the previous question is a reason why it's better to run the process only as SYSTEM when needed, and I think that's what security would say.
+
+&gt; Aren't they basically just removing the ability to
+&gt; turn off UAC? Presumably they can afford to do that
+&gt; now applications have learnt to deal with the
+&gt; UAC restrictions
+
+In a way but this run as medium with free elevation concept is new. So whether you call that the new disabled or the new level when not disabled is up to you :)
+
+</p></li></ul>

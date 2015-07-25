@@ -1,0 +1,11 @@
+<ul class="comments-list"><li class="comment-item"><div><a href="http://joshuakehn.com" target="_blank"><img src="http://www.gravatar.com/avatar/55db06ceffe066c53bf7121fb3e23eea?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://joshuakehn.com">Joshua Kehn</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">Very nice, that looks handy.</p></li><li class="comment-item"><div><a href="http://neil.rashbrook.org/" target="_blank"><img src="http://www.gravatar.com/avatar/3e42479b6063be4a85f9974d2161dadf?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://neil.rashbrook.org/">Neil Rashbrook</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">A few inaccuracies and typos:
+
+XUL, XLB should probably say XUL, XBL
+
+Since the switch to Mercurial, client.mk no longer pulls the tree, so just make -f client.mk suffices. Even with comm-central trunk I think you would need to explicitly use the checkout target.
+
+Don't cd mozilla when building from comm-central!
+
+--disable-static is not supported since Gecko 5.
+
+Tip: use make -C ../toolkit/library to avoid cd</p></li><li class="comment-item"><div><a href="http://www.brianbondy.com/" target="_blank"><img src="http://www.gravatar.com/avatar/47d8644c0ad8d89635fca422dd6d3ab5?s=60" class="gravatar"></a></div><a rel="external nofollow" href="http://www.brianbondy.com/">Brian R. Bondy</a><span> on </span><small>Monday, November 18, 2013 (09:11:02)</small><span> says: </span><p class="comment-text">Neil, thanks! I fixed the build typos and made the other changes.</p></li></ul>

@@ -23,6 +23,7 @@ export default class BlogPost extends React.Component {
           body: blogPost.body,
           created: new Date(blogPost.created),
           tags: blogPost.tags,
+          comments: blogPost.comments,
         }));
     } else {
       this.state = {
@@ -31,6 +32,7 @@ export default class BlogPost extends React.Component {
         body: this.props.body,
         created: new Date(this.props.created),
         tags: this.props.tags,
+        comments: this.props.comments,
       };
     }
   }
@@ -54,6 +56,13 @@ export default class BlogPost extends React.Component {
       <div className='datePosted'>Posted on {this.dateString}</div>
       <div dangerouslySetInnerHTML={{__html: marked(this.state.body)}}/>
       <div className='tags'>{this.state.tags.map(tag => <Tag name={tag}/>)}</div>
+      { !this.state.comments ? null :
+      <div className='commentsContainer'>
+        <h2>Comments</h2>
+        <div className='commentsDisabled'>New comments disabled</div>
+        <div className='archivedCommentBlock' dangerouslySetInnerHTML={{__html: this.state.comments}}/>
+      </div>
+      }
     </div>;
   }
 }

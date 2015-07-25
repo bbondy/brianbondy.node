@@ -33,8 +33,13 @@ function reloadData() {
 
   delete require.cache[require.resolve('./blogPostManifest.js')];
   blogPosts = require('./blogPostManifest.js');
-  blogPosts.forEach(blogPost =>
-    blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
+  blogPosts.forEach(blogPost => {
+    blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8');
+    if (fs.existsSync(`${__dirname}/public/archived-comments/${blogPost.id}.html`)) {
+      blogPost.comments = fs.readFileSync(`${__dirname}/public/archived-comments/${blogPost.id}.html`, 'utf-8');
+    }
+  });
+
   blogPostsByYear = _(blogPosts).groupBy(blogPost =>
     blogPost.created.getFullYear());
   blogPostsByTag = {};
