@@ -1,4 +1,9 @@
 @titleFont: 'Droid Serif';
+@buttonText: #808185;
+@buttonOutlineColor: #ccc;
+@buttonBackground: #fff;
+@buttonHoverBackground: #808185;
+@buttonHoverText: #fff;
 
 body {
   background-color: white;
@@ -99,7 +104,20 @@ h2 {
   background-color: #eee;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  color: black;
+
+  border-bottom: 1px solid @buttonOutlineColor;
+  border-right: 1px solid @buttonOutlineColor;
+  border-top: 1px solid lighten(@buttonOutlineColor, 10%);
+  border-left: 1px solid lighten(@buttonOutlineColor, 10%);
+  background-color: @buttonBackground;
+  color: @buttonText;
+
+  &:hover {
+    background-color: @buttonHoverBackground;
+    color: @buttonHoverText;
+    border: 1px solid @buttonHoverBackground;
+  }
+
   line-height: 3;
   margin: 5px;
   padding: 8px;
@@ -122,12 +140,13 @@ h2 {
 }
 
 .navigationButton {
-  border: 1px solid #CCC;
-  color: #808185;
+  border: 1px solid @buttonOutlineColor;
+  background-color: @buttonBackground;
+  color: @buttonText;
 
   &:hover {
-    background-color: #808185;
-    color: white;
+    background-color: @buttonHoverBackground;
+    color: @buttonHoverText;
   }
   margin: 0 10px 10px 0;
   padding: 8px;
