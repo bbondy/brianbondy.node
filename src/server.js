@@ -10,6 +10,22 @@ var RSS = require('rss');
 let feed = '';
 const postsPerPage = 3;
 
+var marked = require('marked');
+var highlight = require('highlight.js');
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: false,
+  highlight: function (code) {
+    return highlight.highlightAuto(code).value;
+  }
+});
+
 function beginPostIndex(page = 1) {
   return (page - 1) * postsPerPage;
 }
@@ -34,7 +50,7 @@ function reloadData() {
   delete require.cache[require.resolve('./blogPostManifest.js')];
   blogPosts = require('./blogPostManifest.js');
   blogPosts.forEach(blogPost => {
-    blogPost.body = fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8');
+    blogPost.body = marked(fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
     if (fs.existsSync(`${__dirname}/public/archived-comments/${blogPost.id}.html`)) {
       blogPost.comments = fs.readFileSync(`${__dirname}/public/archived-comments/${blogPost.id}.html`, 'utf-8');
     }
@@ -46,7 +62,7 @@ function reloadData() {
   _(blogPosts).each(blogPost => {
     feed.item({
       title: blogPost.title,
-      description: blogPost.body,
+      description: marked(blogPost.body),
       guid: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
       categories: blogPost.tags,
       author: 'Brian R. Bondy',
@@ -109,7 +125,7 @@ server.route({
   method: 'GET',
   path: '/feeds/rss',
   handler: function (request, reply) {
-    reply(feed.xml({indent: true})).tpye('application/rss+xml');
+    reply(feed.xml({indent: true})).type('application/rss+xml');
   }
 });
 
