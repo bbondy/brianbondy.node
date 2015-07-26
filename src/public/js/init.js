@@ -8,29 +8,30 @@ import BlogPost from './blogPost.js';
 import BlogPostList from './blogPostList.js';
 import BlogFilters from './blogFilters.js';
 import Compression from './compression.js';
+import NotFound from './notFound.js';
 import Math from './math.js';
 import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
 
-let Route = Router.Route;
-let Redirect = Router.Redirect;
-let DefaultRoute = Router.DefaultRoute;
+let {Route, Redirect, DefaultRoute, NotFoundRoute} = Router;
 
 // declare our routes and their hierarchy
 let routes =
   <Route handler={Main}>
+    <NotFoundRoute handler={NotFound} />
     <DefaultRoute name='blog-index' handler={BlogPostList}/>
     <Route path='blog' handler={Blog}>
-     <Route name='blog-filters' path='filters' handler={BlogFilters}/>
-     <DefaultRoute handler={BlogPostList}/>
-     <Route path=':id' handler={BlogPost}/>
+      <DefaultRoute handler={BlogPostList}/>
+      <Route name='blog-filters' path='filters' handler={BlogFilters}/>
+      <Route path=':id' handler={BlogPost}/>
 
-     <Route path='posted/:year' handler={BlogPostList}/>
-     <Route path='tagged/:tag' handler={BlogPostList}/>
+      <Route path='posted/:year' handler={BlogPostList}/>
+      <Route path='tagged/:tag' handler={BlogPostList}/>
 
-     <Route path='/page/:page' handler={BlogPostList}/>
-     <Route path='page/:page' handler={BlogPostList}/>
-     <Route path='posted/:year/page/:page' handler={BlogPostList}/>
-     <Route path='tagged/:tag/page/:page' handler={BlogPostList}/>
+      <Route path='/page/:page' handler={BlogPostList}/>
+      <Route path='page/:page' handler={BlogPostList}/>
+      <Route path='posted/:year/page/:page' handler={BlogPostList}/>
+      <Route path='tagged/:tag/page/:page' handler={BlogPostList}/>
+      <NotFoundRoute handler={NotFound} />
     </Route>
 
     <Route name='projects' path='projects' handler={RemoteMarkdownViewer}/>
@@ -45,12 +46,13 @@ let routes =
      <Route path='PPM' handler={RemoteMarkdownViewer}/>
     </Route>
     <Route name='math' path='math' handler={Math}>
-     <Route path='main' handler={RemoteMarkdownViewer}/>
-     <Route path='pi' handler={RemoteMarkdownViewer}/>
-     <Route path='primes' handler={RemoteMarkdownViewer}/>
-     <Route path='numberTheory' handler={RemoteMarkdownViewer}/>
-     <Route path='graphTheory' handler={RemoteMarkdownViewer}/>
-     <Route path='mathTricks' handler={RemoteMarkdownViewer}/>
+      <Route path='main' handler={RemoteMarkdownViewer}/>
+      <Route path='pi' handler={RemoteMarkdownViewer}/>
+      <Route path='primes' handler={RemoteMarkdownViewer}/>
+      <Route path='numberTheory' handler={RemoteMarkdownViewer}/>
+      <Route path='graphTheory' handler={RemoteMarkdownViewer}/>
+      <Route path='mathTricks' handler={RemoteMarkdownViewer}/>
+      <NotFoundRoute handler={NotFound} />
     </Route>
     <Route name='faq' path='faq' handler={RemoteMarkdownViewer}/>
     <Route name='khanacademy' path='khanacademy' handler={RemoteMarkdownViewer}/>
