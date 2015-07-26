@@ -60,6 +60,7 @@ let routes =
     <Route name='advice' path='advice' handler={RemoteMarkdownViewer}/>
     <Route name='mozilla' path='mozilla' handler={RemoteMarkdownViewer}/>
     <Route name='universityClasses' path='universityClasses' handler={RemoteMarkdownViewer}/>
+    <Route name='braille' path='braille' handler={RemoteMarkdownViewer}/>
 
     <Redirect from="other/compression" to="compression" />
     <Redirect from="other/faq" to="faq" />
@@ -70,6 +71,7 @@ let routes =
     <Redirect from="other/advice" to="advice" />
     <Redirect from="other/mozilla" to="mozilla" />
     <Redirect from="other/universityClasses" to="universityClasses" />
+    <Redirect from="other/braille" to="braille" />
   </Route>;
 
 window.addEventListener('load', () => {
