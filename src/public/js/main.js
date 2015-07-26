@@ -14,14 +14,14 @@ class TopBar extends React.Component {
       <Link to='about'><li>About</li></Link>
       <Link to='contact'><li>Contact</li></Link>
 
-      <a href='https://twitter.com/brianbondy' target='_blank'><li className='social'><span className='fa fa-twitter'/></li></a>
-      <a href='/feeds/rss' target='_blank'><li className='social'><span className='fa fa-rss'/></li></a>
+      <a href='https://twitter.com/brianbondy' target='_blank'><li className='social'><span title='Twitter' className='fa fa-twitter'/></li></a>
+      <a href='/feeds/rss' target='_blank'><li className='social'><span title='RSS' className='fa fa-rss'/></li></a>
 
-      <a href='https://github.com/bbondy' target='_blank'><li className='social'><span className='fa fa-github'/></li></a>
+      <a href='https://github.com/bbondy' target='_blank'><li className='social'><span title='GitHub' className='fa fa-github'/></li></a>
 
-      <a href='http://ca.linkedin.com/in/bbondy' target='_blank'><li className='social'><span className='fa fa-linkedin'/></li></a>
-      <a href='https://www.youtube.com/user/bbondy' target='_blank'><li className='social'><span className='fa fa-youtube-play'/></li></a>
-      <a href='http://stackoverflow.com/users/3153/brian-r-bondy' target='_blank'><li className='social'><span className='fa fa fa-stack-overflow'/></li></a>
+      <a href='http://ca.linkedin.com/in/bbondy' target='_blank'><li className='social'><span title='LinkedIn' className='fa fa-linkedin'/></li></a>
+      <a href='https://www.youtube.com/user/bbondy' target='_blank'><li className='social'><span title='YouTube' className='fa fa-youtube-play'/></li></a>
+      <a href='http://stackoverflow.com/users/3153/brian-r-bondy' target='_blank'><li className='social'><span title='StackOverflow' className='fa fa fa-stack-overflow'/></li></a>
     </ul>
     </div>;
   }
