@@ -81,8 +81,8 @@ let server = new Hapi.Server({
 });
 server.connection({ port: 3000 });
 
-let indexPaths = ['/{name}', '/other/{name}', '/compression/{name}', '/math/{name}', '/blog/{id}',
-  '/', '/blog/', '/blog/posted/{year}', '/blog/tagged/{tag}',
+let indexPaths = ['/{name}', '/other/{name}', '/compression/{name}', '/math/{name}', '/mozilla/new',
+  '/', '/blog/', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}',
   '/page/{page}', '/blog/page/{page}', '/blog/posted/{year}/page/{page}', '/blog/tagged/{tag}/page/{page}',
   ];
 

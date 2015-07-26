@@ -59,6 +59,7 @@ let routes =
     <Route name='articles' path='articles' handler={RemoteMarkdownViewer}/>
     <Route name='advice' path='advice' handler={RemoteMarkdownViewer}/>
     <Route name='mozilla' path='mozilla' handler={RemoteMarkdownViewer}/>
+    <Route name='mozilla-new' path='mozilla/new' handler={RemoteMarkdownViewer}/>
     <Route name='universityClasses' path='universityClasses' handler={RemoteMarkdownViewer}/>
     <Route name='braille' path='braille' handler={RemoteMarkdownViewer}/>
     <Route name='morseCode' path='morseCode' handler={RemoteMarkdownViewer}/>
