@@ -178,6 +178,18 @@ server.route({
   }
 });
 
+// Serve everythign else from the public folder
+server.route({
+  method: 'GET',
+  path: '/static/{path*}',
+  handler: {
+    directory: {
+      path: './'
+    }
+  }
+});
+
+
 server.register({
   register: Good,
   options: {
