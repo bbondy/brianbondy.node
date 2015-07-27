@@ -14,7 +14,6 @@ export default class BlogFilters extends React.Component {
 
   componentWillMount() {
     fetchTags().then((tags) => {
-      console.log(tags);
       this.setState({
         tags,
       });
