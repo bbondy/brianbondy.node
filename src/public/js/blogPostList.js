@@ -58,6 +58,7 @@ export default class BlogPostList extends React.Component {
       {
         this.state.blogPosts.map(blogPost =>
           <BlogPost title={blogPost.title}
+            key={blogPost.id}
             body={blogPost.body}
             created={blogPost.created}
             tags={blogPost.tags}

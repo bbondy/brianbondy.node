@@ -54,7 +54,7 @@ export default class BlogPost extends React.Component {
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
       <div className='datePosted'>Posted on {this.dateString}</div>
       <div dangerouslySetInnerHTML={{__html: this.state.body}}/>
-      <div className='tags'>{this.state.tags.map(tag => <Tag name={tag}/>)}</div>
+      <div className='tags'>{this.state.tags.map(tag => <Tag key={tag} name={tag}/>)}</div>
       { !this.state.comments ? null :
       <div className='commentsContainer'>
         <h2>Comments</h2>
