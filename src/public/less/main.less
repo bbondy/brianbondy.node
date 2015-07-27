@@ -1,8 +1,9 @@
 @titleFont: 'Droid Serif';
+@linkColor: #4d90fe;
 @buttonText: #808185;
 @buttonOutlineColor: #ccc;
 @buttonBackground: #fff;
-@buttonHoverBackground: #808185;
+@buttonHoverBackground: #4d90fe;
 @buttonHoverText: #fff;
 
 body {
@@ -16,7 +17,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #4d90fe;
+  color: @linkColor;
 }
 
 .topBar {
@@ -42,7 +43,8 @@ a {
     font-family: 'Droid Serif';
     padding: 10px 14px;
     &:hover:not(.social) {
-      background-color: #909090;
+      background-color: @buttonHoverBackground;
+      border-bottom: 1px solid @buttonHoverBackground;
       color: white;
     }
 
@@ -93,6 +95,7 @@ h3 {
 
 h1 {
   font-size: 1.5em;
+  margin-top: 20px;
   margin-bottom: 12px;
   padding-bottom: 4px;
   border-bottom: 1px dotted rgb(200, 200, 200);
@@ -175,5 +178,5 @@ h2 {
 }
 
 .current {
-  border-bottom: 1px solid #4d90fe;
+  border-bottom: 1px solid @linkColor;
 }
