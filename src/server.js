@@ -8,6 +8,7 @@ var blogPosts, blogPostsByYear, blogPostsByTag;
 var tags = {};
 var RSS = require('rss');
 let feed = '';
+import {setupRedirects} from './redirects.js';
 const postsPerPage = 3;
 
 var marked = require('marked');
@@ -96,9 +97,10 @@ let server = new Hapi.Server({
   }
 });
 server.connection({ port: 3000 });
+setupRedirects(server);
 
 let indexPaths = ['/{name}', '/other/{name}', '/compression/{name}', '/math/{name}', '/mozilla/new',
-  '/', '/blog/', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}',
+  '/', '/blog', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}',
   '/page/{page}', '/blog/page/{page}', '/blog/posted/{year}/page/{page}', '/blog/tagged/{tag}/page/{page}',
   ];
 
@@ -129,20 +131,10 @@ server.route({
   }
 });
 
-
-server.route({
-  method: 'GET',
-  path: '/blog/modified/{year}',
-  handler: function (request, reply) {
-    reply.redirect(`/blog/posted/${request.params.year}`);
-  }
-});
-
 server.route({
   method: 'GET',
   path: '/api/tags',
   handler: function (request, reply) {
-    console.log(JSON.stringify(Set));
     reply(tags).code(200);
   }
 });
