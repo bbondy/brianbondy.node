@@ -10,7 +10,7 @@ import BlogFilters from './blogFilters.js';
 import Compression from './compression.js';
 import NotFound from './notFound.js';
 import Math from './math.js';
-import RemoteMarkdownViewer from './remoteMarkdownViewer.js';
+import RemoteViewer from './remoteViewer.js';
 
 let {Route, Redirect, DefaultRoute, NotFoundRoute} = Router;
 
@@ -34,37 +34,38 @@ let routes =
       <NotFoundRoute handler={NotFound} />
     </Route>
 
-    <Route name='projects' path='projects' handler={RemoteMarkdownViewer}/>
-    <Route name='resume' path='resume' handler={RemoteMarkdownViewer}/>
-    <Route name='other' path='other' handler={RemoteMarkdownViewer}/>
-    <Route name='about' path='about' handler={RemoteMarkdownViewer}/>
-    <Route name='contact' path='contact' handler={RemoteMarkdownViewer}/>
+    <Route name='projects' path='projects' handler={RemoteViewer}/>
+    <Route name='resume' path='resume' handler={RemoteViewer}/>
+    <Route name='other' path='other' handler={RemoteViewer}/>
+    <Route name='about' path='about' handler={RemoteViewer}/>
+    <Route name='contact' path='contact' handler={RemoteViewer}/>
 
     <Route name='compression' path='compression' handler={Compression}>
-     <Route path='huffman' handler={RemoteMarkdownViewer}/>
-     <Route path='BWT' handler={RemoteMarkdownViewer}/>
-     <Route path='PPM' handler={RemoteMarkdownViewer}/>
+     <Route path='huffman' handler={RemoteViewer}/>
+     <Route path='BWT' handler={RemoteViewer}/>
+     <Route path='PPM' handler={RemoteViewer}/>
     </Route>
     <Route name='math' path='math' handler={Math}>
-      <Route path='main' handler={RemoteMarkdownViewer}/>
-      <Route path='pi' handler={RemoteMarkdownViewer}/>
-      <Route path='primes' handler={RemoteMarkdownViewer}/>
-      <Route path='numberTheory' handler={RemoteMarkdownViewer}/>
-      <Route path='graphTheory' handler={RemoteMarkdownViewer}/>
-      <Route path='mathTricks' handler={RemoteMarkdownViewer}/>
+      <Route path='main' handler={RemoteViewer}/>
+      <Route path='pi' handler={RemoteViewer}/>
+      <Route path='primes' handler={RemoteViewer}/>
+      <Route path='numberTheory' handler={RemoteViewer}/>
+      <Route path='graphTheory' handler={RemoteViewer}/>
+      <Route path='mathTricks' handler={RemoteViewer}/>
       <NotFoundRoute handler={NotFound} />
     </Route>
-    <Route name='faq' path='faq' handler={RemoteMarkdownViewer}/>
-    <Route name='khanacademy' path='khanacademy' handler={RemoteMarkdownViewer}/>
-    <Route name='links' path='links' handler={RemoteMarkdownViewer}/>
-    <Route name='books' path='books' handler={RemoteMarkdownViewer}/>
-    <Route name='articles' path='articles' handler={RemoteMarkdownViewer}/>
-    <Route name='advice' path='advice' handler={RemoteMarkdownViewer}/>
-    <Route name='mozilla' path='mozilla' handler={RemoteMarkdownViewer}/>
-    <Route name='mozilla-new' path='mozilla/new' handler={RemoteMarkdownViewer}/>
-    <Route name='universityClasses' path='universityClasses' handler={RemoteMarkdownViewer}/>
-    <Route name='braille' path='braille' handler={RemoteMarkdownViewer}/>
-    <Route name='morseCode' path='morseCode' handler={RemoteMarkdownViewer}/>
+    <Route name='faq' path='faq' handler={RemoteViewer}/>
+    <Route name='khanacademy' path='khanacademy' handler={RemoteViewer}/>
+    <Route name='links' path='links' handler={RemoteViewer}/>
+    <Route name='books' path='books' handler={RemoteViewer}/>
+    <Route name='articles' path='articles' handler={RemoteViewer}/>
+    <Route name='advice' path='advice' handler={RemoteViewer}/>
+    <Route name='mozilla' path='mozilla' handler={RemoteViewer}/>
+    <Route name='mozilla-new' path='mozilla/new' handler={RemoteViewer}/>
+    <Route name='universityClasses' path='universityClasses' handler={RemoteViewer}/>
+    <Route name='braille' path='braille' handler={RemoteViewer}/>
+    <Route name='morseCode' path='morseCode' handler={RemoteViewer}/>
+    <Route name='stackexchnage' path='stackexchange' handler={RemoteViewer}/>
 
     <Redirect from="other/compression" to="compression" />
     <Redirect from="other/faq" to="faq" />
@@ -76,6 +77,7 @@ let routes =
     <Redirect from="other/mozilla" to="mozilla" />
     <Redirect from="other/universityClasses" to="universityClasses" />
     <Redirect from="other/morseCode" to="morseCode" />
+    <Redirect from="other/stackexchange" to="stackexchange" />
   </Route>;
 
 window.addEventListener('load', () => {
