@@ -1,0 +1,14 @@
+Cooking: 45 of 3155 in common (1.43% in common)
+Game Development: 76 of 2938 in common (2.59% in common)
+Gaming: 66 of 4418 in common (1.49% in common)
+Mathematics: 97 of 2965 in common (3.27% in common)
+Photography: 27 of 1916 in common (1.41% in common)
+Server Fault: 3058 of 38434 in common (7.96% in common)
+StackApps: 64 of 3874 in common (1.65% in common)
+Statistical Analysis: 71 of 1728 in common (4.11% in common)
+Super User: 3506 of 49157 in common (7.13% in common)
+Ubuntu: 114 of 5090 in common (2.24% in common)
+WebApplications: 142 of 6223 in common (2.28% in common)
+WebMasters: 45 of 2820 in common (1.60% in common)
+
+Total: 5.96% in common, 94.04% distinct
