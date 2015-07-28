@@ -40,7 +40,6 @@ export default class BlogPostList extends React.Component {
   }
 
   get nextUrl() {
-    console.log(this.props.params.page + 1);
     return this.urlForPage(this.page + 1);
   }
 
