@@ -2,7 +2,7 @@
 
 ##General Information
 
-<img src="//www.brianbondy.com/static/img/family2.jpg" style="float:left; margin-right:20px; border: 1px solid black" height="250">
+<img src="//www.brianbondy.com/static/img/family2.jpg" style="float:left; margin-right:20px; border: 1px solid black" height="250" width="375">
 I live in Windsor, Ontario, Canada where I lived (other than University) since I was born on March 01, 1981.
 
 I spend most of my time reading various books, programming, and doing work. My greatest fields of interest are P2P, digital image processing, number theory, compression, and changing diapers.
@@ -19,7 +19,7 @@ As of April 21, 2014 I work full time for an amazing company called Khan Academy
 
 ##Facts about me
 
-<img src="//www.brianbondy.com/static/img/brian-ronnie.jpg" width="219" style="float:right; margin-left:30px; border: 1px solid black">
+<img src="//www.brianbondy.com/static/img/brian-ronnie.jpg" width="219" height="476" style="float:right; margin-left:30px; border: 1px solid black">
 
 - I drink a lot of coffee and usually spill it on myself
 - I'm married to the beautiful Shannon L. Bondy (Formerly Gray)
