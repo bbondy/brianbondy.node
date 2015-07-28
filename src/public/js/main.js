@@ -30,6 +30,7 @@ class TopBar extends React.Component {
 
       <a href='http://ca.linkedin.com/in/bbondy' target='_blank'><li className='social'><span title='LinkedIn' className='fa fa-linkedin'/></li></a>
       <a href='https://www.youtube.com/user/bbondy' target='_blank'><li className='social'><span title='YouTube' className='fa fa-youtube-play'/></li></a>
+      <a href='https://bugzilla.mozilla.org/user_profile?login=netzen%40gmail.com' target='_blank'><li className='social'><span title='Bugzilla profile' className='fa fa fa-bug'/></li></a>
       <a href='http://stackoverflow.com/users/3153/brian-r-bondy' target='_blank'><li className='social'><span title='StackOverflow' className='fa fa fa-stack-overflow'/></li></a>
     </ul>
     </div>;
