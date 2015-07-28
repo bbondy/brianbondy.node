@@ -9,6 +9,11 @@ export default class About extends React.Component {
       markdownText: ''
     };
   }
+  get pageTitle() {
+    return {
+      '/blog/filters': 'Blog Filters'
+    }[window.location.pathname];
+  }
   fetch() {
     let src = `${window.location.pathname.substring(1)}.markdown`;
     fetchMarkdown(this.props.src || src).then((markdownText) =>
@@ -21,8 +26,8 @@ export default class About extends React.Component {
     this.fetch();
   }
   render() {
-    return <div dangerouslySetInnerHTML={{
-      __html: marked(this.state.markdownText)
-    }}/>;
+    return <div>
+      <div dangerouslySetInnerHTML={
+        {__html: marked(this.state.markdownText)}}/></div>;
   }
 }

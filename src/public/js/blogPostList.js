@@ -1,5 +1,4 @@
 import React from 'react';
-import DocumentTitle from './documentTitle.js';
 import {fetchBlogPosts} from './fetch.js';
 import BlogPost from './blogPost.js';
 import NavigationButton from './navigationButton.js';
@@ -53,7 +52,6 @@ export default class BlogPostList extends React.Component {
     }
 
     return <div>
-      <DocumentTitle title='Blog Posts in ${this.props.params.year}'/>
       {
         this.state.blogPosts.map(blogPost =>
           <BlogPost title={blogPost.title}

@@ -1,5 +1,4 @@
 import React from 'react';
-import DocumentTitle from './documentTitle.js';
 import Tag from './tag.js';
 import {fetchBlogPost} from './fetch.js';
 
@@ -15,7 +14,8 @@ export default class BlogPost extends React.Component {
 
   componentWillMount() {
     if (this.props.params && this.props.params.id) {
-      fetchBlogPost(this.props.params.id).then((blogPost) =>
+      fetchBlogPost(this.props.params.id).then((blogPost) => {
+        document.title = blogPost.title + ' - Brian R. Bondy';
         this.setState({
           id: blogPost.id,
           title: blogPost.title,
@@ -23,7 +23,8 @@ export default class BlogPost extends React.Component {
           created: new Date(blogPost.created),
           tags: blogPost.tags,
           comments: blogPost.comments,
-        }));
+        });
+      });
     } else {
       this.state = {
         id: this.props.id,
@@ -50,7 +51,6 @@ export default class BlogPost extends React.Component {
     }
 
     return <div className='blogPost'>
-      <DocumentTitle title='Blog Post'/>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
       <div className='datePosted'>Posted on {this.dateString}</div>
       <div dangerouslySetInnerHTML={{__html: this.state.body}}/>

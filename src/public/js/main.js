@@ -1,6 +1,7 @@
 import React from 'react';
 import {RouteHandler, Link} from 'react-router';
 import {cx} from './class-set.js';
+import DocumentTitle from './documentTitle.js';
 
 class TopBar extends React.Component {
   get basePath() {
@@ -39,6 +40,7 @@ class TopBar extends React.Component {
 export default class Main extends React.Component {
   render() {
     return <div>
+      <DocumentTitle pathname={window.location.pathname}/>
       <TopBar/>
       <div className='mainBody'>
         <RouteHandler/>
