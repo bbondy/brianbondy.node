@@ -11,6 +11,7 @@ import Compression from './compression.js';
 import NotFound from './notFound.js';
 import Math from './math.js';
 import RemoteViewer from './remoteViewer.js';
+import StackExchangeListViewer from './stackExchangeListViewer.js';
 
 let {Route, Redirect, DefaultRoute, NotFoundRoute} = Router;
 
@@ -66,6 +67,10 @@ let routes =
     <Route name='braille' path='braille' handler={RemoteViewer}/>
     <Route name='morseCode' path='morseCode' handler={RemoteViewer}/>
     <Route name='stackexchnage' path='stackexchange' handler={RemoteViewer}/>
+
+    <Route path='/stackexchange-:social/:page' handler={StackExchangeListViewer}/>
+    <Route path='/stackexchange-:social/:page' handler={StackExchangeListViewer}/>
+    <Route path='/stackexchange-:social/:page' handler={StackExchangeListViewer}/>
 
     <Redirect from="other/compression" to="compression" />
     <Redirect from="other/faq" to="faq" />
