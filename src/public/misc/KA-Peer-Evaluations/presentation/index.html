@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>CS Project Peer Evaluations</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+        <h2>CS Project Evaluations</h2>
+            <div class="slide"><h4>What are projects?</h4>Projects are free form, objective based opportunities for students to get practice with coding.</div>
+            <br><br>
+            <div class="slide"><h4>Problem with projects:</h4>Projects can't be checked automatically in a way that provides value to the student.</div>
+            <br><br>
+            <div class="slide"><h4>Solution:</h4> Allow peers to evaluate each other with rubric based evaluations!</div>
+    </section>
+
+    <section class="slide">
+        <h2>CS Project Evaluations</h2>
+        <h3>How does it look to the person doing the project?</h3>
+        <div class="slide">
+        <div>For each project, the user does the project and clicks the button to request an evaluation</div>
+            <img src="../requestor.png">
+        </div>
+    </section>
+    <section class="slide">
+        <h2>CS Project Evaluations</h2>
+        <h3>How does it look to the evaluator?</h3>
+        <div class="slide">
+            <div>There's a different set of objectives for each project. The user selects pass or fail and enters overall comments.</div>
+            <img src="../evaluator.png">
+        </div>
+    </section>
+    <section class="slide">
+        <h2>CS Project Evaluations</h2>
+        <h3>What was working:</h3>
+        <ul>
+            <li class="slide">No major problems or bugs</li>
+            <li class="slide">People were requesting evaluations, over 1,000 requests / day!</li>
+            <li class="slide">The quality of evaluations were very good!</li>
+            <li class="slide">People seemed to be enjoying both performing and receiving evalutions</li>
+        </ul>
+    </section>
+    <section class="slide">
+      <h2>CS Project Evaluations</h2>
+      <h3>What we had to work at:</h3>
+          <div class="slide">Not enough supply of evaluations for the demand of the requests!<br>
+          <div><img src="../evals-vs-requests-first-days.png"></div>
+          </div>
+    </section>
+    <section class="slide">
+      <h2>CS Project Evaluations</h2>
+      <h3>How we fixed it:</h3>
+          <div>Lowered bar for performing evaluations. Added suggestions for performing evaluations yourself at key places.<br>
+          <div><img src="../evals-vs-requests.png"></div>
+          </div>
+    </section>
+
+    <section class="slide">
+        <h2>CS Project Evaluations</h2>
+        <h3>How many projects are evaluated today?</h3>
+        <div class="slide">
+            Over 99%, people wait about 1-2 days for evaluations on average. This is expected to improve even more.
+            <img src="../evaluated-vs-not.png">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>CS Project Evaluations</h2>
+        <h3>How many people pass evaluation?</h3>
+        <div class="slide"><img src="../pass-vs-fail.png"></div>
+    </section>
+
+    <section class="slide">
+        <h2>CS Project Evaluations</h2>
+        <h3>What's the distribution of how many evaluations each person does?</h3>
+        <div class="slide">
+            <ul>
+                <li>Over 4000 evaluators</li>
+                <li>Over 2000 of them do between 1-2 evaluations</li>
+                <li>There are about 100 people who have done more than 60 evaluations</li>
+            <img src="../num-evals-hist.png"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Thank You!</h2>
+        <br> <br> <br> <br>
+        <div style="font-size: 60px">We're holding a discussion this Thursday at 12:30pm to talk about peer review at KA and for further questions.</div>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>

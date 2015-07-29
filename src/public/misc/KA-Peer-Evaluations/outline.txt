@@ -1,0 +1,24 @@
+Peer review at KA and hold it next Thursday
+
+Key stats:
+- Launched over 30 days ago
+- Over 35,000 evaluation requests
+- Over 4,000 unique reviewers
+- Most people do 1-2 evaluations, but we have new evaluators all the time.
+- 66% of evaluations are successful evaluations
+- People are waiting about 2 days on average for a review, but because of the way we sort some are waiting 5 days. These numbers are expected to imrpove.
+
+Who can evaluate:
+- We initial set the bar very high, you had to complete the entire Intro to JS course to evaluate.
+This lead to a massive amount of evaluation requests and not a lto of people to do them.
+We since changed it to the user only has to complete a single challenge.
+
+Quality of evalutions:
+- We haven't seen a major problem in the quality of evaluations when we dropped the bar for who can evaluate.
+
+
+The major battle has been making sure we have enough evaluators.  Only 20% of evals were being evaluated.
+We added a lot of things at key points in the work flow to continually bring in new evaluators over time.
+For example after you request an evaluation, it asks you to try your own.
+After you receive an ealuation on yoru project, it asks you as well.
+After you perform an evaluation, it asks you if you'd like to perform another.
