@@ -5,8 +5,8 @@ I mined the Stack Overflow (and related sites) data dumps to extract the social 
 These lists may be useful to stay up to date on technology, connect with your StackExchange peers, or even for technical recruiters.
 
 <div style="margin-left:20px"><a name="social-networks">
-</a><p><a name="social-networks"><strong>StackOverflow</strong><br>
-- </a><a href="/stackexchange-twitter/stackoverflow/">Twitter</a> &nbsp;&nbsp; - <a href="/stackexchange-linkedin/stackoverflow/">LinkedIn</a> &nbsp;&nbsp; - <a href="/stackexchange-facebook/stackoverflow/">Facebook</a></p>
+</a><p><strong>StackOverflow</strong><br>
+- <a href="/stackexchange-twitter/stackoverflow/">Twitter</a> &nbsp;&nbsp; - <a href="/stackexchange-linkedin/stackoverflow/">LinkedIn</a> &nbsp;&nbsp; - <a href="/stackexchange-facebook/stackoverflow/">Facebook</a></p>
 <p><strong>ServerFault</strong><br>
 - <a href="/stackexchange-twitter/serverfault/">Twitter</a> &nbsp;&nbsp; - <a href="/stackexchange-linkedin/serverfault/">LinkedIn</a> &nbsp;&nbsp; - <a href="/stackexchange-facebook/serverfault/">Facebook</a><br></p>
 <p><strong>SuperUser</strong><br>
