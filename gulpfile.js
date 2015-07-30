@@ -28,6 +28,9 @@ const SERVER_FILES = [
   SRC_ROOT + 'server.js',
   SRC_ROOT + 'redirects.js',
   SRC_ROOT + 'blogPostManifest.js',
+  SRC_ROOT + 'cache.js',
+  SRC_ROOT + 'marked.js',
+  SRC_ROOT + 'helpers.js',
 ];
 
 const COPY_WEB_APP_FILES = [
