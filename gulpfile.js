@@ -24,6 +24,11 @@ const DIST_ROOT_PUBLIC_JS = './dist/public/js';
 const DIST_EXT = './dist/public/js/ext/';
 const DIST_CSS_ROOT = './dist/public/css';
 const TEST_ROOT = './test/';
+const SERVER_FILES = [
+  SRC_ROOT + 'server.js',
+  SRC_ROOT + 'redirects.js',
+  SRC_ROOT + 'blogPostManifest.js',
+];
 
 const COPY_WEB_APP_FILES = [
   SRC_ROOT_PUBLIC + '**/*',
@@ -60,11 +65,7 @@ gulp.task('start-server', function () {
  * Runs linters on all javascript files found in the src dir.
  */
 gulp.task('lint-node', function() {
-  return gulp.src([
-      SRC_ROOT + 'server.js',
-      SRC_ROOT + 'redirects.js',
-      SRC_ROOT + 'blogPostManifest.js',
-    ])
+  return gulp.src(SERVER_FILES)
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(gutil.noop());
@@ -124,13 +125,8 @@ gulp.task('copy-web-app', function() {
  * Converts javascript to es5. This allows us to use harmony classes and modules.
  */
 gulp.task('babel-node', function() {
-  var files = [
-    SRC_ROOT + 'server.js',
-    SRC_ROOT + 'redirects.js',
-    SRC_ROOT + 'blogPostManifest.js',
-  ];
   try {
-    return gulp.src(files)
+    return gulp.src(SERVER_FILES)
       .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.init())
       .pipe(babel().on('error', function(e) {
         this.emit('end');
@@ -154,11 +150,7 @@ gulp.task('build', function(cb) {
  * Watch for changes on the file system, and rebuild if so.
  */
 gulp.task('watch', function() {
-  gulp.watch([
-    SRC_ROOT + 'server.js',
-    SRC_ROOT + 'redirects.js',
-    SRC_ROOT + 'blogPostManifest.js',
-  ], ['lint-node', 'babel-node']);
+  gulp.watch(SERVER_FILES, ['lint-node', 'babel-node']);
   gulp.watch([
     SRC_ROOT_PUBLIC_JS + '**/*',
   ], ['lint-js', 'bundle-js']);
