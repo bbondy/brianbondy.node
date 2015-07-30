@@ -4,7 +4,7 @@ let Hapi = require('hapi');
 var Good = require('good');
 var fs = require('fs');
 var _ = require('underscore');
-var blogPosts, blogPostsByYear, blogPostsByTag;
+var blogPosts, blogPostsByYear, blogPostsByTag, rssByTag;
 var tags = {};
 var RSS = require('rss');
 let feed = '';
@@ -39,6 +39,27 @@ function slicePostsForPage(posts, page) {
   return posts.slice(beginPostIndex(page), endPostIndex(page));
 }
 
+function feedItemFromBlogPost(blogPost) {
+  return {
+    title: blogPost.title,
+    description: marked(blogPost.body),
+    guid: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
+    categories: blogPost.tags,
+    author: 'Brian R. Bondy',
+    date: blogPost.created,
+  };
+}
+
+function newFeedFromTag(tag) {
+  return new RSS({
+    title: `Brian R. Bondy\'s feed for tag ${tag}`,
+    description: `Blog posts tagged ${tag} by Brian R. Bondy`,
+    'feed_url': `http://www.brianbondy.com/feeds/rss/${tag}`,
+    'site_url': `http://www.brianbondy.com/blog/tagged/${tag}`,
+    'image_url': 'http://www.brianbondy.com/img/logo.png',
+  });
+}
+
 function reloadData() {
   feed = new RSS({
     title: 'Brian R. Bondy\'s Feed',
@@ -60,19 +81,21 @@ function reloadData() {
   blogPostsByYear = _(blogPosts).groupBy(blogPost =>
     blogPost.created.getFullYear());
   blogPostsByTag = {};
+  rssByTag = {};
   _(blogPosts).each(blogPost => {
-    feed.item({
-      title: blogPost.title,
-      description: marked(blogPost.body),
-      guid: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
-      categories: blogPost.tags,
-      author: 'Brian R. Bondy',
-      date: blogPost.created,
-    });
+    let rssItem = feedItemFromBlogPost(blogPost);
+    feed.item(rssItem);
     _(blogPost.tags).each(tag => {
+      // Get tags count
       tags[tag] = (tags[tag] || 0) + 1;
+
+      // Get list of blog posts by tag
       blogPostsByTag[tag] = blogPostsByTag[tag] || [];
       blogPostsByTag[tag].push(blogPost);
+
+      // Get RSS by tag
+      rssByTag[tag] = rssByTag[tag] || newFeedFromTag(tag);
+      rssByTag[tag].item(rssItem);
     });
   });
 
@@ -129,6 +152,15 @@ server.route({
   path: '/feeds/rss',
   handler: function (request, reply) {
     reply(feed.xml({indent: true})).type('application/rss+xml');
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/feeds/rss/{tag}',
+  handler: function (request, reply) {
+    var feedByTag = rssByTag[request.params.tag] || newFeedFromTag(request.params.tag);
+    reply(feedByTag.xml({indent: true})).type('application/rss+xml');
   }
 });
 
