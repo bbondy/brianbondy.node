@@ -6,6 +6,7 @@ var _ = require('underscore');
 import {setupRedirects} from './redirects.js';
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
+import {addComment, getComments} from './datastore.js';
 
 reloadData();
 
@@ -89,6 +90,26 @@ server.route({
   handler: function (request, reply) {
     let posts = blogPostsByTag[request.params.tag] || [];
     reply(slicePostsForPage(posts, request.query.page)).code(200);
+  }
+});
+
+server.route({
+  method: 'POST',
+  path: '/api/blog/{id}/comments',
+  handler: function (request, reply) {
+    addComment(request.query.id, request.payload)
+      .then(() => reply().code(200))
+      .catch(() => reply('Error posting comment to Redis').code(500));
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/api/blog/{id}/comments',
+  handler: function (request, reply) {
+    getComments(request.query.id)
+      .then(() => reply().code(200))
+      .catch(() => reply('Error obtaining comments from Redis').code(500));
   }
 });
 

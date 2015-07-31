@@ -31,6 +31,7 @@ const SERVER_FILES = [
   SRC_ROOT + 'cache.js',
   SRC_ROOT + 'marked.js',
   SRC_ROOT + 'helpers.js',
+  SRC_ROOT + 'datastore.js',
 ];
 
 const COPY_WEB_APP_FILES = [
