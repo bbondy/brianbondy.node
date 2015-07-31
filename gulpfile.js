@@ -20,7 +20,7 @@ const SRC_ROOT_PUBLIC_LESS = './src/public/less/';
 const SRC_ROOT_PUBLIC_JS = './src/public/js/';
 const DIST_ROOT = './dist/';
 const DIST_ROOT_PUBLIC = './dist/public';
-const DIST_ROOT_PUBLIC_JS = './dist/public/js';
+const DIST_ROOT_PUBLIC_JS = './dist/public/js/';
 const DIST_EXT = './dist/public/js/ext/';
 const DIST_CSS_ROOT = './dist/public/css';
 const TEST_ROOT = './test/';
@@ -85,6 +85,7 @@ gulp.task('lint-js', function() {
       SRC_ROOT + 'public/js/**/*.js',
       TEST_ROOT + '**/*.js',
       '!' + SRC_ROOT + 'js/ext/*.js',
+      '!' + SRC_ROOT + 'public/js/analytics.js',
     ])
     .pipe(eslint())
     .pipe(eslint.format())
@@ -126,6 +127,14 @@ gulp.task('copy-web-app', function() {
 });
 
 /**
+ * Copy all non-js directory app source/assets/components.
+ */
+gulp.task('copy-analytics', function() {
+  return gulp.src([SRC_ROOT_PUBLIC_JS + 'analytics.js'])
+    .pipe(gulp.dest(DIST_ROOT_PUBLIC_JS));
+});
+
+/**
  * Converts javascript to es5. This allows us to use harmony classes and modules.
  */
 gulp.task('babel-node', function() {
@@ -147,7 +156,7 @@ gulp.task('babel-node', function() {
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['copy-web-app', 'babel-node', 'bundle-js', 'lint-node', 'lint-js', 'less'], cb);
+  runSequence(['copy-web-app', 'copy-analytics', 'babel-node', 'bundle-js', 'lint-node', 'lint-js', 'less'], cb);
 });
 
 /**
