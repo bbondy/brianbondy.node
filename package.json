@@ -13,6 +13,7 @@
     "marked": "^0.3.3",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
+    "redis": "^0.12.1",
     "rss": "^1.1.1",
     "underscore": "^1.8.3"
   },
