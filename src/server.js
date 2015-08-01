@@ -6,8 +6,9 @@ var _ = require('underscore');
 import {setupRedirects} from './redirects.js';
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
-import {addComment, getComments} from './datastore.js';
+import {initRedis, addComment, getComments} from './datastore.js';
 
+initRedis(process.env.REDIS_PORT);
 reloadData();
 
 let server = new Hapi.Server({
