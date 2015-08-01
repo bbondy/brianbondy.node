@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "test": "jest dist"
+    "test": "(redis-server src/redis-tests.conf&) && jest dist"
   },
   "repository": {
     "type": "git",
