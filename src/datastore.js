@@ -8,8 +8,12 @@ export function initRedis(port = 10226) {
   });
 }
 
-export function uninitRedis() {
-  redisClient.quit();
+export function uninitRedis(shutdown = false) {
+  if (shutdown) {
+    redisClient.shutdown();
+  } else {
+    redisClient.quit();
+  }
 }
 
 /**
