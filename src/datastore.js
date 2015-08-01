@@ -1,11 +1,15 @@
 let redis = require('redis');
 
 let redisClient;
-export function init(port) {
+export function initRedis(port = 10226) {
   redisClient = redis.createClient(port);
   redisClient.on('error', function (err) {
     console.error('DB: Error ' + err);
   });
+}
+
+export function uninitRedis() {
+  redisClient.quit();
 }
 
 /**
@@ -33,7 +37,7 @@ function getListElements(key) {
         reject(err);
         return;
       }
-      resolve(replies.map(result => JSON.parse(result.toString())));
+      resolve(replies.map(result => JSON.parse(result)));
     });
   });
 }
@@ -49,7 +53,6 @@ function getListElements(key) {
  *   - datePosted
  */
 export function addComment(blogPostId, comment) {
-  comment.datePosted = new Date().toISOString();
   return pushToList(`comments:${blogPostId}`, comment);
 }
 
