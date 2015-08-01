@@ -12,6 +12,7 @@
     // Setting flase disallows writing
     "marionetteScriptFinished": false,
     "marionette": false,
+    "jest": false,
     "test": false,
     "setup": false
   },
