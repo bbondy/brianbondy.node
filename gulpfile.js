@@ -9,6 +9,7 @@ var less = require('gulp-less');
 var runSequence = require('run-sequence');
 var nodemon = require('nodemon');
 var fs = require('fs');
+var shell = require('gulp-shell');
 
 var babelify = require('babelify');
 var browserify = require('browserify');
@@ -55,6 +56,12 @@ gulp.task('bundle-js', function() {
   .bundle()
   .pipe(source('bundle.js'))
   .pipe(gulp.dest('./dist/public/js'));
+});
+
+gulp.task('start-redis', function() {
+  return gulp.src('')
+    .pipe(shell([
+      'redis-server src/redis.conf']));
 });
 
 
