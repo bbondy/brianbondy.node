@@ -52,7 +52,7 @@ function getListElements(key) {
  * Comments typically contain:
  *   - name
  *   - email
- *   - homepage
+ *   - website
  *   - body
  *   - datePosted
  */
