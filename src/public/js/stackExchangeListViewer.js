@@ -1,5 +1,5 @@
 import React from 'react';
-import {fetchHtml} from './fetch.js';
+import {fetchHtml} from './client.js';
 import RemoteViewer from './remoteViewer.js';
 
 export default class StackExchangeListViewer extends React.Component {

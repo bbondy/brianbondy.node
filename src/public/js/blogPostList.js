@@ -1,5 +1,5 @@
 import React from 'react';
-import {fetchBlogPosts} from './fetch.js';
+import {fetchBlogPosts} from './client.js';
 import BlogPost from './blogPost.js';
 import NavigationButton from './navigationButton.js';
 

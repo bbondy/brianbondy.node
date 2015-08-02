@@ -1,5 +1,5 @@
 import React from 'react';
-import {fetchMarkdown} from './fetch.js';
+import {fetchMarkdown} from './client.js';
 import marked from './marked';
 
 export default class About extends React.Component {

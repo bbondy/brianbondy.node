@@ -2,7 +2,7 @@ import React from 'react';
 import * as Immutable from 'immutable';
 import Tag from './tag.js';
 import YearTag from './yearTag.js';
-import {fetchTags} from './fetch.js';
+import {fetchTags} from './client.js';
 
 export default class BlogFilters extends React.Component {
   constructor() {

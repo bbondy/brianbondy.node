@@ -1,6 +1,6 @@
 import React from 'react';
 import Tag from './tag.js';
-import {fetchBlogPost} from './fetch.js';
+import {fetchBlogPost} from './client.js';
 
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
