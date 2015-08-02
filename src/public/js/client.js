@@ -1,18 +1,30 @@
-let getByType = (type, url) => {
+let getByType = (type, url, requestContentType, postData) => {
   return new Promise((resolve, reject) => {
     var xhr = new XMLHttpRequest();
     xhr.open('get', url, true);
     xhr.responseType = type;
+    if (requestContentType) {
+      xhr.setRequestHeader('Content-Type', requestContentType);
+    }
     xhr.onload = () => {
-      var status = xhr.status;
-      resolve(xhr.response, status);
+      // var status = xhr.status;
+      resolve(xhr.response);
     };
     xhr.onerror = e => reject(e);
-    xhr.send();
+    if (postData &&
+        requestContentType === 'application/json' &&
+        typeof {} === 'object') {
+      xhr.send(JSON.stringify(postData));
+    } else if (postData) {
+      xhr.send(postData);
+    } else {
+      xhr.send();
+    }
   });
 };
 
 let getJSON = getByType.bind(null, 'json');
+let postJSON = getByType.bind(null, 'json', 'application/json');
 let getText = getByType.bind(null, 'text');
 let getHtml = getText;
 
@@ -60,3 +72,16 @@ export function fetchTags() {
   return getJSON('/api/tags');
 }
 
+/**
+ * Fetch a list of comments
+ */
+export function fetchComments(blogPostId) {
+  return getJSON(`/api/blog/${blogPostId}/comments`);
+}
+
+/**
+ * Post a comment
+ */
+export function postComment(blogPostId, comment) {
+  return postJSON(`/api/blog/${blogPostId}/comments`, comment);
+}
