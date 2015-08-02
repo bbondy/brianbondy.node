@@ -195,3 +195,26 @@ h2 {
 .current {
   border-bottom: 1px solid @linkColor;
 }
+
+input, textarea {
+  background-color: @buttonBackground;
+  border: 1px solid @buttonOutlineColor;
+  color: @buttonText;
+  display: block;
+  margin: 5px 0 15px 0;
+  padding: 5px;
+  width: 200px;
+  &[type="submit"], &[type="button"] {
+    font-size: 17px;
+    &:hover {
+      background-color: @buttonHoverBackground;
+      border-bottom: 1px solid @buttonHoverBackground;
+      color: white;
+    }
+  }
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+}

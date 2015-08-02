@@ -58,7 +58,14 @@ export default class BlogPost extends React.Component {
       { !this.state.comments ? null :
       <div className='commentsContainer'>
         <h2>Comments</h2>
-        <div className='commentsDisabled'>New comments disabled</div>
+        <input type='button' value='Add a new comment' />
+        <form className='commentForm'>
+          <input ref='name' type='text' placeholder='Name' />
+          <input ref='email' type='email' placeholder='Email (Optional)' />
+          <input ref='homepage' type='url' placeholder='Website (Optional)' />
+          <textarea ref='body' placeholder='Your comment (markdown, but no tags)' />
+          <input type='submit' value='Submit' />
+        </form>
         <div className='archivedCommentBlock' dangerouslySetInnerHTML={{__html: this.state.comments}}/>
       </div>
       }
