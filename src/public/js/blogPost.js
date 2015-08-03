@@ -1,6 +1,6 @@
 import React from 'react';
 import Tag from './tag.js';
-import {fetchBlogPost} from './client.js';
+import {fetchBlogPost, fetchComments, addComment} from './client.js';
 
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
@@ -24,6 +24,11 @@ export default class BlogPost extends React.Component {
           tags: blogPost.tags,
           comments: blogPost.comments,
         });
+        return blogPost;
+      })
+      .then((blogPost) => fetchComments(blogPost.id))
+      .then((comments) => {
+        console.log(comments);
       });
     } else {
       this.state = {
@@ -34,6 +39,9 @@ export default class BlogPost extends React.Component {
         tags: this.props.tags,
         comments: this.props.comments,
       };
+      fetchComments(this.props.id).then((comments) => {
+        console.log(comments);
+      });
     }
   }
 
