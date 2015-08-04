@@ -109,7 +109,7 @@ server.route({
   path: '/api/blog/{id}/comments',
   handler: function (request, reply) {
     getComments(request.query.id)
-      .then(() => reply().code(200))
+      .then((comments) => reply(comments).code(200))
       .catch(() => reply('Error obtaining comments from Redis').code(500));
   }
 });
