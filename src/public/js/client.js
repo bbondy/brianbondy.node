@@ -1,7 +1,7 @@
-let getByType = (type, url, requestContentType, postData) => {
+let getByType = (method, type, requestContentType, postData, url) => {
   return new Promise((resolve, reject) => {
     var xhr = new XMLHttpRequest();
-    xhr.open('get', url, true);
+    xhr.open(method, url, true);
     xhr.responseType = type;
     if (requestContentType) {
       xhr.setRequestHeader('Content-Type', requestContentType);
@@ -13,7 +13,7 @@ let getByType = (type, url, requestContentType, postData) => {
     xhr.onerror = e => reject(e);
     if (postData &&
         requestContentType === 'application/json' &&
-        typeof {} === 'object') {
+        typeof postData === 'object') {
       xhr.send(JSON.stringify(postData));
     } else if (postData) {
       xhr.send(postData);
@@ -23,9 +23,9 @@ let getByType = (type, url, requestContentType, postData) => {
   });
 };
 
-let getJSON = getByType.bind(null, 'json');
-let postJSON = getByType.bind(null, 'json', 'application/json');
-let getText = getByType.bind(null, 'text');
+let getJSON = getByType.bind(null, 'GET', 'json', undefined, undefined);
+let postJSON = getByType.bind(null, 'POST', 'json', 'application/json');
+let getText = getByType.bind(null, 'GET', 'text', undefined, undefined);
 let getHtml = getText;
 
 /**
@@ -83,5 +83,5 @@ export function fetchComments(blogPostId) {
  * Post a comment
  */
 export function postComment(blogPostId, comment) {
-  return postJSON(`/api/blog/${blogPostId}/comments`, comment);
+  return postJSON(comment, `/api/blog/${blogPostId}/comments`);
 }
