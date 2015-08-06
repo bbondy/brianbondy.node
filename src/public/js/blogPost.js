@@ -1,6 +1,7 @@
 import React from 'react';
 import Tag from './tag.js';
 import {fetchBlogPost, fetchComments, postComment} from './client.js';
+import {cx} from './class-set.js';
 
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
@@ -9,7 +10,9 @@ var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
 export default class BlogPost extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      showAddCommentForm: false,
+    };
   }
 
   componentWillMount() {
@@ -69,6 +72,12 @@ export default class BlogPost extends React.Component {
     });
   }
 
+  onClickAddComment() {
+    this.setState({
+      showAddCommentForm: true,
+    });
+  }
+
   render() {
     if (!this.state.title) {
       return null;
@@ -82,8 +91,14 @@ export default class BlogPost extends React.Component {
       { !this.state.comments ? null :
       <div className='commentsContainer'>
         <h2>Comments</h2>
-        <input type='button' value='Add a new comment' />
-        <form className='commentForm' onSubmit={this.onPostComment.bind(this)}>
+        <input className={cx({
+          hideAddCommentForm: this.state.showAddCommentForm,
+        })} type='button' value='Add a new comment' onClick={this.onClickAddComment.bind(this)} />
+        <form className={cx({
+            addCommentForm: true,
+            hideAddCommentForm: !this.state.showAddCommentForm,
+          })} onSubmit={this.onPostComment.bind(this)}>
+          <h2>Add a new comment</h2>
           <input ref='name' type='text' placeholder='Name' />
           <input ref='email' type='email' placeholder='Email (Optional)' />
           <input ref='webpage' type='url' placeholder='Website (Optional)' />
