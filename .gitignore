@@ -31,3 +31,6 @@ node_modules
 
 # Ignore dist
 dist
+
+# Secrets file
+secrets.js

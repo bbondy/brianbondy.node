@@ -1,9 +1,9 @@
 require('babel/polyfill');
 let Path = require('path');
 let Hapi = require('hapi');
-var Good = require('good');
 var _ = require('underscore');
 import {setupRedirects} from './redirects.js';
+import {cookiePassword} from './secrets.js';
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments} from './datastore.js';
@@ -155,8 +155,9 @@ server.route({
 });
 
 
-server.register({
-  register: Good,
+server.register([{
+  // good is a process monitor that listens for one or more of the below 'event types'
+  register: require('Good'),
   options: {
     reporters: [{
       reporter: require('good-console'),
@@ -166,7 +167,13 @@ server.register({
       }
     }]
   }
-}, function (err) {
+}, {
+  // A hapi session plugin and cookie jar
+  register: require('Yar'),
+  options: {
+    password: cookiePassword,
+  },
+}], function (err) {
   if (err) {
     throw err; // something bad happened loading the plugin
   }

@@ -27,6 +27,7 @@ const DIST_CSS_ROOT = './dist/public/css';
 const TEST_ROOT = './test/';
 const SERVER_FILES = [
   SRC_ROOT + 'server.js',
+  SRC_ROOT + 'secrets.js',
   SRC_ROOT + 'redirects.js',
   SRC_ROOT + 'blogPostManifest.js',
   SRC_ROOT + 'cache.js',
