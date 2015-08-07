@@ -8,7 +8,11 @@ let getByType = (method, type, requestContentType, postData, url) => {
     }
     xhr.onload = () => {
       // var status = xhr.status;
-      resolve(xhr.response);
+      if (xhr.status === 200) {
+        resolve(xhr.response);
+      } else {
+        reject(xhr.status);
+      }
     };
     xhr.onerror = e => reject(e);
     if (postData &&
@@ -77,6 +81,14 @@ export function fetchTags() {
  */
 export function fetchComments(blogPostId) {
   return getJSON(`/api/blog/${blogPostId}/comments`);
+}
+
+/**
+ * Fetches a captcha image and sets an encrypted cookie
+ * which we'll pass back.
+ */
+export function fetchCaptcha(blogPostId) {
+  return getText(`/api/captcha/${blogPostId}`);
 }
 
 /**

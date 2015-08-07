@@ -1,6 +1,6 @@
 import React from 'react';
 import Tag from './tag.js';
-import {fetchBlogPost, fetchComments, postComment} from './client.js';
+import {fetchBlogPost, fetchComments, postComment, fetchCaptcha} from './client.js';
 import {cx} from './class-set.js';
 
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
@@ -63,16 +63,38 @@ export default class BlogPost extends React.Component {
       email: React.findDOMNode(this.refs.email).value,
       webpage: React.findDOMNode(this.refs.webpage).value,
       body: React.findDOMNode(this.refs.body).value,
+      captcha: React.findDOMNode(this.refs.captcha).value,
     }).then(() => {
       React.findDOMNode(this.refs.name).value = '';
       React.findDOMNode(this.refs.email).value = '';
       React.findDOMNode(this.refs.webpage).value = '';
       React.findDOMNode(this.refs.body).value = '';
-    }).catch(() => {
+      React.findDOMNode(this.refs.captcha).value = '';
+      this.refreshCaptcha();
+      alert('Thank you, your comment was posted!');
+    }).catch((statusCode) => {
+      if (statusCode === 405) {
+        // Captcha invalid show a captcha error
+        React.findDOMNode(this.refs.captcha).value = '';
+        this.refreshCaptcha();
+        alert('The captcha entered does not match what was expected! Please try again!');
+      } else {
+        // Some kind of other error, show a generic posting error
+        React.findDOMNode(this.refs.captcha).value = '';
+        this.refreshCaptcha();
+        alert('There was an error posting the comment!');
+      }
     });
   }
 
+  refreshCaptcha() {
+    fetchCaptcha(this.state.id).then(captchaDataUrl => this.setState({
+      captchaDataUrl,
+    }));
+  }
+
   onClickAddComment() {
+    this.refreshCaptcha();
     this.setState({
       showAddCommentForm: true,
     });
@@ -103,6 +125,10 @@ export default class BlogPost extends React.Component {
           <input ref='email' type='email' placeholder='Email (Optional)' />
           <input ref='webpage' type='url' placeholder='Website (Optional)' />
           <textarea ref='body' placeholder='Your comment (markdown, but no tags)' />
+          <input className='captchaInput' ref='captcha' type='text' placeholder='Enter the text to the right' />
+          { !this.state.captchaDataUrl ? null :
+          <img className='captchaImage' src={this.state.captchaDataUrl}/>
+          }
           <input type='submit' value='Submit' />
         </form>
         <div className='archivedCommentBlock' dangerouslySetInnerHTML={{__html: this.state.comments}}/>

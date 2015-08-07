@@ -212,6 +212,12 @@ input, textarea {
       color: white;
     }
   }
+
+  &:not([type="submit"]) {
+    &:not([type="button"]) {
+      color: black;
+    }
+  }
 }
 
 textarea {
@@ -229,4 +235,15 @@ textarea {
       display: none;
     }
   }
+}
+
+.captchaImage {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.captchaInput {
+  display: inline-block;
+  vertical-align: middle;
 }

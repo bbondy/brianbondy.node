@@ -109,8 +109,13 @@ server.route({
   method: 'POST',
   path: '/api/blog/{id}/comments',
   handler: function (request, reply) {
-    addComment(request.query.id, request.payload)
-      .then(() => reply().code(200))
+    if (request.payload.captcha.toLowerCase() !== request.session.get(`${request.params.id}-captcha`, true).toLowerCase()) {
+      reply('wrong captcha!').code(405);
+      return;
+    }
+    delete request.captcha;
+    addComment(request.params.id, request.payload)
+      .then(() => reply('').code(200))
       .catch(() => reply('Error posting comment to Redis').code(500));
   }
 });
@@ -119,7 +124,7 @@ server.route({
   method: 'GET',
   path: '/api/blog/{id}/comments',
   handler: function (request, reply) {
-    getComments(request.query.id)
+    getComments(request.params.id)
       .then((comments) => reply(comments).code(200))
       .catch(() => reply('Error obtaining comments from Redis').code(500));
   }
@@ -127,12 +132,13 @@ server.route({
 
 server.route({
   method: 'GET',
-  path: '/api/captcha',
+  path: '/api/captcha/{id}',
   handler: function (request, reply) {
-    reply(newCaptcha()).code(200);
+    let {text, dataUrl} = newCaptcha();
+    request.session.set(`${request.params.id}-captcha`, text);
+    reply(dataUrl).code(200);
   }
 });
-
 
 server.route({
   method: 'GET',
@@ -193,6 +199,8 @@ server.register([{
   options: {
     cookieOptions: {
       password: cookiePassword,
+      // only used for captcha so this is ok
+      isSecure: false,
     },
   },
 }], function (err) {
