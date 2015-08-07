@@ -7,7 +7,8 @@ The main goal of this server was to be as low touch as possible.  Blog posts are
 
 ## Setup
 
-    npm install
+- Install Cairo on your system, it is used for captcha, on OSX: `brew install cairo`
+- Run `npm install`
 
 ## Running
 

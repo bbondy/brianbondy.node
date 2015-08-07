@@ -7,6 +7,7 @@ import {cookiePassword} from './secrets.js';
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments} from './datastore.js';
+import {newCaptcha} from './captcha.js';
 
 initRedis(process.env.REDIS_PORT);
 reloadData();
@@ -70,6 +71,16 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/captcha/test',
+  handler: function (request, reply) {
+    let {text, dataUrl} = newCaptcha();
+    reply(`<img src='${dataUrl}'/><br>Text: ${text}`).type('text/html').code(200);
+  }
+});
+
+
+server.route({
+  method: 'GET',
   path: '/api/tags',
   handler: function (request, reply) {
     reply(tags).code(200);
@@ -113,6 +124,15 @@ server.route({
       .catch(() => reply('Error obtaining comments from Redis').code(500));
   }
 });
+
+server.route({
+  method: 'GET',
+  path: '/api/captcha',
+  handler: function (request, reply) {
+    reply(newCaptcha()).code(200);
+  }
+});
+
 
 server.route({
   method: 'GET',
@@ -171,7 +191,9 @@ server.register([{
   // A hapi session plugin and cookie jar
   register: require('Yar'),
   options: {
-    password: cookiePassword,
+    cookieOptions: {
+      password: cookiePassword,
+    },
   },
 }], function (err) {
   if (err) {
