@@ -31,6 +31,7 @@ const SERVER_FILES = [
   SRC_ROOT + 'redirects.js',
   SRC_ROOT + 'blogPostManifest.js',
   SRC_ROOT + 'captcha.js',
+  SRC_ROOT + 'sendEmail.js',
   SRC_ROOT + 'cache.js',
   SRC_ROOT + 'marked.js',
   SRC_ROOT + 'helpers.js',

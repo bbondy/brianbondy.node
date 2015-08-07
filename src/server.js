@@ -2,12 +2,14 @@ require('babel/polyfill');
 let Path = require('path');
 let Hapi = require('hapi');
 var _ = require('underscore');
+var striptags = require('striptags');
 import {setupRedirects} from './redirects.js';
 import {cookiePassword} from './secrets.js';
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments} from './datastore.js';
 import {newCaptcha} from './captcha.js';
+import {sendAdminEmail} from './sendEmail.js';
 
 initRedis(process.env.REDIS_PORT);
 reloadData();
@@ -109,13 +111,24 @@ server.route({
   method: 'POST',
   path: '/api/blog/{id}/comments',
   handler: function (request, reply) {
-    if (request.payload.captcha.toLowerCase() !== request.session.get(`${request.params.id}-captcha`, true).toLowerCase()) {
+    let id = request.params.id;
+    if (request.payload.captcha.toLowerCase() !== request.session.get(`${id}-captcha`, true).toLowerCase()) {
       reply('wrong captcha!').code(405);
       return;
     }
     delete request.captcha;
-    addComment(request.params.id, request.payload)
+
+    addComment(id, request.payload)
       .then(() => reply('').code(200))
+      .then(() => {
+        let html = `<p>A new comment was added to blog post id: <a href='http://www.brianbondy.com/blog/${id}'>${id}</a></p>.\n\n
+        <p><strong>name</strong>: ${request.payload.name}</p>\n\n
+        <p><strong>email</strong>: ${request.payload.email}</p>\n\n
+        <p><strong>webpage</strong>: ${request.payload.webpage}</p>\n\n
+        <p><strong>body</strong>: ${request.payload.body}</p>\n\n
+        `;
+        sendAdminEmail(`New comment posted on blog id: ${id}`, striptags(html), html);
+      })
       .catch(() => reply('Error posting comment to Redis').code(500));
   }
 });
