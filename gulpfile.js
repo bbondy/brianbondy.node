@@ -14,6 +14,7 @@ var shell = require('gulp-shell');
 var babelify = require('babelify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var createPDF = require('./src/createPDF.js');
 
 const SRC_ROOT = './src/';
 const SRC_ROOT_PUBLIC = './src/public/';
@@ -67,6 +68,9 @@ gulp.task('start-redis', function() {
       'redis-server src/redis.conf']));
 });
 
+gulp.task('create-pdf', function(cb) {
+  createPDF('http://localhost:3000', cb);
+});
 
 gulp.task('start-server', function () {
   nodemon({
