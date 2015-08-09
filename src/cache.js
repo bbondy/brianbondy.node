@@ -5,7 +5,7 @@ var _ = require('underscore');
 import marked from './marked.js';
 import {feedItemFromBlogPost, newFeedFromTag} from './helpers.js';
 
-export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, tags = {};
+export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags = {};
 
 export function reloadData() {
   feed = new RSS({
@@ -51,5 +51,7 @@ export function reloadData() {
   }).sort((x, y) => y.count - x.count);
   resumeHTML = '<html><head><link rel="stylesheet" type="text/css" href="/css/resume.css"></head><body>' +
     marked(fs.readFileSync(`${__dirname}/public/markdown/resume.markdown`, 'utf-8')) + '<body></html>';
+
+  resumePDF = fs.readFileSync(`${__dirname}/public/pdf/BrianRBondy_Resume.pdf`);
 }
 reloadData();

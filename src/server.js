@@ -5,7 +5,7 @@ var _ = require('underscore');
 var striptags = require('striptags');
 import {setupRedirects} from './redirects.js';
 import {cookiePassword} from './secrets.js';
-import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, tags} from './cache.js';
+import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments} from './datastore.js';
 import {newCaptcha} from './captcha.js';
@@ -61,6 +61,15 @@ server.route({
     reply(feed.xml({indent: true})).type('application/rss+xml');
   }
 });
+
+server.route({
+  method: 'GET',
+  path: '/resume/pdf',
+  handler: function (request, reply) {
+    reply(resumePDF).type('application/pdf');
+  }
+});
+
 
 server.route({
   method: 'GET',

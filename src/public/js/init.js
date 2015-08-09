@@ -8,6 +8,7 @@ import BlogPost from './blogPost.js';
 import BlogPostList from './blogPostList.js';
 import BlogFilters from './blogFilters.js';
 import Compression from './compression.js';
+import Resume from './resume.js';
 import NotFound from './notFound.js';
 import Math from './math.js';
 import RemoteViewer from './remoteViewer.js';
@@ -36,7 +37,7 @@ let routes =
     </Route>
 
     <Route name='projects' path='projects' handler={RemoteViewer}/>
-    <Route name='resume' path='resume' handler={RemoteViewer}/>
+    <Route name='resume' path='resume' handler={Resume}/>
     <Route name='other' path='other' handler={RemoteViewer}/>
     <Route name='about' path='about' handler={RemoteViewer}/>
     <Route name='contact' path='contact' handler={RemoteViewer}/>

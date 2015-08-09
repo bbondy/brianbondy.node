@@ -68,7 +68,7 @@ gulp.task('start-redis', function() {
       'redis-server src/redis.conf']));
 });
 
-gulp.task('create-pdf', function(cb) {
+gulp.task('create-resume-pdf', function(cb) {
   createPDF('http://localhost:3000', cb);
 });
 
