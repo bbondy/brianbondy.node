@@ -8,6 +8,14 @@ export function setupRedirects(server) {
     }
   });
 
+  server.route({
+    method: 'GET',
+    path: '/blog/id/{id}',
+    handler: function (request, reply) {
+      reply.redirect(`/blog/${request.params.id}`).permanent();
+    }
+  });
+
   // Note that I'm intentionally not using the stripTrailingSlash: true option because it
   // simply serves a second endpoint which is bad for PR juice.  301 is better.
   const maxDepth = 6;
