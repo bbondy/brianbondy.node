@@ -20,4 +20,11 @@ export function setupRedirects(server) {
     });
   }
 
+  server.route({
+    method: 'GET',
+    path: '/resume/pdf',
+    handler: function (request, reply) {
+      reply.redirect('/pdf/BrianRBondy_Resume.pdf');
+    }
+  });
 }

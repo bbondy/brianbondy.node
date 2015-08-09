@@ -5,7 +5,7 @@ var _ = require('underscore');
 var striptags = require('striptags');
 import {setupRedirects} from './redirects.js';
 import {cookiePassword} from './secrets.js';
-import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, tags} from './cache.js';
+import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments} from './datastore.js';
 import {newCaptcha} from './captcha.js';
@@ -80,6 +80,13 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/resume/html',
+  handler: function (request, reply) {
+    reply(resumeHTML).type('text/html').code(200);
+  }
+});
 
 server.route({
   method: 'GET',
