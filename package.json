@@ -12,6 +12,7 @@
     "immutable": "^3.7.4",
     "marked": "^0.3.3",
     "nodemailer": "0.7.1",
+    "phantom": "^0.7.2",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
     "redis": "^0.12.1",
