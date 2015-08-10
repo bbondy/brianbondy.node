@@ -167,11 +167,11 @@ export default class BlogPost extends React.Component {
             hideAddCommentForm: !this.state.showAddCommentForm,
           })} onSubmit={this.onPostComment.bind(this)}>
           <h2>Add a new comment</h2>
-          <input ref='name' type='text' placeholder='Name' />
+          <input ref='name' type='text' placeholder='Name' required />
           <input ref='email' type='email' placeholder='Email (Optional)' />
           <input ref='webpage' type='url' placeholder='Website (Optional)' />
-          <textarea ref='body' placeholder='Your comment (markdown, but no tags)' />
-          <input className='captchaInput' ref='captcha' type='text' placeholder='Enter the text to the right' />
+          <textarea ref='body' placeholder='Your comment (markdown, but no tags)' required />
+          <input className='captchaInput' ref='captcha' type='text' placeholder='Enter the text to the right' required />
           { !this.state.captchaDataUrl ? null :
           <img className='captchaImage' src={this.state.captchaDataUrl}/>
           }
