@@ -2,6 +2,7 @@ import React from 'react';
 import Tag from './tag.js';
 import {fetchBlogPost, fetchComments, postComment, fetchCaptcha} from './client.js';
 import {cx} from './class-set.js';
+import marked from './unsafe-marked.js';
 
 var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
@@ -27,8 +28,12 @@ class Comment extends React.Component {
   get gravatarHash() {
     return `http://www.gravatar.com/avatar/${this.props.comment.gravatarHash}?s=60`;
   }
+  get body() {
+    return this.props.comment.body.replace(/<(?:.|\n)*?>/gm, '');
+  }
   render() {
     let comment = this.props.comment;
+    console.log(marked(comment.body));
     return <div className='comment-item'>
       <div>
         <a href={comment.website} target='_blank'>
@@ -38,7 +43,7 @@ class Comment extends React.Component {
       <a rel='external nofollow' href={comment.website}>{comment.name}</a>
       <span> on </span><span className='datePosted'>{comment.datePosted}</span>
       <span> says: </span>
-      <p className='comment-text'>{comment.body}</p>
+      <p className='comment-text' dangerouslySetInnerHTML={{__html: marked(this.body)}}/>
     </div>;
   }
 }
