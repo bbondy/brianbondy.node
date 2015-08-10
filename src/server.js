@@ -2,6 +2,7 @@ require('babel/polyfill');
 let Path = require('path');
 let Hapi = require('hapi');
 var _ = require('underscore');
+var md5 = require('md5');
 var striptags = require('striptags');
 import {setupRedirects} from './redirects.js';
 import {cookiePassword} from './secrets.js';
@@ -155,7 +156,14 @@ server.route({
   path: '/api/blog/{id}/comments',
   handler: function (request, reply) {
     getComments(request.params.id)
-      .then((comments) => reply(comments).code(200))
+      .then((comments) => {
+        comments.forEach(comment => {
+          let email = comment.email.toLowerCase().trim();
+          comment.gravatarHash = md5(email);
+          delete comment.email;
+        });
+        reply(comments).code(200);
+      })
       .catch(() => reply('Error obtaining comments from Redis').code(500));
   }
 });

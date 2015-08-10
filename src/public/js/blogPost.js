@@ -24,12 +24,15 @@ class Comments extends React.Component {
 }
 
 class Comment extends React.Component {
+  get gravatarHash() {
+    return `http://www.gravatar.com/avatar/${this.props.comment.gravatarHash}?s=60`;
+  }
   render() {
     let comment = this.props.comment;
     return <div className='comment-item'>
       <div>
         <a href={comment.website} target='_blank'>
-          <img src='http://www.gravatar.com/avatar/2cbf8535cdb279570f785296274d304d?s=60' className='gravatar'/>
+          <img src={this.gravatarHash} className='gravatar'/>
         </a>
       </div>
       <a rel='external nofollow' href={comment.website}>{comment.name}</a>

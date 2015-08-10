@@ -11,6 +11,7 @@
     "highlight.js": "^8.6.0",
     "immutable": "^3.7.4",
     "marked": "^0.3.3",
+    "md5": "^2.0.0",
     "nodemailer": "0.7.1",
     "phantom": "^0.7.2",
     "react": "^0.13.3",
