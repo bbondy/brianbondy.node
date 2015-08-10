@@ -7,6 +7,39 @@ var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'
 ];
 
+class Comments extends React.Component {
+  render() {
+    if (!this.props.comments) {
+      return null;
+    }
+
+    return <div className='comments-container'>
+      <div className='comments-list'>
+      {
+        this.props.comments.map(comment => <Comment comment={comment}/>)
+      }
+      </div>
+    </div>;
+  }
+}
+
+class Comment extends React.Component {
+  render() {
+    let comment = this.props.comment;
+    return <div className='comment-item'>
+      <div>
+        <a href={comment.website} target='_blank'>
+          <img src='http://www.gravatar.com/avatar/2cbf8535cdb279570f785296274d304d?s=60' className='gravatar'/>
+        </a>
+      </div>
+      <a rel='external nofollow' href={comment.website}>{comment.name}</a>
+      <span> on </span><span className='datePosted'>{comment.datePosted}</span>
+      <span> says: </span>
+      <p className='comment-text'>{comment.body}</p>
+    </div>;
+  }
+}
+
 export default class BlogPost extends React.Component {
   constructor() {
     super();
@@ -25,12 +58,14 @@ export default class BlogPost extends React.Component {
           body: blogPost.body,
           created: new Date(blogPost.created),
           tags: blogPost.tags,
-          comments: blogPost.comments,
         });
         return blogPost;
       })
       .then((blogPost) => fetchComments(blogPost.id))
       .then((comments) => {
+        this.setState({
+          comments,
+        });
         console.log(comments);
       });
     } else {
@@ -40,10 +75,12 @@ export default class BlogPost extends React.Component {
         body: this.props.body,
         created: new Date(this.props.created),
         tags: this.props.tags,
-        comments: this.props.comments,
       };
       fetchComments(this.props.id).then((comments) => {
         console.log(comments);
+        this.setState({
+          comments,
+        });
       });
     }
   }
@@ -104,6 +141,7 @@ export default class BlogPost extends React.Component {
     if (!this.state.title) {
       return null;
     }
+    console.log(this.state.comments);
 
     return <div className='blogPost'>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
@@ -131,7 +169,7 @@ export default class BlogPost extends React.Component {
           }
           <input type='submit' value='Submit' />
         </form>
-        <div className='archivedCommentBlock' dangerouslySetInnerHTML={{__html: this.state.comments}}/>
+        <Comments comments={this.state.comments}/>
       </div>
       }
     </div>;

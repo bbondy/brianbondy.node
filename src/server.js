@@ -132,7 +132,8 @@ server.route({
       reply('wrong captcha!').code(405);
       return;
     }
-    delete request.captcha;
+    delete request.payload.captcha;
+    request.payload.datePosted = new Date().toISOString();
 
     addComment(id, request.payload)
       .then(() => reply('').code(200))
