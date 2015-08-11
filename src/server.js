@@ -136,12 +136,16 @@ server.route({
     delete request.payload.captcha;
     request.payload.datePosted = new Date().toISOString();
 
+    let email = request.payload.email.toLowerCase().trim();
+    request.payload.gravatarHash = md5(email);
+    delete request.payload.email;
+
     addComment(id, request.payload)
       .then(() => reply('').code(200))
       .then(() => {
         let html = `<p>A new comment was added to blog post id: <a href='http://www.brianbondy.com/blog/${id}'>${id}</a></p>.\n\n
         <p><strong>name</strong>: ${request.payload.name}</p>\n\n
-        <p><strong>email</strong>: ${request.payload.email}</p>\n\n
+        <p><strong>email</strong>: ${email}</p>\n\n
         <p><strong>webpage</strong>: ${request.payload.webpage}</p>\n\n
         <p><strong>body</strong>: ${request.payload.body}</p>\n\n
         `;
@@ -157,11 +161,6 @@ server.route({
   handler: function (request, reply) {
     getComments(request.params.id)
       .then((comments) => {
-        comments.forEach(comment => {
-          let email = comment.email.toLowerCase().trim();
-          comment.gravatarHash = md5(email);
-          delete comment.email;
-        });
         comments = comments.sort((comment1, comment2) => new Date(comment1.datePosted).getTime() - new Date(comment2.datePosted).getTime());
         reply(comments).code(200);
       })
