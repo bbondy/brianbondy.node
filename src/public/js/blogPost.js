@@ -31,9 +31,16 @@ class Comment extends React.Component {
   get body() {
     return this.props.comment.body.replace(/<(?:.|\n)*?>/gm, '');
   }
+  get datePostedOn() {
+    if (!this.props.comment.datePosted) {
+      return '';
+    }
+
+    let date = new Date(this.props.comment.datePosted);
+    return 'on ' + date.format('dddd, MMMM Do YYYY, h:mm:ss a');
+  }
   render() {
     let comment = this.props.comment;
-    console.log(marked(comment.body));
     return <div className='comment-item'>
       <div>
         <a href={comment.website} target='_blank'>
@@ -41,7 +48,7 @@ class Comment extends React.Component {
         </a>
       </div>
       <a rel='external nofollow' href={comment.website}>{comment.name}</a>
-      <span> on </span><span className='datePosted'>{comment.datePosted}</span>
+      <span className='datePosted'>{this.datePostedOn}</span>
       <span> says: </span>
       <p className='comment-text' dangerouslySetInnerHTML={{__html: marked(this.body)}}/>
     </div>;
@@ -74,7 +81,6 @@ export default class BlogPost extends React.Component {
         this.setState({
           comments,
         });
-        console.log(comments);
       });
     } else {
       this.state = {
@@ -85,7 +91,6 @@ export default class BlogPost extends React.Component {
         tags: this.props.tags,
       };
       fetchComments(this.props.id).then((comments) => {
-        console.log(comments);
         this.setState({
           comments,
         });
@@ -149,8 +154,6 @@ export default class BlogPost extends React.Component {
     if (!this.state.title) {
       return null;
     }
-    console.log(this.state.comments);
-
     return <div className='blogPost'>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
       <div className='datePosted'>Posted on {this.dateString}</div>
