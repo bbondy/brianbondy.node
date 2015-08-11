@@ -162,6 +162,7 @@ server.route({
           comment.gravatarHash = md5(email);
           delete comment.email;
         });
+        comments = comments.sort((comment1, comment2) => new Date(comment1.datePosted).getTime() - new Date(comment2.datePosted).getTime());
         reply(comments).code(200);
       })
       .catch(() => reply('Error obtaining comments from Redis').code(500));
