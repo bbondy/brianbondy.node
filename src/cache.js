@@ -20,9 +20,6 @@ export function reloadData() {
   blogPosts = require('./blogPostManifest.js');
   blogPosts.forEach(blogPost => {
     blogPost.body = marked(fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
-    if (fs.existsSync(`${__dirname}/public/archived-comments/${blogPost.id}.html`)) {
-      blogPost.comments = fs.readFileSync(`${__dirname}/public/archived-comments/${blogPost.id}.html`, 'utf-8');
-    }
   });
 
   blogPostsByYear = _(blogPosts).groupBy(blogPost =>
