@@ -3,10 +3,7 @@ import Tag from './tag.js';
 import {fetchBlogPost, fetchComments, postComment, fetchCaptcha} from './client.js';
 import {cx} from './class-set.js';
 import marked from './unsafe-marked.js';
-
-var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'
-];
+import {formatDate, formatTime} from './formatDate.js';
 
 class Comments extends React.Component {
   render() {
@@ -37,7 +34,7 @@ class Comment extends React.Component {
     }
 
     let date = new Date(this.props.comment.datePosted);
-    return 'on ' + date.format('dddd, MMMM Do YYYY, h:mm:ss a');
+    return ' on ' + formatDate(date) + ' at ' + formatTime(date);
   }
   render() {
     let comment = this.props.comment;
@@ -102,10 +99,6 @@ export default class BlogPost extends React.Component {
     return `/blog/${this.state.id}`;
   }
 
-  get dateString() {
-    return `${monthNames[this.state.created.getMonth()]} ${this.state.created.getDate()}, ${this.state.created.getFullYear()}`;
-  }
-
   onPostComment(e) {
     e.preventDefault();
     postComment(this.state.id, {
@@ -156,7 +149,7 @@ export default class BlogPost extends React.Component {
     }
     return <div className='blogPost'>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
-      <div className='datePosted'>Posted on {this.dateString}</div>
+      <div className='datePosted'>Posted on {formatDate(this.state.created)}</div>
       <div dangerouslySetInnerHTML={{__html: this.state.body}}/>
       <div className='tags'>{this.state.tags.map(tag => <Tag key={tag} name={tag}/>)}</div>
       { !this.state.comments ? null :
