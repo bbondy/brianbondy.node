@@ -38,13 +38,25 @@ class Comment extends React.Component {
   }
   render() {
     let comment = this.props.comment;
+    let img = <img src={this.gravatarHash} className='gravatar'/>;
+    let name = comment.name;
     return <div className='comment-item'>
       <div>
-        <a href={comment.website} target='_blank'>
-          <img src={this.gravatarHash} className='gravatar'/>
-        </a>
+        {
+          comment.webpage ?
+            <a rel='extern nofollow' href={comment.webpage} target='_blank'>
+              {img}
+            </a> : {img}
+        }
       </div>
-      <a rel='external nofollow' href={comment.website}>{comment.name}</a>
+      <span>
+      {
+        comment.webpage ?
+          <a rel='external nofollow' href={comment.webpage} target='_blank'>
+            {name}
+          </a> : {name}
+      }
+      </span>
       <span className='datePosted'>{this.datePostedOn}</span>
       <span> says: </span>
       <p className='comment-text' dangerouslySetInnerHTML={{__html: marked(this.body)}}/>
@@ -60,6 +72,15 @@ export default class BlogPost extends React.Component {
     };
   }
 
+  loadComments(id) {
+    fetchComments(id)
+      .then(comments =>
+        this.setState({
+          comments,
+        }));
+
+  }
+
   componentWillMount() {
     if (this.props.params && this.props.params.id) {
       fetchBlogPost(this.props.params.id).then((blogPost) => {
@@ -73,12 +94,7 @@ export default class BlogPost extends React.Component {
         });
         return blogPost;
       })
-      .then((blogPost) => fetchComments(blogPost.id))
-      .then((comments) => {
-        this.setState({
-          comments,
-        });
-      });
+      .then((blogPost) => this.loadComments(blogPost.id));
     } else {
       this.state = {
         id: this.props.id,
@@ -87,11 +103,7 @@ export default class BlogPost extends React.Component {
         created: new Date(this.props.created),
         tags: this.props.tags,
       };
-      fetchComments(this.props.id).then((comments) => {
-        this.setState({
-          comments,
-        });
-      });
+      this.loadComments(this.props.id);
     }
   }
 
@@ -114,6 +126,7 @@ export default class BlogPost extends React.Component {
       React.findDOMNode(this.refs.body).value = '';
       React.findDOMNode(this.refs.captcha).value = '';
       this.refreshCaptcha();
+      this.loadComments(this.state.id);
       alert('Thank you, your comment was posted!');
     }).catch((statusCode) => {
       if (statusCode === 405) {
