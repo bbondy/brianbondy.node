@@ -18,3 +18,9 @@ The main goal of this server was to be as low touch as possible.  Blog posts are
 ## Refreshing data
 
 Just load `/refresh`.
+
+## Admin mode
+
+Admin mode can be enabled to moderate comments.
+It's enabled by running `adminMode('password-here')`.
+Once that's run, comments will have a delete icon and when pressed the password you entered will be sent to the server to make sure you're authorized to delete the comment.
