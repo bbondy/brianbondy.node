@@ -14,6 +14,23 @@ import Math from './math.js';
 import RemoteViewer from './remoteViewer.js';
 import StackExchangeListViewer from './stackExchangeListViewer.js';
 
+/**
+ * Turns admin mode on with the specified password
+ */
+window.adminMode = function(pass) {
+  document.querySelector('body').className += ' adminMode';
+  window.adminPass = pass;
+}
+
+/**
+ * Indicates if admin mode is enabled or not.
+ * It is enabled even if a wrong password was added so this
+ * doesn't necessarily mean any command will work.
+ */
+window.isAdminModeEnabled = function() {
+  return !!window.adminPass;
+}
+
 let {Route, Redirect, DefaultRoute, NotFoundRoute} = Router;
 
 // declare our routes and their hierarchy
