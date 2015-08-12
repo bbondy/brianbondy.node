@@ -1,6 +1,6 @@
 import React from 'react';
 import Tag from './tag.js';
-import {fetchBlogPost, fetchComments, postComment, fetchCaptcha} from './client.js';
+import {fetchBlogPost, fetchComments, postComment, deleteComment, fetchCaptcha} from './client.js';
 import {cx} from './class-set.js';
 import marked from './unsafe-marked.js';
 import {formatDate, formatTime} from './formatDate.js';
@@ -14,7 +14,8 @@ class Comments extends React.Component {
     return <div className='comments-container'>
       <div className='comments-list'>
       {
-        this.props.comments.map(comment => <Comment comment={comment}/>)
+        this.props.comments.map(comment => <Comment blogPostId={this.props.blogPostId}
+          reloadComments={this.props.reloadComments} comment={comment}/>)
       }
       </div>
     </div>;
@@ -36,11 +37,16 @@ class Comment extends React.Component {
     let date = new Date(this.props.comment.datePosted);
     return ' on ' + formatDate(date) + ' at ' + formatTime(date);
   }
+  removeComment(blogPostId, comment) {
+    deleteComment(blogPostId, comment);
+    this.props.reloadComments();
+  }
   render() {
     let comment = this.props.comment;
     let img = <img src={this.gravatarHash} className='gravatar'/>;
     let name = comment.name;
     return <div className='comment-item'>
+      <span onClick={this.removeComment.bind(this, this.props.blogPostId, comment)} className='fa fa-times-circle deleteComment'/>
       <div>
         {
           comment.webpage ?
@@ -186,7 +192,7 @@ export default class BlogPost extends React.Component {
           }
           <input type='submit' value='Submit' />
         </form>
-        <Comments comments={this.state.comments}/>
+        <Comments blogPostId={this.state.id} comments={this.state.comments} reloadComments={this.loadComments.bind(this, this.state.id)}/>
       </div>
       }
     </div>;

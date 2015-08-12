@@ -30,6 +30,7 @@ let getByType = (method, type, requestContentType, postData, url) => {
 let getJSON = getByType.bind(null, 'GET', 'json', undefined, undefined);
 let postJSON = getByType.bind(null, 'POST', 'json', 'application/json');
 let getText = getByType.bind(null, 'GET', 'text', undefined, undefined);
+let deleteJSON = getByType.bind(null, 'DELETE', 'json', 'application/json');
 let getHtml = getText;
 
 /**
@@ -96,4 +97,11 @@ export function fetchCaptcha(blogPostId) {
  */
 export function postComment(blogPostId, comment) {
   return postJSON(comment, `/api/blog/${blogPostId}/comments`);
+}
+
+/**
+ * Delete a comment
+ */
+export function deleteComment(blogPostId, comment) {
+  return deleteJSON(comment, `/api/blog/${blogPostId}/comment`);
 }
