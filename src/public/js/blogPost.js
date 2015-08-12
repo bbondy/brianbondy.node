@@ -38,8 +38,13 @@ class Comment extends React.Component {
     return ' on ' + formatDate(date) + ' at ' + formatTime(date);
   }
   removeComment(blogPostId, comment) {
-    deleteComment(blogPostId, comment);
-    this.props.reloadComments();
+    deleteComment(blogPostId, comment).then(this.props.reloadComments).catch(statusCode => {
+      if (statusCode === 405) {
+        alert('Error deleting comment: Wrong admin mode password!');
+      } else {
+        alert('Error deleting comment!');
+      }
+    });
   }
   render() {
     let comment = this.props.comment;

@@ -5,7 +5,7 @@ var _ = require('underscore');
 var md5 = require('md5');
 var striptags = require('striptags');
 import {setupRedirects} from './redirects.js';
-import {cookiePassword} from './secrets.js';
+import {cookiePassword, adminModePassword} from './secrets.js';
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments, removeComment} from './datastore.js';
@@ -159,6 +159,9 @@ server.route({
   method: 'DELETE',
   path: '/api/blog/{id}/comment',
   handler: function (request, reply) {
+    if (request.query.adminModePass !== adminModePassword) {
+      reply('wrong admin mode password!').code(405);
+    }
     let id = request.params.id;
     removeComment(id, request.payload)
       .then(() => reply('').code(200))

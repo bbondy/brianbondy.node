@@ -103,5 +103,5 @@ export function postComment(blogPostId, comment) {
  * Delete a comment
  */
 export function deleteComment(blogPostId, comment) {
-  return deleteJSON(comment, `/api/blog/${blogPostId}/comment`);
+  return deleteJSON(comment, `/api/blog/${blogPostId}/comment?adminModePass=${window.adminModePass}`);
 }

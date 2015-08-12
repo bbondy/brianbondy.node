@@ -19,8 +19,8 @@ import StackExchangeListViewer from './stackExchangeListViewer.js';
  */
 window.adminMode = function(pass) {
   document.querySelector('body').className += ' adminMode';
-  window.adminPass = pass;
-}
+  window.adminModePass = pass;
+};
 
 /**
  * Indicates if admin mode is enabled or not.
@@ -28,8 +28,8 @@ window.adminMode = function(pass) {
  * doesn't necessarily mean any command will work.
  */
 window.isAdminModeEnabled = function() {
-  return !!window.adminPass;
-}
+  return !!window.adminModePass;
+};
 
 let {Route, Redirect, DefaultRoute, NotFoundRoute} = Router;
 
