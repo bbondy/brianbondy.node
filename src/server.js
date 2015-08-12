@@ -8,7 +8,7 @@ import {setupRedirects} from './redirects.js';
 import {cookiePassword} from './secrets.js';
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
-import {initRedis, addComment, getComments} from './datastore.js';
+import {initRedis, addComment, getComments, removeComment} from './datastore.js';
 import {newCaptcha} from './captcha.js';
 import {sendAdminEmail} from './sendEmail.js';
 
@@ -152,6 +152,17 @@ server.route({
         sendAdminEmail(`New comment posted on blog id: ${id}`, striptags(html), html);
       })
       .catch(() => reply('Error posting comment to Redis').code(500));
+  }
+});
+
+server.route({
+  method: 'DELETE',
+  path: '/api/blog/{id}/comment',
+  handler: function (request, reply) {
+    let id = request.params.id;
+    removeComment(id, request.payload)
+      .then(() => reply('').code(200))
+      .catch(() => reply('Error deleting comment from Redis').code(500));
   }
 });
 

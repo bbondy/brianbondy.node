@@ -31,6 +31,23 @@ function pushToList(key, obj) {
   });
 }
 
+
+/**
+ * Removes an item from the specified list
+ */
+function removeFromList(key, obj) {
+  return new Promise((resolve, reject) => {
+    redisClient.lrem(key, 1, JSON.stringify(obj), err => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve();
+      }
+    });
+  });
+}
+
+
 /**
  * Obtains all items in a list
  */
@@ -66,4 +83,11 @@ export function addComment(blogPostId, comment) {
  */
 export function getComments(blogPostId) {
   return getListElements(`comments:${blogPostId}`);
+}
+
+/**
+ * Removes the specified comment from the blog post id list
+ */
+export function removeComment(blogPostId, comment) {
+  return removeFromList(`comments:${blogPostId}`, comment);
 }
