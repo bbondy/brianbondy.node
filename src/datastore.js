@@ -1,7 +1,7 @@
 let redis = require('redis');
 
 let redisClient;
-export function initRedis(port = 10226) {
+export function initRedis(port = 19278) {
   redisClient = redis.createClient(port);
   redisClient.on('error', function (err) {
     console.error('DB: Error ' + err);
