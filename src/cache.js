@@ -5,9 +5,10 @@ var _ = require('underscore');
 import marked from './marked.js';
 import {feedItemFromBlogPost, newFeedFromTag} from './helpers.js';
 
-export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags = {};
+export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags;
 
 export function reloadData() {
+  tags = {};
   feed = new RSS({
     title: 'Brian R. Bondy\'s Feed',
     description: 'Blog posts by Brian R. Bondy',
