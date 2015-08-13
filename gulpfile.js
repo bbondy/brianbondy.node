@@ -48,7 +48,7 @@ const COPY_WEB_APP_FILES = [
   '!' + SRC_ROOT_PUBLIC_LESS,
 ];
 
-const DEFAULT_PORT = 8000;
+const DEFAULT_PORT = 32757;
 const DEFAULT_HOST = 'localhost';
 
 gulp.task('bundle-js', function() {
@@ -69,7 +69,7 @@ gulp.task('start-redis', function() {
 });
 
 gulp.task('create-resume-pdf', function(cb) {
-  createPDF('http://localhost:3000', cb);
+  createPDF('http://localhost:' + DEFAULT_PORT, cb);
 });
 
 gulp.task('start-server', function () {

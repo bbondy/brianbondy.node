@@ -27,7 +27,7 @@ let server = new Hapi.Server({
     }
   }
 });
-server.connection({ port: process.env.PORT || 3000 });
+server.connection({ port: process.env.PORT || 32757 });
 setupRedirects(server);
 
 let indexPaths = ['/{name}', '/other/{name}', '/compression/{name}', '/math/{name}', '/mozilla/new',
