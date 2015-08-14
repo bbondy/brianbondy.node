@@ -25,7 +25,7 @@ export default class DocumentTitle extends React.Component {
 
     let path = {
       '/': 'Blog posts',
-      '/blog/filters': 'Blog post filters',
+      '/blog/filters': 'Blog filters',
       '/projects': 'Projects',
       '/resume': 'Resume',
       '/other': 'Other',
