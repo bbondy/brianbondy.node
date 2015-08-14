@@ -35,6 +35,10 @@ class Comment extends React.Component {
     }
 
     let date = new Date(this.props.comment.datePosted);
+    if (!(date instanceof Date) || !isFinite(date)) {
+      date = new Date(this.props.comment.datePosted.replace(' ', 'T'));
+    }
+
     return ' on ' + formatDate(date) + ' at ' + formatTime(date);
   }
   removeComment(blogPostId, comment) {
@@ -85,11 +89,9 @@ export default class BlogPost extends React.Component {
 
   loadComments(id) {
     fetchComments(id)
-      .then(comments =>
-        this.setState({
+      .then(comments => this.setState({
           comments,
-        }));
-
+      }));
   }
 
   componentWillMount() {
