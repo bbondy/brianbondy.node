@@ -10,6 +10,14 @@ export function setupRedirects(server) {
 
   server.route({
     method: 'GET',
+    path: '/blog/id/{id}/{slug}',
+    handler: function (request, reply) {
+      reply.redirect(`/blog/${request.params.id}`).permanent();
+    }
+  });
+
+  server.route({
+    method: 'GET',
     path: '/blog/id/{id}',
     handler: function (request, reply) {
       reply.redirect(`/blog/${request.params.id}`).permanent();
