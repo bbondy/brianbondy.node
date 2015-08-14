@@ -235,7 +235,7 @@ server.route({
 
 server.register([{
   // good is a process monitor that listens for one or more of the below 'event types'
-  register: require('Good'),
+  register: require('good'),
   options: {
     reporters: [{
       reporter: require('good-console'),
@@ -247,7 +247,7 @@ server.register([{
   }
 }, {
   // A hapi session plugin and cookie jar
-  register: require('Yar'),
+  register: require('yar'),
   options: {
     cookieOptions: {
       password: cookiePassword,
