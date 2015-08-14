@@ -5,12 +5,12 @@
   "main": "server.js",
   "dependencies": {
     "babel": "^5.8.3",
-    "good": "^6.3.0",
+    "good": "~6.3.0",
     "good-console": "^5.0.2",
     "hapi": "^8.8.0",
     "highlight.js": "^8.6.0",
     "immutable": "^3.7.4",
-    "marked": "^0.3.3",
+    "marked": "0.3.3",
     "md5": "^2.0.0",
     "nodemailer": "0.7.1",
     "phantom": "^0.7.2",
@@ -19,7 +19,9 @@
     "redis": "^0.12.1",
     "rss": "^1.1.1",
     "underscore": "^1.8.3",
-    "yar": "^3.0.3"
+    "yar": "^3.0.3",
+    "canvas": "~1.2.7",
+    "striptags": "~2.0.2"
   },
   "devDependencies": {
     "babel-core": "^5.6.15",
