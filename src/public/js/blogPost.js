@@ -4,6 +4,7 @@ import {fetchBlogPost, fetchComments, postComment, deleteComment, fetchCaptcha} 
 import {cx} from './class-set.js';
 import marked from './unsafe-marked.js';
 import {formatDate, formatTime} from './formatDate.js';
+import externalLinkSetup from './externalLinkSetup.js';
 
 class Comments extends React.Component {
   render() {
@@ -50,11 +51,14 @@ class Comment extends React.Component {
       }
     });
   }
+  componentDidMount() {
+    externalLinkSetup(React.findDOMNode(this.refs.commentItem));
+  }
   render() {
     let comment = this.props.comment;
     let img = <img src={this.gravatarHash} className='gravatar'/>;
     let name = comment.name;
-    return <div className='comment-item'>
+    return <div ref='commentItem' className='comment-item'>
       <span onClick={this.removeComment.bind(this, this.props.blogPostId, comment)} className='fa fa-times-circle deleteComment'/>
       <div>
         {
@@ -169,6 +173,10 @@ export default class BlogPost extends React.Component {
     });
   }
 
+  componentDidUpdate() {
+    externalLinkSetup(React.findDOMNode(this.refs.blogDiv));
+  }
+
   render() {
     if (!this.state.title) {
       return null;
@@ -176,7 +184,7 @@ export default class BlogPost extends React.Component {
     return <div className='blogPost'>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
       <div className='datePosted'>Posted on {formatDate(this.state.created)}</div>
-      <div dangerouslySetInnerHTML={{__html: this.state.body}}/>
+      <div ref='blogDiv' dangerouslySetInnerHTML={{__html: this.state.body}}/>
       <div className='tags'>{this.state.tags.map(tag => <Tag key={tag} name={tag}/>)}</div>
       { !this.state.comments ? null :
       <div className='commentsContainer'>

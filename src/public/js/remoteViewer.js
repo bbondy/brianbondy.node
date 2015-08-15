@@ -1,6 +1,7 @@
 import React from 'react';
 import {fetchMarkdown} from './client.js';
 import marked from './marked';
+import externalLinkSetup from './externalLinkSetup.js';
 
 export default class About extends React.Component {
   constructor() {
@@ -25,9 +26,12 @@ export default class About extends React.Component {
   componentWillMount() {
     this.fetch();
   }
+  componentDidUpdate() {
+    externalLinkSetup(React.findDOMNode(this.refs.markdownContainer));
+  }
   render() {
     return <div>
-      <div dangerouslySetInnerHTML={
+      <div ref='markdownContainer' dangerouslySetInnerHTML={
         {__html: marked(this.state.markdownText)}}/></div>;
   }
 }
