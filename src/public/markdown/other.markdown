@@ -11,5 +11,6 @@
 - [Mathematics](/math)
 - [Morse Code](/morseCode)
 - [Mozilla](/mozilla)
+- [Running](/running)
 - [Stack Exchange](/stackexchange)
 - [University Classes](/universityClasses)

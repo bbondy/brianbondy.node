@@ -84,6 +84,7 @@ let routes =
     <Route name='universityClasses' path='universityClasses' handler={RemoteViewer}/>
     <Route name='braille' path='braille' handler={RemoteViewer}/>
     <Route name='morseCode' path='morseCode' handler={RemoteViewer}/>
+    <Route name='running' path='running' handler={RemoteViewer}/>
     <Route name='stackexchnage' path='stackexchange' handler={RemoteViewer}/>
 
     <Route path='/stackexchange-:social/:page' handler={StackExchangeListViewer}/>
