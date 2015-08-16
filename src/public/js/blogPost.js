@@ -1,96 +1,11 @@
 import React from 'react';
 import Tag from './tag.js';
-import {fetchBlogPost, fetchComments, postComment, deleteComment, fetchCaptcha} from './client.js';
-import {cx} from './class-set.js';
-import marked from './unsafe-marked.js';
-import {formatDate, formatTime} from './formatDate.js';
+import {fetchBlogPost, fetchComments} from './client.js';
+import {formatDate} from './formatDate.js';
 import externalLinkSetup from './externalLinkSetup.js';
-
-class Comments extends React.Component {
-  render() {
-    if (!this.props.comments) {
-      return null;
-    }
-
-    return <div className='comments-container'>
-      <div className='comments-list'>
-      {
-        this.props.comments.map(comment => <Comment blogPostId={this.props.blogPostId}
-          reloadComments={this.props.reloadComments} comment={comment}/>)
-      }
-      </div>
-    </div>;
-  }
-}
-
-class Comment extends React.Component {
-  get gravatarHash() {
-    return `http://www.gravatar.com/avatar/${this.props.comment.gravatarHash}?s=60`;
-  }
-  get body() {
-    return this.props.comment.body.replace(/<(?:.|\n)*?>/gm, '');
-  }
-  get datePostedOn() {
-    if (!this.props.comment.datePosted) {
-      return '';
-    }
-
-    let date = new Date(this.props.comment.datePosted);
-    if (!(date instanceof Date) || !isFinite(date)) {
-      date = new Date(this.props.comment.datePosted.replace(' ', 'T'));
-    }
-
-    return ' on ' + formatDate(date) + ' at ' + formatTime(date);
-  }
-  removeComment(blogPostId, comment) {
-    deleteComment(blogPostId, comment).then(this.props.reloadComments).catch(statusCode => {
-      if (statusCode === 405) {
-        alert('Error deleting comment: Wrong admin mode password!');
-      } else {
-        alert('Error deleting comment!');
-      }
-    });
-  }
-  componentDidMount() {
-    externalLinkSetup(React.findDOMNode(this.refs.commentItem));
-  }
-  render() {
-    let comment = this.props.comment;
-    let img = <img src={this.gravatarHash} className='gravatar'/>;
-    let name = comment.name;
-    return <div ref='commentItem' className='comment-item'>
-      <span onClick={this.removeComment.bind(this, this.props.blogPostId, comment)} className='fa fa-times-circle deleteComment'/>
-      <div>
-        {
-          comment.webpage ?
-            <a rel='extern nofollow' href={comment.webpage} target='_blank'>
-              {img}
-            </a> : {img}
-        }
-      </div>
-      <span>
-      {
-        comment.webpage ?
-          <a rel='external nofollow' href={comment.webpage} target='_blank'>
-            {name}
-          </a> : {name}
-      }
-      </span>
-      <span className='datePosted'>{this.datePostedOn}</span>
-      <span> says: </span>
-      <p className='comment-text' dangerouslySetInnerHTML={{__html: marked(this.body)}}/>
-    </div>;
-  }
-}
+import {Comments, AddComment} from './comments.js';
 
 export default class BlogPost extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      showAddCommentForm: false,
-    };
-  }
-
   loadComments(id) {
     fetchComments(id)
       .then(comments => this.setState({
@@ -128,50 +43,6 @@ export default class BlogPost extends React.Component {
     return `/blog/${this.state.id}`;
   }
 
-  onPostComment(e) {
-    e.preventDefault();
-    postComment(this.state.id, {
-      name: React.findDOMNode(this.refs.name).value,
-      email: React.findDOMNode(this.refs.email).value,
-      webpage: React.findDOMNode(this.refs.webpage).value,
-      body: React.findDOMNode(this.refs.body).value,
-      captcha: React.findDOMNode(this.refs.captcha).value,
-    }).then(() => {
-      React.findDOMNode(this.refs.name).value = '';
-      React.findDOMNode(this.refs.email).value = '';
-      React.findDOMNode(this.refs.webpage).value = '';
-      React.findDOMNode(this.refs.body).value = '';
-      React.findDOMNode(this.refs.captcha).value = '';
-      this.refreshCaptcha();
-      this.loadComments(this.state.id);
-      alert('Thank you, your comment was posted!');
-    }).catch((statusCode) => {
-      if (statusCode === 405) {
-        // Captcha invalid show a captcha error
-        React.findDOMNode(this.refs.captcha).value = '';
-        this.refreshCaptcha();
-        alert('The captcha entered does not match what was expected! Please try again!');
-      } else {
-        // Some kind of other error, show a generic posting error
-        React.findDOMNode(this.refs.captcha).value = '';
-        this.refreshCaptcha();
-        alert('There was an error posting the comment!');
-      }
-    });
-  }
-
-  refreshCaptcha() {
-    fetchCaptcha(this.state.id).then(captchaDataUrl => this.setState({
-      captchaDataUrl,
-    }));
-  }
-
-  onClickAddComment() {
-    this.refreshCaptcha();
-    this.setState({
-      showAddCommentForm: true,
-    });
-  }
 
   componentDidUpdate() {
     externalLinkSetup(React.findDOMNode(this.refs.blogDiv));
@@ -189,25 +60,11 @@ export default class BlogPost extends React.Component {
       { !this.state.comments ? null :
       <div className='commentsContainer'>
         <h2>Comments</h2>
-        <input className={cx({
-          hideAddCommentForm: this.state.showAddCommentForm,
-        })} type='button' value='Add a new comment' onClick={this.onClickAddComment.bind(this)} />
-        <form className={cx({
-            addCommentForm: true,
-            hideAddCommentForm: !this.state.showAddCommentForm,
-          })} onSubmit={this.onPostComment.bind(this)}>
-          <h2>Add a new comment</h2>
-          <input ref='name' type='text' placeholder='Name' required />
-          <input ref='email' type='email' placeholder='Email (Optional)' />
-          <input ref='webpage' type='url' placeholder='Website (Optional)' />
-          <textarea ref='body' placeholder='Your comment (markdown, but no tags)' required />
-          <input className='captchaInput' ref='captcha' type='text' placeholder='Enter the text to the right' required />
-          { !this.state.captchaDataUrl ? null :
-          <img className='captchaImage' src={this.state.captchaDataUrl}/>
-          }
-          <input type='submit' value='Submit' />
-        </form>
-        <Comments blogPostId={this.state.id} comments={this.state.comments} reloadComments={this.loadComments.bind(this, this.state.id)}/>
+        <AddComment blogPostId={this.state.id}
+          reloadComments={this.loadComments.bind(this, this.state.id)}/>
+        <Comments blogPostId={this.state.id}
+          comments={this.state.comments}
+          reloadComments={this.loadComments.bind(this, this.state.id)}/>
       </div>
       }
     </div>;
