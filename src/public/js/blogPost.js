@@ -6,6 +6,11 @@ import externalLinkSetup from './externalLinkSetup.js';
 import {Comments, AddComment} from './comments.js';
 
 export default class BlogPost extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   loadComments(id) {
     fetchComments(id)
       .then(comments => this.setState({
