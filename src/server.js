@@ -6,7 +6,7 @@ var md5 = require('md5');
 var striptags = require('striptags');
 import {setupRedirects} from './redirects.js';
 import {cookiePassword, adminModePassword} from './secrets.js';
-import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags} from './cache.js';
+import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, sitemap, resumeHTML, resumePDF, tags} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments, removeComment} from './datastore.js';
 import {newCaptcha} from './captcha.js';
@@ -62,6 +62,15 @@ server.route({
     reply(feed.xml({indent: true})).type('application/rss+xml');
   }
 });
+
+server.route({
+  method: 'GET',
+  path: '/sitemap.xml',
+  handler: function (request, reply) {
+    reply(sitemap).type('application/xml');
+  }
+});
+
 
 server.route({
   method: 'GET',

@@ -21,6 +21,7 @@
     "recast": "^0.10.28",
     "redis": "^0.12.1",
     "rss": "^1.1.1",
+    "sitemap": "^1.0.0",
     "striptags": "~2.0.2",
     "through": "^2.3.8",
     "underscore": "^1.8.3",

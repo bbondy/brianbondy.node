@@ -1,4 +1,5 @@
 var RSS = require('rss');
+var fs = require('fs');
 import marked from './marked.js';
 
 export const postsPerPage = 3;
@@ -23,6 +24,20 @@ export function feedItemFromBlogPost(blogPost) {
     categories: blogPost.tags,
     author: 'Brian R. Bondy',
     date: blogPost.created,
+  };
+}
+
+export function sitemapItemFromBlogPost(blogPost) {
+  return {
+    url: `/blog/${blogPost.id}`,
+    lastmod: fs.statSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`).mtime,
+  };
+}
+
+export function sitemapItemFromSlug(slug) {
+  return {
+    url: `/${slug}`,
+    lastmod: fs.statSync(`${__dirname}/public/markdown/${slug}.markdown`).mtime,
   };
 }
 

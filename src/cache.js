@@ -1,11 +1,12 @@
 var fs = require('fs');
+var sm = require('sitemap');
 var RSS = require('rss');
 var _ = require('underscore');
 
 import marked from './marked.js';
-import {feedItemFromBlogPost, newFeedFromTag} from './helpers.js';
+import {feedItemFromBlogPost, sitemapItemFromBlogPost, sitemapItemFromSlug, newFeedFromTag} from './helpers.js';
 
-export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags;
+export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags, sitemap;
 
 export function reloadData() {
   tags = {};
@@ -16,6 +17,42 @@ export function reloadData() {
     'site_url': 'http://www.brianbondy.com',
     'image_url': 'http://www.brianbondy.com/img/logo.png',
   });
+
+  sitemap = sm.createSitemap({
+    hostname: 'http://www.brianbondy.com',
+    cacheTime: 0,
+    urls: [
+      { url: '/filters' },
+      sitemapItemFromSlug('projects'),
+      sitemapItemFromSlug('resume'),
+      sitemapItemFromSlug('other'),
+      sitemapItemFromSlug('about'),
+      sitemapItemFromSlug('contact'),
+      sitemapItemFromSlug('compression'),
+      sitemapItemFromSlug('compression/huffman'),
+      sitemapItemFromSlug('compression/BWT'),
+      sitemapItemFromSlug('compression/PPM'),
+      sitemapItemFromSlug('math'),
+      sitemapItemFromSlug('math/main'),
+      sitemapItemFromSlug('math/pi'),
+      sitemapItemFromSlug('math/primes'),
+      sitemapItemFromSlug('math/numberTheory'),
+      sitemapItemFromSlug('math/graphTheory'),
+      sitemapItemFromSlug('math/mathTricks'),
+      sitemapItemFromSlug('faq'),
+      sitemapItemFromSlug('khanacademy'),
+      sitemapItemFromSlug('links'),
+      sitemapItemFromSlug('books'),
+      sitemapItemFromSlug('articles'),
+      sitemapItemFromSlug('advice'),
+      sitemapItemFromSlug('mozilla'),
+      sitemapItemFromSlug('mozilla/new'),
+      sitemapItemFromSlug('universityClasses'),
+      sitemapItemFromSlug('braille'),
+      sitemapItemFromSlug('morseCode'),
+      sitemapItemFromSlug('running'),
+      sitemapItemFromSlug('stackexchange'),
+  ]});
 
   delete require.cache[require.resolve('./blogPostManifest.js')];
   blogPosts = require('./blogPostManifest.js');
@@ -29,6 +66,7 @@ export function reloadData() {
   rssByTag = {};
   _(blogPosts).each(blogPost => {
     let rssItem = feedItemFromBlogPost(blogPost);
+    sitemap.add(sitemapItemFromBlogPost(blogPost));
     feed.item(rssItem);
     _(blogPost.tags).each(tag => {
       // Get tags count
