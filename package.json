@@ -6,6 +6,7 @@
   "dependencies": {
     "babel": "^5.8.3",
     "canvas": "~1.2.7",
+    "deap": "^1.0.0",
     "good": "~6.3.0",
     "good-console": "^5.0.2",
     "gulp-uglify": "^1.2.0",
@@ -25,8 +26,11 @@
     "sitemap": "^1.0.0",
     "striptags": "~2.0.2",
     "through": "^2.3.8",
+    "through2": "^2.0.0",
+    "uglify-js": "^2.4.24",
     "underscore": "^1.8.3",
     "vinyl-buffer": "^1.0.0",
+    "vinyl-sourcemaps-apply": "^0.1.4",
     "yar": "^3.0.3"
   },
   "devDependencies": {
