@@ -67,7 +67,8 @@ server.route({
   method: 'GET',
   path: '/sitemap.xml',
   handler: function (request, reply) {
-    reply(sitemap).type('application/xml');
+    sitemap.toXML(xml =>
+      reply(xml).type('application/xml'));
   }
 });
 
