@@ -11,6 +11,7 @@ var nodemon = require('nodemon');
 var fs = require('fs');
 var shell = require('gulp-shell');
 var buffer = require('vinyl-buffer');
+var uglify = require('gulp-uglify');
 
 var babelify = require('babelify');
 var browserify = require('browserify');
@@ -61,6 +62,7 @@ gulp.task('bundle-js', function() {
   .bundle()
   .pipe(source('bundle.js'))
   .pipe(buffer())
+  .pipe(uglify())
   .pipe(sourcemaps.init({loadMaps: true}))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest('./dist/public/js'));
