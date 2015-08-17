@@ -21,6 +21,7 @@ export function feedItemFromBlogPost(blogPost) {
     title: blogPost.title,
     description: marked(blogPost.body),
     guid: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
+    url: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
     categories: blogPost.tags,
     author: 'Brian R. Bondy',
     date: blogPost.created,
