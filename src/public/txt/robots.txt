@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://www.brianbondy.com/sitemap.xml
+Disallow: /admin

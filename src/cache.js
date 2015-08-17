@@ -6,7 +6,7 @@ var _ = require('underscore');
 import marked from './marked.js';
 import {feedItemFromBlogPost, sitemapItemFromBlogPost, sitemapItemFromSlug, newFeedFromTag} from './helpers.js';
 
-export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags, sitemap;
+export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags, sitemap, robotsTXT;
 
 export function reloadData() {
   tags = {};
@@ -89,5 +89,6 @@ export function reloadData() {
     marked(fs.readFileSync(`${__dirname}/public/markdown/resume.markdown`, 'utf-8')) + '<body></html>';
 
   resumePDF = fs.readFileSync(`${__dirname}/public/pdf/BrianRBondy_Resume.pdf`);
+  robotsTXT = fs.readFileSync(`${__dirname}/public/txt/robots.txt`);
 }
 reloadData();
