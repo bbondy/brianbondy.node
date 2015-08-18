@@ -1,1 +1,1 @@
-./node_modules/.bin/gulp build
+NODE_ENV=production ./node_modules/.bin/gulp build

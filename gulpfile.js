@@ -52,7 +52,7 @@ const COPY_WEB_APP_FILES = [
 
 const DEFAULT_PORT = 32757;
 const DEFAULT_HOST = 'localhost';
-const IS_PRODUCTION = process.env.NODE_ENV !== 'production';
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
 
 gulp.task('bundle-js', function() {
   browserify({
