@@ -52,6 +52,7 @@ const COPY_WEB_APP_FILES = [
 
 const DEFAULT_PORT = 32757;
 const DEFAULT_HOST = 'localhost';
+const IS_PRODUCTION = process.env.NODE_ENV !== 'production';
 
 gulp.task('bundle-js', function() {
   browserify({
@@ -62,7 +63,7 @@ gulp.task('bundle-js', function() {
   .bundle()
   .pipe(source('bundle.js'))
   .pipe(buffer())
-  .pipe(uglify())
+  .pipe(IS_PRODUCTION ? uglify() : gutil.noop())
   .pipe(sourcemaps.init({loadMaps: true}))
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest('./dist/public/js'));
@@ -82,7 +83,7 @@ gulp.task('start-server', function () {
   nodemon({
     script: 'dist/server.js',
     ext: 'js html',
-    env: { 'NODE_ENV': 'development' }
+    env: { 'NODE_ENV': process.env.NODE_ENV || 'development' }
   })
 });
 
@@ -161,11 +162,11 @@ gulp.task('copy-analytics', function() {
 gulp.task('babel-node', function() {
   try {
     return gulp.src(SERVER_FILES)
-      .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.init())
+      .pipe(IS_PRODUCTION ? gutil.noop() : sourcemaps.init())
       .pipe(babel().on('error', function(e) {
         this.emit('end');
       }))
-      .pipe(process.env.PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
+      .pipe(IS_PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
       .pipe(gulp.dest(DIST_ROOT));
 
   } catch (e) {
