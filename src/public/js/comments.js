@@ -11,10 +11,11 @@ export class Comments extends React.Component {
       return null;
     }
 
+    // We use the index as the key since we have nothing better and since users can't remove comments
     return <div className='comments-container'>
       <div className='comments-list'>
       {
-        this.props.comments.map(comment => <Comment blogPostId={this.props.blogPostId}
+        this.props.comments.map((comment, i) => <Comment key={i} blogPostId={this.props.blogPostId}
           reloadComments={this.props.reloadComments} comment={comment}/>)
       }
       </div>
