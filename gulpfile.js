@@ -7,7 +7,7 @@ var del = require('del');
 var eslint = require('gulp-eslint');
 var less = require('gulp-less');
 var runSequence = require('run-sequence');
-var nodemon = require('nodemon');
+var server = require( 'gulp-develop-server' );
 var fs = require('fs');
 var shell = require('gulp-shell');
 var buffer = require('vinyl-buffer');
@@ -44,7 +44,6 @@ const SERVER_FILES = [
 
 const COPY_WEB_APP_FILES = [
   SRC_ROOT_PUBLIC + '**/*',
-  SRC_ROOT_PUBLIC + '**',
   '!' + SRC_ROOT_PUBLIC + '**/js/*.js', // JS files are handled by babel, so don't copy them.
   '!' + SRC_ROOT_PUBLIC_LESS + 'less/**', // LESS files are handled by less, so don't copy them.
   '!' + SRC_ROOT_PUBLIC_LESS,
@@ -80,11 +79,7 @@ gulp.task('create-resume-pdf', function(cb) {
 });
 
 gulp.task('start-server', function () {
-  nodemon({
-    script: 'dist/server.js',
-    ext: 'js html',
-    env: { 'NODE_ENV': process.env.NODE_ENV || 'development' }
-  })
+  server.listen( { path: './dist/server.js' } );
 });
 
 /**
@@ -185,7 +180,7 @@ gulp.task('build', function(cb) {
  * Watch for changes on the file system, and rebuild if so.
  */
 gulp.task('watch', function() {
-  gulp.watch(SERVER_FILES, ['lint-node', 'babel-node']);
+  gulp.watch(SERVER_FILES, ['lint-node', 'babel-node', server.restart]);
   gulp.watch([
     SRC_ROOT_PUBLIC_JS + '**/*',
   ], ['lint-js', 'bundle-js']);
