@@ -17,7 +17,6 @@ export default class TopBar extends React.Component {
       <Link to="blog-index"><li className={cx({current: this.basePath === 'blog' || this.basePath === ''})}>Blog</li></Link>
       <Link to="blog-filters"><li className={cx({current: this.basePath === 'blog/filters'})}>Filters</li></Link>
       <Link to='projects'><li className={cx({current: this.basePath === 'projects'})}>Projects</li></Link>
-      <Link to='resume'><li className={cx({current: this.basePath === 'resume'})}>Resume</li></Link>
       <Link to='other'><li className={cx({current: this.basePath === 'other'})}>Other</li></Link>
       <Link to='about'><li className={cx({current: this.basePath === 'about'})}>About</li></Link>
       <Link to='contact'><li className={cx({current: this.basePath === 'contact'})}>Contact</li></Link>
