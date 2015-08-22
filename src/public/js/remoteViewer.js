@@ -30,6 +30,10 @@ export default class About extends React.Component {
     externalLinkSetup(React.findDOMNode(this.refs.markdownContainer));
   }
   render() {
+    // Add progress indicator on first load
+    if (!this.state.markdownText) {
+      return <span className="fa fa-circle-o-notch fa-spin"/>;
+    }
     return <div>
       <div ref='markdownContainer' dangerouslySetInnerHTML={
         {__html: marked(this.state.markdownText)}}/></div>;
