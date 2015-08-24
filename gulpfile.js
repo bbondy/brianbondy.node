@@ -17,6 +17,7 @@ var babelify = require('babelify');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var createPDF = require('./src/createPDF.js');
+var http = require('http');
 
 const SRC_ROOT = './src/';
 const SRC_ROOT_PUBLIC = './src/public/';
@@ -135,6 +136,14 @@ gulp.task('less', function () {
 gulp.task('install', ['copy-web-app']);
 
 
+gulp.task('refresh', function(cb) {
+  return http.get('http://localhost:' + DEFAULT_PORT + '/refresh' , function (res) {
+    res.on('end', function () {
+      cb();
+    });
+  });
+});
+
 /**
  * Copy all non-js directory app source/assets/components.
  */
@@ -188,8 +197,13 @@ gulp.task('watch', function() {
     SRC_ROOT_PUBLIC_LESS + '**/*',
   ], ['less']);
   gulp.watch([TEST_ROOT + '**/*'], ['lint-js']);
-  gulp.watch(COPY_WEB_APP_FILES, ['copy-web-app'])
+  gulp.watch([COPY_WEB_APP_FILES], ['copy-web-app-and-refresh'])
 });
+
+gulp.task('copy-web-app-and-refresh', function(cb) {
+  runSequence('copy-web-app', 'refresh', cb);
+});
+
 
 /**
  * The default task when `gulp` is run.
