@@ -39,6 +39,8 @@ Some of the new features since we acquired Link Bubble that were released includ
 
 We're excited to be able to put more resources into Link Bubble and we have a lot of great additions planned. Our immediate focus is towards better performance, bug fixes, and customer satisfaction/support. Next, we will work on additional web browsing and navigation features.
 
+Please follow [@Link_Bubble](https://twitter.com/Link_Bubble) for future updates.
+
 ##Users with Link Bubble Pro
 
 Users of Link Bubble Pro can uninstall the Pro version and simply update the existing Link Bubble application which is also installed.
