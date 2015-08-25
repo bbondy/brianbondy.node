@@ -32,6 +32,7 @@
     "underscore": "^1.8.3",
     "vinyl-buffer": "^1.0.0",
     "vinyl-sourcemaps-apply": "^0.1.4",
+    "xhr": "^2.0.4",
     "yar": "^3.0.3"
   },
   "devDependencies": {

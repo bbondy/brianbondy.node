@@ -1,5 +1,10 @@
 export default [
   {
+    id: 171,
+    title: 'The Link Bubble Android web browser has gone fully free',
+    created: new Date('2015/08/25'),
+    tags: ['link-bubble', 'android', 'web'],
+  }, {
     id: 170,
     title: 'Thank you Khan Academy, switching careers',
     created: new Date('2015/05/29'),
@@ -8,17 +13,17 @@ export default [
     id: 169,
     title: 'Developing and releasing the Khan Academy Firefox OS app',
     created: new Date('2014/11/27'),
-    tags: ['khan-academy', 'mozilla', 'firefox-os', 'firefox'],
+    tags: ['khan-academy', 'mozilla', 'firefox-os', 'firefox', 'web'],
   }, {
     id: 168,
     title: 'SQL on Khan Academy enabled by SQLite, sqljs, asm.js and Emscripten',
     created: new Date('2014/11/26'),
-    tags: ['firefox', 'khan-academy', 'mozilla'],
+    tags: ['firefox', 'khan-academy', 'mozilla', 'web'],
   }, {
     id: 167,
     title: 'Automated end to end testing at Khan Academy using Gecko',
     created: new Date('2014/11/25'),
-    tags: ['khan-academy', 'firefox', 'mozilla'],
+    tags: ['khan-academy', 'firefox', 'mozilla', 'web'],
   }, {
     id: 166,
     title: 'Making programming easier on Khan Academy - 2014 Hackathon project',
@@ -193,7 +198,7 @@ export default [
     id: 121,
     title: 'Web optimizations and canvas exporting with data URLs',
     created: new Date('2011/07/10'),
-    tags: ['http', 'firefox', 'mozilla', 'dataurl'],
+    tags: ['http', 'firefox', 'mozilla', 'dataurl', 'web'],
   }, {
     id: 119,
     title: 'What you should know about HTTP pipelining',
