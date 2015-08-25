@@ -1,6 +1,17 @@
 #Projects
 
-Listed below are some of the projects I've worked on throughout my career.  Some are full-fledged products, and some are just libraries.
+Listed below are some of the projects I've worked on throughout my career.  Some are full-fledged products, and some are just libraries.  Some I'm the primary developer (e.g. most things below) and some I've just contributed to (e.g. Link Bubble).
+
+---
+
+<img src='/img/projects/link-bubble.png' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
+###[Link Bubble Browser](https://play.google.com/store/apps/details?id=com.linkbubble.playstore&hl=en)
+Link Bubble makes the Android mobile web more efficient. When you click on a link in any app, Link Bubble loads that webpage in the background and presents it in a floating bubble, leaving you free to continue using your current app.
+Unique amongst Android web browsers, it saves precious time normally spent watching pages load.
+<br><br>
+<span style="clear:both"/>
+
+---
 
 <img src='/img/logo/logo.png' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
 ###[brianbondy.com](https://github.com/bbondy/brianbondy.node)
