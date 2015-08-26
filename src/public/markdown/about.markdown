@@ -13,7 +13,9 @@ Other than work and geek things, I also spend a lot of time with my wife Shannon
 
 I used to work full time on Mozilla's Fireofx browser (2011-2014), I remain a Mozilla community member and contributor (Mozillian).
 
-As of April 21, 2014 I work full time for an amazing company called Khan Academy.
+From April 21, 2014 - May 2015 I worked full time for an amazing company called Khan Academy.
+
+I currently run a startup and we're mostly in stealth mode.
 
 <br class="clearfloat">
 
