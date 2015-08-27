@@ -44,6 +44,10 @@ const SERVER_FILES = [
   SRC_ROOT + '*__tests__*/*',
 ];
 
+const COPY_SERVER_FILES = [
+  SRC_ROOT + '*templates*/*.jade',
+];
+
 const COPY_WEB_APP_FILES = [
   SRC_ROOT_PUBLIC + '**/*',
   '!' + SRC_ROOT_PUBLIC + '**/js/*.js', // JS files are handled by babel, so don't copy them.
@@ -134,7 +138,7 @@ gulp.task('less', function () {
 /**
  * Setup steps after an npm install.
  */
-gulp.task('install', ['copy-web-app']);
+gulp.task('install', ['copy-public-static']);
 
 
 gulp.task('refresh', function(cb) {
@@ -146,15 +150,23 @@ gulp.task('refresh', function(cb) {
 });
 
 /**
- * Copy all non-js directory app source/assets/components.
+ * Copy all public non-js directory app source/assets/components.
  */
-gulp.task('copy-web-app', function() {
+gulp.task('copy-public-static', function() {
   return gulp.src(COPY_WEB_APP_FILES)
     .pipe(gulp.dest(DIST_ROOT_PUBLIC));
 });
 
 /**
  * Copy all non-js directory app source/assets/components.
+ */
+gulp.task('copy-server-files', function() {
+  return gulp.src(COPY_SERVER_FILES)
+    .pipe(gulp.dest(DIST_ROOT));
+});
+
+/**
+ * Copy analytics
  */
 gulp.task('copy-analytics', function() {
   return gulp.src([SRC_ROOT_PUBLIC_JS + 'analytics.js'])
@@ -184,14 +196,14 @@ gulp.task('babel-node', function() {
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['copy-web-app', 'copy-analytics', 'babel-node', 'bundle-js', 'lint-node', 'lint-js', 'less'], cb);
+  runSequence(['copy-public-static', 'copy-analytics', 'copy-server-files', 'babel-node', 'bundle-js', 'lint-node', 'lint-js', 'less'], cb);
 });
 
 /**
  * Watch for changes on the file system, and rebuild if so.
  */
 gulp.task('watch', function() {
-  gulp.watch(SERVER_FILES, ['lint-node', 'babel-node', server.restart]);
+  gulp.watch(SERVER_FILES, ['lint-node', 'babel-node', 'copy-server-files', server.restart]);
   gulp.watch([
     SRC_ROOT_PUBLIC_JS + '**/*',
   ], ['lint-js', 'bundle-js']);
@@ -199,11 +211,11 @@ gulp.task('watch', function() {
     SRC_ROOT_PUBLIC_LESS + '**/*',
   ], ['less']);
   gulp.watch([TEST_ROOT + '**/*'], ['lint-js']);
-  gulp.watch([COPY_WEB_APP_FILES], ['copy-web-app-and-refresh'])
+  gulp.watch([COPY_WEB_APP_FILES], ['copy-public-static-and-refresh'])
 });
 
-gulp.task('copy-web-app-and-refresh', function(cb) {
-  runSequence('copy-web-app', 'refresh', cb);
+gulp.task('copy-public-static-and-refresh', function(cb) {
+  runSequence('copy-public-static', 'refresh', cb);
 });
 
 

@@ -41,7 +41,8 @@ indexPaths.forEach(path => {
     method: 'GET',
     path: path,
     handler: function (request, reply) {
-      reply.file('index.html');
+      reply.view('index', {
+      });
     }
   });
 });
@@ -281,4 +282,12 @@ server.register([{
   server.start(function () {
     server.log('info', 'Server running at: ' + server.info.uri);
   });
+});
+
+server.views({
+  engines: { jade: require('jade') },
+  path: Path.join(__dirname, 'templates'),
+  compileOptions: {
+    pretty: true
+  }
 });
