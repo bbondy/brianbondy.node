@@ -4,6 +4,7 @@ var RSS = require('rss');
 var _ = require('underscore');
 
 import marked from './marked.js';
+import slugify from './slugify.js';
 import {feedItemFromBlogPost, sitemapItemFromBlogPost, sitemapItemFromSlug, newFeedFromTag} from './helpers.js';
 
 export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags, sitemap, robotsTXT;
@@ -58,6 +59,7 @@ export function reloadData() {
   blogPosts = require('./blogPostManifest.js');
   blogPosts.forEach(blogPost => {
     blogPost.body = marked(fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
+    blogPost.url = `/blog/${blogPost.id}/${slugify(blogPost.title)}`;
   });
 
   blogPostsByYear = _(blogPosts).groupBy(blogPost =>

@@ -21,7 +21,7 @@ export function feedItemFromBlogPost(blogPost) {
     title: blogPost.title,
     description: marked(blogPost.body),
     guid: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
-    url: `http://www.brianbondy.com/blog/id/${blogPost.id}`,
+    url: `http://www.brianbondy.com${blogPost.url}`,
     categories: blogPost.tags,
     author: 'Brian R. Bondy',
     date: blogPost.created,
@@ -30,7 +30,7 @@ export function feedItemFromBlogPost(blogPost) {
 
 export function sitemapItemFromBlogPost(blogPost) {
   return {
-    url: `/blog/${blogPost.id}`,
+    url: blogPost.url,
     lastmod: fs.statSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`).mtime,
   };
 }

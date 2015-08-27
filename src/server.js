@@ -31,7 +31,7 @@ server.connection({ port: process.env.PORT || 32757 });
 setupRedirects(server);
 
 let indexPaths = ['/{name}', '/other/{name}', '/compression/{name}', '/math/{name}', '/mozilla/new', '/running',
-  '/', '/blog', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}',
+  '/', '/blog', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}/{slug}',
   '/page/{page}', '/blog/page/{page}', '/blog/posted/{year}/page/{page}', '/blog/tagged/{tag}/page/{page}',
   '/stackexchange-twitter/{page}', '/stackexchange-linkedin/{page}', '/stackexchange-facebook/{page}',
   ];

@@ -1,5 +1,8 @@
-export function setupRedirects(server) {
+var _ = require('underscore');
 
+import {blogPosts} from './cache.js';
+
+export function setupRedirects(server) {
   server.route({
     method: 'GET',
     path: '/blog/modified/{year}',
@@ -12,7 +15,9 @@ export function setupRedirects(server) {
     method: 'GET',
     path: '/blog/id/{id}/{slug}',
     handler: function (request, reply) {
-      reply.redirect(`/blog/${request.params.id}`).permanent();
+      let blogPost = _(blogPosts).find(post =>
+        post.id === Number(request.params.id));
+      reply.redirect(blogPost.url).permanent();
     }
   });
 
@@ -20,7 +25,19 @@ export function setupRedirects(server) {
     method: 'GET',
     path: '/blog/id/{id}',
     handler: function (request, reply) {
-      reply.redirect(`/blog/${request.params.id}`).permanent();
+      let blogPost = _(blogPosts).find(post =>
+        post.id === Number(request.params.id));
+      reply.redirect(blogPost.url).permanent();
+    }
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/blog/{id}',
+    handler: function (request, reply) {
+      let blogPost = _(blogPosts).find(post =>
+        post.id === Number(request.params.id));
+      reply.redirect(blogPost.url).permanent();
     }
   });
 

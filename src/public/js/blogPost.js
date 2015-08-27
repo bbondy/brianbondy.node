@@ -28,6 +28,7 @@ export default class BlogPost extends React.Component {
           body: blogPost.body,
           created: new Date(blogPost.created),
           tags: blogPost.tags,
+          url: blogPost.url,
         });
         return blogPost;
       })
@@ -39,13 +40,14 @@ export default class BlogPost extends React.Component {
         body: this.props.body,
         created: new Date(this.props.created),
         tags: this.props.tags,
+        url: this.props.url,
       };
       this.loadComments(this.props.id);
     }
   }
 
   get blogPostURL() {
-    return `/blog/${this.state.id}`;
+    return this.state.url;
   }
 
 

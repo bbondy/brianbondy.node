@@ -60,6 +60,7 @@ export default class BlogPostList extends React.Component {
             created={blogPost.created}
             tags={blogPost.tags}
             id={blogPost.id}
+            url={blogPost.url}
           />)
       }
     { this.page > 1 ?

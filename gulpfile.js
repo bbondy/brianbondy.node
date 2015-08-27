@@ -39,6 +39,7 @@ const SERVER_FILES = [
   SRC_ROOT + 'cache.js',
   SRC_ROOT + 'marked.js',
   SRC_ROOT + 'helpers.js',
+  SRC_ROOT + 'slugify.js',
   SRC_ROOT + 'datastore.js',
   SRC_ROOT + '*__tests__*/*',
 ];
