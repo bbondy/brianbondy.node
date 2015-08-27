@@ -169,6 +169,7 @@ gulp.task('babel-node', function() {
     return gulp.src(SERVER_FILES)
       .pipe(IS_PRODUCTION ? gutil.noop() : sourcemaps.init())
       .pipe(babel().on('error', function(e) {
+        console.log('error on babel-node: ' + e);
         this.emit('end');
       }))
       .pipe(IS_PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
