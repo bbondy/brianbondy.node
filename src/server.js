@@ -11,6 +11,7 @@ import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments, removeComment} from './datastore.js';
 import {newCaptcha} from './captcha.js';
 import {sendAdminEmail} from './sendEmail.js';
+import titleByPath from './titleByPath.js';
 
 initRedis(process.env.REDIS_PORT);
 reloadData();
@@ -31,7 +32,7 @@ server.connection({ port: process.env.PORT || 32757 });
 setupRedirects(server);
 
 let indexPaths = ['/{name}', '/other/{name}', '/compression/{name}', '/math/{name}', '/mozilla/new', '/running',
-  '/', '/blog', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}/{slug}',
+  '/', '/blog', '/blog/filters', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}/{slug}',
   '/page/{page}', '/blog/page/{page}', '/blog/posted/{year}/page/{page}', '/blog/tagged/{tag}/page/{page}',
   '/stackexchange-twitter/{page}', '/stackexchange-linkedin/{page}', '/stackexchange-facebook/{page}',
   ];
@@ -42,6 +43,7 @@ indexPaths.forEach(path => {
     path: path,
     handler: function (request, reply) {
       reply.view('index', {
+        title: titleByPath(request.url.path),
       });
     }
   });
