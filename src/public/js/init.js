@@ -41,7 +41,6 @@ let routes =
     <Route path='blog' handler={Blog}>
       <DefaultRoute handler={BlogPostList}/>
       <Route name='blog-filters' path='filters' handler={BlogFilters}/>
-      <Route path=':id/:slug' handler={BlogPost}/>
 
       <Route path='posted/:year' handler={BlogPostList}/>
       <Route path='tagged/:tag' handler={BlogPostList}/>
@@ -50,6 +49,8 @@ let routes =
       <Route path='page/:page' handler={BlogPostList}/>
       <Route path='posted/:year/page/:page' handler={BlogPostList}/>
       <Route path='tagged/:tag/page/:page' handler={BlogPostList}/>
+
+      <Route path=':id/:slug' handler={BlogPost}/>
       <NotFoundRoute handler={NotFound} />
     </Route>
 
