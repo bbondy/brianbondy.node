@@ -7,7 +7,11 @@ import marked from './marked.js';
 import slugify from './slugify.js';
 import {feedItemFromBlogPost, sitemapItemFromBlogPost, sitemapItemFromSlug, newFeedFromTag} from './helpers.js';
 
-export let blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags, sitemap, robotsTXT;
+export let blogPosts, blogPostsByYear, blogPostsById, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags, sitemap, robotsTXT;
+
+export function blogPostById(id) {
+  return _(blogPosts).find(post => post.id === Number(id));
+}
 
 export function reloadData() {
   tags = {};

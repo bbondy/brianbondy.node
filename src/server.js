@@ -1,20 +1,16 @@
 require('babel/polyfill');
 let Path = require('path');
 let Hapi = require('hapi');
-var _ = require('underscore');
 var md5 = require('md5');
 var striptags = require('striptags');
 import {setupRedirects} from './redirects.js';
 import {cookiePassword, adminModePassword} from './secrets.js';
-import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, rssByTag, feed, sitemap, resumeHTML, resumePDF, tags, robotsTXT} from './cache.js';
+import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, blogPostById, rssByTag, feed, sitemap, resumeHTML, resumePDF, tags, robotsTXT} from './cache.js';
 import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments, removeComment} from './datastore.js';
 import {newCaptcha} from './captcha.js';
 import {sendAdminEmail} from './sendEmail.js';
 import titleByPath from './titleByPath.js';
-
-const blogPostById = (id) =>
-  _(blogPosts).find(post => post.id === Number(id));
 
 initRedis(process.env.REDIS_PORT);
 reloadData();
@@ -35,7 +31,7 @@ server.connection({ port: process.env.PORT || 32757 });
 setupRedirects(server);
 
 let indexPaths = ['/{name}', '/other/{name}', '/compression/{name}', '/math/{name}', '/mozilla/new', '/running',
-  '/', '/blog', '/blog/filters', '/blog/posted/{year}', '/blog/tagged/{tag}', '/blog/{id}/{slug}',
+  '/', '/blog', '/blog/filters', '/blog/posted/{year}', '/blog/tagged/{tag}',
   '/page/{page}', '/blog/page/{page}', '/blog/posted/{year}/page/{page}', '/blog/tagged/{tag}/page/{page}',
   '/stackexchange-twitter/{page}', '/stackexchange-linkedin/{page}', '/stackexchange-facebook/{page}',
   ];
@@ -50,6 +46,19 @@ indexPaths.forEach(path => {
       });
     }
   });
+});
+
+server.route({
+  method: 'GET',
+  path: '/blog/{id}/{slug}',
+  handler: function (request, reply) {
+    let id = request.params.id;
+    let blogPost = blogPostById(id);
+    let suffix = 'Brian R. Bondy';
+    reply.view('index', {
+      title: blogPost ? `${blogPost.title} - ${suffix}` : suffix,
+    });
+  }
 });
 
 server.route({
