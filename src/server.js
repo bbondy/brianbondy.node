@@ -13,6 +13,9 @@ import {newCaptcha} from './captcha.js';
 import {sendAdminEmail} from './sendEmail.js';
 import titleByPath from './titleByPath.js';
 
+const blogPostById = (id) =>
+  _(blogPosts).find(post => post.id === Number(id));
+
 initRedis(process.env.REDIS_PORT);
 reloadData();
 
@@ -161,14 +164,19 @@ server.route({
     request.payload.gravatarHash = md5(email);
     delete request.payload.email;
 
+    let blogPost = blogPostById(id);
+    let url = blogPost ? `${server.info.uri}${blogPost.url}` : `http://www.brianbondy.com/blog/${id}`;
+    let title = blogPost ? blogPost.title : url;
+
     addComment(id, request.payload)
       .then(() => reply('').code(200))
       .then(() => {
-        let html = `<p>A new comment was added to blog post id: <a href='http://www.brianbondy.com/blog/${id}'>${id}</a></p>.\n\n
+        let html = `<div><p>A new comment was added to blog post: <a href='${url}'>${title}</a>.</p>\n\n
         <p><strong>name</strong>: ${request.payload.name}</p>\n\n
         <p><strong>email</strong>: ${email}</p>\n\n
         <p><strong>webpage</strong>: ${request.payload.webpage}</p>\n\n
         <p><strong>body</strong>: ${request.payload.body}</p>\n\n
+        </div>
         `;
         sendAdminEmail(`New comment posted on blog id: ${id}`, striptags(html), html);
       })
@@ -217,9 +225,12 @@ server.route({
   method: 'GET',
   path: '/api/blog/{id}',
   handler: function (request, reply) {
-    let blogPost = _(blogPosts).find(post =>
-      post.id === Number(request.params.id));
-    reply(blogPost).code(200);
+    let blogPost = blogPostById(request.params.id);
+    if (blogPost) {
+      reply(blogPost).code(200);
+    } else {
+      reply('').code(404);
+    }
   }
 });
 
