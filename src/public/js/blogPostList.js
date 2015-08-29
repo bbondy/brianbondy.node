@@ -21,7 +21,7 @@ export default class BlogPostList extends React.Component {
   }
 
   urlForPage(page) {
-    var pageSuffix = '';
+    var pageSuffix = '/';
     if (page !== 1) {
       pageSuffix = `/page/${page}`;
     }
