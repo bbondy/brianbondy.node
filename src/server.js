@@ -10,7 +10,8 @@ import {slicePostsForPage, newFeedFromTag} from './helpers.js';
 import {initRedis, addComment, getComments, removeComment} from './datastore.js';
 import {newCaptcha} from './captcha.js';
 import {sendAdminEmail} from './sendEmail.js';
-import titleByPath from './titleByPath.js';
+import {pageTitleByPath} from './titleByPath.js';
+const siteName = 'Brian R. Bondy';
 
 initRedis(process.env.REDIS_PORT);
 reloadData();
@@ -42,7 +43,7 @@ indexPaths.forEach(path => {
     path: path,
     handler: function (request, reply) {
       reply.view('index', {
-        title: titleByPath(request.url.path),
+        title: pageTitleByPath(request.url.path),
       });
     }
   });
@@ -54,9 +55,12 @@ server.route({
   handler: function (request, reply) {
     let id = request.params.id;
     let blogPost = blogPostById(id);
-    let suffix = 'Brian R. Bondy';
     reply.view('index', {
-      title: blogPost ? `${blogPost.title} - ${suffix}` : suffix,
+      title: blogPost ? `${blogPost.title} - ${siteName}` : siteName,
+      fbTitle: blogPost.title,
+      fbSiteName: siteName,
+      fbShareUrl: `${server.info.uri}${blogPost.url}`,
+      fbDescription: blogPost.title,
     });
   }
 });

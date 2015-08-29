@@ -1,5 +1,13 @@
-export default function titleByPath(pathname) {
+export function pageTitleByPath(pathname) {
   let suffix = 'Brian R. Bondy';
+  let title = titleByPath(pathname);
+  if (!title) {
+    return suffix;
+  }
+  return `${title} - ${suffix}`
+}
+
+export function titleByPath(pathname) {
   let parts = pathname.substring(1).split('/');
   if (pathname.startsWith('/blog/tagged/')) {
     let tag = parts[2];
@@ -7,14 +15,14 @@ export default function titleByPath(pathname) {
     if (parts[3] === 'page') {
       page = ` page ${parts[4]}`;
     }
-    return `Posts tagged ${tag}${page} - ${suffix}`;
+    return `Posts tagged ${tag}${page}`;
   } else if (pathname.startsWith('/blog/posted/')) {
     let year = parts[2];
     let page = '';
     if (parts[3] === 'page') {
       page = ` page ${parts[4]}`;
     }
-    return `Posted in ${year}${page} - ${suffix}`;
+    return `Posted in ${year}${page}`;
   } else if (pathname.startsWith('/page/')) {
     let page = parts[1];
     return `Blog posts page ${page}`;
@@ -54,6 +62,5 @@ export default function titleByPath(pathname) {
   if (path) {
     path += ' - ';
   }
-  path += suffix;
   return path;
 }
