@@ -59,7 +59,7 @@ export default class BlogPost extends React.Component {
     if (!this.state.title) {
       return null;
     }
-    return <div className='blogPost'>
+    return <article className='blogPost'>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
       <div className='datePosted'>Posted on {formatDate(this.state.created)}</div>
       <div ref='blogDiv' dangerouslySetInnerHTML={{__html: this.state.body}}/>
@@ -74,6 +74,6 @@ export default class BlogPost extends React.Component {
           reloadComments={this.loadComments.bind(this, this.state.id)}/>
       </div>
       }
-    </div>;
+    </article>;
   }
 }
