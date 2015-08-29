@@ -6,8 +6,12 @@ head
   link(rel='stylesheet' href='/css/font-awesome/font-awesome.css')
   link(rel='stylesheet' href='/css/highlight-default.css')
   link(rel='shortcut icon', href='/img/favicon.ico')
-  meta(property='og:title', content=fbTitle)
-  meta(property='og:site_name', content=fbSiteName)
-  meta(property='og:url', content=fbShareUrl)
-  meta(property='og:description', content=fbDescription)
+  if fbTitle
+    meta(property='og:title', content=fbTitle)
+  if fbSiteName
+    meta(property='og:site_name', content=fbSiteName)
+  if fbShareUrl
+    meta(property='og:url', content=fbShareUrl)
+  if fbDescription
+    meta(property='og:description', content=fbDescription)
 body
