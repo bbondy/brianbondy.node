@@ -23,6 +23,14 @@ export function setupRedirects(server) {
 
   server.route({
     method: 'GET',
+    path: '/blog/page/{page}',
+    handler: function (request, reply) {
+      reply.redirect(`/page/${request.params.page}`).permanent();
+    }
+  });
+
+  server.route({
+    method: 'GET',
     path: '/blog/id/{id}',
     handler: function (request, reply) {
       let blogPost = _(blogPosts).find(post =>

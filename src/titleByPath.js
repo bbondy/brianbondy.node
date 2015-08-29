@@ -1,12 +1,3 @@
-export function pageTitleByPath(pathname) {
-  let suffix = 'Brian R. Bondy';
-  let title = titleByPath(pathname);
-  if (!title) {
-    return suffix;
-  }
-  return `${title} - ${suffix}`
-}
-
 export function titleByPath(pathname) {
   let parts = pathname.substring(1).split('/');
   if (pathname.startsWith('/blog/tagged/')) {
@@ -63,4 +54,13 @@ export function titleByPath(pathname) {
     path += ' - ';
   }
   return path;
+}
+
+export function pageTitleByPath(pathname) {
+  let suffix = 'Brian R. Bondy';
+  let title = titleByPath(pathname);
+  if (!title) {
+    return suffix;
+  }
+  return `${title} - ${suffix}`;
 }
