@@ -60,7 +60,6 @@ server.route({
       fbTitle: blogPost.title,
       fbSiteName: siteName,
       fbShareUrl: `${server.info.uri}${blogPost.url}`,
-      fbDescription: blogPost.title,
     });
   }
 });
