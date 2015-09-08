@@ -59,7 +59,7 @@ server.route({
       title: blogPost ? `${blogPost.title} - ${siteName}` : siteName,
       fbTitle: blogPost.title,
       fbSiteName: siteName,
-      fbShareUrl: `${server.info.uri}${blogPost.url}`,
+      fbShareUrl: `http://brianbondy.com/${blogPost.url}`,
     });
   }
 });
@@ -177,7 +177,7 @@ server.route({
     delete request.payload.email;
 
     let blogPost = blogPostById(id);
-    let url = blogPost ? `${server.info.uri}${blogPost.url}` : `http://www.brianbondy.com/blog/${id}`;
+    let url = blogPost ? `http://brianbondy.com/${blogPost.url}` : `http://brianbondy.com/blog/${id}`;
     let title = blogPost ? blogPost.title : url;
 
     addComment(id, request.payload)
