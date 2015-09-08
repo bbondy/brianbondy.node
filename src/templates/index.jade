@@ -15,4 +15,8 @@ head
     meta(property='og:url', content=fbShareUrl)
   if fbDescription
     meta(property='og:description', content=fbDescription)
+  if fbImageUrl
+    meta(property='og:image' content=fbImageUrl)
+  else
+    meta(property='og:image' content='http://www.brianbondy.com/img/avatar.png')
 body
