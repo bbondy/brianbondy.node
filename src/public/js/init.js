@@ -1,5 +1,9 @@
 import React from 'react';
-import Router from 'react-router';
+import {Router, Route, Redirect, IndexRoute} from 'react-router';
+console.log('Router', Router);
+console.log('Route', Route);
+console.log('Redirect', Redirect);
+console.log('IndexRoute', IndexRoute);
 
 import Main from './main.js';
 
@@ -9,7 +13,6 @@ import BlogPostList from './blogPostList.js';
 import BlogFilters from './blogFilters.js';
 import Compression from './compression.js';
 import Resume from './resume.js';
-import NotFound from './notFound.js';
 import Math from './math.js';
 import RemoteViewer from './remoteViewer.js';
 import StackExchangeListViewer from './stackExchangeListViewer.js';
@@ -31,82 +34,80 @@ window.isAdminModeEnabled = function() {
   return !!window.adminModePass;
 };
 
-let {Route, Redirect, DefaultRoute, NotFoundRoute} = Router;
-
-// declare our routes and their hierarchy
-let routes =
-  <Route handler={Main}>
-    <NotFoundRoute handler={NotFound} />
-    <DefaultRoute name='blog-index' handler={BlogPostList}/>
-    <Route path='blog' handler={Blog}>
-      <DefaultRoute handler={BlogPostList}/>
-      <Route name='blog-filters' path='filters' handler={BlogFilters}/>
-
-      <Route path='posted/:year' handler={BlogPostList}/>
-      <Route path='tagged/:tag' handler={BlogPostList}/>
-
-      <Route path='/page/:page' handler={BlogPostList}/>
-      <Route path='page/:page' handler={BlogPostList}/>
-      <Route path='posted/:year/page/:page' handler={BlogPostList}/>
-      <Route path='tagged/:tag/page/:page' handler={BlogPostList}/>
-
-      <Route path=':id/:slug' handler={BlogPost}/>
-      <NotFoundRoute handler={NotFound} />
-    </Route>
-
-    <Route name='projects' path='projects' handler={RemoteViewer}/>
-    <Route name='resume' path='resume' handler={Resume}/>
-    <Route name='other' path='other' handler={RemoteViewer}/>
-    <Route name='about' path='about' handler={RemoteViewer}/>
-    <Route name='contact' path='contact' handler={RemoteViewer}/>
-
-    <Route name='compression' path='compression' handler={Compression}>
-     <Route path='huffman' handler={RemoteViewer}/>
-     <Route path='BWT' handler={RemoteViewer}/>
-     <Route path='PPM' handler={RemoteViewer}/>
-    </Route>
-    <Route name='math' path='math' handler={Math}>
-      <Route path='main' handler={RemoteViewer}/>
-      <Route path='pi' handler={RemoteViewer}/>
-      <Route path='primes' handler={RemoteViewer}/>
-      <Route path='numberTheory' handler={RemoteViewer}/>
-      <Route path='graphTheory' handler={RemoteViewer}/>
-      <Route path='mathTricks' handler={RemoteViewer}/>
-      <NotFoundRoute handler={NotFound} />
-    </Route>
-    <Route name='faq' path='faq' handler={RemoteViewer}/>
-    <Route name='khanacademy' path='khanacademy' handler={RemoteViewer}/>
-    <Route name='links' path='links' handler={RemoteViewer}/>
-    <Route name='books' path='books' handler={RemoteViewer}/>
-    <Route name='articles' path='articles' handler={RemoteViewer}/>
-    <Route name='advice' path='advice' handler={RemoteViewer}/>
-    <Route name='mozilla' path='mozilla' handler={RemoteViewer}/>
-    <Route name='mozilla-new' path='mozilla/new' handler={RemoteViewer}/>
-    <Route name='universityClasses' path='universityClasses' handler={RemoteViewer}/>
-    <Route name='braille' path='braille' handler={RemoteViewer}/>
-    <Route name='morseCode' path='morseCode' handler={RemoteViewer}/>
-    <Route name='running' path='running' handler={RemoteViewer}/>
-    <Route name='stackexchnage' path='stackexchange' handler={RemoteViewer}/>
-
-    <Route path='/stackexchange-:social/:page' handler={StackExchangeListViewer}/>
-    <Route path='/stackexchange-:social/:page' handler={StackExchangeListViewer}/>
-    <Route path='/stackexchange-:social/:page' handler={StackExchangeListViewer}/>
-
-    <Redirect from="other/compression" to="compression" />
-    <Redirect from="other/faq" to="faq" />
-    <Redirect from="other/khanacademy" to="khanacademy" />
-    <Redirect from="other/links" to="links" />
-    <Redirect from="other/books" to="books" />
-    <Redirect from="other/articles" to="articles" />
-    <Redirect from="other/advice" to="advice" />
-    <Redirect from="other/mozilla" to="mozilla" />
-    <Redirect from="other/universityClasses" to="universityClasses" />
-    <Redirect from="other/morseCode" to="morseCode" />
-    <Redirect from="other/stackexchange" to="stackexchange" />
-  </Route>;
-
 window.addEventListener('load', () => {
-  Router.run(routes, Router.HistoryLocation, (Root) => {
-    React.render(<Root/>, document.body);
-  });
+  window.Router = Router;
+  window.Route = Route;
+  window.IndexRoute = IndexRoute;
+  window.BlogFilters = BlogFilters;
+  window.BlogPostList = BlogPostList;
+  window.Blog = Blog;
+  React.render(
+  <Router>
+    <Route path='/' component={Main}>
+      <IndexRoute name='blog-index' component={BlogPostList}/>
+      <Route path='blog' component={Blog}>
+        <IndexRoute component={BlogPostList}/>
+        <Route name='blog-filters' path='filters' component={BlogFilters}/>
+
+        <Route path='posted/:year' component={BlogPostList}/>
+        <Route path='tagged/:tag' component={BlogPostList}/>
+
+        <Route path='/page/:page' component={BlogPostList}/>
+        <Route path='page/:page' component={BlogPostList}/>
+        <Route path='posted/:year/page/:page' component={BlogPostList}/>
+        <Route path='tagged/:tag/page/:page' component={BlogPostList}/>
+
+        <Route path=':id/:slug' component={BlogPost}/>
+      </Route>
+
+      <Route name='projects' path='projects' component={RemoteViewer}/>
+      <Route name='resume' path='resume' component={Resume}/>
+      <Route name='other' path='other' component={RemoteViewer}/>
+      <Route name='about' path='about' component={RemoteViewer}/>
+      <Route name='contact' path='contact' component={RemoteViewer}/>
+
+      <Route name='compression' path='compression' component={Compression}>
+       <Route path='huffman' component={RemoteViewer}/>
+       <Route path='BWT' component={RemoteViewer}/>
+       <Route path='PPM' component={RemoteViewer}/>
+      </Route>
+      <Route name='math' path='math' component={Math}>
+        <Route path='main' component={RemoteViewer}/>
+        <Route path='pi' component={RemoteViewer}/>
+        <Route path='primes' component={RemoteViewer}/>
+        <Route path='numberTheory' component={RemoteViewer}/>
+        <Route path='graphTheory' component={RemoteViewer}/>
+        <Route path='mathTricks' component={RemoteViewer}/>
+      </Route>
+      <Route name='faq' path='faq' component={RemoteViewer}/>
+      <Route name='khanacademy' path='khanacademy' component={RemoteViewer}/>
+      <Route name='links' path='links' component={RemoteViewer}/>
+      <Route name='books' path='books' component={RemoteViewer}/>
+      <Route name='articles' path='articles' component={RemoteViewer}/>
+      <Route name='advice' path='advice' component={RemoteViewer}/>
+      <Route name='mozilla' path='mozilla' component={RemoteViewer}/>
+      <Route name='mozilla-new' path='mozilla/new' component={RemoteViewer}/>
+      <Route name='universityClasses' path='universityClasses' component={RemoteViewer}/>
+      <Route name='braille' path='braille' component={RemoteViewer}/>
+      <Route name='morseCode' path='morseCode' component={RemoteViewer}/>
+      <Route name='running' path='running' component={RemoteViewer}/>
+      <Route name='stackexchnage' path='stackexchange' component={RemoteViewer}/>
+
+      <Route path='/stackexchange-:social/:page' component={StackExchangeListViewer}/>
+      <Route path='/stackexchange-:social/:page' component={StackExchangeListViewer}/>
+      <Route path='/stackexchange-:social/:page' component={StackExchangeListViewer}/>
+
+      <Redirect from='other/compression' to='compression' />
+      <Redirect from='other/faq' to='faq' />
+      <Redirect from='other/khanacademy' to='khanacademy' />
+      <Redirect from='other/links' to='links' />
+      <Redirect from='other/books' to='books' />
+      <Redirect from='other/articles' to='articles' />
+      <Redirect from='other/advice' to='advice' />
+      <Redirect from='other/mozilla' to='mozilla' />
+      <Redirect from='other/universityClasses' to='universityClasses' />
+      <Redirect from='other/morseCode' to='morseCode' />
+      <Redirect from='other/stackexchange' to='stackexchange' />
+    </Route>
+  </Router>, document.body);
 });

@@ -32,7 +32,7 @@ export default class About extends React.Component {
   render() {
     // Add progress indicator on first load
     if (!this.state.markdownText) {
-      return <span className="fa fa-circle-o-notch fa-spin"/>;
+      return <span className='fa fa-circle-o-notch fa-spin'/>;
     }
     return <div>
       <div ref='markdownContainer' dangerouslySetInnerHTML={

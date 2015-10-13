@@ -28,6 +28,19 @@ let server = new Hapi.Server({
     }
   }
 });
+
+server.register(require('inert'), function (err) {
+  if (err) {
+    console.log('Failed to load vision.');
+  }
+});
+server.register(require('vision'), function(err) {
+  if (err) {
+    console.log('Failed to load vision.');
+  }
+});
+
+
 server.connection({ port: process.env.PORT || 32757 });
 setupRedirects(server);
 
@@ -275,7 +288,6 @@ server.route({
     }
   }
 });
-
 
 server.register([{
   // good is a process monitor that listens for one or more of the below 'event types'
