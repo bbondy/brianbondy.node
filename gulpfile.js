@@ -65,7 +65,7 @@ gulp.task('bundle-js', function() {
     entries: './src/public/js/init.js',
     debug: true
   })
-  .transform(babelify)
+  .transform('babelify', {presets: ['react', 'es2015']})
   .bundle()
   .pipe(source('bundle.js'))
   .pipe(buffer())
@@ -181,10 +181,12 @@ gulp.task('babel-node', function() {
   try {
     return gulp.src(SERVER_FILES)
       .pipe(IS_PRODUCTION ? gutil.noop() : sourcemaps.init())
-      .pipe(babel().on('error', function(e) {
+      .pipe(babel({
+        presets: ['react', 'es2015']
+      })).on('error', function(e) {
         console.log('error on babel-node: ' + e);
         this.emit('end');
-      }))
+      })
       .pipe(IS_PRODUCTION ? gutil.noop() : sourcemaps.write('.'))
       .pipe(gulp.dest(DIST_ROOT));
 
