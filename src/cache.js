@@ -60,7 +60,7 @@ export function reloadData() {
   ]});
 
   delete require.cache[require.resolve('./blogPostManifest.js')];
-  blogPosts = require('./blogPostManifest.js');
+  blogPosts = require('./blogPostManifest.js').default;
   blogPosts.forEach(blogPost => {
     blogPost.body = marked(fs.readFileSync(`${__dirname}/public/markdown/blog/${blogPost.id}.markdown`, 'utf-8'));
     blogPost.url = `/blog/${blogPost.id}/${slugify(blogPost.title)}`;

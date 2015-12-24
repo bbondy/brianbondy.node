@@ -1,4 +1,4 @@
-require('babel/polyfill');
+require('babel-polyfill');
 let Path = require('path');
 let Hapi = require('hapi');
 var md5 = require('md5');
