@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {Router, Route, Redirect, IndexRoute} from 'react-router';
 console.log('Router', Router);
 console.log('Route', Route);
@@ -41,7 +42,7 @@ window.addEventListener('load', () => {
   window.BlogFilters = BlogFilters;
   window.BlogPostList = BlogPostList;
   window.Blog = Blog;
-  React.render(
+  ReactDOM.render(
   <Router>
     <Route path='/' component={Main}>
       <IndexRoute name='blog-index' component={BlogPostList}/>
@@ -109,5 +110,5 @@ window.addEventListener('load', () => {
       <Redirect from='other/morseCode' to='morseCode' />
       <Redirect from='other/stackexchange' to='stackexchange' />
     </Route>
-  </Router>, document.body);
+  </Router>, document.getElementById('mountPoint'));
 });
