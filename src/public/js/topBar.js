@@ -12,14 +12,14 @@ export default class TopBar extends React.Component {
 
   render() {
     return <div className='topBar'>
-      <Link to='blog-index'><img title='Brian R. Bondy' src='/img/logo.png'/></Link>
+      <Link to='/'><img title='Brian R. Bondy' src='/img/logo.png'/></Link>
       <ul className='topBarLinks'>
-      <Link to='blog-index'><li className={cx({current: this.basePath === 'blog' || this.basePath === ''})}>Blog</li></Link>
-      <Link to='blog-filters'><li className={cx({current: this.basePath === 'blog/filters'})}>Filters</li></Link>
-      <Link to='projects'><li className={cx({current: this.basePath === 'projects'})}>Projects</li></Link>
-      <Link to='other'><li className={cx({current: this.basePath === 'other'})}>Other</li></Link>
-      <Link to='about'><li className={cx({current: this.basePath === 'about'})}>About</li></Link>
-      <Link to='contact'><li className={cx({current: this.basePath === 'contact'})}>Contact</li></Link>
+      <Link to='/'><li className={cx({current: this.basePath === 'blog' || this.basePath === ''})}>Blog</li></Link>
+      <Link to='/blog/filters'><li className={cx({current: this.basePath === 'blog/filters'})}>Filters</li></Link>
+      <Link to='/projects'><li className={cx({current: this.basePath === 'projects'})}>Projects</li></Link>
+      <Link to='/other'><li className={cx({current: this.basePath === 'other'})}>Other</li></Link>
+      <Link to='/about'><li className={cx({current: this.basePath === 'about'})}>About</li></Link>
+      <Link to='/contact'><li className={cx({current: this.basePath === 'contact'})}>Contact</li></Link>
 
       <a href='https://twitter.com/brianbondy' target='_blank'><li className='social'><span title='Twitter' className='fa fa-twitter'/></li></a>
       <a href='/feeds/rss' target='_blank'><li className='social'><span title='RSS' className='fa fa-rss'/></li></a>

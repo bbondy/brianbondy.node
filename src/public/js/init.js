@@ -47,10 +47,10 @@ window.addEventListener('load', () => {
   ReactDOM.render(
   <Router history={createBrowserHistory()}>
     <Route path='/' component={Main}>
-      <IndexRoute name='blog-index' component={BlogPostList}/>
+      <IndexRoute component={BlogPostList}/>
       <Route path='blog' component={Blog}>
         <IndexRoute component={BlogPostList}/>
-        <Route name='blog-filters' path='filters' component={BlogFilters}/>
+        <Route path='filters' component={BlogFilters}/>
 
         <Route path='posted/:year' component={BlogPostList}/>
         <Route path='tagged/:tag' component={BlogPostList}/>
@@ -63,18 +63,18 @@ window.addEventListener('load', () => {
         <Route path=':id/:slug' component={BlogPost}/>
       </Route>
 
-      <Route name='projects' path='projects' component={RemoteViewer}/>
-      <Route name='resume' path='resume' component={Resume}/>
-      <Route name='other' path='other' component={RemoteViewer}/>
-      <Route name='about' path='about' component={RemoteViewer}/>
-      <Route name='contact' path='contact' component={RemoteViewer}/>
+      <Route path='projects' component={RemoteViewer}/>
+      <Route path='resume' component={Resume}/>
+      <Route path='other' component={RemoteViewer}/>
+      <Route path='about' component={RemoteViewer}/>
+      <Route path='contact' component={RemoteViewer}/>
 
-      <Route name='compression' path='compression' component={Compression}>
+      <Route path='compression' component={Compression}>
        <Route path='huffman' component={RemoteViewer}/>
        <Route path='BWT' component={RemoteViewer}/>
        <Route path='PPM' component={RemoteViewer}/>
       </Route>
-      <Route name='math' path='math' component={Math}>
+      <Route path='math' component={Math}>
         <Route path='main' component={RemoteViewer}/>
         <Route path='pi' component={RemoteViewer}/>
         <Route path='primes' component={RemoteViewer}/>
@@ -82,19 +82,19 @@ window.addEventListener('load', () => {
         <Route path='graphTheory' component={RemoteViewer}/>
         <Route path='mathTricks' component={RemoteViewer}/>
       </Route>
-      <Route name='faq' path='faq' component={RemoteViewer}/>
-      <Route name='khanacademy' path='khanacademy' component={RemoteViewer}/>
-      <Route name='links' path='links' component={RemoteViewer}/>
-      <Route name='books' path='books' component={RemoteViewer}/>
-      <Route name='articles' path='articles' component={RemoteViewer}/>
-      <Route name='advice' path='advice' component={RemoteViewer}/>
-      <Route name='mozilla' path='mozilla' component={RemoteViewer}/>
-      <Route name='mozilla-new' path='mozilla/new' component={RemoteViewer}/>
-      <Route name='universityClasses' path='universityClasses' component={RemoteViewer}/>
-      <Route name='braille' path='braille' component={RemoteViewer}/>
-      <Route name='morseCode' path='morseCode' component={RemoteViewer}/>
-      <Route name='running' path='running' component={RemoteViewer}/>
-      <Route name='stackexchnage' path='stackexchange' component={RemoteViewer}/>
+      <Route path='faq' component={RemoteViewer}/>
+      <Route path='khanacademy' component={RemoteViewer}/>
+      <Route path='links' component={RemoteViewer}/>
+      <Route path='books' component={RemoteViewer}/>
+      <Route path='articles' component={RemoteViewer}/>
+      <Route path='advice' component={RemoteViewer}/>
+      <Route path='mozilla' component={RemoteViewer}/>
+      <Route path='mozilla/new' component={RemoteViewer}/>
+      <Route path='universityClasses' component={RemoteViewer}/>
+      <Route path='braille' component={RemoteViewer}/>
+      <Route path='morseCode' component={RemoteViewer}/>
+      <Route path='running' component={RemoteViewer}/>
+      <Route path='stackexchange' component={RemoteViewer}/>
 
       <Route path='/stackexchange-:social/:page' component={StackExchangeListViewer}/>
       <Route path='/stackexchange-:social/:page' component={StackExchangeListViewer}/>
