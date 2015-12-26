@@ -1,4 +1,4 @@
-#Mathematics
+# Mathematics
 
 - [Main](/math/main)
 - [Pi](/math/pi)

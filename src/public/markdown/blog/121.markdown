@@ -32,7 +32,7 @@ There are also many other uses of the data URL scheme mentioned below.
 
 ---
 
-##Uses of the data URI scheme:
+## Uses of the data URI scheme:
 
 You may have noticed that sometimes emails with images don't have a separate attachment.
 You can use the data URI scheme inside HTML email messages without having a separate image attachment.
@@ -42,7 +42,7 @@ You can do this with [&lt;canvas&gt;.toDataURL][3]
 
 ---
 
-##How it relates to me:
+## How it relates to me:
 
 I recently improved the BMP and ICO decoder (refactoring plus adding support for PNG ICOs) for Firefox.
 I also have to implement BMP and ICO encoders so that we can have better shell integration with Windows 7.

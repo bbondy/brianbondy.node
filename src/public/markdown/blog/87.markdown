@@ -6,7 +6,7 @@ This program didn't last long though, my company's focus went to backup software
 
 This article investigates more proper ways for implementing remote-control-computer software.
 
-##An introduction to some terms:
+## An introduction to some terms:
 
 Images on computers can be categorized into 2 groups:
 
@@ -26,7 +26,7 @@ The VNC protocol works for any framebuffer display.   That is to say it relates 
 
 [The remote framebuffer (RFB) protocol][4] is a protocol used for remotely accessing a GUI.  The VNC protocol is built from the RFB protocol.  The RFB protocol, like most (but not all) other protocols can be divided into a client and server.
 
-##The RFB Client:
+## The RFB Client:
 
 The computer that wants to control the remote computer is called the RFB Client.  Programming an RFB Client is easier relative to programming an RFB server, mostly because the client is stateless.  
 
@@ -40,7 +40,7 @@ The RFB Client also sends Input events such as keyboard presses, mouse presses, 
 
 I won't go into much more details about how things work at the RFB protocol level, but if you'd like to know more [please read this document][5].
 
-##The RFB Server:
+## The RFB Server:
 
 The computer that actually has the framebuffer that you want to see is called the RFB server.  Programming this is harder relative to the RFB Client because it needs to 1) manage one or more RFB Clients, 2) respond to input events from the RFB Client, and 3) Provide updated frames to the RFB Client.
 
@@ -50,7 +50,7 @@ The RFB Server needs to only send incremental updates to the RFB Client, unless 
 
 Both the RFB Server and RFB Client can also notify each other about cut text, and the RFB Server can notify the RFB Client to ring a bell if it has one.
 
-##TCP hole punching:
+## TCP hole punching:
 
 One thing that the RFB protocol does not address directly is connecting 2 endpoints that are behind a router/NAT (henceforth referred to as a NAT).
 
@@ -70,12 +70,12 @@ Getting across NATs is probably one of the hardest things when doing network pro
 
 A commonly used library for doing all of this work for you and getting across NATs is [STUNT][8].  STUNT stands for: Simple Traversal of UDP Through NATs and TCP too.
 
-##Getting across firewalls:
+## Getting across firewalls:
 
 If possible it is best to put your connection to a port like 443 (HTTPS)  or port 80 (HTTP).  Because almost all firewalls will let you have outgoing socket connections on those ports.
 
 
-##Windows specific, sessions and more:
+## Windows specific, sessions and more:
 
 More advanced Windows specific functionality relating to remotely controlling computers has to do with sessions.  
 
@@ -91,7 +91,7 @@ Sessions can be controlled by programmers using the WTS API which is now called 
 
 If multiple Sessions and Desktops exist, the RFB Server must decide which one to use.  This may or may not be the same as which session and desktop the RFB Server runs from.
 
-##Hooking user input:
+## Hooking user input:
 
 Another important aspect of remotely controlling computers is called a [Hook][7].  
 
@@ -99,11 +99,11 @@ A Hook allows you to get feedback system wide, or per process wide about what ev
 
 In Windows, Hooks are implemented in a DLL and Windows will load that DLL and notify it of the events of what the hook is registered to do.
 
-##Web Versions:
+## Web Versions:
 
 In some software for remotely controlling computers, the Client side is on the web.  This is simply done by HTTP and a lot of AJAX.  The web page itself makes the requests directly to the Server and updates the web browser dynamically with the content of the retrieved framebuffers.
 
-##Remote-Control-Computer Software:
+## Remote-Control-Computer Software:
 
 There are many VNC client/server implementations.  Most are open source and licensed under the GPL.  
 

@@ -1,4 +1,4 @@
-##Huffman compression
+## Huffman compression
 
 Huffman coding is a mapping of a set of 'symbols' to a set of 'series of bits'. Each symbol corresponds to a variable length series of bits.
 
@@ -10,11 +10,11 @@ However, Huffman coding is not the best compression method since it does not tak
 
 Example: An 'h' follows a 'T' very often in the english language, and Huffman coding will not take that into consideration.
 
-##Huffman codes
+## Huffman codes
 
 Each Huffman code is prefix free. Meaning no binary code is a prefix of any other binary code. If it was you wouldn't know on the decoding phase which symbol to pick, the prefix of one code which itself a symbol or to keep reading to get another symbol.
 
-##Huffman trees
+## Huffman trees
 
 The binary representations for each symbol is made by using a binary tree. Each symbol is first stored as its own distinct leaf node. Each of these nodes also stores the frequency of the symbol. Since even a single node is considered a tree, each of these nodes are considered their own tree.
 
@@ -22,16 +22,16 @@ From here you simply continuously pick the 2 trees with smallest frequency and c
 
 You now have a single tree with each leaf node being an original symbol. This tree is called a Huffman tree. Creating this tree can be done in O(nlogn) by using a priority queue.
 
-##Getting the code from a Huffman tree
+## Getting the code from a Huffman tree
 
 To obtain a code for any symbol you simply start at the root node and follow down the path to the leaf node. For each left arc you follow you add a 0 to the end of your code, for each right arc that you follow you add a 1 to the end of your code.
 
 Since each symbol is a leaf node you are guaranteed that no symbol will be a prefix of any other symbol.
 
-##Combining compression methods
+## Combining compression methods
 
 Since Huffman encoding keeps the ordering for symbols to series of bits, other kinds of compression can usually be applied after Huffman coding. For example a compression algorithm that takes into consideration cross boundary symbols will still be useful.
 
-##Adaptive Huffman compression
+## Adaptive Huffman compression
 
 Adaptive Huffman coding discovers the frequency of symbols as it processes the algorithm.

@@ -11,7 +11,7 @@ Some milestones:
 - WebKit which Opera and Safari are based on has had support since 2006.
 - Microsoft relases .Net framework 3.0 which has support for XAML
 
-##Does SVG pose a threat to Silverlight/XAML?
+## Does SVG pose a threat to Silverlight/XAML?
 
 In 2006 Microsoft would probably of said yes.  Today they would say no.  I would also say no.
 

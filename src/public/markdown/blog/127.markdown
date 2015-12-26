@@ -24,7 +24,7 @@ There are many ways, the first I will talk about is Xperf.
 
 
 ---
-##Xperf
+## Xperf
 
 One way to identify optimization bottlenecks on Windows is to use [Xperf][1].
 Xperf is a great way to find both IO bottlenecks and CPU usage bottlenecks.
@@ -35,7 +35,7 @@ It can tell you which files use the most IO, what the IO patterns are, which fun
 
 ---
 
-##Built in Mozilla profiler
+## Built in Mozilla profiler
 
 
 Another way to find optimizations is to use [Benoit's profiler (SPS)][2]. Currently it works well on Mac, and Windows is nearly completed.
@@ -48,7 +48,7 @@ It far surpasses the tools I've been using to find the bugs and fixes above.
 
 ---
 
-##Custom profiler
+## Custom profiler
 
 I haven't seen how the Mozilla built-in profiler is implemented, but I suspect that this custom profiler is a simplified version of the Mozilla profiler's Pseudostack mode.
 
@@ -81,7 +81,7 @@ The output of this function is made when the third macro to dump the results is 
 
 ---
 
-##Verifying startup results
+## Verifying startup results
 
 If you're working on Firefox, a good way to verify that your speed optimization made a difference is to use the [about:startup extension][4].
 

@@ -22,7 +22,7 @@ Perhaps even a metro style compose email window application only for when a user
 
 ---
 
-##Related Bug:
+## Related Bug:
 
 - [Bug 686836][2] - Launching default email client in Windows 8 results in error
 

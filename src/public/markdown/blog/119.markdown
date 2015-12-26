@@ -12,7 +12,7 @@ This article will cover the following topics:
 
 ---
 
-##An overview of the basics of HTTP
+## An overview of the basics of HTTP
 
 The HTTP protocol works by sending requests and getting responses back for those requests.
 
@@ -67,7 +67,7 @@ The default is to use a persistent connection, but the server is not forced to d
 
 ---
 
-##What is HTTP pipelining?
+## What is HTTP pipelining?
 
 <img src='/static/img/blogpost_119/pipelining6requests.png' style='float:right;padding-left:10px;padding-bottom:10px;'>
 
@@ -84,7 +84,7 @@ HTTPS pipelining is also possible with secure HTTP connections and it gives an e
 
 ---
 
-##What problems can appear with HTTP pipelining?
+## What problems can appear with HTTP pipelining?
 
 Although the HTTP [1.1 RFC][5] indicates that HTTP implementations **should** support persistent connections, it is possible that they will not.
 
@@ -109,7 +109,7 @@ It would be nice, but servers do not currently tell a client that they support p
 
 ---
 
-##Why you should care about HTTP pipelining?
+## Why you should care about HTTP pipelining?
 
 TCP/IP packets can be reduced.  The typical [maximum segment size (MSS)][6] is in the range of 536 to 1460 bytes, and so several HTTP requests could fit into a single packet.  It would also reduce the total number of packets.
 Also there are wins with the congestion control strategy, connection handshake, connection teardown and SSL handshake.
@@ -120,13 +120,13 @@ I've been using it in Opera and Firefox and have not run into problems.
 
 ---
 
-##Which web servers support HTTP pipelining
+## Which web servers support HTTP pipelining
 
 Most modern web servers support HTTP pipelining.  IIS 4.0 is said to not have support for it.
 
 ---
 
-##Which browsers support HTTP pipelining? (And how to enable it)
+## Which browsers support HTTP pipelining? (And how to enable it)
 
 - Google Chrome: No
 - Safari: No
@@ -155,7 +155,7 @@ Note:
 
 ---
 
-##Which programming languages/libraries support HTTP pipelining?
+## Which programming languages/libraries support HTTP pipelining?
 
 Many popular programming libraries across most programming languages support pipelining.
 

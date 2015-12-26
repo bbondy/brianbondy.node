@@ -1,4 +1,4 @@
-#Other
+# Other
 
 - [Advice](/advice)
 - [Articles](/articles)

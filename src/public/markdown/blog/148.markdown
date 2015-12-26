@@ -10,7 +10,7 @@ I broke down my answer into several sections, I'm probably forgetting to add som
 
 ---
 
-##Inclusiveness
+## Inclusiveness
 
 I can't imagine a company ever being as inclusive with remote employees as Mozilla.
 If you want to be part of any meeting, simply call in and be part of it.
@@ -21,20 +21,20 @@ Every week you have a 1 on 1 meeting time with your manager.  At least once a ye
 
 ---
 
-##Travel
+## Travel
 
 There are team work weeks you get flown in for, and there are plenty of other opportunities to travel as much or as little as you would like for various get-togethers and conferences.
 
 ---
 
-##Control of your schedule
+## Control of your schedule
 
 Mozilla has employees, contractors, and contributors in pretty much every time zone.
 It's best to have a mostly consistent schedule so people can find you, but no one will question you on exactly how often you work, or exactly what hours you work.
 
 ---
 
-##What you work on
+## What you work on
 
 There are quarterly goals, and to meet those quarterly goals you may be part of a project.
 So naturally you're expected to work on the goals you own, but otherwise you can work on anything you want.
@@ -46,7 +46,7 @@ A manager can probably force prioritization on you, but I've never had it happen
 
 ---
 
-##Barriers
+## Barriers
 
 There are no barriers put in place, if you want to do something, just do it.
 If you see a role that needs to be filled, no one will stop you.
@@ -54,7 +54,7 @@ If you want to be awesome, no one will stop you or question what you do.
 
 ---
 
-##Transparency
+## Transparency
 
 Just about everything is public at Mozilla.  Sometimes company operational related information is protected behind a password, but as an employee you will have access to all of this information.
 
@@ -62,7 +62,7 @@ For example, if you want to know how you may get a raise, you can look up this i
 
 ---
 
-##Sharing what you work on
+## Sharing what you work on
 
 If you work on something cool, you can not only talk about it, but you're encouraged to talk about it.
 There are rare cases where you will have to keep quiet, but only if it has security, legal or confidential corporate partnership implications.
@@ -71,7 +71,7 @@ There is a large community of Mozillians as well who will be reading what you po
 
 ---
 
-##Building a portfolio
+## Building a portfolio
 
 Why do developers answer questions on sites like StackOverflow?  Other than being a good person and helping the world, these people are building themselves an online portfolio that gives them credibility.
 
@@ -79,7 +79,7 @@ Almost everything you do at Mozilla is open, and therefore you build yourself a 
 
 ---
 
-##Corporate hierarchy
+## Corporate hierarchy
 
 Everyone has a manager, and so in an abstract sense there is a hierarchy, but really there is no hierarchy.
 
@@ -90,14 +90,14 @@ You can start to be a peer in certain parts of the code which allows you to revi
 
 ---
 
-##Community
+## Community
 
 There is little to no distinction between contributors who pop out of nowhere, contractors, and employees.
 Mozilla is the community.
 
 ---
 
-##Morals
+## Morals
 
 All decisions are made in terms of what is best for the community and the users.
 
@@ -106,13 +106,13 @@ Seriously.
 
 ---
 
-##People
+## People
 
 The people are awesome, intelligent, logical and make you proud to be part of the same team.  There are plenty of opportunities to be mentored and to mentor others.
 
 ---
 
-##Bonus: How to get a job at Mozilla
+## Bonus: How to get a job at Mozilla
 
 Anyone can join the community and [start helping Mozilla][4]. If you want a job here, you'd be in a better position by simply jumping in and showing your value.  
 

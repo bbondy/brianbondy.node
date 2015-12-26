@@ -1,6 +1,6 @@
-#Number theory
+# Number theory
 
-##What is number theory?
+## What is number theory?
 
 Number theory is the branch of mathematics which studies the properties and theories relating to whole numbers.
 

@@ -19,7 +19,7 @@ And you will need to always prefix string, vector and map with `std::` unless yo
     using namespace std;
 
 
-##Here is an example on how to use STL strings:
+## Here is an example on how to use STL strings:
 
     string s = “hi”;//s holds "hi"
     s += “ Brian”;//s now holds “hi Brian”
@@ -40,7 +40,7 @@ So for example:
 
 In the example above s.c_str() will now hold the binary data from both calls. You no longer have to worry about forgetting to delete binary data that you allocate.  If you created pBinaryData and pMoreBinaryData on the heap, you can delete[] them after the call to append.  Anything that you put in a string will have it's own memory, you don't need to worry about freeing it.
 
-##Here is an example on how to use STL vectors:
+## Here is an example on how to use STL vectors:
 
 You use a vector to store a list of values.  A value can be a number, string, or any other class object that you create.  This list can grow to any number of elements, unlike an array.
 
@@ -57,12 +57,12 @@ You use a vector to store a list of values.  A value can be a number, string, or
     }
 
     //The above "for loop" is pointless obviously :).  It will go through each element in the vector, and copy the vector element's data to a variable "s"
-    // When I go s+= "Brian" it won’t modify the vector contents in any way.  Because when you access each elemetn v[a], it will create a copy of the string.
+    // When I go s+= "Brian" it won’t modify the vector contents in any way.  Because when you access each element v[a], it will create a copy of the string.
     // After the for loop, the vector is left unchanged.
 
 Notice how I wrote vector<string>, that means a vector that holds strings.  You could have also wrote vector<int>, or vector<AnyOtherType>.
 
-##Vector of your own class objects:
+## Vector of your own class objects:
 
     class Cat
     {
@@ -85,7 +85,7 @@ Notice how I wrote vector<string>, that means a vector that holds strings.  You 
     assert(vMyCats.size() == 1);
     //vMyCats holds a vector of Cat objects.  Each cat has 3 strings and 1 integer.
 
-##Here is an example on how to use STL maps:
+## Here is an example on how to use STL maps:
 
 You use a map to store a lookup table.  i.e. to associate something with something else.
 

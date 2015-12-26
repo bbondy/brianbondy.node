@@ -22,7 +22,7 @@ I'll be working as a contractor at Mozilla with the title of Platform Engineer. 
 
 ---
 
-##Why I chose Mozilla
+## Why I chose Mozilla
 
 A few reasons why I chose Mozilla:
 

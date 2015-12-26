@@ -1,4 +1,4 @@
-##What are abstract functions?
+## What are abstract functions?
 
 Abstract functions, are functions who's implementation is not yet specified.
 
@@ -13,7 +13,7 @@ In C# there are different constructs for interfaces (`interface`) and undefined 
 
 This post discusses what pure virtual function call errors are, and how they work across the following languages: C++, C#, and Python.
 
-##What is a pure virtual function call error?
+## What is a pure virtual function call error?
 
 Pure virtual function call errors could potentially happen, in a programming language that allows you to create partially implemented classes.  Although not all programming languages can have pure virtual function call errors.
 
@@ -21,7 +21,7 @@ Pure virtual function call errors occur when a call is made to a pure virtual fu
 
 ---
 
-##Can C++ have pure virtual function errors?
+## Can C++ have pure virtual function errors?
 
 Yes.
 
@@ -90,7 +90,7 @@ Here is a code sample that will produce a pure virtual function runtime error in
 
 ---
 
-##Can C# have pure virtual function errors?
+## Can C# have pure virtual function errors?
 
 No.
 
@@ -130,7 +130,7 @@ C# gets around pure virtual function calls though, but arguably in a worse way.
 
 ---
 
-##Can Python have pure virtual function errors?
+## Can Python have pure virtual function errors?
 
 Kind of, and only if you follow certain conventions.
 

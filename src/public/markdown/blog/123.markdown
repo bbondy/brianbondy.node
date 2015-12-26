@@ -8,7 +8,7 @@ Pressing the Start/Windows keyboard button will take you between the 2 interface
 
 ---
 
-##Firefox on Windows 8:
+## Firefox on Windows 8:
 
 The first thing I did was install Firefox.  
 
@@ -31,7 +31,7 @@ Full screen mode in Firefox works the same as previous versions currently.  If y
 
 ---
 
-##Internet Explorer Tablet Mode:
+## Internet Explorer Tablet Mode:
 
 If you start Internet Explorer from the tablet mode you'll see a full screen app with no switch to Desktop.  It has a nice interface and allows you to pin any web page to your Tablet interface as a tile.
 
@@ -44,7 +44,7 @@ Here is a tile created on the far left from a pinned page in IE of the mozilla.o
 
 ---
 
-##Work to be done for Firefox on Windows 8:
+## Work to be done for Firefox on Windows 8:
 
 
 There's probably a ton, but here are a few things that come to mind:
@@ -56,7 +56,7 @@ There's probably a ton, but here are a few things that come to mind:
 
 ---
 
-##Related bugs:
+## Related bugs:
 
 - [Bug 686835][1] - Investigate using XPCOM in a metro style application, and providing Firefox as a Metro app
 - [Bug 686837][3] - Add VS2011 support for mozilla-build

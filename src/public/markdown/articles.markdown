@@ -1,10 +1,10 @@
-#Articles
+# Articles
 
-##What is this section?
+## What is this section?
 
 This section of my page will be used for mini tutorials and in general questions that I've been asked before, and want to answer. It will have articles/posts for many different levels of computer users, as well as interest types.
 
-##Computer science articles/posts
+## Computer science articles/posts
 
 - **Article**: [Understanding GIF Decoding](/downloads/articles/gif.doc)  
 **Covered topics**: GIF, Adaptive LZW decompression  

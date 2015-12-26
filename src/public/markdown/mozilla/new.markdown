@@ -1,6 +1,6 @@
-#Mozilla
+# Mozilla
 
-##New to Mozilla
+## New to Mozilla
 
 If you want to get into the Mozilla community, this page will help you get your foot in the door. A Mozilla community member is called a Mozillian.
 
@@ -8,11 +8,11 @@ The best place to get involved is still by going through the [Mozilla contribute
 
 People often become a Mozillian for a variety of reasons including: Wanting to help the project, wanting to develop their own skills, wanting to put something extra on their resume, or even wanting to get a job at Mozilla.
 
-##Find out where you belong
+## Find out where you belong
 
 Find out what you want to help with. The best way to do that is by reading the [ways to contribute page](http://www.mozilla.org/contribute/areas.html).
 
-##Quality Assurance (QA) and testing
+## Quality Assurance (QA) and testing
 
 Here are some ways to get started with QA:
 
@@ -24,7 +24,7 @@ Here are some ways to get started with QA:
 - [Join IRC](https://wiki.mozilla.org/IRC) and hang out in the relevant channels
 - Try to find a mentor who can help you along the way
 
-##Developers
+## Developers
 
 Here are some ways to get started with development:
 
@@ -33,7 +33,7 @@ Make a [build](https://developer.mozilla.org/En/Developer_Guide) by reading the 
 If you are working on core code frequent the [Platform Developer Cheat Sheet](http://www.codefirefox.com/cheatsheet/) page which is a cheat sheet lookup for common tasks you'll be doing
 Try to find a mentor who can help you along the way
 
-##Firefox builds
+## Firefox builds
 
 Mozilla Firefox has 4 different release channels: Release, Beta, Aurora, and Nightly.
 

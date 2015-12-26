@@ -1,6 +1,6 @@
-#Burrows-Wheeler Transform
+# Burrows-Wheeler Transform
 
-##Lossless data compression
+## Lossless data compression
 
 Burrows-Wheeler transform is not actually a data compression algorithm, but it instead is a data transformation algorithm. The algorithm will transfer your input data to a format that is much easier for other compression algorithms to take advantage of.
 

@@ -9,7 +9,7 @@ Two of  ways you can do to reduce this portion of compilation time is:
 
 ---
 
-##Forward declarations
+## Forward declarations
 
 Extensively using forward declarations at all times will give you the biggest performance in compilation time.
 
@@ -64,7 +64,7 @@ Note you can also perform forward declarations with template types:
 
 ---
 
-##Precompiled headers
+## Precompiled headers
 
 Precompiled headers allow you to speed up compile time when *compiling* C++ source code.  You typically put anything in a precompiled header that doesn't change often or ever such as the standard library includes or boost includes.
 

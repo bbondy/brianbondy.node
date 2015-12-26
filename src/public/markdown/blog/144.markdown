@@ -6,13 +6,13 @@ I put my heart and soul into it, and a couple months later I was offered a full 
 
 ---
 
-##Early concerns:
+## Early concerns:
 
 I was initially offered a position as a contractor for a 3 month term and no guarantee of anything past that. I was coming from a salaried position with benefits, and since I had twin 2 year old boys, this scared the !#$#!% out of me.  I knew the personal growth opportunities at Mozilla exceed those at my current position though, so I decided to take a chance.  
 
 ---
 
-##Retrospection:
+## Retrospection:
 
 I'm happy to say that when looking back, I'm glad I took the risk, and consider it to be one of the best decisions I've ever made.  I've had an amazing year.
 
@@ -22,7 +22,7 @@ The people I work with are awesome, each in their own way, and I have an implici
 
 ---
 
-##What I've completed over the past year:
+## What I've completed over the past year:
 
 Over the past year, not including any of the completed Windows 8 Metro work, I've pushed over 215 patches across over [170 resolved/fixed bugs][2].
 
@@ -58,7 +58,7 @@ Here's a list of some of the larger things I've completed over the past year:
 
 ---
 
-##Where I'd like to go from here:
+## Where I'd like to go from here:
 
 <img src='/static/img/blogpost_118/mozilla-logo.png' style='float:right;padding-left:2px;'>
 

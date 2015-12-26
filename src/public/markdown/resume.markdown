@@ -1,9 +1,9 @@
-#Brian R. Bondy's Resume
+# Brian R. Bondy's Resume
 
-##Objective
+## Objective
 To learn from others and help others reach their goals
 
-##Profiles
+## Profiles
 - [Email](mailto:bbondy@gmail.com) - bbondy@gmail.com
 - [Blog](http://www.brianbondy.com) - http://www.brianbondy.com
 - [Github](https://github.com/bbondy) - https://github.com/bbondy
@@ -12,7 +12,7 @@ To learn from others and help others reach their goals
 - [LinkedIn](https://www.linkedin.com/in/bbondy) - https://www.linkedin.com/in/bbondy
 - [Khan Academy](https://www.khanacademy.org/profile/bbondy/) - https://www.khanacademy.org/profile/bbondy/
 
-##Experience
+## Experience
 - **Favorite Languages and APIs**: C, expert level C++ (Templates, STL, boost, COM, MFC, Win32 API, OpenGL, Qt...), JavaScript (Node, client side, app development), Python (Django, pyWin32, list comprehensions, modules, packages, ...), C# (Winforms, WPF, Silverlight, WCF, LINQ, Entity Framework, Remote Objects, Generics, Nullable types, Extension methods, ...), F#, SQL, Matlab, Haskell, Scheme
 - **Server Side Development**: Node, IIS (5,6,7, extensions), Apache, CGI, Google App Engine (Python GAE runtime, Flask, webapp, datastore, transactions, GQL, memcache, administration console, bulkdata loaders/exporters, remote API), Django, ASP, ASP .NET, ASP .NET MVC3 (ASPX, Razor), PHP, SOAP, REST ROA, template engines (Jade, jinja2)
 - **Front end Development**: DOM, CSS, Stlyus, JavaScript, jQuery, jQueryUI, Backbone, React, debugging, AJAX, JSON HTML5 (canvas, video, local storage, web workers, offline web applications, geolocation, forms, microdata), XML (XPath, XPointer, XSLT, SAX, DTDs), SVG, MathML
@@ -23,22 +23,22 @@ To learn from others and help others reach their goals
 - **Database**: MS SQL Server (2000, 2005, 2008, partitions, index design, ...), SQLite, DB2, mySQL, PostgreSQL, Oracle, Corel Paradox, MS Access
 - **Other Software Development Experience**: ZLIB, libxml2, Image analysis, cryptography, steganography, LZW and Huffman compression, tape drives, CD burning libraries, Windows LAN programming, and creating installers with NSIS. Static/Shared libraries DLLs/.so, semaphores, Windows Multi threading, pthreads, shared mem, free type lib, Video4Linux
 
-##Qualities
+## Qualities
 - Ability to work well independently and/or as a member of a team
 - Adaptable, hard working, reliable, self motivated, and a quick learner
 - Ability to make projects 'happen' quickly, mentoring, management
 - Bilingual (English and French)
 - Have been actively programming for over 20 years
 
-##Education
+## Education
 - **University of Waterloo**: Honours Bachelor of Mathematics in Computer Science  
-  Waterloo, Ontario, Canada - Aug 2000 through April 2005 
+  Waterloo, Ontario, Canada - Aug 2000 through April 2005
   Computer Graphics, Networking, Artificial Intelligence, Operating Systems, Algorithms, Concurrent Programming and Control Structures, Theory of Computation, Data Structures and Data Management, Number Theory, Mathematics of Investment, Statistics and Probability Theory, Combinatorics and Optimization, Logic Math, Calculus, Classical and Linear Algebra
 
 - **Khan Academy**  
   Windsor, Ontario, Canada - 2010 through Forever
 
-##Employment
+## Employment
 - **Khan Academy: Developer Lead**  
   Offsite employee - April 2014 through Present
   - Developed SQL environment for learning SQL on Khan Academy using emscripten + sqljs + sqlite
@@ -85,7 +85,7 @@ To learn from others and help others reach their goals
 
 - Other software developer positions not included to save space.
 
-##Projects
+## Projects
 
 - **CodeFirefox**: Outlines the process of becoming a Mozilla contributor, from start to finish, with 2-10 minute videos and exercises.
 - **Codecheck.JS**: Parses JavaScript code structure with acorn.js into an abstract syntax tree, then compares it against a set of assertions for use in online exercise frameworks.
@@ -102,7 +102,7 @@ To learn from others and help others reach their goals
 - **Pyroflow Archiving**: An alternative to Unix's tar with built in compression
 - **Data Structures**: Several template based data structures, including Adaptive Huffman compression
 
-##Interests, Hobbies, and Other
+## Interests, Hobbies, and Other
 
 - Coding: Working on programming projects, learning new technologies
 - Reading: Reviewing O'Reilly and Manning books

@@ -4,7 +4,7 @@ As of Monday of this week, development work began on Firefox for Metro.
 
 ---
 
-##A bit of background on Windows 8 Metro and Firefox
+## A bit of background on Windows 8 Metro and Firefox
 
 
 It turns out that on Windows 8 there are 3 types of applications:
@@ -30,7 +30,7 @@ The Firefox Metro enabled desktop browser can be, and will be included and packa
 
 ---
 
-##Languages we'll be programming in
+## Languages we'll be programming in
 
 We will be using the Windows Runtime C++ Template Library (WRL) which is similar to C++ / ATL.
 
@@ -46,7 +46,7 @@ Windows 8 has a minimum requirement of hardware that supports Direct X 9 and I'm
 
 ---
 
-##Development milestones
+## Development milestones
 
 Our first major goal is to get an experimental build of Fennec or Firefox running in Metro.
 This work is mainly being tracked in [Bug 732518][732518].
@@ -61,7 +61,7 @@ As a developer, your job gets pretty hard when you do a Google search for topics
 
 ---
 
-##Next development steps
+## Next development steps
 
 We have several smaller goals that we want to tackle next week:
 
@@ -77,13 +77,13 @@ We have several smaller goals that we want to tackle next week:
 
 ---
 
-##Meetings
+## Meetings
 
 We had our first weekly developer meeting half way through the week with attendees: [Robert Strong][rstrong], [Tim Abraldes][tabraldes], [Jim Mathies][jimm] and [myself (Brian R. Bondy)][bbondy].
 
 ---
 
-##Helping out
+## Helping out
 
 We're still extremely early in development so we're not ready for help with things like how the UI should look yet.
 

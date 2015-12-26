@@ -1,10 +1,10 @@
 Believe it or not the Windows 1.0 taskbar looked very similar to the Windows 7 taskbar.  But it obviously didn't have anywhere near same functionality.
 
-##indows 1.0:
+## indows 1.0:
 
 <img src='http://www.brianbondy.com/static/img/blogpost_111/Windows1Taskbar.png' width='480' height='263'>
 
-##Windows 7:
+## Windows 7:
 
 <img src='http://www.brianbondy.com/static/img/blogpost_111/Windows7Taskbar.png' width='480' height='300'>
 
@@ -12,7 +12,7 @@ The [Windows 7 taskbar is pretty awesome][15].  And it has some great functional
 
 ---
 
-##The 5 features...
+## The 5 features...
 
 **1) Application progress in the taskbar:** Progress for anything with visual displays of errors and warnings.
 
@@ -37,7 +37,7 @@ The [Windows 7 taskbar is pretty awesome][15].  And it has some great functional
 
 ---
 
-##Before you start...
+## Before you start...
 
 Before jumping into the interesting stuff, you need to get notified that the taskbar button was created.
 

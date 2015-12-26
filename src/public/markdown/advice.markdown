@@ -1,10 +1,10 @@
-#Advice
+# Advice
 
-##What the list contains
+## What the list contains
 
 These are all very easy and obvious facts. But explicitly reading and following them have helped me immensely.
 
-##Tidbits of what I consider to be good advice that I've heard
+## Tidbits of what I consider to be good advice that I've heard
 
 - This tidbit is related to independent learning. When doing homework, or trying to grasp a new concept, sometimes you just won't understand. The easiest solution is to simply start over from the start. If you get stuck again, start again from the start. You will be starting with knowledge about the subject at hand. This will allow you to grasp more details that might help you to understand the topic. Not all author's write in a linear fashion. Try looking somewhere else. Sometimes an authors explanation is not sufficient. EVERYTHING is possible to understand. You just need the proper background and a proper explanation (which is sometimes hard to come by)
 - Related to finishing a project... Most [At least software projects] fail or just never get completed. The simple solution is to make sure every day you keep doing something related to the project. Whatever you do NOW for the project, you won't need to do LATER. The problem that you fix NOW will allow you to do something else next time you work on the project.

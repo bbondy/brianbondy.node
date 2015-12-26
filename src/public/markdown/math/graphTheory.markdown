@@ -1,6 +1,6 @@
-#Graph theory
+# Graph theory
 
-##What is graph theory?
+## What is graph theory?
 
 Graph theory is of particular interest to both mathematics and computer science.
 

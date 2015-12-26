@@ -1,6 +1,6 @@
-#Morse Code
+# Morse Code
 
-##Morse Code overview
+## Morse Code overview
 
 Morse code has a 1-1 alphabetical to short/long beep code combo.
 
@@ -8,7 +8,7 @@ Morse code is a system of representing letters, numbers and punctuation marks by
 
 Morse code is an early form of digital communication, however unlike modern binary digital codes that use just two states (commonly represented as 1 and 0), it uses five: dot (·), dash (-), short gap (between each letter), medium gap (between words) and long gap (between sentences).
 
-##Basic Morse Code alphabet
+## Basic Morse Code alphabet
 
 <table id="MorseCodeTable">
 <tbody><tr>

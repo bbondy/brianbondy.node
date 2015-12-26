@@ -23,7 +23,7 @@ One particular usage of the `rel` attribute is `rel="nofollow"`.
 The `rel=nofollow` attribute and value is used to inform a search engine that the link's target should not benefit in ranking from search engines.
 
 
-##What problem is nofollow supposed to solve?
+## What problem is nofollow supposed to solve?
 
 `nofollow` was supposed to allow search engines to detect links on a page which could be subject to spam.  
 
@@ -31,56 +31,56 @@ A perfect example of where this is useful would be on a blog site where comments
 
 The `nofollow` convention was created because in theory, if you take away the [PageRank][14] benefit from a link's target, spammers should feel discouraged from spamming their links on random blogs.
 
-##Who came up with the nofollow convention and who follows it?
+## Who came up with the nofollow convention and who follows it?
 
 Members of Google originally came up with `nofollow` mainly for blogger.com in 2005.
 This convention of not affecting page rank of the target was adopted by Google in 2005 and later by Yahoo and Bing as well.
 
 Each search engine has its own interpretation of `nofollow` but in general they all agree that PageRank should not be attributed to the link's target.
 
-##Does nofollow work?
+## Does nofollow work?
 
 `nofollow` doesn't solve the problem it was intended to solve.
 
 Spammers still want direct clicks into their site, and they have no guarantee that search engines will actually do like they say and ignore the links, so spamming is still useful to the spammers.
 Spammers also know that on many sites the content of the site is duplicated on other domains, sometimes these duplicated sites do not use the `nofollow` convention.
 
-##Repurposing nofollow
+## Repurposing nofollow
 
 `nofollow` has since its original inception tried to be repurposed to be used for paid advertising links.  However this affects an entire market of people who pay for links so that they get the benefit of SEO.
 
 Internally to a site, for links inside that site `nofollow` has been used to indicate pages that aren't as important as other pages such as the privacy policy page.
 
-##What is nofollow abuse?
+## What is nofollow abuse?
 
 `nofollow` abuse is when a site uses `nofollow` not to indicate potential spam, but instead for its own selfish benefit.
 
 In particular, if a site marks a link as `nofollow` when credit is due to the attributed source, and the site knows the link is not spam, then you have `nofollow` abuse.
 
-##Does abusing nofollow hurt the Internet?
+## Does abusing nofollow hurt the Internet?
 
 Yes.  
 
 Abusing `nofollow` means that the sites that should get credit for good content no longer are getting credit for good content.
 This will in turn mean that you will receive search results that aren't the best possible ones.
 
-##Why do sites abuse nofollow?
+## Why do sites abuse nofollow?
 
 The problem is that many sites want to be the highest rated site on searches from search engines.  When the abusing site refers to sources, they will always mark the links to other sources with `nofollow`.
 That way the abusing sites will have a better chance of coming up in searches before the people they are quoting and referring to.
 
 Sites do this for selfish benefit and also because they believe their site has the best content available on the Internet.  If it is the best content on the Internet though they shouldn't need to do dirty tricks with `nofollow`.  
 
-##Who abuses nofollow?
+## Who abuses nofollow?
 
 Many major players do, and many major players do not.
 
 Particularly responsible are those sites with a reputation system in place.
 The site in particular that I want to talk about is [stackoverflow.com][9].  
 
-Stackoverflow is a site for programming Q&A and is also the same framework used by many other Q&A sites on a variety of other subjects called StackExchange.  
+StackOverflow is a site for programming Q&A and is also the same framework used by many other Q&A sites on a variety of other subjects called StackExchange.  
 
-Stackoverflow and the entire StackExchange network are some of the biggest abusers of `nofollow`.  
+StackOverflow and the entire StackExchange network are some of the biggest abusers of `nofollow`.  
 
 One of the co-founders and lead developers Jeff Atwood has stated:
 
@@ -105,7 +105,7 @@ Stackoverflow is even more guilty because they have a reputation system in place
 
 Stackoverflow does not want to compete with other sites over Google ranking positions, this is because over 87% of their incoming traffic comes from Google searches as of December 15th, 2010.
 
-##More on Stackoverflow nofollow abuse
+## More on Stackoverflow nofollow abuse
 
 Jon Skeet, the #1 user on Stackoverflow has 250k reputation, [he is immune to many things][11]; however, the links he posts have `nofollow`.
 You can see this on his [about page][1], on his [questions][2], on his [answers][3], and on his [comments][4].
@@ -124,7 +124,7 @@ Sponsored tags on Stackoverflow have `nofollow`, this was mentioned above as to 
 
 The problem is made worse in that all StackExchange sites behave in the same way.  And also if you reference Stackoverflow from a StackExchange network they will actually remove the `nofollow`!
 
-##Stackoverflow is a nofollow Hypocrite
+## Stackoverflow is a nofollow Hypocrite
 
 On this post entitled [Attribution Required][10] Jeff Atwood explains how the content that their community creates, if used, must be linked without `nofollow`:
 
@@ -140,7 +140,7 @@ Another place where they link back to their site is via the StackExchange flair 
 
 Stackoverflow has always prided themselves as being less evil than [experts-exchange.com][15].  And in many ways they are less evil.  But one area where this is not true is that `nofollow` is not used on all links in experts-exchange..
 
-##Do all sites abuse nofollow?
+## Do all sites abuse nofollow?
 
 No.
 
@@ -151,7 +151,7 @@ It is a site which Stackoverflow should look to for inspiration in this respect.
 Slashdot has per user karma and they will selectively remove `nofollow` from trusted sources.
 I verified this for both their comments and their article posts.
 
-##How can we solve this problem?
+## How can we solve this problem?
 
 One thing we can do is raise awareness of `nofollow` abuse.  That way the offending sites may eventually get the point of not abusing `nofollow`.
 

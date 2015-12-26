@@ -1,6 +1,6 @@
 [The official FTP standard is defined in RFC 959 [Postel and Reynolds 1985]][1].  This article is in no way complete nor should it be used as an implementation guide alone.
 
-##FTP uses two TCP connections to transfer files:
+## FTP uses two TCP connections to transfer files:
 
 1. The control connection
 
@@ -10,7 +10,7 @@ The control connection is made by the server listening to the default port for F
 
 Once the control connection is used to specify that it would like to transfer a file, a data connection is established to actually transfer the file.  The data connection is used for sending files, receiving files, and getting a list of files in the current directory.
 
-##FTP requests:
+## FTP requests:
 
 All FTP requests are 3 or 4 digit ASCII commands.  Each command can have 0, 1, or more optional arguments.  The most popular FTP commands are as follows:
 
@@ -47,7 +47,7 @@ All FTP requests are 3 or 4 digit ASCII commands.  Each command can have 0, 1, o
 - TYPE - set transfer type
 -USER - send username
 
-##FTP replies:
+## FTP replies:
 
 All FTP replies start with 3 digit status code in ASCII. An optional message can follow this 3 digit status code.
 
@@ -72,7 +72,7 @@ The third (right most) digit in the error code, is just used to be more specific
 
 Most FTP replies are 1 line replies, and can be read up to the first CR LF.  However, some may be multi-line replies and you should therefore check to see if the 4th digit is a hyphen.  If the 4th digit is a hypen, then you should keep reading lines until the 4th digit is not a hypen.  All lines in a multiline reply will start with the same 3 digit status code.  The final line in a multi line reply will not have a hyphen.
 
-##Using telnet to communicate with FTP:
+## Using telnet to communicate with FTP:
 
 As with many other ASCII protocols, you can communicate with an FTP server via telnet alone.
 To do this in windows, simply go to start menu | Run | command.com
@@ -94,7 +94,7 @@ In the prompt type:
 You won't be able to easily test your data connection this way, but you can test out many of the FTP commands and see the replies that they give.
 
 
-##Debugging FTP:
+## Debugging FTP:
 
 As with every other protocol, when implementing or learning FTP, it is a good idea to use ethereal.  You can download [Ethereal/Wireshark][2]. If you are using ethereal 0.10.9 or above, you will not need to download winPCAP.
 

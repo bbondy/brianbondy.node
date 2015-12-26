@@ -28,7 +28,7 @@ You can view the lists here:
 - [Cooking][12]
 - [Gaming][13]
 
-##Updates:
+## Updates:
 
 - Created real twitter lists which are self updating via the Twitter API.  You can access these twitter lists from the lists linked above.  Note: Twitter has a limit of 500 users per list so I include only the top 500 users.
 - Removed some meta tags for the "Known By" list such as "mistakes" so that I don't show anyone as being known for mistakes :)

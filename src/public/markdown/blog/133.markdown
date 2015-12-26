@@ -3,7 +3,7 @@ I will answer some commonly asked questions relating to the [series of tasks tha
 ---
 
 
-##Will silent updates first land in Firefox 13?
+## Will silent updates first land in Firefox 13?
 
 No, the silent updates work is a series of tasks, and some of it has already landed.
 
@@ -21,7 +21,7 @@ Firefox 15 will have background updates.
 
 ---
 
-##Are background updates the same as silent updates?
+## Are background updates the same as silent updates?
 
 No, background updates is a task that makes silent updates better, it is a component of the silent update project.
 
@@ -32,7 +32,7 @@ Meaning when there is an update, it will take about the same amount of time to s
 
 ---
 
-##Will Firefox force me into silent updates?
+## Will Firefox force me into silent updates?
 
 No, you have always been able to configure how you get updates.
 
@@ -50,14 +50,14 @@ Furthermore, you can specify whether or not to use the Mozilla Maintenance Servi
 
 ---
 
-##If I uninstall the Mozilla Maintenance Service will the next update just reinstall it?
+## If I uninstall the Mozilla Maintenance Service will the next update just reinstall it?
 
 No, the Mozilla Maintenance Service will only be installed once.
 If you uninstall the service after that, it will never be installed via an update again.
 
 ---
 
-##Will Firefox silently install other things than updates?
+## Will Firefox silently install other things than updates?
 
 No, the only things that will be silently installed, if the silent update option is on, are Firefox updates.
 The updates cannot be tampered with, if they are, they will not be installed.
@@ -65,7 +65,7 @@ The updates cannot be tampered with, if they are, they will not be installed.
 ---
 
 
-##Will the Mozilla Maintenance Service slow down my computer?
+## Will the Mozilla Maintenance Service slow down my computer?
 
 No, the Mozilla Maintenance Service will take up a small amount of disk space and only be run during an update.
 If an update is not in the middle of being applied, the service will not be running and will have absolutely no effect on the performance of Firefox and your machine.
@@ -73,21 +73,21 @@ If an update is not in the middle of being applied, the service will not be runn
 ---
 
 
-##Will the Mozilla Maintenance Service make updating less secure?
+## Will the Mozilla Maintenance Service make updating less secure?
 
 No, we have worked closely with the security team to ensure this feature was delivered securely.
 Firefox will only apply updates issued by Mozilla designed specifically for Firefox.
 
 ---
 
-##Is updating more often less secure?
+## Is updating more often less secure?
 
 No, if you are not updating your browser, then you do not have the most recent security fixes.
 These are the most dangerous security problems because they are well known and can be exploited.
 
 ---
 
-##Will I see the effects of the silent update service in Firefox 12?
+## Will I see the effects of the silent update service in Firefox 12?
 
 No, although the Mozilla Maintenance Service will first be installed in Firefox 12, users will not experience the benefits of the service until the first update after Firefox 12.
 

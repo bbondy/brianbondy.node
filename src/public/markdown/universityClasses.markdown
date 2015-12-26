@@ -1,10 +1,10 @@
-#University classes
+# University classes
 
-##Classes I found most interesting
+## Classes I found most interesting
 
 Listed below is a list of only the important courses that come to mind that I liked and have taken.
 
-##Math courses
+## Math courses
 
 - CO485 The Mathematics of Public-Key Cryptography
 - PMATH340 Elementary Number theory
@@ -17,7 +17,7 @@ Listed below is a list of only the important courses that come to mind that I li
 - MAT135 Algebra for Honours Mathematics
 - Math137 Calculus 1
 
-##Computer Science courses
+## Computer Science courses
 
 - CS488 Computer Graphics
 - CS486 Artificial Intelligence
@@ -33,7 +33,7 @@ Listed below is a list of only the important courses that come to mind that I li
 - CS241 Foundations of Sequential Programs
 - CS134 Principles of Computer Science 1
 
-##Physics courses
+## Physics courses
 
 - PHYS121 Mechanics, Wave Motion and Heat 1
 - SCI238 Introduction to Astronomy

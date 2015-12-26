@@ -1,4 +1,4 @@
-#Stack Exchange
+# Stack Exchange
 Twitter, LinkedIn, Facebook Stack Exchange lists
 I mined the Stack Overflow (and related sites) data dumps to extract the social networking accounts of the top users. Each list includes only the users who have social networking links in their profile, and each list is sorted by the highest reputation users first.
 

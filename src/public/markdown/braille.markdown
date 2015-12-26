@@ -1,24 +1,24 @@
-#Braille
+# Braille
 
-##Braille Information
+## Braille Information
 
 Braille was invented by Louis Braille who was born in 1809 and lost his sight when he was 6.
 
 Braille gives the blind the ability to read and do mathematics.
 
-##How Braille works
+## How Braille works
 
 Braille consists of a series of raised dots. A braille cell consists of a '3 row x 2 column' grid. Anyone of these 6 dots can be raised to form different combinations. These combinations are interpreted to mean different characters, numbers, or groups of characters. There are 2^6 - 1 different possible symbols. This is only 63, however some braille codes can be used in combination to form others making the possibilities endless.
 
 One of my favorite composers Ray Charles, was blind at the age of 7.
 
-##Why I care?
+## Why I care?
 
 I've always been interested in different ways to represent things, and different methods of communication.
 
 For example, in my projects section I have a project on steganography (encoding data into normal images by using pixel color variations).
 
-##Braille Alphabet
+## Braille Alphabet
 
 In level 1 braille every letter has it's own braille code.
 
@@ -79,7 +79,7 @@ In level 1 braille every letter has it's own braille code.
 </tr>
 </tbody></table>
 
-##Braille Numbers
+## Braille Numbers
 
 <table id="Braille-Numbers" width="100%" align="left" valign="top" style="padding-bottom:15px;">
 <tbody><tr>

@@ -17,7 +17,7 @@ To understand how all of the above works, you need to understand the concept of 
 
 Some of the below may be a little heavy, but it's worth learning it to see how Windows really works.
 
-##A gentle introduction to Sessions:
+## A gentle introduction to Sessions:
 
 Each program you have on your computer, when run is considered a process.
 A process is a program which is being executed.  Each process is the program code, a collection of threads, and other resources relating to the program.
@@ -69,7 +69,7 @@ So to recap, so far we understand that inside your Windows operating system (OS)
     - ...  
     - Process M.N  
 
-##How Vista changes how Sessions work:
+## How Vista changes how Sessions work:
 
 Before Windows Vista, the first logged in user and the NT services shared the first Session which was Session 0.
 This Session was also allowed to be interactive.
@@ -90,7 +90,7 @@ How Sessions worked Post-Vista with 3 logged on users:
 
 The difference of the 2 diagrams being that the first logged on user has his own Session in the Post-Vista diagram.
 
-##Window Stations:
+## Window Stations:
 
 Each Session contains a collection of Window Stations, a clipboard, and more.
 Each Window station has a name unique to the Session it belongs to.  Meaning within a Session each Window Station is unique.  But across Sessions two Window Stations can share a name but they are completely distinct.
@@ -139,7 +139,7 @@ So to recap , so far we understand that inside your Windows OS you have the foll
     - WinstaN  
         - Some Processes
 
-##Windows Desktops
+## Windows Desktops
 
 Each Window Station contains a collection of Desktops.
 A Desktop is loaded into kernel memory space and is a logical display surface.
@@ -231,7 +231,7 @@ So to recap , so far we understand that inside your Windows OS you have the foll
         - Some other Desktops  
             - Some processes
 
-##Mysterious checkbox in the services tab (Optional Read)
+## Mysterious checkbox in the services tab (Optional Read)
 
 There is a little mysterious checkbox that appears in the property page of each of your services called "Allow services to interact with Desktop".
 
@@ -243,13 +243,13 @@ If this checkbox is ON, then a new Session is created and a new Window Station c
 
 If this checkbox is OFF, and the service tries to display a GUI, nothing will happen to any visible Desktop.  The service gets started in Session 0.  The GUI calls will succeed but no GUI will ever be shown.
 
-##Windows Handles
+## Windows Handles
 
 Windows inside the Windows OS are children of Desktop objects.
 
 A Window is any GUI element and is usually identified by a Windows handle (HWND).  It is important to understand where Windows Handles fit into the whole picture because then you can understand what you can do across Desktops and what you cannot do across Desktops.
 
-##Communication across Sessions
+## Communication across Sessions
 
 Depending on the type of communication, inter-Session communication is possible.
 
@@ -263,7 +263,7 @@ The proper way to display a GUI for service code now is to do some kind of inter
 
 A second way to display a GUI from a service is to simply launch the process within another user's Session inside Winsta0 and the Default Desktop.
 
-##Communication across Desktops
+## Communication across Desktops
 
 Windows messages are not possible across Desktops.  Windows messages are only possible within the same Desktop.  As confirmed here: [Inter-Desktop communication via message passing is not possible][10].  
 
@@ -274,7 +274,7 @@ So a key logger for example wouldn't be allowed to have access to what is typed 
 After enumerating the Desktops you can enumerate the windows inside each Desktop.  
 You can use the Win323 API [EnumDesktopWindows][19] to enumerate these Desktop windows.  The purpose of me telling you this is that this function takes in a handle to a Desktop and it returns to you a handle to the Windows inside that Desktop.  This reinforces what I've been saying about Windows being children of Desktops.
 
-##How to circumvent all security in Windows
+## How to circumvent all security in Windows
 
 It is actually possible to do anything you want in Windows in any Session, Window Station, or Desktop.  The solution is to build a service running on your computer running as the Local System Account.  
 
@@ -295,7 +295,7 @@ As long as this service is running elevated via a manifest file, it can obtain t
     }
 
 
-##Tying it all together
+## Tying it all together
 
 Now is the fun part when we can now answer each of the questions in turn:
 
@@ -359,7 +359,7 @@ Since some of the changes weren't made in time, Windows Vista took the hit for l
 
 I'm not claiming Vista was perfect, it was far from it; however, Vista took more of a hit than it deserved.
 
-##Further reading
+## Further reading
 
 - For further reading you can read a technical paper on [Sessions, Desktops, and Window Stations][6] and also visit the various MSDN articles linked in this article.
 

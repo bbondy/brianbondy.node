@@ -5,7 +5,7 @@ I thought it would be interesting to calculate the average age of users on each 
 I did a caculation using the April 2011 data dump and came up with the following data.
 I call the statistic the `Expected age of a tag` because it is calculated using the [Expected Value][expected_value].
 
-##Observations:
+## Observations:
 
 - The expected age of the whole StackOverflow site is ~30 years old.
 - On StackOverlow the tag with the youngest expected age is 26 years old, the tag with the oldest is 36.  I was surprised they were so close together.
@@ -48,7 +48,7 @@ I've said this before, but I think it would be advantageous for the StackExchang
 When I previously helped with some Microsoft events at [University of Waterloo][26] (Top Computer Science University in Canada, and one of the top in the world) several students didn't know what StackOverflow was.
 
 
-##How I made the calculations per tag
+## How I made the calculations per tag
 
 The below calculations were calculated with the April 2011 [StackOverflow][1] data dump.
 
@@ -62,12 +62,12 @@ Where `P(X)` is the probability that a user of age `X` will answer a given quest
 
 I also only considered the top 3000 tags.  The top tags may not match up exactly since I only consider tags if the answerer has an age specified in their profile.
 
-##Other attempts at these stats
+## Other attempts at these stats
 
 I initially tried to do this statistic by weighing each age by the reputation of each user, but it turned out to not generate interesting data.
 The problem was that the data was weighted heavily to only include the top 1% or so of users.
 
-##Limitations of this study
+## Limitations of this study
 
 - Several users don't enter their age in their profile, so no answers from a user without an age specified counts.
 - Users that are very young and users that are very old may be more unlikely to enter their age.

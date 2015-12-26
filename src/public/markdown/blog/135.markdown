@@ -37,7 +37,7 @@ Jim put together an installer this week as well so that UX can get hands on with
 
 ---
 
-##Platform integration
+## Platform integration
 
 <img src='/static/img/blogpost_135/metro-charms.png' style='float:right; padding-left:20px; padding-bottom:2px;'>
 
@@ -71,7 +71,7 @@ Metro file picker after clicking on an input file form control</figurecaption>
 ---
 <a name="metro-is-important" />
 
-##Why Windows 8 Metro support is really important
+## Why Windows 8 Metro support is really important
 
 <img src='/static/img/blogpost_135/windows-8-logo-small.jpg' style='float:left; padding-right:15px; padding-bottom:2px;'>
 

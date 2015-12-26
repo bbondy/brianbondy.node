@@ -1,6 +1,6 @@
-#Math tricks
+# Math tricks
 
-##Math tricks
+## Math tricks
 
 - Instead of subtracting number, it's sometimes easier to think how much you need to add to the smaller number to get to the bigger number. For example 1134 -1123. You need to add 11 to 1123 to get to 1134.
 - You can multiply any large number by 9 easily in your head. Example 123 * 9. Instead of calculating the number using 9, you can instead do 123 * 10 = 1230 and then subtract 123. Which gives 1107. The same trick works with 11 but you add instead of subtracting the number.

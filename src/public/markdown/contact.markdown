@@ -1,6 +1,6 @@
-#Contact Brian R. Bondy
+# Contact Brian R. Bondy
 
-##How to get in touch with me
+## How to get in touch with me
 
 - **Email**: bbondy [at] gmail.com
 - **Twitter**: [@brianbondy](https://twitter.com/brianbondy)
