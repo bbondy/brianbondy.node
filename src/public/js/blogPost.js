@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Tag from './tag.js';
 import {fetchBlogPost, fetchComments} from './client.js';
 import {formatDate} from './formatDate.js';
@@ -52,7 +53,7 @@ export default class BlogPost extends React.Component {
 
 
   componentDidUpdate() {
-    externalLinkSetup(React.findDOMNode(this.refs.blogDiv));
+    externalLinkSetup(ReactDOM.findDOMNode(this.refs.blogDiv));
   }
 
   render() {

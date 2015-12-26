@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {fetchMarkdown} from './client.js';
 import marked from './marked';
 import externalLinkSetup from './externalLinkSetup.js';
@@ -27,7 +28,7 @@ export default class About extends React.Component {
     this.fetch();
   }
   componentDidUpdate() {
-    externalLinkSetup(React.findDOMNode(this.refs.markdownContainer));
+    externalLinkSetup(ReactDOM.findDOMNode(this.refs.markdownContainer));
   }
   render() {
     // Add progress indicator on first load

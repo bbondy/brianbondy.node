@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {deleteComment, fetchCaptcha, postComment} from './client.js';
 import marked from './unsafe-marked.js';
 import {formatDate, formatTime} from './formatDate.js';
@@ -52,7 +53,7 @@ export class Comment extends React.Component {
     });
   }
   componentDidMount() {
-    externalLinkSetup(React.findDOMNode(this.refs.commentItem));
+    externalLinkSetup(ReactDOM.findDOMNode(this.refs.commentItem));
   }
   render() {
     let comment = this.props.comment;
@@ -94,30 +95,30 @@ export class AddComment extends React.Component {
   onPostComment(e) {
     e.preventDefault();
     postComment(this.props.blogPostId, {
-      name: React.findDOMNode(this.refs.name).value,
-      email: React.findDOMNode(this.refs.email).value,
-      webpage: React.findDOMNode(this.refs.webpage).value,
-      body: React.findDOMNode(this.refs.body).value,
-      captcha: React.findDOMNode(this.refs.captcha).value,
+      name: ReactDOM.findDOMNode(this.refs.name).value,
+      email: ReactDOM.findDOMNode(this.refs.email).value,
+      webpage: ReactDOM.findDOMNode(this.refs.webpage).value,
+      body: ReactDOM.findDOMNode(this.refs.body).value,
+      captcha: ReactDOM.findDOMNode(this.refs.captcha).value,
     }).then(() => {
-      React.findDOMNode(this.refs.name).value = '';
-      React.findDOMNode(this.refs.email).value = '';
-      React.findDOMNode(this.refs.webpage).value = '';
-      React.findDOMNode(this.refs.body).value = '';
-      React.findDOMNode(this.refs.captcha).value = '';
+      ReactDOM.findDOMNode(this.refs.name).value = '';
+      ReactDOM.findDOMNode(this.refs.email).value = '';
+      ReactDOM.findDOMNode(this.refs.webpage).value = '';
+      ReactDOM.findDOMNode(this.refs.body).value = '';
+      ReactDOM.findDOMNode(this.refs.captcha).value = '';
       this.refreshCaptcha();
       this.props.reloadComments();
       alert('Thank you, your comment was posted!');
     }).catch((statusCode) => {
       if (statusCode === 405) {
         // Captcha invalid show a captcha error
-        React.findDOMNode(this.refs.captcha).value = '';
+        ReactDOM.findDOMNode(this.refs.captcha).value = '';
         this.refreshCaptcha();
         alert('The captcha entered does not match what was expected! Please try again!');
       } else {
         console.error(`Blog post not posted, promise rejected with: ${statusCode}`);
         // Some kind of other error, show a generic posting error
-        React.findDOMNode(this.refs.captcha).value = '';
+        ReactDOM.findDOMNode(this.refs.captcha).value = '';
         this.refreshCaptcha();
         alert('There was an error posting the comment!');
       }
