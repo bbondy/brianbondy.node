@@ -3,7 +3,7 @@ import React from 'react'
 export default class DocumentTitle extends React.Component {
   get titleByPath () {
     let suffix = 'Brian R. Bondy'
-    let parts = location.pathname.substring(1).split('/')
+    let parts = window.location.pathname.substring(1).split('/')
     if (this.props.pathname.startsWith('/blog/tagged/')) {
       let tag = parts[2]
       let page = ''
@@ -52,7 +52,7 @@ export default class DocumentTitle extends React.Component {
       '/mozilla': 'Mozilla',
       '/mozilla/new': 'New to Mozilla',
       '/stackexchange': 'Stack Exchange',
-      '/universityClasses': 'University classes',
+      '/universityClasses': 'University classes'
     }[this.props.pathname] || ''
     if (path) {
       path += ' - '
@@ -73,3 +73,5 @@ export default class DocumentTitle extends React.Component {
     return null
   }
 }
+
+DocumentTitle.propTypes = { pathname: React.PropTypes.string }

@@ -16,3 +16,5 @@ export default class StackExchangeListViewer extends React.Component {
     </div>
   }
 }
+
+StackExchangeListViewer.propTypes = { params: React.PropTypes.object }

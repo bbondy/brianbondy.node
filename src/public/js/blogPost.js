@@ -15,7 +15,7 @@ export default class BlogPost extends React.Component {
   loadComments (id) {
     fetchComments(id)
       .then(comments => this.setState({
-          comments,
+        comments
       }))
   }
 
@@ -29,7 +29,7 @@ export default class BlogPost extends React.Component {
           body: blogPost.body,
           created: new Date(blogPost.created),
           tags: blogPost.tags,
-          url: blogPost.url,
+          url: blogPost.url
         })
         return blogPost
       })
@@ -41,7 +41,7 @@ export default class BlogPost extends React.Component {
         body: this.props.body,
         created: new Date(this.props.created),
         tags: this.props.tags,
-        url: this.props.url,
+        url: this.props.url
       }
       this.loadComments(this.props.id)
     }
@@ -50,7 +50,6 @@ export default class BlogPost extends React.Component {
   get blogPostURL () {
     return this.state.url
   }
-
 
   componentDidUpdate () {
     externalLinkSetup(ReactDOM.findDOMNode(this.refs.blogDiv))
@@ -65,8 +64,8 @@ export default class BlogPost extends React.Component {
       <div className='datePosted'>Posted on {formatDate(this.state.created)}</div>
       <div ref='blogDiv' dangerouslySetInnerHTML={{__html: this.state.body}}/>
       <div className='tags'>{this.state.tags.map(tag => <Tag key={tag} name={tag}/>)}</div>
-      { !this.state.comments ? null :
-      <div className='commentsContainer'>
+      { !this.state.comments
+        ? null : <div className='commentsContainer'>
         <h2>Comments</h2>
         <AddComment blogPostId={this.state.id}
           reloadComments={this.loadComments.bind(this, this.state.id)}/>
@@ -78,3 +77,5 @@ export default class BlogPost extends React.Component {
     </article>
   }
 }
+
+BlogPost.propTypes = { id: React.PropTypes.any, url: React.PropTypes.string, tags: React.PropTypes.string, created: React.PropTypes.any, body: React.PropTypes.string, title: React.PropTypes.string, params: React.PropTypes.object }

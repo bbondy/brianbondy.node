@@ -9,3 +9,5 @@ export default class Compression extends React.Component {
     </div>
   }
 }
+
+Compression.propTypes = { children: React.PropTypes.any }

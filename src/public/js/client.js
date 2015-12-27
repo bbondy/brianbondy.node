@@ -1,6 +1,6 @@
 let getByType = (method, type, requestContentType, postData, url) => {
   return new Promise((resolve, reject) => {
-    var xhr = new XMLHttpRequest()
+    var xhr = new window.XMLHttpRequest()
     xhr.open(method, url, true)
     xhr.responseType = type
     if (requestContentType) {

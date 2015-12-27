@@ -10,3 +10,5 @@ export default class Resume extends React.Component {
     </div>
   }
 }
+
+Resume.propTypes = { children: React.PropTypes.any }

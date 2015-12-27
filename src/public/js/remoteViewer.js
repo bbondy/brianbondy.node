@@ -4,7 +4,7 @@ import {fetchMarkdown} from './client.js'
 import marked from './marked'
 import externalLinkSetup from './externalLinkSetup.js'
 
-export default class About extends React.Component {
+export default class RemoteViewer extends React.Component {
   constructor () {
     super()
     this.state = {
@@ -18,7 +18,8 @@ export default class About extends React.Component {
   }
   fetch () {
     let src = `${window.location.pathname.substring(1)}.markdown`
-    (this.props.fetchFunc || fetchMarkdown)(this.props.src || src).then((markdownText) =>
+    const func = this.props.fetchFunc || fetchMarkdown
+    func(this.props.src || src).then((markdownText) =>
       this.setState({markdownText}))
   }
   componentWillReceiveProps () {
@@ -40,3 +41,5 @@ export default class About extends React.Component {
         {__html: marked(this.state.markdownText)}}/></div>
   }
 }
+
+RemoteViewer.propTypes = { fetchFunc: React.PropTypes.func, src: React.PropTypes.string }

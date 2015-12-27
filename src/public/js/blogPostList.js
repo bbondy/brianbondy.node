@@ -13,10 +13,10 @@ export default class BlogPostList extends React.Component {
     fetchBlogPosts({
       year: this.props.params.year,
       tag: this.props.params.tag,
-      page: this.props.params.page,
+      page: this.props.params.page
     }).then((blogPosts) =>
       this.setState({
-        blogPosts,
+        blogPosts
       }))
   }
 
@@ -63,10 +63,12 @@ export default class BlogPostList extends React.Component {
             url={blogPost.url}
           />)
       }
-    { this.page > 1 ?
-    <NavigationButton text='Previous page' src={this.prevUrl}/> : null }
-    { this.state.blogPosts.length === 3 ?
-    <NavigationButton text='Next page' src={this.nextUrl}/> : null }
+    { this.page > 1
+      ? <NavigationButton text='Previous page' src={this.prevUrl}/> : null }
+    { this.state.blogPosts.length === 3
+      ? <NavigationButton text='Next page' src={this.nextUrl}/> : null }
     </div>
   }
 }
+
+BlogPostList.propTypes = { year: React.PropTypes.any, tag: React.PropTypes.any, page: React.PropTypes.any, params: React.PropTypes.object }

@@ -13,3 +13,5 @@ export default class Main extends React.Component {
     </div>
   }
 }
+
+Main.propTypes = { children: React.PropTypes.any }

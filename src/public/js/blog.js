@@ -7,3 +7,5 @@ export default class Blog extends React.Component {
     </div>
   }
 }
+
+Blog.propTypes = { children: React.PropTypes.any }

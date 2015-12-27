@@ -24,6 +24,8 @@ export class Comments extends React.Component {
   }
 }
 
+Comments.propTypes = { comments: React.PropTypes.any, blogPostId: React.PropTypes.any, reloadComments: React.PropTypes.any }
+
 export class Comment extends React.Component {
   get gravatarHash () {
     return `http://www.gravatar.com/avatar/${this.props.comment.gravatarHash}?s=60`
@@ -46,9 +48,9 @@ export class Comment extends React.Component {
   removeComment (blogPostId, comment) {
     deleteComment(blogPostId, comment).then(this.props.reloadComments).catch(statusCode => {
       if (statusCode === 405) {
-        alert('Error deleting comment: Wrong admin mode password!')
+        window.alert('Error deleting comment: Wrong admin mode password!')
       } else {
-        alert('Error deleting comment!')
+        window.alert('Error deleting comment!')
       }
     })
   }
@@ -63,16 +65,16 @@ export class Comment extends React.Component {
       <span onClick={this.removeComment.bind(this, this.props.blogPostId, comment)} className='fa fa-times-circle deleteComment'/>
       <div>
         {
-          comment.webpage ?
-            <a rel='extern nofollow' href={comment.webpage} target='_blank'>
+          comment.webpage
+          ? <a rel='extern nofollow' href={comment.webpage} target='_blank'>
               {img}
             </a> : {img}
         }
       </div>
       <span>
       {
-        comment.webpage ?
-          <a rel='external nofollow' href={comment.webpage} target='_blank'>
+        comment.webpage
+        ? <a rel='external nofollow' href={comment.webpage} target='_blank'>
             {name}
           </a> : {name}
       }
@@ -84,11 +86,13 @@ export class Comment extends React.Component {
   }
 }
 
+Comment.propTypes = { blogPostId: React.PropTypes.any, comment: React.PropTypes.comment, reloadComments: React.PropTypes.func }
+
 export class AddComment extends React.Component {
   constructor () {
     super()
     this.state = {
-      showAddCommentForm: false,
+      showAddCommentForm: false
     }
   }
 
@@ -99,7 +103,7 @@ export class AddComment extends React.Component {
       email: ReactDOM.findDOMNode(this.refs.email).value,
       webpage: ReactDOM.findDOMNode(this.refs.webpage).value,
       body: ReactDOM.findDOMNode(this.refs.body).value,
-      captcha: ReactDOM.findDOMNode(this.refs.captcha).value,
+      captcha: ReactDOM.findDOMNode(this.refs.captcha).value
     }).then(() => {
       ReactDOM.findDOMNode(this.refs.name).value = ''
       ReactDOM.findDOMNode(this.refs.email).value = ''
@@ -108,43 +112,43 @@ export class AddComment extends React.Component {
       ReactDOM.findDOMNode(this.refs.captcha).value = ''
       this.refreshCaptcha()
       this.props.reloadComments()
-      alert('Thank you, your comment was posted!')
+      window.alert('Thank you, your comment was posted!')
     }).catch((statusCode) => {
       if (statusCode === 405) {
         // Captcha invalid show a captcha error
         ReactDOM.findDOMNode(this.refs.captcha).value = ''
         this.refreshCaptcha()
-        alert('The captcha entered does not match what was expected! Please try again!')
+        window.alert('The captcha entered does not match what was expected! Please try again!')
       } else {
         console.error(`Blog post not posted, promise rejected with: ${statusCode}`)
         // Some kind of other error, show a generic posting error
         ReactDOM.findDOMNode(this.refs.captcha).value = ''
         this.refreshCaptcha()
-        alert('There was an error posting the comment!')
+        window.alert('There was an error posting the comment!')
       }
     })
   }
 
   refreshCaptcha () {
     fetchCaptcha(this.props.blogPostId).then(captchaDataUrl => this.setState({
-      captchaDataUrl,
+      captchaDataUrl
     }))
   }
 
   onClickAddComment () {
     this.refreshCaptcha()
     this.setState({
-      showAddCommentForm: true,
+      showAddCommentForm: true
     })
   }
   render () {
     return <div>
       <input className={cx({
-        hideAddCommentForm: this.state.showAddCommentForm,
+        hideAddCommentForm: this.state.showAddCommentForm
       })} type='button' value='Add a new comment' onClick={this.onClickAddComment.bind(this)} />
       <form className={cx({
         addCommentForm: true,
-        hideAddCommentForm: !this.state.showAddCommentForm,
+        hideAddCommentForm: !this.state.showAddCommentForm
       })} onSubmit={this.onPostComment.bind(this)}>
         <h2>Add a new comment</h2>
         <input ref='name' type='text' placeholder='Name' required />
@@ -152,11 +156,13 @@ export class AddComment extends React.Component {
         <input ref='webpage' type='url' placeholder='Website (Optional)' />
         <textarea ref='body' placeholder='Your comment (markdown, but no tags)' required />
         <input className='captchaInput' ref='captcha' type='text' placeholder='Enter the text to the right' required />
-        { !this.state.captchaDataUrl ? null :
-          <img className='captchaImage' src={this.state.captchaDataUrl}/>
+        { !this.state.captchaDataUrl
+          ? null : <img className='captchaImage' src={this.state.captchaDataUrl}/>
         }
         <input type='submit' value='Submit' />
       </form>
     </div>
   }
 }
+
+AddComment.propTypes = { blogPostId: React.PropTypes.any, reloadComments: React.PropTypes.func }
