@@ -1,26 +1,26 @@
-import React from 'react';
+import React from 'react'
 
 export default class DocumentTitle extends React.Component {
-  get titleByPath() {
-    let suffix = 'Brian R. Bondy';
-    let parts = location.pathname.substring(1).split('/');
+  get titleByPath () {
+    let suffix = 'Brian R. Bondy'
+    let parts = location.pathname.substring(1).split('/')
     if (this.props.pathname.startsWith('/blog/tagged/')) {
-      let tag = parts[2];
-      let page = '';
+      let tag = parts[2]
+      let page = ''
       if (parts[3] === 'page') {
-        page = ` page ${parts[4]}`;
+        page = ` page ${parts[4]}`
       }
-      return `Posts tagged ${tag}${page} - ${suffix}`;
+      return `Posts tagged ${tag}${page} - ${suffix}`
     } else if (this.props.pathname.startsWith('/blog/posted/')) {
-      let year = parts[2];
-      let page = '';
+      let year = parts[2]
+      let page = ''
       if (parts[3] === 'page') {
-        page = ` page ${parts[4]}`;
+        page = ` page ${parts[4]}`
       }
-      return `Posted in ${year}${page} - ${suffix}`;
+      return `Posted in ${year}${page} - ${suffix}`
     } else if (this.props.pathname.startsWith('/page/')) {
-      let page = parts[1];
-      return `Blog posts page ${page}`;
+      let page = parts[1]
+      return `Blog posts page ${page}`
     }
 
     let path = {
@@ -53,24 +53,23 @@ export default class DocumentTitle extends React.Component {
       '/mozilla/new': 'New to Mozilla',
       '/stackexchange': 'Stack Exchange',
       '/universityClasses': 'University classes',
-    }[this.props.pathname] || '';
+    }[this.props.pathname] || ''
     if (path) {
-      path += ' - ';
+      path += ' - '
     }
-    path += suffix;
-    return path;
+    path += suffix
+    return path
   }
 
-  componentDidMount() {
-    document.title = this.titleByPath;
+  componentDidMount () {
+    document.title = this.titleByPath
   }
 
-  componentDidUpdate() {
-    document.title = this.titleByPath;
+  componentDidUpdate () {
+    document.title = this.titleByPath
   }
 
-  render() {
-    return null;
+  render () {
+    return null
   }
 }
-

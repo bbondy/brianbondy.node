@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 export default class Blog extends React.Component {
-  render() {
+  render () {
     return <div>
       {this.props.children}
-    </div>;
+    </div>
   }
 }

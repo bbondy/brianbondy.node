@@ -4,7 +4,7 @@ var changed = require('gulp-changed');
 var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
-var eslint = require('gulp-eslint');
+var standard = require('gulp-standard')
 var less = require('gulp-less');
 var runSequence = require('run-sequence');
 var server = require( 'gulp-develop-server' );
@@ -94,8 +94,10 @@ gulp.task('start-server', function () {
  */
 gulp.task('lint-node', function() {
   return gulp.src(SERVER_FILES)
-    .pipe(eslint())
-    .pipe(eslint.format())
+    .pipe(standard())
+    .pipe(standard.reporter('default', {
+      breakOnError: false
+    }))
     .pipe(gutil.noop());
 });
 
@@ -111,9 +113,10 @@ gulp.task('lint-js', function() {
       '!' + SRC_ROOT + 'js/ext/*.js',
       '!' + SRC_ROOT + 'public/js/analytics.js',
     ])
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(gutil.noop());
+    .pipe(standard())
+    .pipe(standard.reporter('default', {
+      breakOnError: false
+    }))
 });
 
 /**

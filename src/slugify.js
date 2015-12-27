@@ -1,5 +1,5 @@
-export default function slugify(str) {
+export default function slugify (str) {
   return str.toLowerCase()
     .replace(/[^\w ]+/g, '')
-    .replace(/ +/g, '-');
+    .replace(/ +/g, '-')
 }

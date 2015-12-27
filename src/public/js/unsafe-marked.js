@@ -1,5 +1,5 @@
-import marked from 'marked';
-import highlight from 'highlight.js';
+import marked from 'marked'
+import highlight from 'highlight.js'
 marked.setOptions({
   renderer: new marked.Renderer(),
   gfm: true,
@@ -10,7 +10,7 @@ marked.setOptions({
   smartLists: true,
   smartypants: false,
   highlight: function (code) {
-    return highlight.highlightAuto(code).value;
+    return highlight.highlightAuto(code).value
   }
-});
-export default marked;
+})
+export default marked

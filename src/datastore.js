@@ -1,66 +1,64 @@
-let redis = require('redis');
+let redis = require('redis')
 
-let redisClient;
-export function initRedis(port = 19278) {
-  redisClient = redis.createClient(port);
+let redisClient
+export function initRedis (port = 19278) {
+  redisClient = redis.createClient(port)
   redisClient.on('error', function (err) {
-    console.error('DB: Error ' + err);
-  });
+    console.error('DB: Error ' + err)
+  })
 }
 
-export function uninitRedis(shutdown = false) {
+export function uninitRedis (shutdown = false) {
   if (shutdown) {
-    redisClient.shutdown();
+    redisClient.shutdown()
   } else {
-    redisClient.quit();
+    redisClient.quit()
   }
 }
 
 /**
  * Adds an object to a list
  */
-function pushToList(key, obj) {
+function pushToList (key, obj) {
   return new Promise((resolve, reject) => {
     redisClient.rpush(key, JSON.stringify(obj), err => {
       if (err) {
-        reject(err);
+        reject(err)
       } else {
-        resolve();
+        resolve()
       }
-    });
-  });
+    })
+  })
 }
-
 
 /**
  * Removes an item from the specified list
  */
-function removeFromList(key, obj) {
+function removeFromList (key, obj) {
   return new Promise((resolve, reject) => {
     redisClient.lrem(key, 1, JSON.stringify(obj), err => {
       if (err) {
-        reject(err);
+        reject(err)
       } else {
-        resolve();
+        resolve()
       }
-    });
-  });
+    })
+  })
 }
-
 
 /**
  * Obtains all items in a list
  */
-function getListElements(key) {
+function getListElements (key) {
   return new Promise((resolve, reject) => {
     redisClient.lrange(key, 0, -1, (err, replies) => {
       if (err) {
-        reject(err);
-        return;
+        reject(err)
+        return
       }
-      resolve(replies.map(result => JSON.parse(result)));
-    });
-  });
+      resolve(replies.map(result => JSON.parse(result)))
+    })
+  })
 }
 
 /**
@@ -73,21 +71,21 @@ function getListElements(key) {
  *   - body
  *   - datePosted
  */
-export function addComment(blogPostId, comment) {
-  return pushToList(`comments:${blogPostId}`, comment);
+export function addComment (blogPostId, comment) {
+  return pushToList(`comments:${blogPostId}`, comment)
 }
 
 /**
  * Obtains a list of comments for the specified blogPostId
  * See addComment for the data stored for each comment.
  */
-export function getComments(blogPostId) {
-  return getListElements(`comments:${blogPostId}`);
+export function getComments (blogPostId) {
+  return getListElements(`comments:${blogPostId}`)
 }
 
 /**
  * Removes the specified comment from the blog post id list
  */
-export function removeComment(blogPostId, comment) {
-  return removeFromList(`comments:${blogPostId}`, comment);
+export function removeComment (blogPostId, comment) {
+  return removeFromList(`comments:${blogPostId}`, comment)
 }

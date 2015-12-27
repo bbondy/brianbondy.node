@@ -1,28 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Tag from './tag.js';
-import {fetchBlogPost, fetchComments} from './client.js';
-import {formatDate} from './formatDate.js';
-import externalLinkSetup from './externalLinkSetup.js';
-import {Comments, AddComment} from './comments.js';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Tag from './tag.js'
+import {fetchBlogPost, fetchComments} from './client.js'
+import {formatDate} from './formatDate.js'
+import externalLinkSetup from './externalLinkSetup.js'
+import {Comments, AddComment} from './comments.js'
 
 export default class BlogPost extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
+  constructor () {
+    super()
+    this.state = {}
   }
 
-  loadComments(id) {
+  loadComments (id) {
     fetchComments(id)
       .then(comments => this.setState({
           comments,
-      }));
+      }))
   }
 
-  componentWillMount() {
+  componentWillMount () {
     if (this.props.params && this.props.params.id) {
       fetchBlogPost(this.props.params.id).then((blogPost) => {
-        document.title = blogPost.title + ' - Brian R. Bondy';
+        document.title = blogPost.title + ' - Brian R. Bondy'
         this.setState({
           id: blogPost.id,
           title: blogPost.title,
@@ -30,10 +30,10 @@ export default class BlogPost extends React.Component {
           created: new Date(blogPost.created),
           tags: blogPost.tags,
           url: blogPost.url,
-        });
-        return blogPost;
+        })
+        return blogPost
       })
-      .then((blogPost) => this.loadComments(blogPost.id));
+      .then((blogPost) => this.loadComments(blogPost.id))
     } else {
       this.state = {
         id: this.props.id,
@@ -42,23 +42,23 @@ export default class BlogPost extends React.Component {
         created: new Date(this.props.created),
         tags: this.props.tags,
         url: this.props.url,
-      };
-      this.loadComments(this.props.id);
+      }
+      this.loadComments(this.props.id)
     }
   }
 
-  get blogPostURL() {
-    return this.state.url;
+  get blogPostURL () {
+    return this.state.url
   }
 
 
-  componentDidUpdate() {
-    externalLinkSetup(ReactDOM.findDOMNode(this.refs.blogDiv));
+  componentDidUpdate () {
+    externalLinkSetup(ReactDOM.findDOMNode(this.refs.blogDiv))
   }
 
-  render() {
+  render () {
     if (!this.state.title) {
-      return null;
+      return null
     }
     return <article className='blogPost'>
       <h1><a href={this.blogPostURL}>{this.state.title}</a></h1>
@@ -75,6 +75,6 @@ export default class BlogPost extends React.Component {
           reloadComments={this.loadComments.bind(this, this.state.id)}/>
       </div>
       }
-    </article>;
+    </article>
   }
 }

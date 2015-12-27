@@ -1,49 +1,49 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Router, Route, Redirect, IndexRoute} from 'react-router';
-console.log('Router', Router);
-console.log('Route', Route);
-console.log('Redirect', Redirect);
-console.log('IndexRoute', IndexRoute);
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {Router, Route, Redirect, IndexRoute} from 'react-router'
+console.log('Router', Router)
+console.log('Route', Route)
+console.log('Redirect', Redirect)
+console.log('IndexRoute', IndexRoute)
 
-import Main from './main.js';
+import Main from './main.js'
 
-import Blog from './blog.js';
-import BlogPost from './blogPost.js';
-import BlogPostList from './blogPostList.js';
-import BlogFilters from './blogFilters.js';
-import Compression from './compression.js';
-import Resume from './resume.js';
-import Math from './math.js';
-import RemoteViewer from './remoteViewer.js';
-import StackExchangeListViewer from './stackExchangeListViewer.js';
+import Blog from './blog.js'
+import BlogPost from './blogPost.js'
+import BlogPostList from './blogPostList.js'
+import BlogFilters from './blogFilters.js'
+import Compression from './compression.js'
+import Resume from './resume.js'
+import Math from './math.js'
+import RemoteViewer from './remoteViewer.js'
+import StackExchangeListViewer from './stackExchangeListViewer.js'
 
-const createBrowserHistory = require('history/lib/createBrowserHistory');
+const createBrowserHistory = require('history/lib/createBrowserHistory')
 
 /**
  * Turns admin mode on with the specified password
  */
-window.adminMode = function(pass) {
-  document.querySelector('body').className += ' adminMode';
-  window.adminModePass = pass;
-};
+window.adminMode = function (pass) {
+  document.querySelector('body').className += ' adminMode'
+  window.adminModePass = pass
+}
 
 /**
  * Indicates if admin mode is enabled or not.
  * It is enabled even if a wrong password was added so this
  * doesn't necessarily mean any command will work.
  */
-window.isAdminModeEnabled = function() {
-  return !!window.adminModePass;
-};
+window.isAdminModeEnabled = function () {
+  return !!window.adminModePass
+}
 
 window.addEventListener('load', () => {
-  window.Router = Router;
-  window.Route = Route;
-  window.IndexRoute = IndexRoute;
-  window.BlogFilters = BlogFilters;
-  window.BlogPostList = BlogPostList;
-  window.Blog = Blog;
+  window.Router = Router
+  window.Route = Route
+  window.IndexRoute = IndexRoute
+  window.BlogFilters = BlogFilters
+  window.BlogPostList = BlogPostList
+  window.Blog = Blog
   ReactDOM.render(
   <Router history={createBrowserHistory()}>
     <Route path='/' component={Main}>
@@ -112,5 +112,5 @@ window.addEventListener('load', () => {
       <Redirect from='other/morseCode' to='morseCode' />
       <Redirect from='other/stackexchange' to='stackexchange' />
     </Route>
-  </Router>, document.getElementById('mountPoint'));
-});
+  </Router>, document.getElementById('mountPoint'))
+})

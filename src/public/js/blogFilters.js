@@ -1,26 +1,26 @@
-import React from 'react';
-import * as Immutable from 'immutable';
-import Tag from './tag.js';
-import YearTag from './yearTag.js';
-import {fetchTags} from './client.js';
+import React from 'react'
+import * as Immutable from 'immutable'
+import Tag from './tag.js'
+import YearTag from './yearTag.js'
+import {fetchTags} from './client.js'
 
 export default class BlogFilters extends React.Component {
-  constructor() {
-    super();
+  constructor () {
+    super()
     this.state = {
-      tags: [],
-    };
+      tags: []
+    }
   }
 
-  componentWillMount() {
+  componentWillMount () {
     fetchTags().then((tags) => {
       this.setState({
-        tags,
-      });
-    });
+        tags
+      })
+    })
   }
 
-  render() {
+  render () {
     return <div>
       <h1>Blog posts by year</h1>
       {new Immutable.Range(new Date().getFullYear(), 2005, -1)
@@ -30,6 +30,6 @@ export default class BlogFilters extends React.Component {
       {this.state.tags
         .map(tag => <div key={tag.name + '-continer'}> <Tag name={tag.name}/> x {tag.count}</div>)}
       </div>
-    </div>;
+    </div>
   }
 }

@@ -1,5 +1,5 @@
-var marked = require('marked');
-var highlight = require('highlight.js');
+var marked = require('marked')
+var highlight = require('highlight.js')
 export default marked.setOptions({
   renderer: new marked.Renderer(),
   gfm: true,
@@ -10,7 +10,6 @@ export default marked.setOptions({
   smartLists: true,
   smartypants: false,
   highlight: function (code) {
-    return highlight.highlightAuto(code).value;
+    return highlight.highlightAuto(code).value
   }
-});
-
+})

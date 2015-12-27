@@ -1,22 +1,22 @@
-export function titleByPath(pathname) {
-  let parts = pathname.substring(1).split('/');
+export function titleByPath (pathname) {
+  let parts = pathname.substring(1).split('/')
   if (pathname.startsWith('/blog/tagged/')) {
-    let tag = parts[2];
-    let page = '';
+    let tag = parts[2]
+    let page = ''
     if (parts[3] === 'page') {
-      page = ` page ${parts[4]}`;
+      page = ` page ${parts[4]}`
     }
-    return `Posts tagged ${tag}${page}`;
+    return `Posts tagged ${tag}${page}`
   } else if (pathname.startsWith('/blog/posted/')) {
-    let year = parts[2];
-    let page = '';
+    let year = parts[2]
+    let page = ''
     if (parts[3] === 'page') {
-      page = ` page ${parts[4]}`;
+      page = ` page ${parts[4]}`
     }
-    return `Posted in ${year}${page}`;
+    return `Posted in ${year}${page}`
   } else if (pathname.startsWith('/page/')) {
-    let page = parts[1];
-    return `Blog posts page ${page}`;
+    let page = parts[1]
+    return `Blog posts page ${page}`
   }
 
   let path = {
@@ -48,19 +48,19 @@ export function titleByPath(pathname) {
     '/mozilla': 'Mozilla',
     '/mozilla/new': 'New to Mozilla',
     '/stackexchange': 'Stack Exchange',
-    '/universityClasses': 'University classes',
-  }[pathname] || '';
+    '/universityClasses': 'University classes'
+  }[pathname] || ''
   if (path) {
-    path += ' - ';
+    path += ' - '
   }
-  return path;
+  return path
 }
 
-export function pageTitleByPath(pathname) {
-  let suffix = 'Brian R. Bondy';
-  let title = titleByPath(pathname);
+export function pageTitleByPath (pathname) {
+  let suffix = 'Brian R. Bondy'
+  let title = titleByPath(pathname)
   if (!title) {
-    return suffix;
+    return suffix
   }
-  return `${title} - ${suffix}`;
+  return `${title} - ${suffix}`
 }
