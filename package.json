@@ -60,12 +60,14 @@
     "gulp-util": "^3.0.7",
     "jest-cli": "^0.8.2",
     "nodemon": "^1.8.1",
+    "pre-commit": "^1.1.2",
     "run-sequence": "^1.1.5",
     "standard": "^5.4.1",
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
     "start": "gulp",
+    "lint": "gulp lint",
     "test": "(redis-server src/redis-tests.conf&) && jest dist"
   },
   "repository": {
@@ -91,7 +93,9 @@
   },
   "homepage": "https://github.com/bbondy/brianbondy.node#readme",
   "standard": {
-    "ignore": [
-    ]
-  }
+    "ignore": []
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
