@@ -206,6 +206,13 @@ gulp.task('build', function(cb) {
 });
 
 /**
+ * All lint
+ */
+gulp.task('lint', function(cb) {
+  runSequence(['lint-node', 'lint-js'], cb);
+});
+
+/**
  * Watch for changes on the file system, and rebuild if so.
  */
 gulp.task('watch', function() {
