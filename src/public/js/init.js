@@ -1,10 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Router, Route, Redirect, IndexRoute} from 'react-router'
-console.log('Router', Router)
-console.log('Route', Route)
-console.log('Redirect', Redirect)
-console.log('IndexRoute', IndexRoute)
 
 import Main from './main.js'
 
