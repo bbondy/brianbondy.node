@@ -78,4 +78,4 @@ export default class BlogPost extends React.Component {
   }
 }
 
-BlogPost.propTypes = { id: React.PropTypes.any, url: React.PropTypes.string, tags: React.PropTypes.string, created: React.PropTypes.any, body: React.PropTypes.string, title: React.PropTypes.string, params: React.PropTypes.object }
+BlogPost.propTypes = { id: React.PropTypes.any, url: React.PropTypes.string, tags: React.PropTypes.arrayOf(React.PropTypes.string), created: React.PropTypes.any, body: React.PropTypes.string, title: React.PropTypes.string, params: React.PropTypes.object }

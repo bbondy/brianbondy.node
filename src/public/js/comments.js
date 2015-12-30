@@ -6,6 +6,10 @@ import {formatDate, formatTime} from './formatDate.js'
 import externalLinkSetup from './externalLinkSetup.js'
 import {cx} from './class-set.js'
 
+function stripHTML (str) {
+  return str.replace(/<(?:.|\n)*?>/gm, '')
+}
+
 export class Comments extends React.Component {
   render () {
     if (!this.props.comments) {
@@ -31,7 +35,7 @@ export class Comment extends React.Component {
     return `http://www.gravatar.com/avatar/${this.props.comment.gravatarHash}?s=60`
   }
   get body () {
-    return this.props.comment.body.replace(/<(?:.|\n)*?>/gm, '')
+    return stripHTML(this.props.comment.body)
   }
   get datePostedOn () {
     if (!this.props.comment.datePosted) {
@@ -59,24 +63,22 @@ export class Comment extends React.Component {
   }
   render () {
     let comment = this.props.comment
-    let img = <img src={this.gravatarHash} className='gravatar'/>
-    let name = comment.name
     return <div ref='commentItem' className='comment-item'>
       <span onClick={this.removeComment.bind(this, this.props.blogPostId, comment)} className='fa fa-times-circle deleteComment'/>
       <div>
         {
           comment.webpage
           ? <a rel='extern nofollow' href={comment.webpage} target='_blank'>
-              {img}
-            </a> : {img}
+              <img src={this.gravatarHash} className='gravatar'/>
+            </a> : <img src={this.gravatarHash} className='gravatar'/>
         }
       </div>
       <span>
       {
         comment.webpage
         ? <a rel='external nofollow' href={comment.webpage} target='_blank'>
-            {name}
-          </a> : {name}
+            <span dangerouslySetInnerHTML={{__html: stripHTML(comment.name)}}/>
+          </a> : <span dangerouslySetInnerHTML={{__html: stripHTML(comment.name)}}/>
       }
       </span>
       <span className='datePosted'>{this.datePostedOn}</span>
@@ -86,7 +88,7 @@ export class Comment extends React.Component {
   }
 }
 
-Comment.propTypes = { blogPostId: React.PropTypes.any, comment: React.PropTypes.comment, reloadComments: React.PropTypes.func }
+Comment.propTypes = { blogPostId: React.PropTypes.any, comment: React.PropTypes.object, reloadComments: React.PropTypes.func }
 
 export class AddComment extends React.Component {
   constructor () {
