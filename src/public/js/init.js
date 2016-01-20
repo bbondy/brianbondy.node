@@ -13,8 +13,7 @@ import Resume from './resume.js'
 import Math from './math.js'
 import RemoteViewer from './remoteViewer.js'
 import StackExchangeListViewer from './stackExchangeListViewer.js'
-
-const createBrowserHistory = require('history/lib/createBrowserHistory')
+import { browserHistory } from 'react-router'
 
 /**
  * Turns admin mode on with the specified password
@@ -41,7 +40,7 @@ window.addEventListener('load', () => {
   window.BlogPostList = BlogPostList
   window.Blog = Blog
   ReactDOM.render(
-  <Router history={createBrowserHistory()}>
+  <Router history={browserHistory}>
     <Route path='/' component={Main}>
       <IndexRoute component={BlogPostList}/>
       <Route path='blog' component={Blog}>
