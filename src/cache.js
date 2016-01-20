@@ -83,7 +83,7 @@ export function reloadData () {
       blogPostsByTag[tag].push(blogPost)
 
       // Get RSS by tag
-      if (tags[tag] <= 20)  {
+      if (tags[tag] <= 20) {
         rssByTag[tag] = rssByTag[tag] || newFeedFromTag(tag)
         rssByTag[tag].item(rssItem)
       }
