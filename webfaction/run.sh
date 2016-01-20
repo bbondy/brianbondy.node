@@ -98,3 +98,12 @@ cd pygtk-2.24.0
 ./configure --prefix=$HOME
 make    # 22s
 make install
+
+cd $HOME/src
+wget 'http://downloads.sourceforge.net/project/giflib/giflib-5.1.2.tar.bz2?r=&ts=1453281413&use_mirror=iweb'
+mv giflib-5.1.2.tar.bz2\?r\=\&ts\=1453281413\&use_mirror\=iweb giflib-5.1.2.tar.bz2
+tar -xjf giflib-5.1.2.tar.bz2
+cd giflib-5.1.2
+./configure --prefix=$HOME
+make    # 22s
+make install
