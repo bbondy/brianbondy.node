@@ -174,10 +174,8 @@ server.route({
   method: 'POST',
   path: '/api/blog/{id}/comments',
   handler: function (request, reply) {
-    console.log('---------')
-    console.log('get comments for session:', request.session)
     let id = request.params.id
-    if (request.payload.captcha.toLowerCase() !== request.session.get(`${id}-captcha`, true).toLowerCase()) {
+    if (request.payload.captcha.toLowerCase() !== String(request.yar.get(`${id}-captcha`, true).key).toLowerCase()) {
       reply('wrong captcha!').code(405)
       return
     }
@@ -239,9 +237,8 @@ server.route({
   method: 'GET',
   path: '/api/captcha/{id}',
   handler: function (request, reply) {
-    console.log('request session is: ', request.session)
     let {solution, textToDisplay} = newCaptcha()
-    request.session.set(`${request.params.id}-captcha`, solution)
+    request.yar.set(`${request.params.id}-captcha`, { key: solution })
     reply(textToDisplay).code(200)
   }
 })
@@ -299,9 +296,11 @@ const options = {
 }
 server.register({
   register: require('yar'),
-  options: options
+  options
 }, function (err) {
-  console.error('Error with cookie jar (yar)', err)
+  if (err) {
+    console.error('Error with cookie jar (yar)', err)
+  }
 })
 
 server.register([{
