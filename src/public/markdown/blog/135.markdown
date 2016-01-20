@@ -7,9 +7,9 @@ I don't consider that 2012 Q2 goal met yet, we still have some open design quest
 
 <figure style='text-align:left; padding:10px; margin-left:0px'>
 <img src='/static/img/blogpost_135/metro-start.jpg' style='display:block'>
-<figurecaption style='display:block;'>
+<figcaption style='display:block;'>
 Early tile design from [Bug 735008][735008] - design still in progress
-</figurecaption>
+</figcaption>
 </figure>
 
 
@@ -22,9 +22,9 @@ We haven't seen the same types of startup performance problems we've had on Andr
 <a href='/static/img/blogpost_135/metro-sidebar.jpg'>
 <img src='/static/img/blogpost_135/metro-sidebar-small.jpg'  style='padding-right:10px;'></a>
 <a href='/static/img/blogpost_135/metro-no-sidebar.jpg'><img src='/static/img/blogpost_135/metro-no-sidebar-small.jpg' style='padding-left:10px;'></a>
-<figurecaption style='display:block;'>
+<figcaption style='display:block;'>
 Firefox Metro screenshots - UI will be changing, Metro specific UI guidelines and Mozilla UX work feedback has not begun yet.
-</figurecaption>
+</figcaption>
 </figure>
 
 We're currently writing up a proposal on how we should proceed with the Metro work and we will post it on [dev.planning][2].
@@ -57,15 +57,15 @@ Once you select the Share Charm it will list the applications you can share to, 
 <figure style='text-align:center; padding:10px'>
 <a href='/static/img/blogpost_135/screenshot-search-charm.jpg'><img src='/static/img/blogpost_135/screenshot-search-charm-small.jpg' style='padding-right:10px;'></a>
 <a href='/static/img/blogpost_135/screenshot-share.jpg'><img src='/static/img/blogpost_135/screenshot-share-small.jpg' style='padding-left:10px;'></a>
-<figurecaption style='display:block;'>
-Searching for the text "Firefox Windows 8" and Sharing while playing BrowserQuest</figurecaption>
+<figcaption style='display:block;'>
+Searching for the text "Firefox Windows 8" and Sharing while playing BrowserQuest</figcaption>
 </figure>
 
 <figure style='text-align:center; padding:10px'>
 <a href='/static/img/blogpost_135/screenshot-filepicker.jpg'>
 <img src='/static/img/blogpost_135/screenshot-filepicker-small.jpg'></a>
-<figurecaption style='display:block;'>
-Metro file picker after clicking on an input file form control</figurecaption>
+<figcaption style='display:block;'>
+Metro file picker after clicking on an input file form control</figcaption>
 </figure>
 
 ---

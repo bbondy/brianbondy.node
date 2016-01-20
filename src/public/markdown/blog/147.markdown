@@ -4,8 +4,8 @@
 
 <figure style='text-align:center'>
 <img src='/static/img/blogpost_147/favicon_shortcuts.png'>
-<figurecaption style='display:block; margin-left: auto; margin-right:auto'>
-Favicons of any image format as shortcut icons in Windows</figurecaption>
+<figcaption style='display:block; margin-left: auto; margin-right:auto'>
+Favicons of any image format as shortcut icons in Windows</figcaption>
 </figure>
 
 ## Mentored bugs
