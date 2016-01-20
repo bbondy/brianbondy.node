@@ -131,8 +131,8 @@ server.route({
   method: 'GET',
   path: '/captcha/test',
   handler: function (request, reply) {
-    let {text, dataUrl} = newCaptcha()
-    reply(`<img src='${dataUrl}'/><br>Text: ${text}`).type('text/html').code(200)
+    let {solution, textToDisplay} = newCaptcha()
+    reply(`Solution: ${solution}, text: ${textToDisplay}`).type('text/html').code(200)
   }
 })
 
@@ -174,6 +174,8 @@ server.route({
   method: 'POST',
   path: '/api/blog/{id}/comments',
   handler: function (request, reply) {
+    console.log('---------')
+    console.log('get comments for session:', request.session)
     let id = request.params.id
     if (request.payload.captcha.toLowerCase() !== request.session.get(`${id}-captcha`, true).toLowerCase()) {
       reply('wrong captcha!').code(405)
@@ -237,9 +239,10 @@ server.route({
   method: 'GET',
   path: '/api/captcha/{id}',
   handler: function (request, reply) {
-    let {text, dataUrl} = newCaptcha()
-    request.session.set(`${request.params.id}-captcha`, text)
-    reply(dataUrl).code(200)
+    console.log('request session is: ', request.session)
+    let {solution, textToDisplay} = newCaptcha()
+    request.session.set(`${request.params.id}-captcha`, solution)
+    reply(textToDisplay).code(200)
   }
 })
 
@@ -286,6 +289,21 @@ server.route({
   }
 })
 
+// A hapi session plugin and cookie jar
+const options = {
+  storeBlank: false,
+  cookieOptions: {
+    password: cookiePassword,
+    isSecure: false
+  }
+}
+server.register({
+  register: require('yar'),
+  options: options
+}, function (err) {
+  console.error('Error with cookie jar (yar)', err)
+})
+
 server.register([{
   // good is a process monitor that listens for one or more of the below 'event types'
   register: require('good'),
@@ -297,16 +315,6 @@ server.register([{
         log: '*'
       }
     }]
-  }
-}, {
-  // A hapi session plugin and cookie jar
-  register: require('yar'),
-  options: {
-    cookieOptions: {
-      password: cookiePassword,
-      // only used for captcha so this is ok
-      isSecure: false
-    }
   }
 }], function (err) {
   if (err) {

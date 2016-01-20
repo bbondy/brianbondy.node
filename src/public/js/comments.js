@@ -132,9 +132,15 @@ export class AddComment extends React.Component {
   }
 
   refreshCaptcha () {
-    fetchCaptcha(this.props.blogPostId).then(captchaDataUrl => this.setState({
-      captchaDataUrl
-    }))
+    fetchCaptcha(this.props.blogPostId)
+      .then(captchaTextToDisplay => {
+        console.log('captcha text to display: ', captchaTextToDisplay)
+        this.setState({
+          captchaTextToDisplay
+        })
+      }).catch((err) => {
+        console.log('captcha text error: ', err)
+      })
   }
 
   onClickAddComment () {
@@ -157,9 +163,9 @@ export class AddComment extends React.Component {
         <input ref='email' type='email' placeholder='Email (Optional)' />
         <input ref='webpage' type='url' placeholder='Website (Optional)' />
         <textarea ref='body' placeholder='Your comment (markdown, but no tags)' required />
-        <input className='captchaInput' ref='captcha' type='text' placeholder='Enter the text to the right' required />
-        { !this.state.captchaDataUrl
-          ? null : <img className='captchaImage' src={this.state.captchaDataUrl}/>
+        <input className='captchaInput' ref='captcha' type='text' placeholder='Enter the numeric value of the number on the right' required />
+        { !this.state.captchaTextToDisplay
+          ? null : <span className='captchaText'>{this.state.captchaTextToDisplay}</span>
         }
         <input type='submit' value='Submit' />
       </form>
