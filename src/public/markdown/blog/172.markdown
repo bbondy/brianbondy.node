@@ -1,4 +1,4 @@
-Since June of last year, I’ve been co-founding a new startup called [Brave Software][0] with Brendan Eich][1].
+Since June of last year, I’ve been co-founding a new startup called [Brave Software][0] with [Brendan Eich][1].
 With our amazing team, we're developing something pretty epic.
 
 We're building the next-generation of browsers for smartphones and laptops as part of our new ad-tech platform.
