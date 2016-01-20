@@ -70,7 +70,7 @@ export function reloadData () {
     blogPost.created.getFullYear())
   blogPostsByTag = {}
   rssByTag = {}
-  _(blogPosts).each(blogPost => {
+  _(blogPosts).sortBy(blogPost => -blogPost.id).forEach(blogPost => {
     let rssItem = feedItemFromBlogPost(blogPost)
     sitemap.add(sitemapItemFromBlogPost(blogPost))
     feed.item(rssItem)
@@ -83,8 +83,10 @@ export function reloadData () {
       blogPostsByTag[tag].push(blogPost)
 
       // Get RSS by tag
-      rssByTag[tag] = rssByTag[tag] || newFeedFromTag(tag)
-      rssByTag[tag].item(rssItem)
+      if (tags[tag] <= 20)  {
+        rssByTag[tag] = rssByTag[tag] || newFeedFromTag(tag)
+        rssByTag[tag].item(rssItem)
+      }
     })
   })
 
