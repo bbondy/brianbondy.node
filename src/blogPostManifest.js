@@ -1,5 +1,10 @@
 export default [
   {
+    id: 172,
+    title: 'Brave Software',
+    created: new Date('2016/01/20'),
+    tags: ['brave', 'electron', 'node', 'firefox', 'firefox-ios', 'mozilla', 'gecko']
+  }, {
     id: 171,
     title: 'The Link Bubble Android web browser has gone fully free',
     created: new Date('2015/08/25'),
