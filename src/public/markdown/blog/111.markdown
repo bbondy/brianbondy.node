@@ -226,7 +226,7 @@ Custom destinations are controlled by: [ICustomDestinationList][10].
 
 ---
 
-##A couple other things you can do:
+## A couple other things you can do:
 
 You can customize your taskbar thumbnails by specifying a clipped rectangle of your window:
 
@@ -244,7 +244,7 @@ Or if you have multiple tab thumbnail previews:
 
 ---
 
-##What about managed code?
+## What about managed code?
 
 There are a couple of good resources for tying into the taskbar API from managed languages:
 
@@ -253,7 +253,7 @@ There are a couple of good resources for tying into the taskbar API from managed
 
 ---
 
-##Other reading:
+## Other reading:
 
 - [Introducing the Taskbar APIs][4] (Nice introductory alternative tutorial covering some different things than I have above)
 - [ITaskbarList3 Interface][13] (The gateway to most of the above features)

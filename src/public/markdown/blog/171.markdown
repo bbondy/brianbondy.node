@@ -13,14 +13,14 @@ Link Bubble going free means that all users of Link Bubble can now update and ge
 - Article mode
 - Article mode for Android wear
 
-##Acquiring Link Bubble
+## Acquiring Link Bubble
 
 At the start of August, my startup [acquired Link Bubble](http://theblerg.net/post/2015/08/05/ive-sold-link-bubble-tappath-and-all-related-assets) from an innovative independent developer named [Chris Lacy](https://twitter.com/chrismlacy).
 Together we worked with Chris on the 1.5.0 release, and then continued to do releases at a weekly cadence.
 
 We're currently doing business as Link Bubble.
 
-##Since we acquired
+## Since we acquired
 
 Some of the new features since we acquired Link Bubble that were released include:
 
@@ -35,13 +35,13 @@ Some of the new features since we acquired Link Bubble that were released includ
 - Various crash fixes
 - Many more new languages and translations
 
-##Future plans
+## Future plans
 
 We're excited to be able to put more resources into Link Bubble and we have a lot of great additions planned. Our immediate focus is towards better performance, bug fixes, and customer satisfaction/support. Next, we will work on additional web browsing and navigation features.
 
 Please follow [@Link_Bubble](https://twitter.com/Link_Bubble) for future updates.
 
-##Users with Link Bubble Pro
+## Users with Link Bubble Pro
 
 Users of Link Bubble Pro can uninstall the Pro version and simply update the existing Link Bubble application which is also installed.
 

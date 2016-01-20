@@ -1,4 +1,4 @@
-##Mozilla 2014 Goal
+## Mozilla 2014 Goal
 
 <img src='/static/img/blogpost_158/deb.jpeg' width=64 height=64 style="float:left; margin-right: 15px">
 As <cite>Deb Cohen (VP, Chief of People)</cite> said:
@@ -13,7 +13,7 @@ This year we have a very aggressive goal, for all of us to look inside our teams
 
 <img src='/static/img/blogpost_118/firefox-logo.png' width=128 style="float:right; margin-left: 15px">
 
-##What is Code Firefox?
+## What is Code Firefox?
 
 The [Code Firefox site][0] ([@codefirefox][codefirefoxtwitter]), is a new video and exercise framework which is highly inspired by [Khan Academy][KA].  Its purpose is for on-boarding contributors and sharpening the skills of existing community members.  
 
@@ -23,7 +23,7 @@ People learn differently. Providing different ways to consume information is cru
 
 ---
 
-##Testimonial
+## Testimonial
 
 One prime example of Code Firefox's usefulness is of a new contributor who joined last month, and actively uses Code Firefox.
 He has already [submitted 18 patches][1].
@@ -38,7 +38,7 @@ Just for fun, [here is the patch I got reviewed today!][anujpatch]  And it was m
 
 ---
 
-##Code Firefox statistics
+## Code Firefox statistics
 
 
 <a title='Visits per region' href='/static/img/blogpost_158/stats.png'><img src='/static/img/blogpost_158/stats.png' width=300 style="float:right; margin-left: 15px"></a>
@@ -53,7 +53,7 @@ The site has not been promoted yet, but it already has:
 
 ---
 
-##What has Code Firefox accomplished?
+## What has Code Firefox accomplished?
 
 <i class="fa fa-check" style="color: green; margin-right: 10px"></i> 51 videos, 3 exercises focused mostly on on-boarding new Firefox developers<br>
 <i class="fa fa-check" style="color: green; margin-right: 10px"></i> Videos are captioned<br>
@@ -63,7 +63,7 @@ The site has not been promoted yet, but it already has:
 
 ---
 
-##Where is the Code Firefox site going? (Code Firefox Goals)
+## Where is the Code Firefox site going? (Code Firefox Goals)
 
 <i class="fa fa-check" style="color: #B4A423; margin-right: 10px"></i> Opening up the ability to post videos to other people<br>
 <i class="fa fa-check" style="color: #B4A423; margin-right: 10px"></i> Ability to create different "Outline tracks", for example, a QA track.<br>
@@ -78,7 +78,7 @@ The site has not been promoted yet, but it already has:
 ---
 
 
-##Highlights of benefits gained by Mozilla from the site
+## Highlights of benefits gained by Mozilla from the site
 
 <i class="fa fa-check" style="color: green; margin-right: 10px"></i> Brings in new contributors<br>
 <i class="fa fa-check" style="color: green; margin-right: 10px"></i> Retains new and existing contributors<br>
@@ -89,7 +89,7 @@ The site has not been promoted yet, but it already has:
 
 ---
 
-##Media coverage of Code Firefox so far
+## Media coverage of Code Firefox so far
 
 Some people have taken the time to write about Code Firefox:
 
@@ -101,7 +101,7 @@ Some people have taken the time to write about Code Firefox:
 
 ---
 
-##What our community is saying
+## What our community is saying
 
 - <cite>Robert O'Callahan (Distinguished Engineer)</cite>:
 <br>
@@ -299,7 +299,7 @@ That's how I did my first patches! RT @codefirefox: [...]feature from start to f
 
 ---
 
-##Would you like to create Code Firefox videos?
+## Would you like to create Code Firefox videos?
 
 Please contact me at bbondy[at]gmail.com if you'd like to make a series of videos on Code Firefox for your area of expertise.
 

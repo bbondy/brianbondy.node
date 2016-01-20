@@ -1,4 +1,4 @@
-##Front end team
+## Front end team
 
 As of the end of August, two awesome Mozilla hackers, [Matt Brubeck][mbrubeck] and [Frank Yan][fyan] started tearing through front end bugs for the Metro browser.
 
@@ -10,7 +10,7 @@ Jonathan Wilde has been working on making the [Metro UI mockups][1] a reality fo
 
 ---
 
-##Front end progress
+## Front end progress
 
 Several keyboard shortcuts were added,  the new tab page is now the default home page, and a ton of small glitches on the front end are now fixed.
 
@@ -18,7 +18,7 @@ There are 2 modes for tabs in the Metro Firefox front end. You can have tab prev
 
 ---
 
-##An actual installer
+## An actual installer
 
 We updated the Firefox installer to do the necessary metro registration and include all of the new Metro bits.  
 
@@ -26,7 +26,7 @@ We also have zip builds which will do the needed Metro registration after you se
 
 ---
 
-##Default browser handling changes
+## Default browser handling changes
 
 In Windows 8 RTM, Microsoft protects both the default protocol handler, and the default file type handlers (such as .html) with a cryptographic hash.
 
@@ -42,7 +42,7 @@ We also added code to do the needed Metro registration on Windows 8 after each u
 
 ---
 
-##Default browser handling and UAC
+## Default browser handling and UAC
 
 Due to the way default browser registration works, depending on what your default browser was previously, Firefox would sometimes have to prompt you with a UAC window on Windows 7 and Vista.  In Windows 8 Microsoft changed this so that you can do this registration entirely in HKCU.
 
@@ -50,7 +50,7 @@ We updated our code to take advantage of this, so as of Windows 8, you will neve
 
 ---
 
-##Things we disabled
+## Things we disabled
 
 We disabled the code for loading external add-ons since we don't plan to have add-on support for the initial release.  We will have add-ons through the add-on SDK after the initial release though.
 
@@ -58,13 +58,13 @@ The Flash support that we currently do have is disabled for the preview as well.
 
 ---
 
-##Build changes
+## Build changes
 
 The platform splitting bug that was holding us up from landing on mozilla-central is complete as far as our needs are concerned.  It landed on elm which is where we'll do the Metro preview from.  There was a lot of fallout from these changes that got fixed up as well.
 
 ---
 
-##Various other changes
+## Various other changes
 
 We synced up the user agent string with the desktop one, did some crash reporting fixes, improved text selection, fixed up things for mouse and touch, fixed the Metro clipboard handling, added support for anonymous opt-in telemetry data reporting, and fixed several other bugs.  
 
@@ -72,7 +72,7 @@ We added a save file picker,  context menu items for saving images, enabled spel
 
 ---
 
-##Landing on mozilla-central
+## Landing on mozilla-central
 
 The platform splitting bug is complete enough for our needs but I think there is still a bit of work before it can land on m-c.  
 

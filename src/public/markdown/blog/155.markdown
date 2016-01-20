@@ -7,7 +7,7 @@ We're in the process of implementing shared profiles.
 
 ---
 
-##What is a profile?
+## What is a profile?
 
 A profile in Firefox stores all of your personal settings, including: bookmarks, preferences, extensions, passwords, history, and more.
 
@@ -18,7 +18,7 @@ We'll be sharing profiles from both applications, but there are some exceptions:
 
 ---
 
-##What are the upsides of having a shared profile?
+## What are the upsides of having a shared profile?
 
 Sharing a single profile would allow you to instantly retain bookmarks, login status, cookies, and other profile data between environments.
 
@@ -28,7 +28,7 @@ Another task highly related to sharing a single profile is adding a "Relaunch in
 
 ---
 
-##Are there any downsides to having a shared profile?
+## Are there any downsides to having a shared profile?
 
 Yes, but we believe them to be corner case issues that the user can work around, see below.
 
@@ -49,7 +49,7 @@ For users who really want to run both at the same time, they can force the use o
 
 ---
 
-##Will having a shared profile change the release date?
+## Will having a shared profile change the release date?
 
 Having a shared profile is not expected to change the release of Metro Firefox.
 A smooth async panning and zooming experience is being worked on before we want to release, and during that time we're implementing shared profiles.
@@ -58,13 +58,13 @@ The switch to Desktop / Metro feature may not retain all opened tabs and filled 
 
 ---
 
-##Where is this work being tracked?
+## Where is this work being tracked?
 
 Shared profile work is being tracked in [bug 924860][924860].
 
 ---
 
-##Other implementation details
+## Other implementation details
 
 - Browser chrome cache (not HTTP content cache) will be stored separately to avoid unexpected startup problems. Both browsers use the same User-Agent.
 - We'll be using session restore to accomplish the Metro -> Desktop and Desktop -> Metro switch should time permit.
@@ -75,7 +75,7 @@ Shared profile work is being tracked in [bug 924860][924860].
 
 ---
 
-##Current progress
+## Current progress
 
 If you'd like to see general progress of Metro Firefox you should use either the [Nightly][nightly] or [Aurora][aurora] builds.
 
@@ -91,7 +91,7 @@ The completed list of tasks related to this feature so far include:
 
 ---
 
-##Feedback
+## Feedback
 
 Constructive feedback is appreciated and wanted. Please feel free to leave a comment here or post in the profile sharing tracking bug: [Bug 924860][924860].
 

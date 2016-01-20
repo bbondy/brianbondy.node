@@ -45,7 +45,7 @@ SMTP communication is present on your computer, no matter what email client you 
 
 By using standards you are guaranteed that, even know user A uses Outlook, and user B uses Eudora, and they both have different SMTP servers both of the users will be able to communicate.
 
-##What is HTTP?
+## What is HTTP?
 
 Before I can get to what web mail is, you first need to know what HTTP is.
 HTTP is just another standard protocol.  But HTTP is meant to download files and web pages, unlike SMTP which is meant to send emails.   See [HTTP 1.1 RFC 2616, June 1999][3].

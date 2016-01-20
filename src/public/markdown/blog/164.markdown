@@ -5,7 +5,7 @@ I had an amazing first week at [Khan Academy](https://www.khanacademy.org) as a 
 
 ---
 
-##My first week
+## My first week
 
 For the week I, finished and pushed out 12 bugs fixes, posted 7 bugs, got myself added to the team page, and did a deploy of the site.
 I felt productive largely thanks to having great docs, and great people who helped on-ramp me.
@@ -23,7 +23,7 @@ On Friday, I received an amazing care package delivered to my door. The highligh
 
 <img src='http://www.brianbondy.com/static/img/blogpost_164/hopper.png' style="float:right">
 
-##Computer Science team
+## Computer Science team
 
 I’m working on the computer science team along with 2 very decorated and talented developers:
 
@@ -33,7 +33,7 @@ I’m working on the computer science team along with 2 very decorated and talen
 
 ---
 
-##A different world, but a good fit
+## A different world, but a good fit
 
 This is my first job doing web development. I’ve been mostly a C++ programmer for the past 20 years, but I’ve used a lot of technologies in use at Khan Academy.
 
@@ -42,7 +42,7 @@ My personal blog is coded in Python / Flask for Google App Engine, and I run ano
 ---
 
 
-##A long time coming
+## A long time coming
 
 Before joining Mozilla, I actually applied and interviewed with Khan Academy back in 2011. I also previously wrote a [blog post about their development process][1].  Warning: The technical information on that post is very out of date.
 
@@ -56,7 +56,7 @@ Soon enough I was flying out to the Khan Academy offices to meet Sal, Shantanu, 
 
 ---
 
-##Next steps?
+## Next steps?
 
 Learn, consistently work extremely hard, and try to do epic things.
 

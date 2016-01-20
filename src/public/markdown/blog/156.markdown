@@ -2,13 +2,13 @@ I'd like to introduce a new site I'm working on named [Code Firefox][codefirefox
 
 ---
 
-##Elevator pitch
+## Elevator pitch
 
 Becoming a Mozilla contributor can be intimidating. There's a lot of information to consume, and that information can be dispersed in a variety of different places. This site aim to outline the process of becoming a Mozilla contributor, from the start, with gentle, short, consumable 2-10 minute videos.
 
 ---
 
-##A long time coming
+## A long time coming
 
 In July 2012 I [blogged][1] about my first year at Mozilla, and where I'd like to go in the future.
 
@@ -25,7 +25,7 @@ I also created a [github project][github] and started coding the site that would
 
 ---
 
-##The future of Code Firefox
+## The future of Code Firefox
 
 Code Firefox aims to focus on Desktop Firefox videos from the ground up. I'd love to also do videos on Firefox for Android, Firefox for Windows 8 style UI, and especially for Firefox OS.
 
@@ -33,7 +33,7 @@ I'd like to eventually get to a place where the videos can be used for onramping
 
 ---
 
-##Status and focus
+## Status and focus
 
 Since I began posting videos, I've been posting an average of over 1 video per day, I'm close to 20 videos so far.
 
@@ -43,7 +43,7 @@ One statistic I found interesting is that the average visit duration on [my blog
 
 ---
 
-##The process
+## The process
 
 I’m using ScreenFlow on OS X to make the videos in a Windows 8 VMware Fusion VM, and a Blue Yeti microphone.
 

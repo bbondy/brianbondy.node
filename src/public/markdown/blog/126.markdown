@@ -1,5 +1,5 @@
 Introducing:
-##[The Mozilla Platform Development Cheat Sheet][1].
+## [The Mozilla Platform Development Cheat Sheet][1].
 
 Working on Firefox can be daunting when you first start as a developer.  
 
