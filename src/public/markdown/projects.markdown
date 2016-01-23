@@ -4,6 +4,15 @@ Listed below are some of the projects I've worked on throughout my career.  Some
 
 ---
 
+<img src='/img/projects/brave.png' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
+### [Brave OS X, Windows, and Linux browser](https://github.com/brave/browser-laptop)
+Brave browser blocks all the greed and ugliness on the Web that slows you down and invades your privacy.
+Then we put clean ads back, to fund website owners and Brave users alike.
+<br><br>
+<span style="clear:both"/>
+
+---
+
 <img src='/img/projects/link-bubble.png' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
 ### [Link Bubble Browser](https://play.google.com/store/apps/details?id=com.linkbubble.playstore&hl=en)
 Link Bubble makes the Android mobile web more efficient. When you click on a link in any app, Link Bubble loads that webpage in the background and presents it in a floating bubble, leaving you free to continue using your current app.
@@ -24,11 +33,11 @@ Only the last couple sites were open source.
 ---
 
 <img src='/img/projects/abp.png' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
-### [AdBlock Pro Filter Parser](https://www.npmjs.com/package/abp-filter-parser)
-JavaScript Adblock Plus filter parsing and matching for lists like EasyList.
+### [Brave Ad Block Engine (C++)](https://www.npmjs.com/package/abp-filter-parser)
+Adblock Plus filter parsing and matching for lists like EasyList.
 This library allows users to prevent page elements, such as advertisements, from being downloaded and displayed.
 It is an implementation of AdBlockPlus' filter rules. This library is in no way affiliated with Adblock Plus.
-It just parses the same rules as Adblock Plus does.
+It just parses the same rules as Adblock Plus does.  It does it significantly faster than other adblock implementations.
 <br><br>
 <span style="clear:both"/>
 
