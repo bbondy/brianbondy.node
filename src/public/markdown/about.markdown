@@ -11,11 +11,11 @@ I am a primarily a C++, C#, Python, and JavaScript software developer.
 
 Other than work and geek things, I also spend a lot of time with my wife Shannon, and 3 sons: Link, Ronnie, and Asher.
 
-I used to work full time on Mozilla's Fireofx browser (2011-2014), I remain a Mozilla community member and contributor (Mozillian).
+I used to work full time on Mozilla's Firefox browser (2011-2014), I remain a Mozilla community member and contributor (Mozillian).
 
 From April 21, 2014 - May 2015 I worked full time for an amazing company called Khan Academy.
 
-I currently run a startup and we're mostly in stealth mode.
+In 2015 onward I'm co-founding a business named [Brave](https://www.brave.com) with Brendan Eich.
 
 <br class="clearfloat">
 
