@@ -55,6 +55,9 @@ const COPY_WEB_APP_FILES = [
   '!' + SRC_ROOT_PUBLIC_LESS + 'less/**', // LESS files are handled by less, so don't copy them.
   '!' + SRC_ROOT_PUBLIC_LESS,
 ];
+const COPY_WELL_KNOWN_FILES = [
+  SRC_ROOT_PUBLIC + '.well-known/**/*',
+]
 
 const DEFAULT_PORT = 32757;
 const DEFAULT_HOST = 'localhost';
@@ -161,6 +164,11 @@ gulp.task('copy-public-static', function() {
     .pipe(gulp.dest(DIST_ROOT_PUBLIC));
 });
 
+gulp.task('copy-well-known', function() {
+  return gulp.src(COPY_WELL_KNOWN_FILES)
+    .pipe(gulp.dest(DIST_ROOT_PUBLIC));
+});
+
 /**
  * Copy all non-js directory app source/assets/components.
  */
@@ -202,7 +210,7 @@ gulp.task('babel-node', function() {
  * Build the app.
  */
 gulp.task('build', function(cb) {
-  runSequence(['copy-public-static', 'copy-analytics', 'copy-server-files', 'babel-node', 'bundle-js', 'lint-node', 'lint-js', 'less'], cb);
+  runSequence(['copy-public-static', 'copy-well-known', 'copy-analytics', 'copy-server-files', 'babel-node', 'bundle-js', 'lint-node', 'lint-js', 'less'], cb);
 });
 
 /**

@@ -275,7 +275,20 @@ server.route({
   }
 })
 
+server.route({
+  method: 'GET',
+  path: '/.well-known/{path*}',
+  handler: {
+    directory: {
+      path: 'well-known',
+      showHidden: true,
+      listing: true
+    }
+  }
+})
+
 // Serve everythign else from the public folder
+// Some old links used to point to /static, maybe some still exist too.
 server.route({
   method: 'GET',
   path: '/static/{path*}',
