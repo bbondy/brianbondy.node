@@ -49,8 +49,8 @@ I’m using ScreenFlow on OS X to make the videos in a Windows 8 VMware Fusion V
 
 As each video is posted, I post a message about it on this [twitter account][twitters].
 
-[1]: http://www.brianbondy.com/blog/id/144/retrospection-my-first-year-at-mozilla
-[myblog]: http://www.brianbondy.com
+[1]: https://brianbondy.com/blog/id/144/retrospection-my-first-year-at-mozilla
+[myblog]: https://brianbondy.com
 [codefirefox]: http://codefirefox.com
 [twitters]: https://twitter.com/codefirefox
 [github]: https://github.com/bbondy/codefirefox/

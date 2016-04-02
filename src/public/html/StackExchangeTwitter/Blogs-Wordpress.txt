@@ -22,7 +22,7 @@ http://c3mdigital.com/wordpress
 http://wp-performance.com/
 http://scribu.net/
 http://toscho.de/
-http://github.com/toscho
+https://github.com/toscho
 http://wordpress.pastebin.com/A2c2G7Kq
 http://goldenapplesdesign.com/
 http://sixohthree.com/
@@ -119,8 +119,8 @@ http://doug.aqueo.us/
 http://design.aqueo.us/
 http://www.pnmg.com/
 http://drupal.stackexchange.com/
-http://twitter.com/shubhkarman
-http://twitter.com/shubhkarman
+https://twitter.com/shubhkarman
+https://twitter.com/shubhkarman
 http://fractured-state.com/
 http://www.sixfourweb.com/
 http://www.cmikavac.net/
@@ -376,7 +376,7 @@ http://www.joetaxpayer.com/
 http://www.joetaxpayer.com/
 http://blog.turbotax.intuit.com/
 http://blog.turbotax.intuit.com/
-http://www.twitter.com/joetaxpayerblog
+https://twitter.com/joetaxpayerblog
 http://www.facebook.com/joetaxpayer
 http://cfssinc.com/
 http://www.notosoft.com/
@@ -415,7 +415,7 @@ http://ceejayoz.com/
 http://www.linkedin.com/in/ceejayoz
 http://www.daven.se/
 http://tcsavage.org/
-http://github.com/tcsavage/aspectgtk
+https://github.com/tcsavage/aspectgtk
 http://www.fencepost.net/
 http://stronglyemergent.com/
 http://sholsinger.com/
@@ -424,7 +424,7 @@ http://www.govcomm.harris.com/solutions/segments/Cyberspace-Security-Services.as
 http://www.echo-technology.co.uk/
 http://www.richardstelling.com/
 http://www.richardstelling.com/
-http://twitter.com/rjstelling
+https://twitter.com/rjstelling
 http://docwhat.org/
 http://www.hmemcpy.com/blog/
 http://www.typemock.com/
@@ -479,7 +479,7 @@ http://benmccormack.com/
 http://benmccormack.com/?p=212
 http://careers.stackoverflow.com/bmccormack
 http://pwnguin.net/
-http://twitter.com/#!/kriscoverdale
+https://twitter.com/#!/kriscoverdale
 http://sander.rijken.info/
 http://ankhsvn.net/
 http://sander.rijken.info/wp-content/uploads/twitter.jpg
@@ -533,7 +533,7 @@ http://blog.stackoverflow.com/2010/06/server-fault-hiring-from-the-community/
 http://blog.serverfault.com/
 http://vancouverdata.blogspot.com/
 http://socialstrategist.com/
-http://twitter.com/JayNeely
+https://twitter.com/JayNeely
 http://socialstrategist.com/2010/02/19/how-to-add-value-to-a-discussion
 http://socialstrategist.com/2010/02/04/how-to-hire-a-good-marketer-for-startups
 http://john-sheehan.com/blog
@@ -575,7 +575,7 @@ http://ruel.me/
 http://mrminimalist.nfshost.com/
 http://jmillikan.blogspot.com/
 http://weddingmusicproject.com/
-http://github.com/jmillikan/Yet-Another-Juggling-Animator
+https://github.com/jmillikan/Yet-Another-Juggling-Animator
 http://fingerpainttheweb.com/
 http://www.webtechwise.com/
 http://www.ricardoamaral.net/
@@ -658,7 +658,7 @@ http://carlrussmann.com/
 http://wordpress.stackexchange.com/
 http://www.yostivanich.com/
 http://jeffmetzner.spaces.live.com/
-http://twitter.com/tomowens
+https://twitter.com/tomowens
 http://mark.biek.org/
 http://www.dotcodedump.com/
 http://jonasnordstrom.se/
@@ -749,7 +749,7 @@ http://blog.componentoriented.com/
 http://clipperhouse.com/
 http://clipperhouse.com/blog/
 http://clipperhouse.com/blog/
-http://twitter.com/clipperhouse
+https://twitter.com/clipperhouse
 http://alikewise.com/
 http://alikewise.com/
 http://whitelightcomputing.com/
@@ -780,8 +780,8 @@ http://coderjournal.com/
 http://careers.stackoverflow.com/nick-berardi
 http://careers.stackoverflow.com/nick-berardi
 http://code.google.com/p/elmah
-http://github.com/managedfusion/managedfusion-rewriter
-http://github.com/managedfusion/fluentcassandra
+https://github.com/managedfusion/managedfusion-rewriter
+https://github.com/managedfusion/fluentcassandra
 http://rads.stackoverflow.com/amzn/click/0470410957
 http://www.greenthumbgeeks.com/
 http://picasaweb.google.com/naseer
@@ -825,9 +825,9 @@ http://www.mediaparks.lv/
 http://www.mediaparks.lv/
 http://www.thehubbards.org/blog
 http://brianmckenna.org/
-http://github.com/pufuwozu
-http://github.com/pufuwozu
-http://twitter.com/puffnfresh
+https://github.com/pufuwozu
+https://github.com/pufuwozu
+https://twitter.com/puffnfresh
 http://www.hackernewsers.com/users/pufuwozu.html
 http://www.hackernewsers.com/users/pufuwozu.html
 http://w4ik.wordpress.com/
@@ -967,7 +967,7 @@ http://www.wise-women.org/
 http://www.webstandards.org/
 http://www.backupbrain.com/
 http://www.google.com/profiles/c/favicons?domain=facebook.com
-http://github.com/dori
+https://github.com/dori
 http://www.google.com/profiles/c/favicons?domain=github.com
 http://www.google.com/profiles/dorismith#about
 http://www.google.com/profiles/c/favicons?domain=google.com
@@ -1039,8 +1039,8 @@ http://techworklove.com/
 http://theworkinggeek.com/book
 http://perlbuzz.com/
 http://techworklove.com/
-http://twitter.com/
-http://twitter.com/techworklove
+https://twitter.com/
+https://twitter.com/techworklove
 http://www.google.com/profiles/francyci
 http://www.nwesd.org/
 http://www.sage.org/field/jobs-descriptions.html#Intermediate
@@ -1159,7 +1159,7 @@ http://lavergne.gotdns.org/
 http://variable3.com/
 http://variable3.com/
 http://variable3.com/
-http://twitter.com/variable3
+https://twitter.com/variable3
 http://gofrom.us/
 http://matt.theditrolios.com/
 http://t3mujin.tumblr.com/
@@ -1167,10 +1167,10 @@ http://silentmatt.com/
 http://vodacoagency.com/
 http://www.simpligility.com/
 http://www.simpligility.com/
-http://www.github.com/mosabua
+https://github.com/mosabua
 http://www.mosabuam.com/manfred
 http://code.google.com/p/ksoap2-android/
-http://github.com/mosabua/maven-android-sdk-deployer
+https://github.com/mosabua/maven-android-sdk-deployer
 http://code.google.com/p/maven-android-plugin/
 http://burpen.com/
 http://www.ddrewdesign.com/
@@ -1208,7 +1208,7 @@ http://www.sktnetwork.com/portfolio/hindi-programming-language
 http://sidewaysmilk.com/
 http://www.theycomewithcheese.com/
 http://marcoceppi.com/
-http://github.com/marcoceppi
+https://github.com/marcoceppi
 http://www.ohloh.net/accounts/marcoceppi
 http://www.google.com/#q=Marco+Ceppi&amp;hl=en&amp;sa=2&amp;fp=1&amp;cad=b
 http://www.webmaster-eye.de/
@@ -1258,7 +1258,7 @@ http://www.elphnet.com/
 http://programmer.brettveenstra.com/
 http://www.ualberta.ca/~tlucas/
 http://saurabh-nigam.blogspot.com/
-http://twitter.com/saurabhnigam
+https://twitter.com/saurabhnigam
 http://saurabh8.wordpress.com/
 http://saurabh8.wordpress.com/
 http://dskvry.com/
@@ -1278,12 +1278,12 @@ http://changingcode.wordpress.com/
 http://adrianpalmer.me/
 http://hashedin.com/
 http://eecchhoo.wordpress.com/
-http://github.com/rchern
+https://github.com/rchern
 http://blog.stackoverflow.com/2011/01/welcome-valued-associate-rebecca-chernoff/
-http://github.com/rchern/StackExchangeScripts
+https://github.com/rchern/StackExchangeScripts
 http://stackflair.com/
 http://stackflair.com/Generate/3f0eac82-1801-410d-b334-234c18ddeeeb.png
-http://github.com/rchern
+https://github.com/rchern
 http://webapps.stackexchange.com/
 http://www.givle.com/
 http://blog.kevfoo.com/
@@ -1331,18 +1331,18 @@ http://blog.piechotka.com.pl/
 http://blog.tedd.no/
 http://johnweldon.com/
 http://chipaca.com/
-http://twitter.com/chipaca
+https://twitter.com/chipaca
 http://www.backwardcompatible.net/
-http://www.github.com/radeks
-http://github.com/radeks/300CMS
+https://github.com/radeks
+https://github.com/radeks/300CMS
 http://voidptr.heroku.com/
 http://wildptr.heroku.com/
-http://www.twitter.com/radekslupik
+https://twitter.com/radekslupik
 http://soonstudios.wordpress.com/
 http://soonstudios.wordpress.com/
 http://www.youtube.com/user/SoonStudios
 http://warpedvisions.org/
-http://github.com/khirbat
+https://github.com/khirbat
 http://persson.cx/
 http://matthewmanela.com/
 http://matthewmanela.com/
@@ -1366,7 +1366,7 @@ http://danmacs.blogspot.com/
 http://rdn-consulting.com/blog
 http://rdn-consulting.com/blog
 http://arjanvandergaag.nl/
-http://github.com/avdgaag
+https://github.com/avdgaag
 http://jordanstephens.net/
 http://oraxle.wordpress.com/
 http://oraxle.wordpress.com/
@@ -1459,7 +1459,7 @@ http://littlesecretsrecords.com/
 http://taxon.myopenid.com/
 http://www.ankurb.info/
 http://www.randominnovation.com/
-http://twitter.com/josephmferris
+https://twitter.com/josephmferris
 http://ciupicri.github.com/
 http://www.supernova.com/
 http://explorations.chasrmartin.com/
@@ -1471,7 +1471,7 @@ http://about.me/jorge.castro
 http://wiki.ubuntu.com/Upstream
 http://castrojo.tumblr.com/
 http://castrojo.tumblr.com/
-http://twitter.com/castrojo
+https://twitter.com/castrojo
 http://unicornify.appspot.com/
 http://blog.stackoverflow.com/2010/06/welcome-stack-overflow-valued-associates-00006-and-00007
 http://notarealquestion.appspot.com/
@@ -1496,7 +1496,7 @@ http://deanmarktaylor.com/
 http://t-rob.net/
 http://www.ibm.com/developerworks/views/websphere/libraryview.jsp?search_by=Mission:Messaging:&S_TACT=105AGX10&S_CMP=JRNL
 http://sankarganesh-info-exchange.blogspot.com/
-http://twitter.com/sankarganesh87
+https://twitter.com/sankarganesh87
 http://www.mskf.org/
 http://www.cooperpowereas.com/
 http://www.dunxd.com/
@@ -2277,7 +2277,7 @@ http://planetozh.com/
 http://www.roygreen.com/
 http://palbakulich.me/
 http://www.morgadinho.org/
-http://twitter.com/morgadin
+https://twitter.com/morgadin
 http://www.wycis.com/
 http://chrisbratlien.com/
 http://trustpilot.com/
@@ -2367,7 +2367,7 @@ http://www.ariellephan.com/
 http://casastorta.net/
 http://www.macronimous.com/
 http://www.mightyanchor.com/
-http://twitter.com/wpStackExchange
+https://twitter.com/wpStackExchange
 http://www.makdotgnu.com/
 http://nacho.saski.com/
 http://gray-um.com/
@@ -2776,7 +2776,7 @@ http://www.andrewalaniz.com/
 http://www.andrewalaniz.com/p/andrew-alaniz-profile.html
 http://www.forwardthinkingdesign.com/
 http://www.creedscorner.com/
-http://twitter.com/crutis
+https://twitter.com/crutis
 http://myjourneytolife.info/
 http://www.terra-imprints.com/
 http://www.terra-imprints.com/
@@ -2967,7 +2967,7 @@ http://www.niallkennedy.com/
 http://felixcat.net/
 http://muasamvui.com/
 http://www.edrooth.com/
-http://github.com/kyoto
+https://github.com/kyoto
 http://www.gregrogers.co.uk/
 http://eyesx.com/
 http://www.alexfarran.com/
@@ -3087,7 +3087,7 @@ http://www.intergraf.it/
 http://www.openid.com/
 http://msn.com/
 http://recordsonribs.com/
-http://github.com/recordsonribs/ribcage
+https://github.com/recordsonribs/ribcage
 http://www.my-webmagazine.com/
 http://www.fastjobs.com/
 http://www.premierleaguenews.in/news/ipl-2010/

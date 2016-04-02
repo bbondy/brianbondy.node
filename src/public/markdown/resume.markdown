@@ -5,7 +5,7 @@ To learn from others and help others reach their goals
 
 ## Profiles
 - [Email](mailto:bbondy@gmail.com) - bbondy@gmail.com
-- [Blog](http://www.brianbondy.com) - http://www.brianbondy.com
+- [Blog](https://brianbondy.com) - https://brianbondy.com
 - [Github](https://github.com/bbondy) - https://github.com/bbondy
 - [Stackoverflow](http://stackoverflow.com/users/3153/brian-r-bondy) (Top 0.01%) - http://stackoverflow.com/users/3153/brian-r-bondy
 - [Twitter](https://twitter.com/brianbondy) - https://twitter.com/brianbondy

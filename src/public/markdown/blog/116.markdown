@@ -1,4 +1,4 @@
-<img src='http://www.brianbondy.com/static/img/blogpost_107/socialIcons.png' width='480' height='170'>
+<img src='https://brianbondy.com/static/img/blogpost_107/socialIcons.png' width='480' height='170'>
 
 I refreshed [my lists][1] of social networking accounts (Twitter, LinkedIn, and Facebook) for StackExchange users.  The lists are sorted by reputation and updated for the April 2011 data dump.
 
@@ -20,6 +20,6 @@ For the first time there are over 20 StackExchange sites, and so I ran into a pr
 
 I tried to contact Twitter support to raise my limit of 20 lists but they could not help.  I ended up getting my 2 sons to host the lists, so I have all automatic lists up and room for another 36 StackExchange sites.  Thanks [@linkbondy][2] and [@ronniebondy][3].
 
-[1]: http://www.brianbondy.com/stackexchange/
-[2]: http://www.twitter.com/linkbondy
-[3]: http://www.twitter.com/ronniebondy
+[1]: https://brianbondy.com/stackexchange/
+[2]: https://twitter.com/linkbondy
+[3]: https://twitter.com/ronniebondy

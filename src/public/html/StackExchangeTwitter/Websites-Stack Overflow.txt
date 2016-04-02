@@ -30,7 +30,7 @@ http://blog.nth-element.com
 http://None
 http://blogs.msdn.com/ericlippert
 http://techblog.bozho.net
-http://www.brianbondy.com
+https://brianbondy.com
 http://jalf.dk/blog
 http://blog.pascal-martin.fr
 http://www.brazzy.de/
@@ -460,7 +460,7 @@ http://fgaillard.com
 http://www.brasee.com
 http://grumpyop.wordpress.com/
 http://oxygene.sk/lukas/
-http://github.com/hoffstein
+https://github.com/hoffstein
 http://www.bizcoder.com
 http://www.fleuron.cz/
 http://www.sorcerers-isle.net
@@ -1091,7 +1091,7 @@ http://www.robfe.com
 http://www.ebomike.com
 http://www.sktnetwork.com/
 http://zealandit.com
-http://github.com/jkp
+https://github.com/jkp
 http://www.google.com/profiles/taylor.paul.marshall
 http://lexicalclosures.blogspot.com/
 http://cookieoffortune.wordpress.com
@@ -1220,7 +1220,7 @@ http://mozilla.doslash.org
 http://blog.cdleary.com
 http://tagg.im/
 http://justkeepswimming.net
-http://github.com/coiscir
+https://github.com/coiscir
 http://sqlfascination.com
 http://code.google.com/p/lh-vim/
 http://rauros.net
@@ -1427,7 +1427,7 @@ http://wry.me
 http://www.12titans.net/p/default.aspx
 http://blog.mischel.com
 http://none
-http://github.com/fschwiet
+https://github.com/fschwiet
 http://www.charliehess.com
 http://juliano.info/
 http://www.mtrpcic.net
@@ -1548,7 +1548,7 @@ http://frihjul.net/
 http://www.nmichaels.org:8080/
 http://phihag.de
 http://devneal.blogspot.com
-http://www.github.com/teragonaudio
+https://github.com/teragonaudio
 http://www.panesar.net
 http://www.linkedin.com/in/jablan
 http://www.robspages.net
@@ -1576,7 +1576,7 @@ http://cowburn.info
 http://zvrba.net
 http://www.deltics.co.nz/blog
 http://opelbrothers.net
-http://github.com/dbyrne
+https://github.com/dbyrne
 http://www.carlvondrick.com
 http://ejohn.org/
 http://www.brockwoolf.com
@@ -1773,7 +1773,7 @@ http://www.safariepic.com/
 http://aino.se
 http://gojisoft.com/
 http://flook.it
-http://github.com/macek
+https://github.com/macek
 http://www.no-spoon.de/
 http://mackeblog.blogspot.com/
 http://nzpcmad.blogspot.com/
@@ -2107,7 +2107,7 @@ http://dosoft.nl/
 http://www.nowyoufirst.com
 http://adam.kissyour.net
 http://www.alexsexton.com/
-http://github.com/khirbat
+https://github.com/khirbat
 http://bushidoburrito.com/
 http://www.natpryce.com
 http://www.nls.net/mp/jarvis
@@ -2252,7 +2252,7 @@ http://johnnycoder.com/blog
 http://pdconsec.net/blogs/peterw
 http://www.google.com
 http://aouida.com
-http://github.com/MBO
+https://github.com/MBO
 http://www.maad.com
 http://www.frickinsweet.com/ryanlanciaux.com
 http://stronger.epsi.pl
@@ -2440,7 +2440,7 @@ http://bolusmjak.posterous.com/
 http://kosi2801.freepgs.com
 http://sdx2000.blogspot.com/
 http://www.tomdalling.com/
-http://www.github.com/radeks
+https://github.com/radeks
 http://code-n-play.blogspot.com/
 http://dalkescientific.com/writings/
 http://pedigree-project.org
@@ -2604,7 +2604,7 @@ http://www.discoverfire.com
 http://squirrel.pl/blog
 http://simu.wikidot.com/
 http://hangy.de/
-http://github.com/sroccaserra
+https://github.com/sroccaserra
 http://www.wengier.com/
 http://www.kconnolly.net
 http://blog.rictic.com/
@@ -2999,7 +2999,7 @@ http://memorysafari.com
 http://w.mat.cc/
 http://tooldesign.ch
 http://www.icemanind.com
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.morgancheng.com
 http://lightyearsoftware.com/
 http://bertjwregeer.com/
@@ -3262,7 +3262,7 @@ http://www.resonance-asm.com
 http://www.JohnMunsch.com
 http://www.djSpinMonkey.com
 http://crasta.com/
-http://www.github.com/drekka
+https://github.com/drekka
 http://www.topdesk.com/
 http://redwerb.com
 http://www.muhuk.com
@@ -3745,7 +3745,7 @@ http://www.danray.net
 http://www.brassy.net/
 http://greenbytes.de/tech/webdav/
 http://ruel.me
-http://github.com/djv
+https://github.com/djv
 http://komola.de
 http://tewha.net
 http://siliconsea.net/
@@ -3837,7 +3837,7 @@ http://rix0r.nl/
 http://users.forthnet.gr/pat/efotinis/
 http://none
 http://cactus-mouse.com
-http://github.com/axefrog
+https://github.com/axefrog
 http://www.dynamicalsoftware.com
 http://pushingpixels.familywhitfield.co.uk
 http://shyknee.net
@@ -4008,7 +4008,7 @@ http://blog.ablepear.com/
 http://relet.net
 http://zeljkofilipin.com/
 http://www.q-software-solutions.de/~frido
-http://github.com/tulskiy
+https://github.com/tulskiy
 http://alexkr.com
 http://padmarag.blogspot.com/
 http://triin.net
@@ -4041,7 +4041,7 @@ http://www.jamielewis.me.uk
 http://www.thegrubbsian.com
 http://itke.techtarget.com/sql-server/
 http://www.ohloh.net/accounts/sylvanaar
-http://github.com/juraj-blahunka
+https://github.com/juraj-blahunka
 http://www.veda.com.br
 http://blog.courtine.org/
 http://blog.abifathir.com
@@ -4328,7 +4328,7 @@ http://blog.caljacobson.com
 http://www.lovehabibi.com/
 http://null.void.com
 http://www.steveify.com
-http://github.com/BonsaiDen
+https://github.com/BonsaiDen
 http://www.javamexico.org/blogs/ezamudio
 http://iamthewalr.us
 http://alexfeinman.net
@@ -4449,7 +4449,7 @@ http://www.cannontrodder.net/
 http://www.irofoot.com
 http://none
 http://extempore.livejournal.com/
-http://github.com/dcrosta
+https://github.com/dcrosta
 http://nasir.wordpress.com
 http://thejacobtaylor.blogspot.com
 http://blogs.msdn.com/csharpfaq/
@@ -4491,7 +4491,7 @@ http://blendedtechnologies.com
 http://www.lloydp.co.uk
 http://www.neocodenetworks.com
 http://muze.nl
-http://github.com/jemfinch/
+https://github.com/jemfinch/
 http://tony-stormcrow.blogspot.com/
 http://www.stackoverflow.com
 http://www.inamics.com/
@@ -5470,7 +5470,7 @@ http://ohlalaweb.com
 http://jacksleight.com/
 http://www.paulbatum.com
 http://www.imrah.org
-http://Twitter.com/romainmuller
+https://twitter.com/romainmuller
 http://www.msa.mmu.ac.uk/~fraser/
 http://www.agilar.org
 http://www.chezmarshall.com
@@ -5492,7 +5492,7 @@ http://vidutis.com
 http://infinitemonkeyproductions.net
 http://statictype.org
 http://webmojo.ca
-http://github.com/zmsmith
+https://github.com/zmsmith
 http://popester.net
 http://goodstuff.im
 http://www.dfine.com.au/
@@ -5512,7 +5512,7 @@ http://www.codingreflection.com
 http://ariya.blogspot.com
 http://careers.stackoverflow.com/prashantvc
 http://www.chrisspen.com
-http://github.com/kanaka
+https://github.com/kanaka
 http://danielblair.com
 http://indyfromoz.wordpress.com
 http://zodeus.com
@@ -5935,7 +5935,7 @@ http://www.google.com
 http://none
 http://www.laisvalaikiodovanos.lt
 http://methodin.tumblr.com
-http://github.com/voxwerk
+https://github.com/voxwerk
 http://troels.arvin.dk
 http://delmiaquest.blogspot.com
 http://johnnylambada.blogspot.com
@@ -6475,7 +6475,7 @@ http://feelitlive.com/
 http://hewo.xedoloh.com/
 http://www.latitude33.co.uk
 http://www.paulhurley.co.uk
-http://github.com/sneakyness
+https://github.com/sneakyness
 http://il.linkedin.com/pub/eli-acherkan/0/497/375
 http://aniltalking.blogspot.com/
 http://www.tovare.com
@@ -6798,7 +6798,7 @@ http://www.steverb.com
 http://www.sunbase.org
 http://www.google.com.au
 http://www.dmi.me.uk
-http://github.com/ponzao
+https://github.com/ponzao
 http://www.patternfall.com
 http://reef.pl
 http://www.bastijn.nl
@@ -7180,7 +7180,7 @@ http://www.visualhint.com
 http://www.onupdatecascade.com
 http://www.mydietmatch.com
 http://nicodotti.heroku.com
-http://github.com/o-sam-o
+https://github.com/o-sam-o
 http://digdog.tumblr.com
 http://heath-tech.blogspot.com
 http://turnor.co.uk/
@@ -7294,7 +7294,7 @@ http://www.genericerror.com/blog/
 http://www.lookwhatgmanfound.com
 http://www.google.com/s2/profiles/116565082754313304860
 http://cia.vc/stats/author/spatz
-http://github.com/jdodds
+https://github.com/jdodds
 http://www.nowebsite.com
 http://blog.photeus.com/
 http://www.siriusapplications.com/
@@ -7658,7 +7658,7 @@ http://www.russellmyers.com
 http://selfdeprecated.wordpress.com/
 http://www.thenullreference.com
 http://www.BlueToque.ca
-http://github.com/rjp/
+https://github.com/rjp/
 http://www.gnome.org/~jjongsma/
 http://ifelipe.net
 http://code.google.com/p/lambdaj/
@@ -7720,12 +7720,12 @@ http://strcpy.org
 http://www.thoughtworks.com
 http://blog.zoolutions.se/
 http://blog.damontimm.com
-http://github.com/jdeseno
+https://github.com/jdeseno
 http://blogs.msdn.com/granth/
 http://www.villalette.se
 http://craiggwilson.com
 http://NoneYet
-http://github.com/bjeanes
+https://github.com/bjeanes
 http://duskwerks.com/
 http://erikvold.com/index.cfm
 http://myhipom.com/
@@ -8436,7 +8436,7 @@ http://www.ironfort.net/cgi-bin/wiki.pl?DaveF
 http://www.maploser.com
 http://blog.riff.org/
 http://artagnon.com
-http://github.com/nviennot
+https://github.com/nviennot
 http://timlentine.com/blog
 http://www.google.com
 http://blog.noblemail.ca
@@ -8529,7 +8529,7 @@ http://www.google.com/profiles/mr.rahulgarg
 http://paradigmatic.streum.org
 http://www.ourselves.nl
 http://www.clausthomsen.com
-http://github.com/gregsexton
+https://github.com/gregsexton
 http://www.dailytip.net
 http://www.michaelsteele.us
 http://www.snow-blind.net
@@ -8751,7 +8751,7 @@ http://dotsid.blogspot.com
 http://www.elasticimagesoftware.com
 http://in.finitu.de
 http://aikhan.wordpress.com
-http://github.com/mathk/
+https://github.com/mathk/
 http://www.marcreichelt.de/
 http://tcdev.free.fr
 http://mtst-a.blogspot.com/
@@ -8810,7 +8810,7 @@ http://fnogol.de/
 http://daniel.hahler.de
 http://www.brunofigueiredo.com
 http://solheimweb.com
-http://github.com/MihaiDamian
+https://github.com/MihaiDamian
 http://www.xxeo.com/
 http://ottoradke.com
 http://https://claimid.com/jonasg
@@ -9694,7 +9694,7 @@ http://rubiii.com
 http://www.winand.at/
 http://www.artoo.in
 http://www.miketomasello.net/
-http://github.com/nakajima
+https://github.com/nakajima
 http://xofz.wordpress.com
 http://disneyanimation.com
 http://wiki.tcl.tk/1240
@@ -10412,7 +10412,7 @@ http://marcoceppi.com/
 http://jaxn.org
 http://mkluwe.de
 http://www.getinvisiblehand.com
-http://github.com/dsmith-to
+https://github.com/dsmith-to
 http://www.facebook.com/MeetAnthony
 http://www.ahmedmasud.com
 http://www.wishfulcoding.com/
@@ -10775,7 +10775,7 @@ http://www.highlevelbits.com/
 http://www.perevillega.com
 http://www.koekiebox.com
 http://laurentparenteau.com/blog/
-http://github.com/willert
+https://github.com/willert
 http://micheletitolo.com
 http://disattention.com/
 http://www.danielsims.com
@@ -10878,7 +10878,7 @@ http://www.misc.lv/
 http://linil.wordpress.com
 http://www.google.com
 http://www.ubernote.com
-http://github.com/madhav/
+https://github.com/madhav/
 http://www.visionarytools.com
 http://friendlybit.com
 http://None
@@ -11200,7 +11200,7 @@ http://www.pedroghilardi.rg3.net
 http://wahlers.com.br/claus/
 http://www.thinkedge.com
 http://squirrelsewer.blogspot.com
-http://github.com/indieinvader
+https://github.com/indieinvader
 http://ericschweichler.info
 http://www.sebastianbrozda.com
 http://delicious.com/asharism
@@ -11773,7 +11773,7 @@ http://aaronhanson.net
 http://www.novacode.fi/jansson
 http://www.mediahq.co.za
 http://sharepointexplored.wordpress.com
-http://github.com/maydaniel
+https://github.com/maydaniel
 http://roman.ae-labs.org
 http://www.alvherre.cl
 http://www.jaskula.fr
@@ -11963,7 +11963,7 @@ http://rixi.us
 http://www.linkedin.com/pub/jim-fell/17/218/b35
 http://www.3waywebdesign.de
 http://mrdhiraj.blogspot.com
-http://github.com/guzba
+https://github.com/guzba
 http://www.peterjuhasz.net
 http://theadmin.org
 http://gasparolo.com/gabriel
@@ -12756,7 +12756,7 @@ http://www.coreguardian.org
 http://mike.fi/
 http://www.google.co.uk
 http://paralyzed.se
-http://github.com/dkubb
+https://github.com/dkubb
 http://irrlichtirc.g0dsoft.com/erus%60/
 http://www.dananhudson.com
 http://none
@@ -13144,7 +13144,7 @@ http://www.google.com
 http://m0sa.net
 http://cowarthill.com/
 http://www.jeffnunn.com
-http://github.com/gautem
+https://github.com/gautem
 http://kkaammee.blogspot.com
 http://www.thestechschultes.com
 http://blogs.msdn.com/garethj
@@ -14048,7 +14048,7 @@ http://code.google.com/p/android-apktool/
 http://beekeeperlabs.com
 http://argv0.net
 http://blog.ortz.org
-http://github.com/satyr
+https://github.com/satyr
 http://phantomtypist.com
 http://vermaas.net
 http://twaltari.blogspot.com/
@@ -14081,7 +14081,7 @@ http://slashdot.org
 http://www.unionstreetgallery.org
 http://www.codersarepeople.com
 http://flowdev.co.uk/
-http://github.com/tinifni
+https://github.com/tinifni
 http://weblogs.asp.net/jdanforth
 http://metadataexpress.com
 http://www.timb.me.uk
@@ -14284,7 +14284,7 @@ http://ste0.myopenid.com/
 http://bart.whahay.net
 http://weblogs.asp.net/shijuvarghese
 http://www.la-grange.net/karl/
-http://github.com/andreberg
+https://github.com/andreberg
 http://amplivibe.com
 http://blogs.byte-force.com/xor
 http://www.sliff.co.uk
@@ -14403,7 +14403,7 @@ http://gimpysoft.com
 http://www.yottazoo.com
 http://martinkenny.com/
 http://www.caboose.org.uk/
-http://github.com/timtadh
+https://github.com/timtadh
 http://www.supergreg.net
 http://none
 http://www.istari.nu
@@ -14963,7 +14963,7 @@ http://efiquest.org
 http://etoreo.com
 http://blog.felipel.com
 http://shufler.net
-http://github.com/johnsimons
+https://github.com/johnsimons
 http://www.stationarypoint.com
 http://cubesoft.pl
 http://streklin-gene.blogspot.com
@@ -15123,7 +15123,7 @@ http://prng.vangorkom.org
 http://www.dbguru.co.uk
 http://dealdealdeal.net
 http://www.linkedin.com/in/etamar
-http://github.com/tadzik
+https://github.com/tadzik
 http://codesurgeonblog.com
 http://disenoweb20.com/web20
 http://www.jpennington.net
@@ -15492,7 +15492,7 @@ http://www.stackoverflow.com
 http://variable3.com
 http://www.coastside.net/pelicans
 http://14lox.com
-http://github.com/paulyoder
+https://github.com/paulyoder
 http://www.garrypettet.com
 http://www.ajcw.com
 http://android.hcpl.be
@@ -15752,7 +15752,7 @@ http://www.ingtotaro.it
 http://etvnet.com
 http://joeynelson.com
 http://www.noverse.com
-http://github.com/hluk
+https://github.com/hluk
 http://www.elsniwiki.de
 http://www.gieldoskop.pl/
 http://www.szevvy.com
@@ -16018,7 +16018,7 @@ http://www.devdave.com
 http://www.bin-co.com/blog/
 http://eddorre.com
 http://iainknight.com
-http://github.com/nkpart
+https://github.com/nkpart
 http://www.innovaapps.net
 http://www.acidavengers.co.uk
 http://www.fiddlemeragged.com
@@ -16273,7 +16273,7 @@ http://ossandcad.blogspot.com
 http://www.rmauger.co.uk/
 http://weblog.dangertree.net
 http://michaelk.ch
-http://github.com/martydill/PyCIL
+https://github.com/martydill/PyCIL
 http://hello-moto.hit.bg/
 http://www.iki.fi/rowan
 http://someclosure.com
@@ -16755,7 +16755,7 @@ http://bentobin.com
 http://www.eyebuyVisualSearch.com
 http://www.wantsa.com/
 http://sharpkml.codeplex.com
-http://github.com/alexwinston/
+https://github.com/alexwinston/
 http://appelfreelance.com
 http://www.pixeltechnologies.ca
 http://expertruby.com
@@ -16772,7 +16772,7 @@ http://irisharepoint.blogspot.com
 http://www.google.co.uk
 http://johncring.com
 http://www.mSafdel.com
-http://github.com/chrisdinn
+https://github.com/chrisdinn
 http://www.guidomb.com.ar
 http://www.cybervision.ro
 http://www.code.cx/
@@ -16820,7 +16820,7 @@ http://www.timkennedy.net
 http://www.ironicnet.com
 http://www.lukecummins.me.uk
 http://pk-designs.com
-http://github.com/hotdog003
+https://github.com/hotdog003
 http://www.sweetbabythings.net
 http://www.wiredbob.com
 http://www.jottza.com
@@ -16878,7 +16878,7 @@ http://www.satedproductions.com
 http://blog.motheyes.com
 http://blog.rishiagarwal.in
 http://spmacdonald.com
-http://github.com/leetreveil
+https://github.com/leetreveil
 http://mortslikeus.blogspot.com
 http://www.tlson.com/
 http://www.elgebar.com
@@ -16993,7 +16993,7 @@ http://resborand.co.uk
 http://stackoverflow.com
 http://zenbob.myopenid.com
 http://none
-http://Twitter.com/thelobster
+https://twitter.com/thelobster
 http://www.peteamundson.com
 http://www.mydbr.com
 http://www.ju-n.net
@@ -17029,7 +17029,7 @@ http://wonea.blogspot.com/
 http://www.google.com/profiles/brandon.a.linton
 http://kroimon.de/
 http://www.alef-tech.com
-http://github.com/tobsn/
+https://github.com/tobsn/
 http://ballpointstudio.com
 http://None
 http://www.madhat.de
@@ -17300,7 +17300,7 @@ http://hermanningjaldsson.com
 http://www.intelometry.com
 http://users.softlab.ntua.gr/~ttsiod/index.html
 http://www-sean-o.com
-http://www.github.com/Splo
+https://github.com/Splo
 http://sweetsyntacticsugar.blogspot.com
 http://amit.chakradeo.net/
 http://www.brianlow.com
@@ -17371,7 +17371,7 @@ http://timgolden.me.uk
 http://www.amadeusconsulting.com
 http://thoughtsoncoding.blogspot.com/
 http://None
-http://github.com/murbanski
+https://github.com/murbanski
 http://www.insomniaaddict.com
 http://gertm.blogspot.com
 http://grkvlt.blogspot.com/
@@ -17954,7 +17954,7 @@ http://www.talios.com
 http://blog.ruski.co.za
 http://www.andrewmoore.com/
 http://rockifier.com
-http://github.com/jstewart
+https://github.com/jstewart
 http://www.cubicle51.com
 http://segfaulthunter.blogspot.com
 http://www.antonnguyen.com
@@ -18436,7 +18436,7 @@ http://www.microsoft.com
 http://ajravindiran.com/
 http://mark.aufflick.com/
 http://www.luckykind.com
-http://github.com/levicook
+https://github.com/levicook
 http://www.jbull.ca
 http://shaneosullivan.blogspot.com/
 http://www.nigelmclaughlin.com
@@ -18505,7 +18505,7 @@ http://pierdelacabeza.com
 http://www.hotmail.com
 http://www.diadiora.com
 http://www.reliableembeddedsystems.com
-http://github.com/gudhul/bets/tree/master
+https://github.com/gudhul/bets/tree/master
 http://mphillipson.users.btopenworld.com/
 http://www.gouder.com
 http://www.patto.net
@@ -19026,7 +19026,7 @@ http://carey.geek.nz/
 http://afrosoft.co.cc
 http://none.yet.com
 http://www.lastfm.pl/user/malleor
-http://github.com/audy
+https://github.com/audy
 http://www.bytesite.co.uk
 http://morwen-world.com
 http://www.doronkatz.com
@@ -19622,7 +19622,7 @@ http://bbvnsp.org
 http://bretik.com
 http://www.devMomentum.com
 http://www.boschmans.net
-http://github.com/Wergan
+https://github.com/Wergan
 http://www.twodividedbyzero.net/
 http://gasubasu.com
 http://www.mazesoft.com
@@ -19740,7 +19740,7 @@ http://standalone-sysadmin.blogspot.com
 http://www.integratedwebsystems.com
 http://nanotech.nanotechcorp.net
 http://www.wissel.net/
-http://www.github.com/moonpxi
+https://github.com/moonpxi
 http://drakmyth.cwahi.net
 http://www.ivannovak.com
 http://www.jasonlefkowitz.net
@@ -19796,7 +19796,7 @@ http://www.freelancersunite.net
 http://stygma.com
 http://sites.google.com/sites/doulos05
 http://nsivkov.com
-http://github.com/lstejskal
+https://github.com/lstejskal
 http://software.tulentsev.com
 http://www.google.com
 http://www.giolekva.com
@@ -20294,7 +20294,7 @@ http://blog.keilly.com
 http://iambibhas.blogspot.com
 http://Http://www.orbitlogic.com
 http://zash.se/
-http://github.com/mdvorscak/Personal
+https://github.com/mdvorscak/Personal
 http://mirzu.com
 http://www.wikia.com
 http://codingcramp.blogspot.com
@@ -20802,7 +20802,7 @@ http://www.linkedin.com/in/jimvoris
 http://infochimps.org
 http://quaint.circle.nu/
 http://www.keepcore.com
-http://github.com/bluehavana
+https://github.com/bluehavana
 http://www.edobashira.com
 http://noneyet.
 http://nick.ci-fi.net
@@ -21133,7 +21133,7 @@ http://www.olegsych.com
 http://Ludge
 http://None
 http://apartmentonesix.com
-http://github.com/ahammar/
+https://github.com/ahammar/
 http://flavors.me/pandasuit
 http://www.plantworking.com
 http://teki.repcsi.com
@@ -21305,7 +21305,7 @@ http://www.webmastersintl.com
 http://www.bretkuhns.com/
 http://djmp.org
 http://www.ablewhitesolutions.co.uk
-http://github.com/hermannloose
+https://github.com/hermannloose
 http://www.geeko-hosting.com
 http://limist.com
 http://www.mattbrock.com
@@ -21348,7 +21348,7 @@ http://bloghed.blogpsot.com
 http://Donthaveone
 http://www.codingmurmur.com
 http://sabanito.blogspot.com
-http://github.com/alecthegeek
+https://github.com/alecthegeek
 http://google.com
 http://amiestreet.com/music/spiritual-migraine/
 http://www.linkedin.com/in/rubentrancoso
@@ -22649,7 +22649,7 @@ http://www.stackoverflow.com
 http://mostlycode.wordpress.com
 http://signedzero.com
 http://noblog,notwitter
-http://github.com/ashrewdmint
+https://github.com/ashrewdmint
 http://www.whysoscared.com/
 http://jlcoady.net
 http://www.goncaloqueiros.net
@@ -23096,7 +23096,7 @@ http://JonathansCorner.com/
 http://www.champlain.edu/Emergent-Media-Center.html
 http://www.joefuture.com
 http://www.alexcode.com
-http://github.com/jkamenik
+https://github.com/jkamenik
 http://blog.binggl.net
 http://www.michaelpstone.net
 http://keegez.com
@@ -23168,7 +23168,7 @@ http://none
 http://www.mobiuspc.com
 http://www.senditsecure.com
 http://www.audiospillage.com
-http://github.com/futuranon
+https://github.com/futuranon
 http://ryanleland.com
 http://annah.ru/
 http://www.eightyearproject.com
@@ -23281,7 +23281,7 @@ http://davidcrowell.com/
 http://priddysoftware.com
 http://www.fishwalking.com
 http://strobe.cc
-http://github.com/9re
+https://github.com/9re
 http://www.alfdev.net
 http://rakkarage.posterous.com
 http://None
@@ -23402,7 +23402,7 @@ http://www.herocoder.com
 http://www.i-security.at
 http://loopycube.com
 http://www.enscand.com
-http://github.com/sunaku
+https://github.com/sunaku
 http://schmeedy.com
 http://None
 http://ronr.blogspot.com
@@ -23897,7 +23897,7 @@ http://www.mondaymorning.org
 http://web.cecs.pdx.edu/~rtaycher/
 http://peopleareducks.com
 http://blog.intuitivemedia.biz
-http://github.com/dharmatech
+https://github.com/dharmatech
 http://andredurao.blogspot.com
 http://farhadi.ir
 http://none
@@ -23960,7 +23960,7 @@ http://bemcapaz.net
 http://www.danielrieck.de
 http://www.xintum.be
 http://None
-http://github.com/adamnew123456
+https://github.com/adamnew123456
 http://zlajo.net
 http://www.3djam.com
 http://www.hakbra.moo.no
@@ -24288,7 +24288,7 @@ http://www.no.where
 http://skylightlabs.ca/
 http://sockleg.com
 http://mauriciocuenca.com/
-http://github.com/jedt
+https://github.com/jedt
 http://defaultbreak.com
 http://www.codeonaboat.com
 http://spatialnet.net/about.html
@@ -24506,7 +24506,7 @@ http://jorder.net
 http://www.pivotalsecurity.com
 http://floatinglomas.ca
 http://www.happyfunpoints.com/
-http://github.com/sumanmukherjee03
+https://github.com/sumanmukherjee03
 http://www.eclipse.org/eclipselink
 http://Gotnone...!
 http://rociiu.com
@@ -24895,7 +24895,7 @@ http://google.com
 http://www.dennismonsewicz.com
 http://brandizzi.googlepages.com
 http://UnderConstruction
-http://github.com/maca
+https://github.com/maca
 http://www.duckbox.net
 http://optick-illusions.blogspot.com/
 http://www.tuhh.de
@@ -25017,7 +25017,7 @@ http://www.screenworks.fr
 http://www.dpolson.co.uk
 http://chessbomb.com/
 http://www.republicoftouch.com
-http://github.com/jessy
+https://github.com/jessy
 http://www.google.com
 http://erikthiem.users.sourceforge.net/
 http://blog.seemikecode.com/
@@ -25067,7 +25067,7 @@ http://jeansymolanza.wordpress.com
 http://fawek.net
 http://https://tpchq.org
 http://newtekwebhosting.com
-http://github.com/mrpi
+https://github.com/mrpi
 http://www.aharrisbooks.net
 http://keetology.com/blog/
 http://not yet..
@@ -25764,7 +25764,7 @@ http://joelabrahamsson.com/
 http://persistall.com
 http://www.douglastarr.com
 http://byzet.com
-http://github.com/jeekl
+https://github.com/jeekl
 http://www.artbucket.ru
 http://www.erik-n.net/
 http://programmer-art.org/
@@ -26522,7 +26522,7 @@ http://www.SoftwareInteractions.com
 http://www.chriscowdery.com
 http://news.perlfoundation.org
 http://www.astrum-it.de
-http://github.com/cuervoslaugh
+https://github.com/cuervoslaugh
 http://www.3manzana.com
 http://www.google.com/profiles/michael.searcy
 http://www.irritatedvowel.com/blog
@@ -26666,7 +26666,7 @@ http://www.google.com/profiles/dsmudger
 http://meherranjan.com
 http://volaresystems.com/blog
 http://www.unfoldingneurons.com
-http://github.com/shunsuk
+https://github.com/shunsuk
 http://snkmchnb.com
 http://screenlight.tv
 http://vision-player.com/
@@ -26689,7 +26689,7 @@ http://jason.karns.name
 http://www.galacticmag.com
 http://delphist.com
 http://bbrinck.com
-http://github.com/AndreasBWagner
+https://github.com/AndreasBWagner
 http://ca.linkedin.com/in/qsmienk
 http://www.t-scripting.de
 http://thompcha.wordpress.com/
@@ -27262,7 +27262,7 @@ http://techannotations.blogspot.com/
 http://www.youtube.com/watch?v=oHg5SJYRHA0
 http://www.facebook.com/udayalkonline
 http://www.dominixz.com
-http://github.com/linusoleander/Flashbacks-PHP-projekt
+https://github.com/linusoleander/Flashbacks-PHP-projekt
 http://Altentee.com
 http://yabasic.basicprogramming.org/
 http://www.stat-me.com/
@@ -27988,7 +27988,7 @@ http://www.brunton-spall.co.uk
 http://rwaltenberg.com.br
 http://stephan.com/
 http://elitekingdoms.com
-http://github.com/zquestz
+https://github.com/zquestz
 http://www.grinninglizard.com/
 http://foobuilder.com/
 http://www.google.com
@@ -28885,7 +28885,7 @@ http://www.ryancammer.com
 http://www.peterflom.com
 http://www.mysmallcorneroftheweb.co.uk
 http://yellingaboutcomputers.blogspot.com/
-http://github.com/balexand
+https://github.com/balexand
 http://www.agroborsa.com
 http://www.markandey.com
 http://www.ninjarift.com
@@ -30230,7 +30230,7 @@ http://www.in-nomine.org/
 http://mansoormehmood.blogspot.com/2010/02/about-mansoor-mehmood.html
 http://criticalBelief.com
 http://lamp.epfl.ch/~phaller/
-http://github.com/shanna
+https://github.com/shanna
 http://www.visual-mojo.de
 http://www.osato.it
 http://kunday.com
@@ -31109,7 +31109,7 @@ http://sanity-free.org
 http://www.strebitzer.at
 http://gburt.blogspot.com/
 http://www.protagonize.com
-http://github.com/igor-alexandrov
+https://github.com/igor-alexandrov
 http://ajaxray.com
 http://www.gpiter.com
 http://tekipad.com/blog
@@ -31260,7 +31260,7 @@ http://esceptico.org
 http://www.noxart.cz
 http://coryschires.com
 http://luketoop.com
-http://github.com/grantyb/
+https://github.com/grantyb/
 http://mayumi01.com
 http://none
 http://iterutech.com
@@ -31779,7 +31779,7 @@ http://datapolitics.wordpress.com/
 http://www.kleos.co.za
 http://pb.io
 http://www.easyvectors.com
-http://github.com/lyrch/
+https://github.com/lyrch/
 http://www.thinkbluecrew.com/
 http://blog.alextoul.fr
 http://pmazzotta.com
@@ -32328,7 +32328,7 @@ http://www.punkave.com/
 http://www.nsoftware.com
 http://www.1your.com
 http://threestrangedays.net
-http://github.com/Jazzinghen
+https://github.com/Jazzinghen
 http://www.rockhardsystems.com
 http://sharemyp0int.blogspot.com/
 http://stackoverflow.com
@@ -32372,9 +32372,9 @@ http://www.cse.ucsd.edu/~cdcash
 http://www.chozabu.org
 http://www.leadnt.com
 http://www.klanoma.com
-http://www.github.com/blak3mill3r
+https://github.com/blak3mill3r
 http://www.cozyroc.com
-http://github.com/troystribling
+https://github.com/troystribling
 http://noya.inrain.org/
 http://www.nicholosophy.com
 http://www.xqdt.org
@@ -33116,7 +33116,7 @@ http://demo.elasticdms.com
 http://django-newbie.blogspot.com
 http://colrosa.co.uk
 http://blog.viarails.net
-http://github.com/sullivant
+https://github.com/sullivant
 http://nleach.com
 http://www.kendyck.com
 http://www.blinkenlights.ca
@@ -33136,7 +33136,7 @@ http://bemoko.com
 http://AgileOtter.blogspot.com/
 http://intri.ca/
 http://www.argdrop.com
-http://github.com/maclennann/Athena-Chat
+https://github.com/maclennann/Athena-Chat
 http://www.precipicedevelopment.com
 http://sappworks.com/
 http://krismarkel.com
@@ -33224,7 +33224,7 @@ http://www.pluralsight.com
 http://www.beefyapps.com
 http://www.bushibytes.com
 http://www.essentialmath.com
-http://github.com/cgs1019
+https://github.com/cgs1019
 http://www.ricklafleur.com
 http://www.techyouruniverse.com
 http://softswit.ch
@@ -33680,7 +33680,7 @@ http://www.bharathwaj.com/
 http://www.netwerkin.com/
 http://www.designermonkey.co.uk
 http://blissfulthinking.nl
-http://github.com/gavinbeatty
+https://github.com/gavinbeatty
 http://www.cyberdynamic.net/
 http://www.commutweet.com
 http://learnvst.wordpress.com
@@ -34367,7 +34367,7 @@ http://www.gauravjassal.com
 http://www.tiltedpixel.com
 http://stephenhouston.com
 http://kardash.net
-http://github.com/pepeiborra
+https://github.com/pepeiborra
 http://www.andyfowler.com/
 http://brea.kfa.st
 http://www.bobnadler.com
@@ -34794,7 +34794,7 @@ http://www.getfirebug.com
 http://hackthetruth.org
 http://ascott.ca/
 http://www.bigco.com/
-http://github.com/andyhite/
+https://github.com/andyhite/
 http://www.alfajango.com/blog
 http://railstips.org
 http://roeurboat.wordpress.com
@@ -34834,7 +34834,7 @@ http://drusellers.com
 http://www.tomseago.com
 http://www.aggpas.org
 http://www.re-motion.org/blogs/team
-http://github.com/sunnygleason/j4-minimal
+https://github.com/sunnygleason/j4-minimal
 http://oddlyzen.com
 http://www.oinopa.com
 http://www.usualcoding.eu
@@ -34906,7 +34906,7 @@ http://www.unigui.com
 http://www.rasch.org.uk
 http://www.fredkelly.net
 http://www.markserve.org
-http://github.com/jceb/vimrc
+https://github.com/jceb/vimrc
 http://www.averetek.com
 http://roomiepla.net
 http://buckmaster.ca
@@ -35206,7 +35206,7 @@ http://www.samvloeberghs.be
 http://techneiq.com
 http://jethomas.net
 http://martinkokes.com
-http://github.com/mtrovo
+https://github.com/mtrovo
 http://www.ergose.gr
 http://www.stackoverflow.com
 http://in.linkedin.com/in/ppdas
@@ -36357,7 +36357,7 @@ http://www.eqatec.com
 http://vveare.com
 http://peterdewinter.blogspot.com
 http://blogs.telerik.com/valerihristov/posts.aspx
-http://github.com/julianEberius
+https://github.com/julianEberius
 http://www.randomsequence.com/
 http://www.saobart.com
 http://www.assembla.com/wiki/show/hippomocks
@@ -36837,7 +36837,7 @@ http://www.pocketvillage.com/
 http://www.dipprod.com
 http://www.phreakyourgeek.com/
 http://www.jasonschell.com
-http://github.com/lightalloy
+https://github.com/lightalloy
 http://marcelodeaguiar.blogspot.com.br
 http://wet-media.de
 http://www.site-ekle.web.tr
@@ -37268,7 +37268,7 @@ http://tusharkhairnar.blogspot.com
 http://www.rakshitmenpara.com
 http://abyshakes.wordpress.com
 http://davetcoleman.com
-http://github.com/juniorbl/
+https://github.com/juniorbl/
 http://www.cantrell.org.uk/david/journal/
 http://warren-gray.com
 http://err0.net/
@@ -37347,7 +37347,7 @@ http://reaktivo.com
 http://www.stanford.edu/~eyjin
 http://www.facebook.com/hirosatori
 http://f-utility.tumblr.com
-http://github.com/nciagra
+https://github.com/nciagra
 http://www.martentonissoo.com
 http://www.hanskalabs.net
 http://oscar.djupfeldt.se
@@ -38614,7 +38614,7 @@ http://www.appscrafter.com
 http://www.tcmulder.com
 http://www.grokkier.com
 http://www.eventknecht.de
-http://github.com/britto
+https://github.com/britto
 http://jlx.cc
 http://www.drewbradford.com/
 http://somejerk.github.com
@@ -40225,7 +40225,7 @@ http://mstechnoblogger.blogspot.com/
 http://ruslany.net
 http://cory.deppen.us
 http://dpdearing.com
-http://github.com/grimen
+https://github.com/grimen
 http://lahirumanaya.blogspot.com
 http://stingr.net/
 http://www.adambarth.com/
@@ -40399,7 +40399,7 @@ http://www.gubgolf.com
 http://www.tonic.com/
 http://Yahoo.com
 http://pseudofish.com/
-http://github.com/wharsojo
+https://github.com/wharsojo
 http://NotYet
 http://web.me.com/c.derche/iApps/
 http://moropo.blogspot.com/
@@ -40839,7 +40839,7 @@ http://blog.augmentedfragments.com
 http://www.serendipsys.com
 http://ramp.virtualmobiletech.com/
 http://skynet.ie/~program9
-http://github.com/jrbasso/
+https://github.com/jrbasso/
 http://www.danhawkins.me.uk
 http://susam.in/
 http://lmframework.com
@@ -40910,7 +40910,7 @@ http://pviojo.net
 http://www.thegadgetworks.com
 http://chadly.net
 http://chance.lindseydev.com
-http://github.com/laurynas
+https://github.com/laurynas
 http://ahmetaygun.net
 http://www.xdallen.com/
 http://gophoto.com
@@ -40982,7 +40982,7 @@ http://www.frugalfairways.com
 http://peripheraldevice.couchone.com
 http://www.dasa.cc
 http://hiteshbiblog.blogspot.com
-http://github.com/tmm1
+https://github.com/tmm1
 http://www.google.com/linux
 http://www.pixelinlove.com
 http://www.twindx.co.uk
@@ -41022,7 +41022,7 @@ http://www.createdbyx.com
 http://www.radioman.lt
 http://number27.org
 http://www.openlm.com
-http://github.com/klang
+https://github.com/klang
 http://f5refresh.wordpress.com
 http://www.awgtek.com
 http://ironwolf.dangerousgames.com
@@ -41516,7 +41516,7 @@ http://itgoran.com
 http://lsblog.wordpress.com
 http://blog.HabitShaper.com
 http://www.haikowick.de
-http://github.com/anair84
+https://github.com/anair84
 http://www.google.com/profiles/calum.mackenzie
 http://www.erikmitchell.net
 http://chrisconstable.com
@@ -42578,7 +42578,7 @@ http://www.waybe.ca
 http://www.cwcrawley.co.uk
 http://www.tagmore.com
 http://www.mit.edu/~amonroy/
-http://www.github.com/gcao
+https://github.com/gcao
 http://none
 http://jutopia.tirsen.com
 http://www.mediagirl.com
@@ -43399,7 +43399,7 @@ http://guylancaster.com
 http://www.eolki.com
 http://jmswebsitesolutions.com
 http://mfavez.com
-http://github.com/fiorix
+https://github.com/fiorix
 http://SerenityHarmony.com
 http://www.imaginationeverywhere.info
 http://www.in.linkedin/in/shettigar
@@ -43513,7 +43513,7 @@ http://www.erik.co.uk
 http://www.google.com
 http://www.cthulhubrewing.com/
 http://arielerdman.com
-http://github.com/willluongo
+https://github.com/willluongo
 http://www.programmerscountry.com
 http://www.google.com
 http://kin2ku.org/
@@ -43774,7 +43774,7 @@ http://www.crossingchannels.com
 http://blog.progs.be/
 http://www.worldwithoutwalls.co.uk
 http://www.jorgedelprado.com.ar
-http://github.com/olkeene
+https://github.com/olkeene
 http://c0rnh0li0.google.gov
 http://www.facebook.com/nitin07sharma
 http://www.rahul@gmail.com
@@ -44120,7 +44120,7 @@ http://francois.wauquier.fr
 http://khakionion.blogspot.com
 http://alexeyblinov.net
 http://www.gmail.com
-http://www.twitter.com
+https://twitter.com
 http://www.charlestonecommerce.com
 http://digitalneurosurgeon.com
 http://reluctant-wookeh.blogspot.com
@@ -45026,7 +45026,7 @@ http://www.francescomoro.it
 http://www.pratyk.com
 http://www.teknikkonsulterna.se
 http://www.kutulu.com.ar
-http://github.com/iwill
+https://github.com/iwill
 http://quaa.net
 http://www.ecodac.de
 http://vickodin.blogspot.com
@@ -45928,7 +45928,7 @@ http://paulspringett.name
 http://rbxbx.info
 http://gordon-lucas.blogspot.com
 http://www.brilliance.com
-http://github.com/phuphighter
+https://github.com/phuphighter
 http://codahale.com
 http://www.sipsfromthefirehose.net/blog
 http://www.awtrey.com/
@@ -45996,7 +45996,7 @@ http://www.vossoft.de
 http://None
 http://www.delphicsage.com
 http://roman.khimov.ru/
-http://github.com/laserlemon
+https://github.com/laserlemon
 http://www.bioxd.com
 http://www.ensode.net
 http://flooha.com
@@ -46347,7 +46347,7 @@ http://basittanveer.blogspot.com
 http://refactoringtime.wordpress.com
 http://jordan.ganoff.com
 http://cmumford.com
-http://github.com/zenchild
+https://github.com/zenchild
 http://www.ideall.ro
 http://www.gbeddow.com
 http://ignacio.decordoba.com
@@ -46916,7 +46916,7 @@ http://www.n4k.org
 http://triplefox.com
 http://ask.amoeba.co.in
 http://www.devegypt.com
-http://www.github.com/dokterbob
+https://github.com/dokterbob
 http://www.etesters.com
 http://bri-space.com
 http://www.elegantsoftwaresolutions.com
@@ -47145,7 +47145,7 @@ http://blog.technothink.net
 http://www.udorse.com
 http://albertsun.info
 http://www.nucleint.com
-http://github.com/dbalatero
+https://github.com/dbalatero
 http://www.mtdd.co.uk
 http://www.briankueck.com
 http://www.comp.nus.edu.sg/~wuyongzh/
@@ -48453,7 +48453,7 @@ http://www.82protons.com
 http://prateek-jain.com
 http://abreakorcontinue.blogspot.com
 http://www.taranfx.com
-http://github.com/cveneziani
+https://github.com/cveneziani
 http://duodec.net
 http://www.objectouch.com
 http://www.appnowgo.com
@@ -48541,7 +48541,7 @@ http://www.hengartner.biz
 http://www.leonsmith.com
 http://www.altova.com
 http://www.google.com
-http://github.com/avalanche123
+https://github.com/avalanche123
 http://www.filosophize.com
 http://www.longjump.com
 http://www.redcanvas.net
@@ -49116,7 +49116,7 @@ http://www.werbe-markt.de/
 http://briandupreez.net/
 http://jaybose.com
 http://www.sql-server-tool.com
-http://github.com/igaiga/
+https://github.com/igaiga/
 http://www.nextage-on.com
 http://www.exit.com
 http://3960.org/
@@ -49179,7 +49179,7 @@ http://www.blocsoft.com
 http://asimuttech.com
 http://xolast.blogspot.com
 http://www.temboo.com
-http://github.com/andrehjr
+https://github.com/andrehjr
 http://batsuev.com
 http://www.phpurchase.com
 http://fusioned.blogspot.com/
@@ -49998,7 +49998,7 @@ http://www.testme.com
 http://www.gearheadforhire.com
 http://www.jalbumskins.com
 http://fancybox.net/
-http://github.com/jhalterman
+https://github.com/jhalterman
 http://www.michaelroam.com
 http://www.cspsolutions.ca
 http://Netay
@@ -50212,7 +50212,7 @@ http://seaofclouds.com
 http://www.orkut4all.com
 http://www.ilovevillainy.com
 http://code.google.com/p/consonrj/
-http://twitter.com
+https://twitter.com
 http://www.bartclaessens.com
 http://www.brunopanara.com
 http://mark.watero.us/
@@ -52309,7 +52309,7 @@ http://www.dev0.de
 http://blog.postmaster.gr
 http://www.e-path.co.uk
 http://www.studioskylab.com
-http://Twitter.com/shaunandrews
+https://twitter.com/shaunandrews
 http://gigapan.org
 http://nilesh
 http://www.robertofalcone.it
@@ -53377,7 +53377,7 @@ http://mortalpowers.com/
 http://www.youtube.com/mallikv
 http://fokus.se
 http://www.appfarms.com
-http://github.com/KL-7
+https://github.com/KL-7
 http://blog.realmofzod.com
 http://VishalG
 http://example.com
@@ -53531,7 +53531,7 @@ http://www.feit.ukim.edu.mk
 http://brunonery.com
 http://cv.misza.co.uk/
 http://jason-preston.com
-http://github.com/coyote
+https://github.com/coyote
 http://www.ifandis.com
 http://danielkbx.com
 http://card.ly/phidias51
@@ -53745,7 +53745,7 @@ http://unsymptomatictoo.blogspot.com/
 http://bobbarker.com
 http://tipila.com
 http://www.webshop-winkelen.nl
-http://github.com/reubano
+https://github.com/reubano
 http://www.google.com
 http://www.yahoo.com
 http://www.smackall.com
@@ -53898,7 +53898,7 @@ http://LogicWizards.NET
 http://notoneyet
 http://medusa.reyco1.com
 http://elaltaico.com
-http://github.com/yetty
+https://github.com/yetty
 http://www.ellev8.ca
 http://www.martin-binder.net
 http://www.rosnertech.com
@@ -53962,7 +53962,7 @@ http://www.iws.uk.com
 http://asasdas
 http://www.craftpaper.tk
 http://www.thomasmuller.nl
-http://www.Twitter.com/DanPatey
+https://twitter.com/DanPatey
 http://arch_340@yahoo.com
 http://www.trovascatti.com
 http://testing
@@ -54434,7 +54434,7 @@ http://ignatynikulin.com
 http://elprup.appspot.com
 http://iconvertible.blogspot.com
 http://www.st3fan.de
-http://github.com/jbfink
+https://github.com/jbfink
 http://www.candytunes.com
 http://www.flavors.me/clschnei
 http://rktechblog.blogspot.com
@@ -59775,7 +59775,7 @@ http://markfarnsworth.wordpress.com
 http://JVInfoSolutions
 http://www.xanda.org
 http://www.netlink.ie
-http://github.com/snipsnipsnip
+https://github.com/snipsnipsnip
 http://railser.cn
 http://arthoo.blogspot.com
 http://www.Google.com
@@ -60903,7 +60903,7 @@ http://www.syncorsystems.com
 http://www.praxunited.com
 http://www.developer.mn
 http://www.surya-soft.com
-http://www.github.com/jeremiah.mccann
+https://github.com/jeremiah.mccann
 http://www.google.co.in
 http://www.subtlysimple.com
 http://akiscode.com
@@ -61955,7 +61955,7 @@ http://cid-8aca63e57376d022.spaces.live.com/
 http://beverett.com
 http://www.fourtentech.com/
 http://www.websitesbuilt4less.weebly.com
-http://github.com/sferik
+https://github.com/sferik
 http://www.fngeeks.net/
 http://int64.org
 http://www.jplozano.com
@@ -64964,7 +64964,7 @@ http://google.com
 http://www.e-novative.com
 http://sandeepmore.com
 http://www.30threedesign.com
-http://github.com/sahilm
+https://github.com/sahilm
 http://http//titlovi.com
 http://www.michelemostarda.com
 http://beshrkayali.com
@@ -65952,7 +65952,7 @@ http://sites.google.com/site/bdciphoneapps/
 http://gtgross.com
 http://www.zaerion.com/
 http://briandeweese.org
-http://github.com/stefanfoulis/
+https://github.com/stefanfoulis/
 http://pythonocc.org/blog
 http://www.reborndigital.com
 http://marcelk.net/
@@ -66146,7 +66146,7 @@ http://www.musicjunky.be
 http://red-sheep.de
 http://www.canol.info
 http://www.forfun.net/
-http://www.github.com/mazuhl
+https://github.com/mazuhl
 http://ziggurat.wordpress.com
 http://free-lance.ru
 http://www.basic-signalprocessing.com
@@ -66482,7 +66482,7 @@ http://www.remybecher.co.uk
 http://benfrantzdale.livejournal.com
 http://zeti-goes-canada.blogspot.com
 http://binkley.blogspot.com
-http://github.com/izmanromli
+https://github.com/izmanromli
 http://www.namhpham.com
 http://www.cnsaturn.com/
 http://www.foxwhisper.co.uk
@@ -66632,7 +66632,7 @@ http://www.lionroo.dyndns.org/
 http://www.devarticles.in
 http://oooakm.md8.ru
 http://jphoude.qc.ca
-http://Twitter.com/megacron
+https://twitter.com/megacron
 http://extricate.org/
 http://satyaakam.net
 http://www.cupomud.com
@@ -68434,7 +68434,7 @@ http://www.ignition-project.com/
 http://www.reichel.it
 http://none.com
 http://www.blogadilla.com
-http://github.com/kimos
+https://github.com/kimos
 http://www.msbaker.co.uk
 http://www.summeylabs.com
 http://www.brainsfactory.org
@@ -69554,7 +69554,7 @@ http://helen.st/
 http://www.yakmoo.se
 http://www.skunkpost.com
 http://strlen.net/
-http://www.github.com/mudphone/
+https://github.com/mudphone/
 http://cristianradu.com/
 http://www.poslfit.com
 http://www.startinchina.com
@@ -70075,7 +70075,7 @@ http://ba-labs.com
 http://www.twobelowzero.net
 http://olex.biz
 http://www.photosocal.com
-http://github.com/tweak
+https://github.com/tweak
 http://www.ericjboyer.com
 http://www.fobikr.com
 http://www.markflowers.net
@@ -70084,7 +70084,7 @@ http://www.lexicalscoping.com
 http://www.tenclub.net
 http://www.cityicenter.com
 http://www.carry.com.br
-http://github.com/siasia
+https://github.com/siasia
 http://www.humanumbrella.com
 http://www.yabood.com
 http://weboreviews.com
@@ -72042,7 +72042,7 @@ http://jagyar09.ru/v/
 http://www.rationalforce.com
 http://kamilcakir.net
 http://ejwjsw.com
-http://github.com/raneksi
+https://github.com/raneksi
 http://4kids.com
 http://mjava.ch
 http://bob.com
@@ -73745,7 +73745,7 @@ http://sidney3172.com
 http://www.isbkch.com
 http://www.allyreid.info
 http://yetanotherandroidblog.blogspot.com/
-http://github.com/icaruswings/gizmo
+https://github.com/icaruswings/gizmo
 http://www.bizface.co.uk
 http://makkalot-opensource.blogspot.com
 http://www.cadi.com.tr
@@ -74876,7 +74876,7 @@ http://richardnicholas.comsalonphiladelphiapa.com
 http://pauljuenger.com
 http://www.wijdemans.com
 http://www.adnpost.com,www.freemoviepoint.com
-http://github.com/sirthias/pegdown
+https://github.com/sirthias/pegdown
 http://embedded-sparetime.blogspot.com/
 http://jefferytay.wordpress.com
 http://2one5.com
@@ -75685,7 +75685,7 @@ http://www.gregpabst.com
 http://www.220marketing.com
 http://abstractedge.com
 http://www.4service.net
-http://github.com/amolenaar
+https://github.com/amolenaar
 http://www.cloudsparks.com
 http://weblogs.asp.net/jtobler/
 http://www.leandro.wives.nom.br
@@ -75708,7 +75708,7 @@ http://justmetal.net
 http://www.foxflare.com
 http://www.flytrapcare.com
 http://www.daviferreira.com
-http://www.github.com/sopo
+https://github.com/sopo
 http://www.novoco.com
 http://carlymho.com/
 http://www.securepatterns.com
@@ -75877,7 +75877,7 @@ http://www.ii.uni.wroc.pl/~gawry
 http://www.tonyc.org/
 http://www.raymarron.com
 http://www.visionetsystems.com
-http://github.com/adacosta/mongoid_rails_migrations
+https://github.com/adacosta/mongoid_rails_migrations
 http://www.vfl.dk
 http://www.bizchair.com
 http://www.adamwashere.com
@@ -76165,7 +76165,7 @@ http://http//ugurkoltuk.wordpress.com/
 http://www.onet.pl
 http://zadorozhnyi.com
 http://blog.louspringer.com
-http://github.com/toksaitov
+https://github.com/toksaitov
 http://www.gnotum.com
 http://uguu.ca/
 http://waseemsmirza@gmail.com
@@ -76379,7 +76379,7 @@ http://www.assistyx.com
 http://google.com
 http://george.com
 http://tomatenmark.org
-http://github.com/spirit23
+https://github.com/spirit23
 http://www.weknowtoomuch.com
 http://thebellimagegroup.com
 http://www.csh.rit.edu
@@ -78090,7 +78090,7 @@ http://www.slashproc.net
 http://www.flexflashforum.com
 http://www.tedkitch.com
 http://www.systemseed.com
-http://github.com/netProphET
+https://github.com/netProphET
 http://cfruss.blogspot.com
 http://vocecommunications.com
 http://www.google.com
@@ -78241,7 +78241,7 @@ http://www.codeboogie.com
 http://www.cnblogs.com
 http://www.sellthekids.com
 http://www.hawkessolutions.com
-http://github.com/laughinghan
+https://github.com/laughinghan
 http://nbergus.com
 http://www.versant.com
 http://www.gmail.com
@@ -78380,7 +78380,7 @@ http://heidisoft.com
 http://www.zalz.de
 http://mcasamento.blogspot.com
 http://www.online-promotion-services.com/
-http://github.com/zachris
+https://github.com/zachris
 http://www.adnpost.com
 http://www.dataved.ru/
 http://george.tc
@@ -78571,7 +78571,7 @@ http://dogonauta.blogspot.com
 http://lineadecodigo.com
 http://zuup.ro
 http://localhost/
-http://github.com/n-time
+https://github.com/n-time
 http://kurozael.com
 http://www.mousewax.com/
 http://www.jayxu.com
@@ -79300,7 +79300,7 @@ http://ellbur.110mb.com/
 http://www.legitalk.sk
 http://www.hsbt.org/
 http://nitobi.com
-http://github.com/tario
+https://github.com/tario
 http://yrbm.com
 http://WikiEducator.org/User:JimTittsler
 http://www.gotbible.net
@@ -80028,7 +80028,7 @@ http://www.alco.dk
 http://log.medcl.net
 http://www.tcs.com
 http://sunnyroad.info
-http://github.com/blevin
+https://github.com/blevin
 http://www.techfortune.co.in
 http://ved-dimensions.blogspot.com
 http://www.balianti.com
@@ -80139,7 +80139,7 @@ http://www.10086.com
 http://www.craftyclicks.co.uk
 http://vincentgrimmer.wordpress.com
 http://www.yogeshyrbyogi.blogspot.com/
-http://github.com/martinciu
+https://github.com/martinciu
 http://www.prabhat.arunsoliya.com
 http://sglnetwork.com
 http://vk.com/vsushkov
@@ -80630,7 +80630,7 @@ http://www.tohopes.com
 http://www.nico.schottelius.org
 http://suchanowski.com
 http://www.mehmetaltuntas.com
-http://github.com/tbuehlmann
+https://github.com/tbuehlmann
 http://syabac.student.ipb.ac.id
 http://www.kigwana.com
 http://www.bpulse.co.uk
@@ -80749,7 +80749,7 @@ http://yasinetskiy.com
 http://sharcus.blogspot.com
 http://dotnetstep.blogspot.com
 http://www.ophir.org.il
-http://github.com/dbbolton
+https://github.com/dbbolton
 http://www.webtrain.nl
 http://vacationpackagestogo.com
 http://www.samplemessages.in/
@@ -80783,7 +80783,7 @@ http://ortatherox.com
 http://bergholt.net/gastronomi
 http://gerard-payne.net
 http://www.pomona.edu
-http://github.com/ggayan
+https://github.com/ggayan
 http://davidxl.blogspot.com
 http://ericvinson.net
 http://www.carpentersystems.com
@@ -81664,7 +81664,7 @@ http://art-showtime-tools.blogspot.com/
 http://topinews.com/mainstream/
 http://www.semseo.co.uk
 http://www.thenateway.net
-http://Twitter.com/FollowSaien
+https://twitter.com/FollowSaien
 http://www.chinrus.com
 http://this.darn.com
 http://www.eniro.no
@@ -82064,7 +82064,7 @@ http://jquery.malsup.com
 http://blah
 http://svdgraaf.nl
 http://www.jober.org
-http://www.github.com/yalcin
+https://github.com/yalcin
 http://chxor.chxo.com/
 http://www.texjernigan.com
 http://tareq.wedevs.com
@@ -82267,7 +82267,7 @@ http://www.aquarianconsultant.com
 http://mandarjoshi009@gmail.com
 http://www.idesigner.co.uk
 http://computerprogramminghelp.blogspot.com
-http://Twitter.com/maheshreddyv
+https://twitter.com/maheshreddyv
 http://pkroger.org
 http://bapro.pl
 http://www.seriousagency.fr
@@ -84279,7 +84279,7 @@ http://www.toedter.com
 http://everywhereelse.wordpress.com
 http://hi.baidu.com/probill
 http://Sadhana-k.myopenid.com/
-http://www.twitter.com
+https://twitter.com
 http://yglodt.wordpress.com
 http://www.meineneue.de
 http://atsushisadachika.web.fc2.com/
@@ -84464,7 +84464,7 @@ http://www.beusekom-it.nl
 http://www.google.com/profiles/emmanuel.florent
 http://www.sitetool.com.nu
 http://www.fabianhaupt.de
-http://Twitter.com/iamnotmitch
+https://twitter.com/iamnotmitch
 http://benjamin.barenblat.name/
 http://www.coda5.com
 http://www.stescodes.com/grabcontacts.aspx
@@ -84595,7 +84595,7 @@ http://www.fewlines4biju.com
 http://www.activecodewar.com
 http://www.ekhichdi.com
 http://www.avvesome.com
-http://github.com/sitaramc/gitolite
+https://github.com/sitaramc/gitolite
 http://www.freejavaclass.com
 http://www.sqllion.com
 http://www.4pang.com
@@ -85301,7 +85301,7 @@ http://www.haziba.co.uk
 http://www.dbadesign.net
 http://Google
 http://www.claudworks.net
-http://github.com/unify
+https://github.com/unify
 http://gumuruh.multiply.com
 http://www.silverstripe.com.au
 http://joseluis.herranzmartin.net
@@ -85477,7 +85477,7 @@ http://cid-4515677bdf99b35f.spaces.live.com/
 http://https://www.scss.tcd.ie/Andrew.Butterfield/
 http://www.aqk.ca
 http://www.disarli.com.br
-http://github.com/vic
+https://github.com/vic
 http://mync.sourceforge.net
 http://www.noellsch.com/
 http://phpsol.net/portfolio
@@ -85675,7 +85675,7 @@ http://www.drop-muse.com/
 http://blog.Solutions29.com
 http://www.boreed.com
 http://www.skyshaw.net
-http://github.com/etruta
+https://github.com/etruta
 http://answer
 http://corvidae.org/
 http://in.com
@@ -85748,7 +85748,7 @@ http://www.ajquick.com
 http://chronoslinux.org
 http://chris-fletcher.com
 http://www.victorboba.com
-http://github.com/ninjudd
+https://github.com/ninjudd
 http://ryngle.com/jan
 http://Speedanatomy.com
 http://jmrware.com
@@ -85826,7 +85826,7 @@ http://graemenelsonpdx.com
 http://gera-it.com
 http://filmix.info
 http://phpword.codeplex.com
-http://Twitter.com/pestrov
+https://twitter.com/pestrov
 http://derhaa.com/blog
 http://www.farneville.com
 http://xkcd.com/327/
@@ -86107,7 +86107,7 @@ http://garapata.com
 http://taranjs.blogspot.com
 http://www.wix.com/hardiksavani/flex
 http://cf-sami.blogspot.com
-http://www.github.com/tristan
+https://github.com/tristan
 http://fqqdk.clusterone.hu/
 http://ultimatef1racing.com
 http://msmvps.com/blogs/matthieu/
@@ -86806,7 +86806,7 @@ http://delicious.com/MineDevin
 http://www.stackoverflow.com
 http://none
 http://www.glacsy.com
-http://github.com/sitaramc/gitolite
+https://github.com/sitaramc/gitolite
 http://https://quickbase-script-engine.heroku.com/
 http://jfzarama.blogspot.com
 http://Foltz
@@ -86863,7 +86863,7 @@ http://roidrapture.blogspot.com/
 http://www.hs-lab.com
 http://teed-younger.com/rlb/
 http://www.masssoftech.blogspot.com
-http://github.com/sitaramc/gitolite
+https://github.com/sitaramc/gitolite
 http://www.talsraviv.com
 http://atvision.net
 http://www.vestadigital.com
@@ -87084,7 +87084,7 @@ http://mindinvaders.netsons.org
 http://omniscientist.net
 http://www.stefanvott.com
 http://AnotherapithatcallsObjective-CfromJavascript.Itisprettylightweight.code.google.com/p/jsbridge-to-cocoa/
-http://github.com/jjk/
+https://github.com/jjk/
 http://informST.ucoz.ru
 http://www.tqis.com
 http://firebugger.000a.de/
@@ -87094,7 +87094,7 @@ http://facebook.com/RejectKid
 http://www.treminio.info
 http://www.muraterturk.com/
 http://MiJaMu.com
-http://github.com/jjk/
+https://github.com/jjk/
 http://korzen.ovh.org
 http://python-thoughts.blogspot.com/
 http://www.kevincraigclark.com
@@ -87355,7 +87355,7 @@ http://hanyzayed.live.com
 http://herdian.ferdianto.com/
 http://www.maurosala.it
 http://retetelemamicii.fnhost.org
-http://github.com/juandebravo
+https://github.com/juandebravo
 http://pannujuang.blogspot.com
 http://supankar.wordpress.com
 http://www.sailwave.com
@@ -87515,7 +87515,7 @@ http://www.joisys.com
 http://hrhnick.com
 http://www.wkcidl.com
 http://manuelberger.com
-http://twitter.com
+https://twitter.com
 http://www.dataclip.com
 http://volocode.com
 http://blog.bauna.com.ar
@@ -89427,7 +89427,7 @@ http://flashpower.wordpress.com
 http://roseannebarr.tumblr.com
 http://www.mybizorder.com
 http://jacobbuck.co.nz/
-http://github.com/niklas
+https://github.com/niklas
 http://www.3dknot.com
 http://lauxanh.us
 http://Billy-Ray-Fortenbury.myopenid.com/
@@ -89450,7 +89450,7 @@ http://www.popescuandrei.co.cc
 http://www.wafwaf.com
 http://www.ebuildy.com
 http://crsantos.info
-http://github.com/otaviof
+https://github.com/otaviof
 http://danielvanc.com
 http://www.primaccount.nl
 http://blogspot.com/smuthu.14
@@ -90184,7 +90184,7 @@ http://multimedia.cx/eggs/
 http://hellerich.net/
 http://Sindahl
 http://waltnorblad.com
-http://github.com/mo-zag/watcher
+https://github.com/mo-zag/watcher
 http://www.modernninja.com/
 http://www.RHollister.com
 http://www.arteal.name
@@ -90500,7 +90500,7 @@ http://impress.ge
 http://www.diymagneticmotor.com
 http://www.wix.com/vohrasohilhis/sohilvohra
 http://mindon.appspot.com/
-http://github.com/rmt/amqptools/
+https://github.com/rmt/amqptools/
 http://reeves
 http://www.maswadkar.com
 http://www.amiryan.org
@@ -90980,7 +90980,7 @@ http://www.george2giga.com
 http://www.xmlthunder.com
 http://www.facebook.com/MikeYoungFB
 http://www.knowledgetree.com
-http://github.com/tulios
+https://github.com/tulios
 http://flovato.wordpress.com/
 http://latter
 http://facebook.com/masonvl
@@ -91142,7 +91142,7 @@ http://x-aps.pl
 http://lonnieezell.com
 http://www.gsgtechnologies.com
 http://www.nhanminh.com
-http://github.com/oggy
+https://github.com/oggy
 http://www.yahoo.co.in
 http://vanmardian.com
 http://www.educatesoft.com
@@ -91889,7 +91889,7 @@ http://www.dagblastit.com/
 http://svan.ca/
 http://www.fromdev.com
 http://www.annlewkowicz.com
-http://github.com
+https://github.com
 http://amplifieddesign.com
 http://lxcblog.com
 http://www.defineyouredge.com
@@ -92112,7 +92112,7 @@ http://www.mitgsw.org
 http://www.buzzecc.com
 http://www.richardpeacock.com
 http://www.xndfwx.com
-http://github.com/refaim
+https://github.com/refaim
 http://www.supporters.dk
 http://2600th.com
 http://alfonsojimenez.com
@@ -92223,7 +92223,7 @@ http://www.uaconspiracy.com
 http://bossbyte.pl
 http://jonathas.com
 http://www.alibasiri.com
-http://github.com/beppu
+https://github.com/beppu
 http://http:www.equinoxe-consulting.net
 http://hennell-online.co.uk
 http://tenfourty.com

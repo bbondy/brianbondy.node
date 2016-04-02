@@ -23,5 +23,5 @@ That being said, when possible I would prefer to use SVG.
 
 [0]: http://oreilly.com/catalog/9780596002237
 [1]: http://www.w3.org/TR/SVG/
-[2]: http://www.brianbondy.com/blog/id/17/the-trouble-with-internet-explorer
+[2]: https://brianbondy.com/blog/id/17/the-trouble-with-internet-explorer
 [3]: http://live.visitmix.com/

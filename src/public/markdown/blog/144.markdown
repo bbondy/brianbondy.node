@@ -1,4 +1,4 @@
-<img src='http://www.brianbondy.com/static/img/blogpost_118/firefox-logo.png' style='float:left;padding-right:10px'>
+<img src='https://brianbondy.com/static/img/blogpost_118/firefox-logo.png' style='float:left;padding-right:10px'>
 
 About a year and a half ago, Priya Patel reached out to me and offered me a position as a contractor.  I [eventually accepted and started work][118] on July 6th 2011 under [Benjamin Smedberg][6].  
 
@@ -77,11 +77,11 @@ Lastly I want to continue doing what I'm already doing, I love making a differen
 [7]: http://blog.mozilla.org/rstrong/
 [8]: https://wiki.mozilla.org/Performance/Snappy
 [10]: https://wiki.mozilla.org/Stewards/Coding
-[11]: http://www.brianbondy.com/mozilla/cheatsheet/
+[11]: https://brianbondy.com/mozilla/cheatsheet/
 
-[118]: http://www.brianbondy.com/blog/id/118/
-[127]: http://www.brianbondy.com/blog/id/127/
-[125]: http://www.brianbondy.com/blog/id/125/
-[137]: http://www.brianbondy.com/blog/id/137/
-[win8work]: http://www.brianbondy.com/blog/tagged/status-report/
+[118]: https://brianbondy.com/blog/id/118/
+[127]: https://brianbondy.com/blog/id/127/
+[125]: https://brianbondy.com/blog/id/125/
+[137]: https://brianbondy.com/blog/id/137/
+[win8work]: https://brianbondy.com/blog/tagged/status-report/
 [200bugs]: http://goo.gl/K3X9o

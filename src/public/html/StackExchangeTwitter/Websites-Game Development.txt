@@ -165,7 +165,7 @@ http://www.iki.fi/thorium/
 http://www.unreliablepollution.net/
 http://thetweaker.wordpress.com/
 http://www.dominikgrabiec.com
-http://github.com/BonsaiDen
+https://github.com/BonsaiDen
 http://bananattack.com
 http://www.samboush.com
 http:///dev/null
@@ -302,7 +302,7 @@ http://liberment.homeserver.com/chris/blog
 http://www.ugw.name/
 http://serverboy.net/
 http://mr_grobowsky.livejournal.com
-http://www.github.com/radeks
+https://github.com/radeks
 http://zebrabox.blogspot.com/
 http://www.virtuosimedia.com
 http://www.reedolsen.com
@@ -462,7 +462,7 @@ http://www.mattsapps.com
 http://nicerobot.org
 http://maximzaslavsky.com
 http://www.tinyfrogsoftware.com
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.frankcrook.net
 http://michaelcotterell.com/
 http://cogwheel.info
@@ -490,7 +490,7 @@ http://www.stolz-alexander.com
 http://phings.wordpress.com
 http://theotherscott.blogspot.com/
 http://none
-http://github.com/MihaiDamian
+https://github.com/MihaiDamian
 http://sepehr.ws/
 http://www.jimmyperrine.com
 http://absolutecobblers.blogspot.com/
@@ -552,7 +552,7 @@ http://itsaboutcode.wordpress.com
 http://www.mikejarosch.com/
 http://bobobobo.wordpress.com
 http://downwiththe.net
-http://github.com/khirbat
+https://github.com/khirbat
 http://www.xs4all.nl/~weertj
 http://www.andreas-schoeneck.net.ms
 http://www.SoftwareQuotes.com
@@ -1408,7 +1408,7 @@ http://breadthfirst.wordpress.com/
 http://nironan12.deviantart.com/
 http://noneyet
 http://www.google.com
-http://github.com/linusoleander/Flashbacks-PHP-projekt
+https://github.com/linusoleander/Flashbacks-PHP-projekt
 http://0fps.wordpress.com
 http://fabs4d.de
 http://sair.am/
@@ -1428,7 +1428,7 @@ http://blog.maniacd.net
 http://www.heptamind.com
 http://danielmantovani.com
 http://michelaledwidge.com
-http://github.com/Jazzinghen
+https://github.com/Jazzinghen
 http://wargamer.co.za
 http://lambdor.net
 http://pabloblamirez.blogspot.com
@@ -1442,7 +1442,7 @@ http://red-badger.com
 http://cpb.coaxialhost.com
 http://www.horsedrowner.com/
 http://friendfeed.com/timepilot
-http://www.github.com/Splo
+https://github.com/Splo
 http://www.faya.com
 http://www.summarg.com
 http://simranow.blogspot.com
@@ -1542,7 +1542,7 @@ http://danharrelson.com
 http://www.radicalgraphics.com
 http://www.codeinsight.co.cc/
 http://sinisterinfinty.blogspot.com
-http://github.com/snipsnipsnip
+https://github.com/snipsnipsnip
 http://narkoz.me
 http://savara.us
 http://www-cs-students.stanford.edu/~amitp/gameprog.html

@@ -17,7 +17,7 @@ I highly encourage anyone looking to contribute to an open source project to loo
 Not only will you be helping an open source non-profit organization, but you will also connect with extremely smart peers, have extra resume flair, and learn a ton.  The experience of contributing ([or working][6]) for Mozilla will forever change you as a developer.
 
 
-[1]: http://www.brianbondy.com/mozilla/cheatsheet/
+[1]: https://brianbondy.com/mozilla/cheatsheet/
 [2]: http://www.mozilla.org/contribute/
 [3]: https://developer.mozilla.org/En/Developer_Guide
 [4]: http://mercurial.selenic.com/wiki/MqExtension

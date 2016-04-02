@@ -259,7 +259,7 @@ http://www.mechko.com
 http://stackoverflow.com/users/205859/ufuk-haciogullari
 http://www.ericscc.com
 http://www.trevorburnham.com/
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.basicallymoney.com
 http://alpinedesert.com
 http://www.shelfari.com/undef/shelf
@@ -623,7 +623,7 @@ http://www.ebynum.com
 http://offbytwo.com
 http://neverreadpassively.com
 http://www.marcosdecarvalho.com
-http://github.com/reubano
+https://github.com/reubano
 http://decisionstats.wordpress.com
 http://www.info-care.com.pt
 http://agambrahma.posterous.com
@@ -679,7 +679,7 @@ http://www.godsboss.de/
 http://localhost/
 http://armistead.cc
 http://in.linkedin.com/in/gopal1035
-http://github.com/anair84
+https://github.com/anair84
 http://www.jazer.com
 http://www3.amherst.edu/~amgoodman12/
 http://gael-varoquaux.info

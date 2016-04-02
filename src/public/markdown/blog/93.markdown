@@ -31,4 +31,4 @@ No.  But why not?
 
 Specifying the type of an `enum` is not actually part of the current C++ standard.  It is a VC++ extension.   It will be part of C++0x though.
 
-[speedUp]: http://www.brianbondy.com/blog/id/5/slow-compilation-time
+[speedUp]: https://brianbondy.com/blog/id/5/slow-compilation-time

@@ -38,18 +38,18 @@ You can view the lists here:
 - Removed invalid twitter accounts that don't actually exist anymore
 - Added followers count,  following count, last tweet date, and twitter description
 
-[1]: http://www.brianbondy.com/stackexchange-twitter/stackoverflow
-[2]: http://www.brianbondy.com/stackexchange-twitter/serverfault
-[3]: http://www.brianbondy.com/stackexchange-twitter/superuser
-[4]: http://www.brianbondy.com/stackexchange-twitter/gamedevelopment
-[5]: http://www.brianbondy.com/stackexchange-twitter/webmasters
-[6]: http://www.brianbondy.com/stackexchange-twitter/webapplications
-[7]: http://www.brianbondy.com/stackexchange-twitter/ubuntu
-[8]: http://www.brianbondy.com/stackexchange-twitter/statisticalanalysis
-[9]: http://www.brianbondy.com/stackexchange-twitter/stackapps
-[10]: http://www.brianbondy.com/stackexchange-twitter/photography
-[11]: http://www.brianbondy.com/stackexchange-twitter/mathematics
-[12]: http://www.brianbondy.com/stackexchange-twitter/cooking
-[13]: http://www.brianbondy.com/stackexchange-twitter/gaming
+[1]: https://brianbondy.com/stackexchange-twitter/stackoverflow
+[2]: https://brianbondy.com/stackexchange-twitter/serverfault
+[3]: https://brianbondy.com/stackexchange-twitter/superuser
+[4]: https://brianbondy.com/stackexchange-twitter/gamedevelopment
+[5]: https://brianbondy.com/stackexchange-twitter/webmasters
+[6]: https://brianbondy.com/stackexchange-twitter/webapplications
+[7]: https://brianbondy.com/stackexchange-twitter/ubuntu
+[8]: https://brianbondy.com/stackexchange-twitter/statisticalanalysis
+[9]: https://brianbondy.com/stackexchange-twitter/stackapps
+[10]: https://brianbondy.com/stackexchange-twitter/photography
+[11]: https://brianbondy.com/stackexchange-twitter/mathematics
+[12]: https://brianbondy.com/stackexchange-twitter/cooking
+[13]: https://brianbondy.com/stackexchange-twitter/gaming
 
-[img1]: http://www.brianbondy.com/static/img/blogpost_105/twitterSEScreenshot.png
+[img1]: https://brianbondy.com/static/img/blogpost_105/twitterSEScreenshot.png

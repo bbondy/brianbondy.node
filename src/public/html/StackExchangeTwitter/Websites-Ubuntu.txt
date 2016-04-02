@@ -171,7 +171,7 @@ http://www.ju-n.net
 http://www.cartography.gr/blog
 http://code.google.com/p/pypreprocessor/
 http://www.gsdesign.ro/blog
-http://github.com/silentroach
+https://github.com/silentroach
 http://www.cs.nuim.ie/~nmurphy/
 http://www.gregmaclellan.com
 http://www.countonline.com.au
@@ -597,7 +597,7 @@ http://dan-herbert.com
 http://plasticboy.com/
 http://unbracketed.com
 http://www.starkeith.net/coredump/
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.digitalsanctum.com
 http://www.defusion.org.uk/
 http://oldnick.typepad.com/msblog/
@@ -618,7 +618,7 @@ http://tech.offworld.net.au
 http://Corbomite.net
 http://steve.swindley.co.uk
 http://Donthaveone!
-http://github.com/madhav/
+https://github.com/madhav/
 http://raleighbuckner.com
 http://www.scirra.com
 http://zetamac.com/arithmetic/
@@ -1134,7 +1134,7 @@ http://www.balexandre.com
 http://pedantic.co.za
 http://www.pablasso.com
 http://chakrit.net/
-http://github.com/jkp
+https://github.com/jkp
 http://www.andrewgjohnson.com/
 http://www.adamfranco.com
 http://sverre.rabbelier.com
@@ -1198,8 +1198,8 @@ http://joshfinnie.com
 http://www.mindbaseconsulting.com
 http://jonathanprior.name
 http://jasonsaldo.tumblr.com/
-http://www.brianbondy.com
-http://github.com/maydaniel
+https://brianbondy.com
+https://github.com/maydaniel
 http://ablegray.com
 http://james.thevasaks.net/
 http://www.cedrich.net
@@ -1300,7 +1300,7 @@ http://www.google.ca/
 http://blog.sydoracle.com/
 http://mobotica.blogspot.com/
 http://4paisa.blogspot.com
-http://github.com/BonsaiDen
+https://github.com/BonsaiDen
 http://www.mediahq.co.za
 http://bitmiracle.com
 http://biomath.ugent.be/biomath/index.php
@@ -1361,7 +1361,7 @@ http://mcottondesign.com
 http://cylonrobot.blogspot.com/
 http://derekerdmann.com
 http://www.boldewyn.de/
-http://www.github.com/teragonaudio
+https://github.com/teragonaudio
 http://None
 http://www.wishfulcoding.com/
 http://bcnewman.com
@@ -2288,7 +2288,7 @@ http://kidproquo.co.nz
 http://alan.com
 http://banger0250.blogspot.com/
 http://lippolweblog.wordpress.com
-http://github.com/hermannloose
+https://github.com/hermannloose
 http://geekygospel.wordpress.com
 http://www.pablo-a.com.ar/
 http://stackoverflow.com/users/67150/

@@ -5,7 +5,7 @@ http://www.flavoralchemy.com
 http://jessica.mcrackan.com
 http://none:(
 http://None
-http://Twitter.com/sarge_smith
+https://twitter.com/sarge_smith
 http://www.stephennmcdonald.com
 http://www.stackoverflow.com
 http://shog9.com
@@ -493,10 +493,10 @@ http://marcgravell.blogspot.com/
 http://careers.stackoverflow.com/amir-rachum
 http://stackoverflow.com/users/6527/chris-gow
 http://ctd.livejournal.com
-http://github.com/dbyrne
+https://github.com/dbyrne
 http://tonyabell.com/
 http://nevali.net
-http://www.brianbondy.com
+https://brianbondy.com
 http://jasedit.tumblr.com
 http://www.chrisbartow.com/
 http://oogly.co.uk
@@ -693,7 +693,7 @@ http://www.ilhan.name
 http://hireahelper.com
 http://icanhascheezburger.com
 http://codycaughlan.com/
-http://github.com/zmsmith
+https://github.com/zmsmith
 http://www.enginerding.com
 http://blogs.msdn.com/automated_destruction/
 http://joelwatts.com/
@@ -727,7 +727,7 @@ http://stackoverflow.com/users/3051
 http://tqft.net/
 http://none
 http://www.stevekuo.com/
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.auctionsieve.com
 http://www.rationalistic.com
 http://nathan.randle.me
@@ -1626,7 +1626,7 @@ http://rogerthegeek.wordpress.com/
 http://jaderobbins.com
 http://www.alvinsim.com
 http://smrad.mine.nu
-http://github.com/linusoleander/Flashbacks-PHP-projekt
+https://github.com/linusoleander/Flashbacks-PHP-projekt
 http://www.rawmeat.org
 http://rich.bruchal.com
 http://www.socialmedia-max.com

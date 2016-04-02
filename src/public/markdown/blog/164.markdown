@@ -1,4 +1,4 @@
-<img src='http://www.brianbondy.com/static/img/blogpost_164/KA.png' style="float:right">
+<img src='https://brianbondy.com/static/img/blogpost_164/KA.png' style="float:right">
 
 I had an amazing first week at [Khan Academy](https://www.khanacademy.org) as a remote employee.
 
@@ -21,7 +21,7 @@ On Friday, I received an amazing care package delivered to my door. The highligh
 
 ---
 
-<img src='http://www.brianbondy.com/static/img/blogpost_164/hopper.png' style="float:right">
+<img src='https://brianbondy.com/static/img/blogpost_164/hopper.png' style="float:right">
 
 ## Computer Science team
 
@@ -61,4 +61,4 @@ Soon enough I was flying out to the Khan Academy offices to meet Sal, Shantanu, 
 Learn, consistently work extremely hard, and try to do epic things.
 
 
-[1]: http://www.brianbondy.com/blog/id/109/the-big-picture-of-how-khan-academy-development-works/
+[1]: https://brianbondy.com/blog/id/109/the-big-picture-of-how-khan-academy-development-works/

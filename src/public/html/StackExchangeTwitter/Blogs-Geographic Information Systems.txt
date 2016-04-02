@@ -31,7 +31,7 @@ http://celenius.com/
 http://www.linea21.com/
 http://woostuff.wordpress.com/
 http://www.qgis.org/
-http://github.com/madmanwoo
+https://github.com/madmanwoo
 http://code.google.com/p/mapinfodotnetwrapper/
 http://code.google.com/p/nathansmapinfoprojects/
 http://extensionoverflow.codeplex.com/
@@ -78,7 +78,7 @@ http://jay.askren.net/
 http://www.esri.com/
 http://pragmaticgeographer.posterous.com/
 http://bitbucket.org/gallipoli
-http://github.com/bwreilly
+https://github.com/bwreilly
 http://bitbucket.org/gallipoli/nx_spatial
 http://networkx.lanl.gov/
 http://relet.net/
@@ -90,7 +90,7 @@ http://mediocresoft.com/
 http://mediocresoft.com/
 http://cartesiananalytics.com/
 http://cartesiananalytics.com/
-http://twitter.com/whosyourdandy
+https://twitter.com/whosyourdandy
 http://www.pjiwebdesign.net/
 http://na/
 http://geobabble.wordpress.com/
@@ -127,7 +127,7 @@ http://www.archaeogeek.com/
 http://www.jamesmccarthy.ca/
 http://www.portbris.com.au/
 http://gisweb.apsu.edu/
-http://www.twitter.com/wilsongis
+https://twitter.com/wilsongis
 http://www.bostongis.com/
 http://mnementh.de/
 http://geofoolery.com/
@@ -157,12 +157,12 @@ http://www.transactor.com/
 http://www.specbug.com/
 http://coloradoreader.blogspot.com/
 http://jasonswett.net/
-http://github.com/rchern
+https://github.com/rchern
 http://blog.stackoverflow.com/2011/01/welcome-valued-associate-rebecca-chernoff/
-http://github.com/rchern/StackExchangeScripts
+https://github.com/rchern/StackExchangeScripts
 http://stackflair.com/
 http://stackflair.com/Generate/3f0eac82-1801-410d-b334-234c18ddeeeb.png
-http://github.com/rchern
+https://github.com/rchern
 http://webapps.stackexchange.com/
 http://code.google.com/
 http://www.dixis.com/
@@ -243,7 +243,7 @@ http://blog.germuska.com/
 http://www.getdorm.com/
 http://www.vozlabs.com/
 http://www.getdorm.com/
-http://www.twitter.com/olivierll
+https://twitter.com/olivierll
 http://www.linkedin.com/in/olivierll
 http://www.google.com/
 http://www.bing.com/Dictionary/search?q=define+hacker&amp;FORM=DTPDIA&amp;qpvt=define+hacker
@@ -268,7 +268,7 @@ http://www.spoiledtechie.com/
 http://www.radeldudel.de/
 http://www.manmapping.com/
 http://www.amreldib.com/
-http://twitter.com/AmrEldib
+https://twitter.com/AmrEldib
 http://127.0.0.1/
 http://www.philsalesses.com/
 http://www.netpalantir.it/
@@ -395,7 +395,7 @@ http://www.blogger.com/favicon.ico
 http://www.linkedin.com/favicon.ico
 http://careers.stackoverflow.com/robthijssen
 http://sstatic.net/so/favicon.ico
-http://twitter.com/favicon.ico
+https://twitter.com/favicon.ico
 http://www.pablorodriguez.info/
 http://blog.rot13.org/
 http://www.codinghorror.com/blog/
@@ -450,7 +450,7 @@ http://www.isimonbrown.co.uk/
 http://tinyurl.com/bpm4lv
 http://stackexchange.com/users/96cd77c96749488da80d0b30a9587b60
 http://stackexchange.com/users/flair/96cd77c96749488da80d0b30a9587b60.png
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://zolomon.com/
 http://www.teamoff.org/
 http://steamcommunity.com/id/n1ghtm4r/
@@ -507,7 +507,7 @@ http://pyramid.cluenet.org/~fahad
 http://www.lucasimone.info/
 http://www.mohitjain.co.in/
 http://www.rondevera.com/
-http://github.com/rondevera
+https://github.com/rondevera
 http://dixond.blogspot.com/
 http://www.d.kth.se/~auno/
 http://wagezudenken.blogspot.com/
@@ -572,7 +572,7 @@ http://www.wise-women.org/
 http://www.webstandards.org/
 http://www.backupbrain.com/
 http://www.google.com/profiles/c/favicons?domain=facebook.com
-http://github.com/dori
+https://github.com/dori
 http://www.google.com/profiles/c/favicons?domain=github.com
 http://www.google.com/profiles/dorismith#about
 http://www.google.com/profiles/c/favicons?domain=google.com
@@ -658,8 +658,8 @@ http://coderjournal.com/
 http://careers.stackoverflow.com/nick-berardi
 http://careers.stackoverflow.com/nick-berardi
 http://code.google.com/p/elmah
-http://github.com/managedfusion/managedfusion-rewriter
-http://github.com/managedfusion/fluentcassandra
+https://github.com/managedfusion/managedfusion-rewriter
+https://github.com/managedfusion/fluentcassandra
 http://rads.stackoverflow.com/amzn/click/0470410957
 http://atma.free.fr/
 http://banang.wordpress.com/
@@ -671,7 +671,7 @@ http://developer.web.id/
 http://solutionyogi.com/
 http://bratch.org/
 http://www.cise.ufl.edu/~kwatford
-http://github.com/kw/pymex
+https://github.com/kw/pymex
 http://www.javalicensemanager.com/
 http://www.javalicensemanager.com/
 http://www.cote-soleil.be/
@@ -723,7 +723,7 @@ http://jc.unternet.net/
 http://www.jgraph.com/
 http://alfps.wordpress.com/
 http://chrisbroadfoot.id.au/
-http://twitter.com/broady
+https://twitter.com/broady
 http://philipefatio.com/
 http://www.nacredata.com/
 http://blog.wezeku.com/
@@ -778,14 +778,14 @@ http://www.bruxellesmobilite.irisnet.be/
 http://blog.trevoke.net/
 http://improbable.org/chris
 http://pymacadmin.googlecode.com/
-http://github.com/acdha/webtoolbox
-http://github.com/acdha
+https://github.com/acdha/webtoolbox
+https://github.com/acdha
 http://bitbucket.org/acdha
 http://www.infinite-loop.dk/
 http://www.mccune.org.uk/
 http://www.bentbindings.com/
 http://chipaca.com/
-http://twitter.com/chipaca
+https://twitter.com/chipaca
 http://www.laszlo.nu/
 http://polemic.net.nz/
 http://www.boyandi.net/
@@ -835,7 +835,7 @@ http://silentsoftware.net/
 http://www.lyxi.co.uk/
 http://www.scannedinavian.com/
 http://sankarganesh-info-exchange.blogspot.com/
-http://twitter.com/sankarganesh87
+https://twitter.com/sankarganesh87
 http://simonwiles.net/
 http://christianpayne.com.au/
 http://www.romankagan.com/
@@ -868,7 +868,7 @@ http://www.letsjustgetit.com/
 http://itsaboutcode.wordpress.com/
 http://pk.linkedin.com/in/itsaboutcode
 http://www.facebook.com/itsaboutcode
-http://twitter.com/#!/itsaboutcode
+https://twitter.com/#!/itsaboutcode
 http://bit.ly/d6jLf1
 http://bit.ly/d6jLf1
 http://bit.ly/a55GF2
@@ -886,7 +886,7 @@ http://illusoryfollies.com/
 http://knauth.org/gsk
 http://runningwithdata.tumblr.com/
 http://runningwithdata.tumblr.com/
-http://github.com/jsundram/
+https://github.com/jsundram/
 http://littlesecretsrecords.com/
 http://blog.codenaked.com/
 http://marcin.floryan.pl/
@@ -1269,7 +1269,7 @@ http://gis.metc.state.mn.us/
 http://www.arcgis.com/home/item.html?id=6809086326ea4c76bf026a32bb9dd698
 http://florian-konnertz.de/
 http://ci.uchicago.edu/
-http://github.com/vicentereig
+https://github.com/vicentereig
 http://justlanded.com/
 http://justlanded.com/
 http://setem.ru/
@@ -1289,7 +1289,7 @@ http://www.dynamicmaps.net/
 http://jblog.instinia.com/
 http://www.whitestar.com/
 http://mapguymike.wordpress.com/
-http://twitter.com/mkrus/
+https://twitter.com/mkrus/
 http://gis4free.wordpress.com/
 http://jaderobbins.com/
 http://contrapunctus.net/

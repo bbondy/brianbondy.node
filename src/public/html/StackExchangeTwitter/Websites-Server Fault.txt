@@ -773,7 +773,7 @@ http://sqlinthewild.co.za
 http://0x89.eu
 http://thenixon.com
 http://jldupont.blogspot.com/
-http://www.brianbondy.com
+https://brianbondy.com
 http://lucweb.100webspace.net/
 http://blog.brettski.com
 http://go.art.pl
@@ -1764,7 +1764,7 @@ http://marksowul.com
 http://leo.cuckoo.org/
 http://www.bylandandsea.org/
 http://thedbaknows.wordpress.com/
-http://github.com/jdodds
+https://github.com/jdodds
 http://michael.mior.ca/
 http://alicebobandmallory.com/
 http://www.cmdln.org
@@ -1796,7 +1796,7 @@ http://glob.com.au/
 http://www.davidstorie.ca
 http://www.zx81.org.uk/
 http://www.TheXSoft.com
-http://www.github.com/teragonaudio
+https://github.com/teragonaudio
 http://itgoon.blogspot.com
 http://bobobobo.wordpress.com
 http://www.myspace.com/juarezkills
@@ -2658,7 +2658,7 @@ http://www.jmarki.net
 http://www.agidev.com/
 http://briancline.org/
 http://blog.nerdbank.net
-http://github.com/madhav/
+https://github.com/madhav/
 http://www.thesimoneaus.com
 http://coderot.com
 http://www.spinellis.gr
@@ -2927,7 +2927,7 @@ http://blog.visionsource.org
 http://wiki.tcl.tk/73
 http://twistedmatrix.com/
 http://www.virag.si/
-http://github.com/hoffstein
+https://github.com/hoffstein
 http://None
 http://www.compassion.com.au
 http://freelance.ee
@@ -3307,7 +3307,7 @@ http://vkreynin.wordpress.com
 http://blog.richardszalay.com
 http://careers.stackoverflow.com/stevenhicks
 http://www.naildrivin5.com/daveblog5000
-http://github.com/dcrosta
+https://github.com/dcrosta
 http://www.nils-andresen.de/
 http://www.example.com
 http://www.womps.net
@@ -3574,7 +3574,7 @@ http://www.rvandam.com
 http://www.atlantis-interactive.co.uk
 http://dasz.at
 http://pi.pihost.us/
-http://github.com/macek
+https://github.com/macek
 http://www.ccswe.com/
 http://www.ozitea.fr
 http://www.revolsound.co.uk
@@ -4215,7 +4215,7 @@ http://www.davidbdean.com
 http://www.piquadrat.ch
 http://zachbonham.blogspot.com
 http://in.linkedin.com/in/vikaskanani
-http://github.com/bjeanes
+https://github.com/bjeanes
 http://None
 http://www.jamting.com
 http://www.geocities.com/burning_thornbush/
@@ -5181,7 +5181,7 @@ http://www.foxandxss.org
 http://www.nickkirkes.com
 http://www.garsplace.com
 http://blogs.edwardwilde.com
-http://github.com/coiscir
+https://github.com/coiscir
 http://homepage.mac.com/quinntaylor/
 http://code.google.com/p/kgui/
 http://monkut.webfactional.com/
@@ -6351,7 +6351,7 @@ http://techinfatuations.wordpress.com/
 http://patrice.ch/
 http://www.gljakal.com/
 http://mattias-jakobsson.net
-http://github.com/MBO
+https://github.com/MBO
 http://meanstreak.co.uk
 http://www.forgefx.com/
 http://www.pascoecentral.com
@@ -6425,7 +6425,7 @@ http://www.google.com/profiles/118102173347686565581
 http://froz.net16.net
 http://oneputteringaround.blogspot.com/
 http://www.ayokasystems.com
-http://github.com/rjp/
+https://github.com/rjp/
 http://www.meagar.net
 http://www.overprotectivemedia.com
 http://www.rectoverso-software.com
@@ -7148,7 +7148,7 @@ http://www.tommedley.com
 http://www.infusion.com
 http://chartgame.com
 http://www.romanstolper.com
-http://github.com/BonsaiDen
+https://github.com/BonsaiDen
 http://www.flickr.com/marcduiker
 http://www.scottellis.com.au
 http://htp://mentalized.net
@@ -10787,7 +10787,7 @@ http://www.tfsblog.de
 http://obsec.info/
 http://slackergeneration.com
 http://darron.froese.org
-http://github.com/sitaramc/gitolite
+https://github.com/sitaramc/gitolite
 http://www.imartins.com.br/informix
 http://joshuamcginnis.com
 http://adamv.com/
@@ -12106,7 +12106,7 @@ http://tcsavage.org/
 http://alan.lamielle.net
 http://thomasjbradley.ca
 http://vincentdavis.net
-http://www.twitter.com
+https://twitter.com
 http://www.baskoro.web.id
 http://rodrigo.valin.cl
 http://dannyman.toldme.com/
@@ -12173,7 +12173,7 @@ http://tommasolanza.com
 http://thoselog.com
 http://www.kienpham.com
 http://blog.pauldelhanty.com
-http://github.com/levicook
+https://github.com/levicook
 http://www.calder0n.com
 http://www.google.com/profiles/carlosturiel
 http://lorinhalpert.com
@@ -13927,7 +13927,7 @@ http://h00s.net
 http://hansel23.altervista.org/
 http://blog.shooksweb.com
 http://littleghost76.blogspot.com/
-http://github.com/ggayan
+https://github.com/ggayan
 http://www.facebook.com/vincent.bortone
 http://raylu.eth24.net/
 http://zerofate.com
@@ -14017,7 +14017,7 @@ http://www.levelbelow.net
 http://cbas.pandion.im/
 http://avnetlabs.com
 http://www.onyxwebdevelopment.com
-http://github.com/gudhul/bets/tree/master
+https://github.com/gudhul/bets/tree/master
 http://www.olafdietsche.de
 http://www.ejo.lt
 http://leonstafford.com/wp/
@@ -14361,7 +14361,7 @@ http://www.flickr.com/photos/21384335@N00/
 http://jon-hermansen.com
 http://thesbsguy.com
 http://rgksugan.wordpress.com
-http://github.com/linusoleander/Flashbacks-PHP-projekt
+https://github.com/linusoleander/Flashbacks-PHP-projekt
 http://www.tylerclendenin.com/
 http://hardik.co.in
 http://avsej.net
@@ -14555,7 +14555,7 @@ http://www.inkjet-toner.co.uk
 http://www.juliahayward.com
 http://none
 http://www.mscha.nl/
-http://github.com/willluongo
+https://github.com/willluongo
 http://www.cleverit.com.pl
 http://jonathan.dupre.free.fr
 http://www.arsenalinv.com.br
@@ -14695,7 +14695,7 @@ http://spidertaffy.com
 http://lucaspirola.com
 http://vrn.vanderbilt.edu/
 http://www.skytap.com
-http://github.com/laughinghan
+https://github.com/laughinghan
 http://none-as-of-yet.com
 http://blog.ibd.com
 http://GamesGoUS.webs.com
@@ -14840,7 +14840,7 @@ http://www.bitky.com
 http://www.crosswins.com
 http://msdn.com
 http://www.jdisc.com
-http://www.github.com/Splo
+https://github.com/Splo
 http://good-good-study.appspot.com
 http://wernercd.isa-geek.com
 http://changoleon.net
@@ -14892,7 +14892,7 @@ http://facebook.com/jsick
 http://www.justatheory.com/
 http://codesion.com
 http://aboldnewlook.com
-http://github.com/anair84
+https://github.com/anair84
 http://sohoa.com.vn
 http://www.return-0.com
 http://arturopuente.com
@@ -14969,7 +14969,7 @@ http://www.benjeavons.com
 http://adamvarga.com
 http://www.natereid.com
 http://digitalintuition.co.uk
-http://github.com/alecthegeek
+https://github.com/alecthegeek
 http://www.cdwilson.us
 http://srujans.com
 http://www.passwordunlocker.com/

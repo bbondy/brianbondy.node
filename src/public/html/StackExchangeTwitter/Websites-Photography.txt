@@ -314,7 +314,7 @@ http://lokling.com
 http://blog.jaredharley.com
 http://Http://mistersql.com
 http://www.weicker.net
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.sagara.net
 http://www.kumler.us/
 http://craters-of-the-mind.blogspot.com

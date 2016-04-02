@@ -45,7 +45,7 @@ http://www.chromand.com
 http://johnmu.com/
 http://www.xopj.com
 http://qwertyful.com
-http://www.brianbondy.com
+https://brianbondy.com
 http://holyvier.u7n.org
 http://www.indentity.nl/
 http://www.linkedin.com/in/adamrich
@@ -396,7 +396,7 @@ http://www.v25media.com
 http://www.aboutcode.net/
 http://kris-erickson.tumblr.com/
 http://mikeboers.com
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.storm-consultancy.com
 http://niels.basjes.nl
 http://www.christopherlawlor.com
@@ -1251,7 +1251,7 @@ http://flowdev.co.uk/
 http://www.techdept.co.uk
 http://arnaud.fortier.free.fr
 http://decasteljau.nuton.ca
-http://github.com/coiscir
+https://github.com/coiscir
 http://www.jamesskidmore.com
 http://kevinpeno.com
 http://www.shawndev.com
@@ -1394,7 +1394,7 @@ http://www.pageofbob.com/
 http://joemako.com
 http://chanchal1987.wordpress.com/
 http://SEOplanNOW.com
-http://github.com/linusoleander/Flashbacks-PHP-projekt
+https://github.com/linusoleander/Flashbacks-PHP-projekt
 http://www.whythawk.com/
 http://bibakis.com
 http://inateq.com

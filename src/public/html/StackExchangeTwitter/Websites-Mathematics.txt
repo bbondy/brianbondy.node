@@ -187,7 +187,7 @@ http://abemiester.com
 http://saveabend.blogspot.com
 http://blog.piechotka.com.pl
 http://www.coreyogburn.com
-http://www.brianbondy.com
+https://brianbondy.com
 http://www.mechko.com
 http://sigurdhsson.org/
 http://math.princeton.edu
@@ -344,7 +344,7 @@ http://peeterjoot.wordpress.com/
 http://nick.aldwin.us/
 http://stackoverflow.com/users/205859/ufuk-haciogullari
 http://www.metafessional.com
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://stackoverflow.com/users/353004/cloudanger
 http://www.teamoff.org
 http://eli-shalom.blogspot.com/
@@ -395,7 +395,7 @@ http://www.aaronsnitzer.com
 http://setaoffice.com/
 http://code.google.com/u/anacrolix/
 http://127.0.0.1
-http://github.com/khirbat
+https://github.com/khirbat
 http://kobikobi.wordpress.com/
 http://itsaboutcode.wordpress.com
 http://www.scheme.dk/blog/
@@ -628,7 +628,7 @@ http://theyougen.blogspot.com/
 http://lipiridis.blogspot.com
 http://www.greenkiwi.net
 http://mineknowledge.com
-http://github.com/macek
+https://github.com/macek
 http://houbysoft.com/
 http://polisha.com
 http://satoh-lab.ex.nii.ac.jp/users/grira/index.html
@@ -1137,7 +1137,7 @@ http://unix-monk.com
 http://about:blank
 http://animorten.net
 http://acw.livejournal.com/
-http://github.com/anair84
+https://github.com/anair84
 http://cyrebjr.livejournal.com/
 http://noneyet
 http://www.tyblu.ca

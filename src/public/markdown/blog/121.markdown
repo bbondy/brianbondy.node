@@ -1,6 +1,6 @@
 We see the http a URL scheme, just about every day:
 
-> http://www.brianbondy.com
+> https://brianbondy.com
 
 The `http` part in the example above is the URL scheme.
 

@@ -26,7 +26,7 @@ http://www.r-statistics.com
 http://iamconor.wordpress.com
 http://www.codingbadger.com
 http://zferral.com
-http://www.brianbondy.com
+https://brianbondy.com
 http://www.victorstanciu.ro
 http://www.tanguay.info/web
 http://stefanco.com
@@ -497,7 +497,7 @@ http://bennoland.com
 http://www.control-v.net
 http://excelninja.blogspot.com
 http://www.linkedin.com/in/marcusleon
-http://github.com/madhav/
+https://github.com/madhav/
 http://www.jimohalloran.com/
 http://www.trafficandroid.com
 http://axristo.info
@@ -926,7 +926,7 @@ http://www.avantewebdesign.com
 http://www.sverrejoh.org
 http://wilcobase.com
 http://www.thecodingmonkey.net
-http://github.com/hoffstein
+https://github.com/hoffstein
 http://bendauphinee.com
 http://www.flickr.com/photos/just_mike/
 http://codycaughlan.com/
@@ -1061,7 +1061,7 @@ http://blog.urth.org/
 http://www.lemoncurry.co.uk
 http://nowebsite...
 http://jonseigel.info
-http://github.com/MBO
+https://github.com/MBO
 http://alpinedesert.com
 http://www.flaminglogos.com
 http://tragicallyleet.com
@@ -1228,7 +1228,7 @@ http://arturh.de
 http://yoolki.com
 http://www.google.com/profiles/102843653957433318841
 http://sam.haslers.info/
-http://github.com/sroccaserra
+https://github.com/sroccaserra
 http://www.ulgen.net
 http://blogs.planetingres.org/grant
 http://www.kieransenior.co.uk
@@ -2226,7 +2226,7 @@ http://elv1s.ru/
 http://www.robertgreiner.com
 http://www.linkedin.com/in/jerkimball
 http://blog.dotsmart.net/
-http://github.com/paulyoder
+https://github.com/paulyoder
 http://superfeedr.com
 http://polarbizzler.blogspot.com/
 http://amro.ws
@@ -2367,7 +2367,7 @@ http://www.portnine.com
 http://pradeepgururani.blogspot.com
 http://sites.google.com/site/archtainer/
 http://www.cedrich.net
-http://github.com/andreberg
+https://github.com/andreberg
 http://en.mathematicsociety.com
 http://www.benlumley.co.uk/
 http://www.fastchicken.co.nz/
@@ -2962,7 +2962,7 @@ http://www.ubergamermonkey.com
 http://soylentcola.com
 http://www.nickoneill.name
 http://sputnik.pl
-http://github.com/ggayan
+https://github.com/ggayan
 http://www.djlk.com
 http://e-x-e.dk
 http://www.guspaul.net
@@ -3010,7 +3010,7 @@ http://blog.grahampoulter.com
 http://www.google.com/profiles/dajpanspokoj
 http://www.kendimenotlar.com
 http://matteomoci.wordpress.com
-http://github.com/hermannloose
+https://github.com/hermannloose
 http://lanhappy.net
 http://www.codegrit.com
 http://pinked.ru
@@ -3069,7 +3069,7 @@ http://stackoverflow.com
 http://www.erikdared.com
 http://www.snipe.net
 http://fuseinteractive.ca
-http://github.com/levicook
+https://github.com/levicook
 http://www.clarityenglish.com
 http://www.andrewbarber.com
 http://yury.name
@@ -3634,7 +3634,7 @@ http://studio.livemade.com
 http://vitorbarbosa.com
 http://linmic.cooplex.cc/
 http://www.cherrycoder.com
-http://github.com/linusoleander/Flashbacks-PHP-projekt
+https://github.com/linusoleander/Flashbacks-PHP-projekt
 http://www.michael.vanderlinden.com.br
 http://realizetheweb.com
 http://www.voltdb.com

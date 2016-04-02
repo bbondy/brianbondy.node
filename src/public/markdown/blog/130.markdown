@@ -89,7 +89,7 @@ We didn't have a meeting this week because we were actively keeping each other u
 I'll be away next week so probably won't write another update for a couple weeks.
 Feel free to email me if you'd like to get involved.
 
-[0]: http://www.brianbondy.com/blog/id/129/firefox-metro-development-begins-status-update
+[0]: https://brianbondy.com/blog/id/129/firefox-metro-development-begins-status-update
 [1]: https://bugzilla.mozilla.org/show_bug.cgi?id=732518#c25
 [2]: http://hg.mozilla.org/projects/elm
 [735008]: https://bugzilla.mozilla.org/show_bug.cgi?id=735008

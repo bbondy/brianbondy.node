@@ -18,13 +18,13 @@ export function reloadData () {
   feed = new RSS({
     title: 'Brian R. Bondy\'s Feed',
     description: 'Blog posts by Brian R. Bondy',
-    'feed_url': 'http://www.brianbondy.com/feeds/rss',
-    'site_url': 'http://www.brianbondy.com',
-    'image_url': 'http://www.brianbondy.com/img/logo.png'
+    'feed_url': 'https://brianbondy.com/feeds/rss',
+    'site_url': 'https://brianbondy.com',
+    'image_url': 'https://brianbondy.com/img/logo.png'
   })
 
   sitemap = sm.createSitemap({
-    hostname: 'http://www.brianbondy.com',
+    hostname: 'https://brianbondy.com',
     cacheTime: 0,
     urls: [
       { url: '/filters' },

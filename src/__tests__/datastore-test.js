@@ -6,18 +6,18 @@ const {initRedis, uninitRedis, addComment, getComments} = require('../datastore.
 const testComments = [{
   name: 'Brian',
   email: 'fake-email@gmail.com',
-  website: 'http://www.brianbondy.com',
+  website: 'https://brianbondy.com',
   body: 'test message'
 }, {
   name: 'Shannon',
   email: 'hello-email@gmail.com',
-  website: 'http://www.brianbondy.com/blog',
+  website: 'https://brianbondy.com/blog',
   body: 'test message2',
   datePosted: new Date().toISOString()
 }, {
   name: 'RonnieLinkAsher',
   email: 'kids-email@gmail.com',
-  website: 'http://www.brianbondy.com/blog/page/1',
+  website: 'https://brianbondy.com/blog/page/1',
   body: 'test message3',
   datePosted: new Date().toISOString()
 }]

@@ -5,4 +5,4 @@ But with some small changes to one of the config files, you can actually have Dj
 The only change from their help file that you need to do is replace their [pyisapie.py with this file that I modified][2].
 
 [1]: http://pypi.python.org/pypi/PyISAPIe/1.0.130
-[2]: http://www.brianbondy.com/static/downloads/pyisapie.zip
+[2]: https://brianbondy.com/static/downloads/pyisapie.zip

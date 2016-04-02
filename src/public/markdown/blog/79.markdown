@@ -34,7 +34,7 @@ I like the new design a lot better than the old one.  I hired [Bradd Bezaire to 
 [6]: http://pypi.python.org/pypi/PyISAPIe/1.0.130
 [7]: http://rubyonrails.org/
 [8]: http://www.djangoproject.com/
-[9]: http://www.brianbondy.com/static/img/poweredByDjango.gif
+[9]: https://brianbondy.com/static/img/poweredByDjango.gif
 [10]: http://jquery.com/
 [11]: http://oldsite.brianbondy.com
 [12]: http://www.sqlite.org/

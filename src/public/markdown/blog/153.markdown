@@ -121,13 +121,13 @@ Panning and zooming support is currently disabled.  <strike>Scrolling with the m
 - [Preparing for the Firefox for Windows 8 Metro preview, status update 7][151]
 
 
-[129]: http://www.brianbondy.com/blog/id/129/
-[130]: http://www.brianbondy.com/blog/id/130/
-[135]: http://www.brianbondy.com/blog/id/135/
-[136]: http://www.brianbondy.com/blog/id/136/
-[137]: http://www.brianbondy.com/blog/id/137/
-[150]: http://www.brianbondy.com/blog/id/150/
-[151]: http://www.brianbondy.com/blog/id/151/
+[129]: https://brianbondy.com/blog/id/129/
+[130]: https://brianbondy.com/blog/id/130/
+[135]: https://brianbondy.com/blog/id/135/
+[136]: https://brianbondy.com/blog/id/136/
+[137]: https://brianbondy.com/blog/id/137/
+[150]: https://brianbondy.com/blog/id/150/
+[151]: https://brianbondy.com/blog/id/151/
 [1]: https://blog.mozilla.org/futurereleases/
 [2]: https://bugzilla.mozilla.org/enter_bug.cgi?product=Firefox
 [3]: https://wiki.mozilla.org/Firefox/Windows_8_Integration#Elm_Nightly_Builds

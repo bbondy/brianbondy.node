@@ -244,7 +244,7 @@ http://www.example.com/?well_actually_this_is_my_favorite_website_(after_stack_o
 http://www.gamepad.co.il/
 http://blank.jasonwhaley.com
 http://blog.noobtech.com
-http://github.com/macek
+https://github.com/macek
 http://www.tinyfrogsoftware.com
 http://blog.brandonsinger.com
 http://jethrolarson.github.com
@@ -256,7 +256,7 @@ http://worthlesscheese.com
 http://www.metafessional.com
 http://steveboz-apps.blogspot.com/
 http://www.basicallymoney.com
-http://Twitter.com/sarge_smith
+https://twitter.com/sarge_smith
 http://www.gyswebdesign.com
 http://programanddesign.com
 http://www.cregox.info
@@ -881,7 +881,7 @@ http://www.mauriciogiraldo.com/blog/
 http://www.leniel.net/
 http://healsdata.com
 http://jonseigel.info
-http://github.com/khirbat
+https://github.com/khirbat
 http://www.myra.net
 http://www.cannonade.net/dev
 http://www.tomusher.co.uk
@@ -894,7 +894,7 @@ http://www.linkedin.com/in/jayhofacker
 http://yaserxp.wordpress.com/
 http://lipiridis.blogspot.com
 http://www.linkedin.com/in/ranbiron
-http://www.brianbondy.com
+https://brianbondy.com
 http://studer.su
 http://www.epfl.ch
 http://mymcp.blogspot.com
@@ -1008,7 +1008,7 @@ http://www.lemessurier.com
 http://www.fuzzylogicsystems.com
 http://forums.g-creator.org
 http://thenixon.com
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://www.incito.hr
 http://www.123montenegro.com
 http://None
@@ -1031,7 +1031,7 @@ http://cogwheel.info
 http://www.jonathan.com
 http://www.tonywilliams.me.uk
 http://www.advorto.com
-http://github.com/MihaiDamian
+https://github.com/MihaiDamian
 http://www.dbaccess.com
 http://weblogs.asp.net/bdill
 http://deceptacle.com
@@ -1344,7 +1344,7 @@ http://development.tobiasopdenbrouw.nl
 http://www.ioz.hr
 http://statestreetgang.net
 http://example.com/IHaveNoWebsite
-http://github.com/MBO
+https://github.com/MBO
 http://www.burbas.se
 http://www.linkedin.com/in/janaagaard
 http://blogs.msdn.com/jimlamb
@@ -1544,7 +1544,7 @@ http://restuta.net
 http://a-i-ti.blogspot.com
 http://codeacula.com
 http://blog.pagedesigners.co.nz
-http://github.com/coiscir
+https://github.com/coiscir
 http://www.myindiradio.com/Zach
 http://none
 http://chaosdynamics.com
@@ -2227,7 +2227,7 @@ http://www.beetlejoose.co.uk
 http://www.colliberty.com
 http://www.robgthai.com
 http://eleves.cmaisonneuve.qc.ca/e0823360/www/lerouxtech_V2
-http://github.com/Jazzinghen
+https://github.com/Jazzinghen
 http://gatesoftartarus.blogspot.com/
 http://maloki.net
 http://www.biodigital.com
@@ -2343,7 +2343,7 @@ http://localhost/
 http://smith
 http://reinaldosanches.wordpress.com
 http://none
-http://www.github.com/Splo
+https://github.com/Splo
 http://www.inceptix.com
 http://dealdealdeal.net
 http://google.com/search?q=hilton+perantunes

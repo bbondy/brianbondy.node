@@ -504,10 +504,10 @@ http://satukubik.com
 http://goodcoffeegoodcode.blogspot.com/
 http://stackoverflow.com/users/389/
 http://petersmit.eu
-http://github.com/jkp
+https://github.com/jkp
 http://www.linkedin.com/in/aamirbutt
 http://www.vvse.com
-http://github.com/madhav/
+https://github.com/madhav/
 http://www.gerritduits.nl
 http://www.the-rodeo.com
 http://www.rowanmanning.co.uk/
@@ -586,7 +586,7 @@ http://wblinks.com
 http://mkdot.net/blogs/lz
 http://careers.stackoverflow.com/ddaniels
 http://flickr.com/photos/johnrudy
-http://www.brianbondy.com
+https://brianbondy.com
 http://stackoverflow.com
 http://www.parivedasolutions.com
 http://drew.gibson.myopenid.com
@@ -628,7 +628,7 @@ http://www.geek2nerd.blogspot.com/
 http://www.cannonade.net/dev
 http://corner-house.blogspot.com
 http://blog.pwkf.org/
-http://github.com/ponzao
+https://github.com/ponzao
 http://www.vzcz.com
 http://bert.huijben.net/
 http://beebo.org
@@ -643,7 +643,7 @@ http://uptosomething.in
 http://www.kieranbenton.com
 http://careers.stackoverflow.com/cagdastekin
 http://mafutrct.wordpress.com/
-http://github.com/MihaiDamian
+https://github.com/MihaiDamian
 http://sgehrig.wordpress.com
 http://localhost:3000
 http://godfather.net.ru/software/
@@ -1078,7 +1078,7 @@ http://www.roryf.co.uk
 http://monoceroi.com
 http://www.wlvacc.org/
 http://www.sentient.nl/
-http://github.com/sroccaserra
+https://github.com/sroccaserra
 http://www.bradparks.com
 http://chirantan.rajhans.googlepages.com/knowme
 http://NOVALISTIC.com
@@ -1169,7 +1169,7 @@ http://none
 http://slapouttech.blogspot.com
 http://javahacker.com
 http://gotnone
-http://github.com/coiscir
+https://github.com/coiscir
 http://www.jaanuskase.com/
 http://web.vscht.cz/sedlakf/
 http://www.texotela.co.uk
@@ -1318,7 +1318,7 @@ http://www.mattyw.net
 http://mathiasbynens.be/
 http://jasonscott.org
 http://ericwuehler.com
-http://github.com/hoffstein
+https://github.com/hoffstein
 http://www.theredhead.nl
 http://rossmasters.com
 http://code.google.com/p/urotas
@@ -1674,7 +1674,7 @@ http://hierview.com/Blog
 http://blog.waynehartman.com
 http://www.bonsaimind.org
 http://weblogs.asp.net/soever
-http://github.com/maydaniel
+https://github.com/maydaniel
 http://www.adathedev.co.uk
 http://javaenthusiastic.blogspot.com/
 http://stackoverflow.com/users/370756/mbq
@@ -1887,7 +1887,7 @@ http://blog.maniacd.net
 http://seifsallam.co.cc
 http://www.uparix.com
 http://stackoverflow.com/users/215217/
-http://github.com/jeekl
+https://github.com/jeekl
 http://www.leestone.co.uk
 http://www.forgotten-hide-out.com
 http://www.ilsitoconscadenza.com
@@ -1929,7 +1929,7 @@ http://collinprice.com
 http://www.cgi.com
 http://www.mogua.com
 http://www.springactionscript.org
-http://github.com/hermannloose
+https://github.com/hermannloose
 http://mishareyzlin.com
 http://www.mikescott8.net/blog/
 http://bintangjatuh.com

@@ -26,6 +26,6 @@ Perhaps even a metro style compose email window application only for when a user
 
 - [Bug 686836][2] - Launching default email client in Windows 8 results in error
 
-[1]: http://www.brianbondy.com/blog/id/123/windows-8-and-firefox-first-looks
+[1]: https://brianbondy.com/blog/id/123/windows-8-and-firefox-first-looks
 
 [2]: https://bugzilla.mozilla.org/show_bug.cgi?id=686836

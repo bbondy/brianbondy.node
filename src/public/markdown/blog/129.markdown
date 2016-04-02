@@ -92,7 +92,7 @@ If you want to help with the development effort to get Firefox up and running in
 [732518]: https://bugzilla.mozilla.org/show_bug.cgi?id=732518
 [1]: http://go.microsoft.com/fwlink/?LinkID=243079
 [jimm]: http://www.mathies.com/weblog/
-[bbondy]: http://www.brianbondy.com/
+[bbondy]: https://brianbondy.com/
 [rstrong]: http://blog.mozilla.com/rstrong/
 [tabraldes]: http://www.linkedin.com/in/timabraldes
 [irc]: https://wiki.mozilla.org/IRC

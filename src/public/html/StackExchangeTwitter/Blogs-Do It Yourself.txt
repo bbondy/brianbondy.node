@@ -74,7 +74,7 @@ http://www.sadleric.net/
 http://blog.dynasphere.ca/
 http://www.utoronto.ca/
 http://money.stackexchange.com/users/3/chris-w-rea
-http://twitter.com/cwrea
+https://twitter.com/cwrea
 http://blog.dynasphere.ca/
 http://blog.dynasphere.ca/
 http://www.linkedin.com/in/chriswrea
@@ -223,8 +223,8 @@ http://www.dreamstime.com/Pearsonartphoto_portfolio_pg1
 http://www.swindelles.com/
 http://www.ccc.uga.edu/
 http://blog.tuxcoder.com/
-http://github.com/cmcginty/PyWeather
-http://github.com/cmcginty/PyWeather
+https://github.com/cmcginty/PyWeather
+https://github.com/cmcginty/PyWeather
 http://code.google.com/p/flacsync/
 http://code.google.com/p/flacsync/
 http://code.google.com/p/mktoc/
@@ -305,7 +305,7 @@ http://www.mitchelsellers.com/
 http://www.echo-technology.co.uk/
 http://www.richardstelling.com/
 http://www.richardstelling.com/
-http://twitter.com/rjstelling
+https://twitter.com/rjstelling
 http://www.rsobers.com/
 http://rich.bruchal.com/
 http://www.bulbstorm.com/
@@ -428,7 +428,7 @@ http://www.aballs.com/
 http://clipperhouse.com/
 http://clipperhouse.com/blog/
 http://clipperhouse.com/blog/
-http://twitter.com/clipperhouse
+https://twitter.com/clipperhouse
 http://alikewise.com/
 http://alikewise.com/
 http://bizvprog.blogspot.com/
@@ -610,7 +610,7 @@ http://annecroninart.com/
 http://stackexchange.com/users/flair/0f9fd6981506425497457e7dffcbf49f.png
 http://www.techtoolblog.com/
 http://dan-herbert.com/
-http://github.com/KendallHopkins
+https://github.com/KendallHopkins
 http://geek.michaelgrace.org/
 http://www.alexgrey.com/
 http://img124.imageshack.us/img124/9937/vic20of3.png
@@ -697,7 +697,7 @@ http://synetech.dyndns.org/
 http://www.xperia-x10.it/
 http://thenixon.com/
 http://www.fleuron.cz/
-http://github.com/zoul
+https://github.com/zoul
 http://nitoprograms.com/
 http://www.landmarkbaptist.ws/salvation
 http://www.landmarkbaptist.ws/
@@ -792,7 +792,7 @@ http://www.delphi.org/
 http://pyramid.cluenet.org/~fahad
 http://www.millssoftware.com/
 http://www.rondevera.com/
-http://github.com/rondevera
+https://github.com/rondevera
 http://tox.sourceforge.net/
 http://www.willoller.com/
 http://dixond.blogspot.com/
@@ -826,7 +826,7 @@ http://about.me/jorge.castro
 http://wiki.ubuntu.com/Upstream
 http://castrojo.tumblr.com/
 http://castrojo.tumblr.com/
-http://twitter.com/castrojo
+https://twitter.com/castrojo
 http://www.fuwt.com/07.php?first=Joshua&last=Masek
 http://thedelphigeek.com/
 http://gp.17slon.com/gp/index.htm
@@ -917,7 +917,7 @@ http://www.wise-women.org/
 http://www.webstandards.org/
 http://www.backupbrain.com/
 http://www.google.com/profiles/c/favicons?domain=facebook.com
-http://github.com/dori
+https://github.com/dori
 http://www.google.com/profiles/c/favicons?domain=github.com
 http://www.google.com/profiles/dorismith#about
 http://www.google.com/profiles/c/favicons?domain=google.com
@@ -992,8 +992,8 @@ http://coderjournal.com/
 http://careers.stackoverflow.com/nick-berardi
 http://careers.stackoverflow.com/nick-berardi
 http://code.google.com/p/elmah
-http://github.com/managedfusion/managedfusion-rewriter
-http://github.com/managedfusion/fluentcassandra
+https://github.com/managedfusion/managedfusion-rewriter
+https://github.com/managedfusion/fluentcassandra
 http://rads.stackoverflow.com/amzn/click/0470410957
 http://noneatthetime/
 http://gmoliv.blogspot.com/
@@ -1146,12 +1146,12 @@ http://blog.wcpro.com/
 http://www.thinkbinary.co.uk/
 http://www.bing.com/Dictionary/search?q=define+hacker&amp;FORM=DTPDIA&amp;qpvt=define+hacker
 http://codendesing.blogspot.com/
-http://github.com/rchern
+https://github.com/rchern
 http://blog.stackoverflow.com/2011/01/welcome-valued-associate-rebecca-chernoff/
-http://github.com/rchern/StackExchangeScripts
+https://github.com/rchern/StackExchangeScripts
 http://stackflair.com/
 http://stackflair.com/Generate/3f0eac82-1801-410d-b334-234c18ddeeeb.png
-http://github.com/rchern
+https://github.com/rchern
 http://webapps.stackexchange.com/
 http://in-fuse.co.nz/
 http://themacrohook.blogspot.com/
@@ -1185,7 +1185,7 @@ http://www.jtcfurnituregroup.com/
 http://docwhat.org/
 http://www.jjcsjourney.com/
 http://chipaca.com/
-http://twitter.com/chipaca
+https://twitter.com/chipaca
 http://www.kumler.us/
 http://sarangdave.blogspot.com/
 http://www.coldcode.net/
@@ -1214,7 +1214,7 @@ http://dinomite.net/
 http://clearspring.com/
 http://b.wardje.eu/
 http://www.fitnessconnections.com/blog/
-http://twitter.com/kyleballard
+https://twitter.com/kyleballard
 http://www.stackoverflow.com/
 http://www.kumarchetan.com/
 http://www.google.com/
@@ -1262,7 +1262,7 @@ http://www.joetaxpayer.com/
 http://www.joetaxpayer.com/
 http://blog.turbotax.intuit.com/index.php?author=38
 http://getcurrency.com/contributors/joe-taxpayer
-http://www.twitter.com/joetaxpayerblog
+https://twitter.com/joetaxpayerblog
 http://www.facebook.com/joetaxpayer
 http://www.dan-atkinson.com/
 http://friendfeed.com/danatkinson
@@ -1304,7 +1304,7 @@ http://www.amrutlar.com/
 http://andy.edinborough.org/
 http://bob-the-janitor.blogspot.com/
 http://deanchester.com/
-http://twitter.com/#!/chester458
+https://twitter.com/#!/chester458
 http://mentalpandiculation.com/
 http://eduphoria.net/
 http://www.maximeseguin.com/
@@ -1325,7 +1325,7 @@ http://christianpayne.com.au/
 http://itsaboutcode.wordpress.com/
 http://pk.linkedin.com/in/itsaboutcode
 http://www.facebook.com/itsaboutcode
-http://twitter.com/#!/itsaboutcode
+https://twitter.com/#!/itsaboutcode
 http://bit.ly/d6jLf1
 http://bit.ly/d6jLf1
 http://bit.ly/a55GF2
@@ -1349,7 +1349,7 @@ http://nowebsite/
 http://variable3.com/
 http://variable3.com/
 http://variable3.com/
-http://twitter.com/variable3
+https://twitter.com/variable3
 http://www.deckerd.com/
 http://www.example.com/
 http://www.bkdtechnologies.com/AX/
@@ -1381,7 +1381,7 @@ http://www.alexangas.com/blog
 http://area51.stackexchange.com/proposals/28921/sharepoint-overflow?referrer=UhOiV0ReN8IdOf0kzJX7fA2
 http://www.alexangas.com/blog
 http://www.sqeq.com/
-http://twitter.com/squillman
+https://twitter.com/squillman
 http://andrewjgrimm.wordpress.com/
 http://en.wikipedia.org/wiki/Wikipedia:Get_to_Philosophy
 http://frazsundal.blogspot.com/
@@ -1450,7 +1450,7 @@ http://127.0.0.1/
 http://shane.jscconsulting.ca/
 http://www.barnesdmd.co.uk/
 http://sankarganesh-info-exchange.blogspot.com/
-http://twitter.com/sankarganesh87
+https://twitter.com/sankarganesh87
 http://www.insario.com/
 http://www.mysteryexperience.com/
 http://jalan-jalan.it/

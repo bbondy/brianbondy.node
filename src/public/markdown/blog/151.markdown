@@ -86,5 +86,5 @@ That switch won't take us too long, I would guess a week of long hours, or sligh
 [fyan]: http://frankyan.wordpress.com/
 [mbrubeck]: http://limpet.net/mbrubeck/
 [jmathies]: http://www.mathies.com/weblog/
-[bbondy]: http://www.brianbondy.com
+[bbondy]: https://brianbondy.com
 [tabraldes]: https://blog.mozilla.org/tabraldes/

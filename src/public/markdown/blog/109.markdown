@@ -85,8 +85,8 @@ If you are interested in helping with the Khan Academy project you can get start
 [21]: http://en.wikipedia.org/wiki/BigTable
 [22]: http://en.wikipedia.org/wiki/Google_File_System
 [23]: http://shipordie.com/
-[24]: http://twitter.com/#!/jasonrr/
-[25]: http://twitter.com/#!/kamens
+[24]: https://twitter.com/#!/jasonrr/
+[25]: https://twitter.com/#!/kamens
 [26]: http://www.khanacademy.org/
 [28]: http://www.project10tothe100.com/index.html
 [29]: http://www.stackoverflow.com
@@ -96,7 +96,7 @@ If you are interested in helping with the Khan Academy project you can get start
 [33]: http://analytics.google.com/
 [34]: http://www.highcharts.com/
 [35]: https://spreadsheets.google.com/ccc?key=0AsgWawUKHSJldGlvX3RUX2FyMEpMdzdRRWlOLXg3TVE&hl=en&authkey=CJWi-LMM#gid=0
-[36]: http://twitter.com/#!/marcia_lee
+[36]: https://twitter.com/#!/marcia_lee
 [37]: http://code.google.com/appengine/docs/python/memcache/usingmemcache.html
 [38]: http://raphaeljs.com/
 [39]: http://www.mathjax.org/

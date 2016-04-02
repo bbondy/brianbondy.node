@@ -96,6 +96,6 @@ The update that installs Firefox 12 will install the service, and so the service
 The next update after Firefox 12 may be Firefox 13 or may be a minor update after Firefox 12.
 
 [0]: http://lawrencemandel.com/2012/02/03/improving-the-firefox-update-experience/
-[1]: http://www.brianbondy.com/blog/id/125/mozilla-firefox-and-silent-updates
+[1]: https://brianbondy.com/blog/id/125/mozilla-firefox-and-silent-updates
 [2]: http://blog.mozilla.com/rstrong/
 [3]: http://ehsanakhgari.org/blog/2011-11-11/updating-firefox-background

@@ -8,5 +8,5 @@ Here is a talk I did on Windows 8 and Firefox:
 
 The [slides for the talk can be found here][1].  The slides were built in HTML5 from [this slides sample at html5rocks.com][2].
 
-[1]: http://www.brianbondy.com/talks/2012-work-week-win8/#slide1
+[1]: https://brianbondy.com/talks/2012-work-week-win8/#slide1
 [2]: http://studio.html5rocks.com/#Deck

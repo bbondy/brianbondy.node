@@ -34,4 +34,4 @@ What percentage of SO users come from the other sites? I checked the registratio
 
 [1]: http://stackexchange.com/
 [2]: http://stackoverflow.com/about
-[3]: http://www.brianbondy.com/blog/id/105/twitter-accounts-for-all-stackoverflow-users-by-reputation
+[3]: https://brianbondy.com/blog/id/105/twitter-accounts-for-all-stackoverflow-users-by-reputation

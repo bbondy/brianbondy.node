@@ -14,7 +14,7 @@ Everyone with any exposure to HTML knows what a link element looks like:
 
     <a  href="http://wwww.brianbondy.com">My Website</a>
 
-This is a link called `My Website` with a link target of `http://www.brianbondy.com`.
+This is a link called `My Website` with a link target of `https://brianbondy.com`.
 Links like this can be easily marked up with a `rel` attribute to add extra information about the link.
 One particular usage of the `rel` attribute is `rel="nofollow"`.
 
@@ -174,5 +174,5 @@ I would hope that search engines will be powerful enough to not only ignore `nof
 [15]: http://experts-exchange.com
 [acp]: http://stackoverflow.com/questions/2660355/net-4-0-has-a-new-gac-why/2660366#2660366
 
-[img_abuse1]: http://www.brianbondy.com/static/img/nofollow_abuse/NoFollowAbuse1.png
-[img_abuse2]: http://www.brianbondy.com/static/img/nofollow_abuse/NoAbuse2.png
+[img_abuse1]: https://brianbondy.com/static/img/nofollow_abuse/NoFollowAbuse1.png
+[img_abuse2]: https://brianbondy.com/static/img/nofollow_abuse/NoAbuse2.png

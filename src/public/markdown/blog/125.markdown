@@ -1,4 +1,4 @@
-<img src='http://www.brianbondy.com/static/img/blogpost_118/firefox-logo.png' style='position:relative;top:-5px;float:left;padding-right:10px'>Mozilla's [rapid release process][1] allows us to deliver features, speed optimizations, memory reductions, and much more... faster.
+<img src='https://brianbondy.com/static/img/blogpost_118/firefox-logo.png' style='position:relative;top:-5px;float:left;padding-right:10px'>Mozilla's [rapid release process][1] allows us to deliver features, speed optimizations, memory reductions, and much more... faster.
 Keeping up to date fast is an essential need for the ever changing web.
 
 There is a new release of Firefox every 6 weeks instead of every year. Even with this shortened release cycle, these releases still include major enhancements.  These faster updates are possible because Mozilla is growing significantly, and the community of Mozillians at large is growing month over month.  
@@ -13,7 +13,7 @@ One of the negative side effects is that minor annoyances with software updates 
 ## One such minor annoyance is User Account Control (UAC):
 
 Starting with Windows Vista Microsoft introduced UAC, and with it users across the world see this familiar dialog when doing any operation that requires administrative access: <br>  
-<img src='http://www.brianbondy.com/static/img/blogpost_125/UAC.png'>
+<img src='https://brianbondy.com/static/img/blogpost_125/UAC.png'>
 
 UAC in particular makes every process run with limited permissions, and if you want to do something like write into `Program Files`, then the user has to give permissions to the application to do this.
 This makes things like automated software updates hard to do without user interaction.  If we don't have access to write into `Program Files` to perform an update, then we have to ask for elevated permissions.  We ask for elevated permissions today when applying updates.
@@ -35,7 +35,7 @@ We are currently experimenting with a Windows service approach.
 
 This means that an optional component will be installed that automates the software update process better without giving UAC prompts.
 
-<img src='http://www.brianbondy.com/static/img/blogpost_125/mozilla_service_scrn.png'>
+<img src='https://brianbondy.com/static/img/blogpost_125/mozilla_service_scrn.png'>
 
 ---
 
@@ -57,7 +57,7 @@ A user can also uninstall the Firefox service at any time.  Updates will continu
 
 ## Other uses of the Firefox service:
 
-<img src='http://www.brianbondy.com/static/img/blogpost_125/services.png' style='float:right;padding-left:5px;position:relative;top:-15px;'>
+<img src='https://brianbondy.com/static/img/blogpost_125/services.png' style='float:right;padding-left:5px;position:relative;top:-15px;'>
 Having a Windows service installed means that we can investigate other integration and maintenance points.  The possibilities are very exciting.
 
 The Windows service may be used later on for a wider selection of maintenance related things including faster browser startup via prefetching, but initially will be only for software updates.
@@ -87,7 +87,7 @@ All of the [silent update work can be tracked on the wiki][rs11].
 
 ## Other Mozilla products:
 
-<img src='http://www.brianbondy.com/static/img/blogpost_125/thunderbird.png' style='float:right;padding-left:5px;position:relative;top:-15px;'>
+<img src='https://brianbondy.com/static/img/blogpost_125/thunderbird.png' style='float:right;padding-left:5px;position:relative;top:-15px;'>
 
 Other Mozilla products may use the service described above.  We currently plan to have only one Windows service across all products.  All supported architectures are also planned to share the same Windows service.
 
@@ -97,7 +97,7 @@ Every feature described in this post either applies to or can be done for other 
 
 ## Platform Integration team:
 
-<img src='http://www.brianbondy.com/static/img/blogpost_125/windows_linux_mac_small3.png' style='float:left;margin-right:10px;position:relative;top:-7px;'>
+<img src='https://brianbondy.com/static/img/blogpost_125/windows_linux_mac_small3.png' style='float:left;margin-right:10px;position:relative;top:-7px;'>
 
 Mozilla started a new Platform Integration team which focuses on issues which need Operating System specific solutions.  
 
