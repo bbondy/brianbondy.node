@@ -1,3 +1,5 @@
+'use strict'
+
 require('babel-polyfill')
 let Path = require('path')
 let Hapi = require('hapi')
@@ -345,3 +347,12 @@ server.views({
     pretty: true
   }
 })
+
+const onRequest = function (request, reply) {
+  if (request.info.host === 'www.brianbondy.com') {
+    return reply.redirect('https://brianbondy.com' + (request.url.path || ''))
+  } else {
+    return reply.continue()
+  }
+}
+server.ext('onRequest', onRequest)
