@@ -61,22 +61,30 @@ export class Comment extends React.Component {
   componentDidMount () {
     externalLinkSetup(ReactDOM.findDOMNode(this.refs.commentItem))
   }
+
+  get webpage () {
+    let comment = this.props.comment
+    if (comment.webpage && comment.webpage.indexOf('http://brianbondy.com') === 0 || comment.webpage.indexOf('http://www.brianbondy.com') === 0) {
+      return comment.webpage.replace('http://', 'https://')
+    }
+    return comment.webpage
+  }
   render () {
     let comment = this.props.comment
     return <div ref='commentItem' className='comment-item'>
       <span onClick={this.removeComment.bind(this, this.props.blogPostId, comment)} className='fa fa-times-circle deleteComment'/>
       <div>
         {
-          comment.webpage
-          ? <a rel='extern nofollow' href={comment.webpage} target='_blank'>
+          this.webpage
+          ? <a rel='extern nofollow' href={this.webpage} target='_blank'>
               <img src={this.gravatarHash} className='gravatar'/>
             </a> : <img src={this.gravatarHash} className='gravatar'/>
         }
       </div>
       <span>
       {
-        comment.webpage
-        ? <a rel='external nofollow' href={comment.webpage} target='_blank'>
+        this.webpage
+        ? <a rel='external nofollow' href={this.webpage} target='_blank'>
             <span dangerouslySetInnerHTML={{__html: stripHTML(comment.name)}}/>
           </a> : <span dangerouslySetInnerHTML={{__html: stripHTML(comment.name)}}/>
       }
