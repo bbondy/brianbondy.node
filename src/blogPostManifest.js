@@ -1,5 +1,11 @@
 export default [
   {
+    id: 173,
+    title: 'Shutting down Code Firefox',
+    created: new Date('2016/07/08'),
+    tags: ['mozilla', 'firefox', 'codefirefox']
+  },
+  {
     id: 172,
     title: 'Brave Software',
     created: new Date('2016/01/20'),
