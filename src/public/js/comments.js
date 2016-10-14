@@ -32,7 +32,7 @@ Comments.propTypes = { comments: React.PropTypes.any, blogPostId: React.PropType
 
 export class Comment extends React.Component {
   get gravatarHash () {
-    return `http://www.gravatar.com/avatar/${this.props.comment.gravatarHash}?s=60`
+    return `https://www.gravatar.com/avatar/${this.props.comment.gravatarHash}?s=60`
   }
   get body () {
     return stripHTML(this.props.comment.body)
