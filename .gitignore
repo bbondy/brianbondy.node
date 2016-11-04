@@ -22,8 +22,9 @@ build/Release
 
 node_modules
 
-# OSX files
+# macOS
 .DS_Store
+.DS-Store
 
 # Ignore dist
 dist

@@ -5,7 +5,7 @@ Listed below are some of the projects I've worked on throughout my career.  Some
 ---
 
 <img src='/img/projects/brave.png' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
-### [Brave OS X, Windows, and Linux browser](https://github.com/brave/browser-laptop)
+### [Brave macOS, Windows, and Linux browser](https://github.com/brave/browser-laptop)
 Brave browser blocks all the greed and ugliness on the Web that slows you down and invades your privacy.
 Then we put clean ads back, to fund website owners and Brave users alike.
 <br><br>
