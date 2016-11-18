@@ -40,7 +40,7 @@ Forward declaration means to declare something without defining it in a header f
       C c;
     };
 
-Notice that d.h does not include c.h even know it uses a class declared in c.h
+Notice that d.h does not include c.h even though it uses a class declared in c.h
 
 
 **main.cpp:**
