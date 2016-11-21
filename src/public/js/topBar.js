@@ -23,6 +23,7 @@ export default class TopBar extends React.Component {
 
       <a href='https://twitter.com/brianbondy' target='_blank'><li className='social'><span title='Twitter' className='fa fa-twitter'/></li></a>
       <a href='/feeds/rss' target='_blank'><li className='social'><span title='RSS' className='fa fa-rss'/></li></a>
+      <a href='https://keybase.io/bbondy' target='_blank'><li className='social'><span title='Keybase' className='fa fa-key'/></li></a>
 
       <a href='https://github.com/bbondy' target='_blank'><li className='social'><span title='GitHub' className='fa fa-github'/></li></a>
 
