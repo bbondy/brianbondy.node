@@ -44,7 +44,7 @@ It just parses the same rules as Adblock Plus does.  It does it significantly fa
 ---
 
 <img src='/img/projects/babel.jpg' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
-### [Babael JSM module formatter](https://www.npmjs.com/package/babel-jsm-plugin)
+### [Babel JSM module formatter](https://www.npmjs.com/package/babel-jsm-plugin)
 Babel plugin for converting ES6 modules into JavaScript code modules (JSM).
 JavaScript code modules let multiple privileged JavaScript scopes share code. For example, a module could be used by Firefox itself as well as by extensions, in order to avoid code duplication.
 <br><br>
