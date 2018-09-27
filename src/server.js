@@ -277,6 +277,7 @@ server.route({
   }
 })
 
+/*
 server.route({
   method: 'GET',
   path: '/.well-known/{path*}',
@@ -288,6 +289,7 @@ server.route({
     }
   }
 })
+*/
 
 // Serve everythign else from the public folder
 // Some old links used to point to /static, maybe some still exist too.
