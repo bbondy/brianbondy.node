@@ -1,6 +1,6 @@
 ## What are abstract functions?
 
-Abstract functions, are functions who's implementation is not yet specified.
+Abstract functions, are functions whose implementation is not yet specified.
 
 They are useful because:
 

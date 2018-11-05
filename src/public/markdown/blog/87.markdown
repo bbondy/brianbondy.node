@@ -18,8 +18,8 @@ Images on computers can be categorized into 2 groups:
 Likewise, displays can also be categorized into 2 groups:
 
 
-1. **Vector graphic displays:** Video output display who's source comes from vector graphics.
--  **A framebuffer display:** Video output display who's source comes from a memory buffer containing a frame of data.   That is to say it stores a raster graphic.
+1. **Vector graphic displays:** Video output display whose source comes from vector graphics.
+-  **A framebuffer display:** Video output display whose source comes from a memory buffer containing a frame of data.   That is to say it stores a raster graphic.
 
 
 The VNC protocol works for any framebuffer display.   That is to say it relates to #2s above, but not the #1s above.  That means it applies to just about every operating system whether it is Linux, Solaris, OS X, or Windows.
