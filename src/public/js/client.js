@@ -76,32 +76,3 @@ export function fetchBlogPosts (filter) {
 export function fetchTags () {
   return getJSON('/api/tags')
 }
-
-/**
- * Fetch a list of comments
- */
-export function fetchComments (blogPostId) {
-  return getJSON(`/api/blog/${blogPostId}/comments`)
-}
-
-/**
- * Fetches a captcha image and sets an encrypted cookie
- * which we'll pass back.
- */
-export function fetchCaptcha (blogPostId) {
-  return getText(`/api/captcha/${blogPostId}`)
-}
-
-/**
- * Post a comment
- */
-export function postComment (blogPostId, comment) {
-  return postJSON(comment, `/api/blog/${blogPostId}/comments`)
-}
-
-/**
- * Delete a comment
- */
-export function deleteComment (blogPostId, comment) {
-  return deleteJSON(comment, `/api/blog/${blogPostId}/comment?adminModePass=${window.adminModePass}`)
-}

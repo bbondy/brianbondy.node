@@ -173,17 +173,6 @@ h2 {
   padding: 8px;
 }
 
-.comments-container {
-  .gravatar {
-    float: left;
-    margin-right: 15px;
-  }
-  comment-list {
-    list-style-type: none;
-    padding: 0 20px;
-  }
-}
-
 .current {
   border-bottom: 1px solid @linkColor;
 }
@@ -215,42 +204,4 @@ input, textarea {
 textarea {
   width: 400px;
   height: 100px;
-}
-
-.commentsContainer {
-  input.hideAddCommentForm {
-    display: none;
-  }
-
-  .addCommentForm {
-    &.hideAddCommentForm {
-      display: none;
-    }
-  }
-}
-
-.captchaText {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.captchaInput {
-  display: inline-block;
-  vertical-align: middle;
-  width: 300px;
-}
-
-.deleteComment {
-  display: none !important;
-  position: relative;
-  top: 5px;
-  left: -5px;
-  color: red;
-  cursor: pointer;
-}
-
-.adminMode .deleteComment {
-  display: block !important;
 }

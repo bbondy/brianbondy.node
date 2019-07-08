@@ -1,22 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Tag from './tag.js'
-import {fetchBlogPost, fetchComments} from './client.js'
+import {fetchBlogPost} from './client.js'
 import {formatDate} from './formatDate.js'
 import externalLinkSetup from './externalLinkSetup.js'
-import {Comments, AddComment} from './comments.js'
 
 export default class BlogPost extends React.Component {
   constructor () {
     super()
     this.state = {}
-  }
-
-  loadComments (id) {
-    fetchComments(id)
-      .then(comments => this.setState({
-        comments
-      }))
   }
 
   componentWillMount () {
@@ -33,7 +25,6 @@ export default class BlogPost extends React.Component {
         })
         return blogPost
       })
-      .then((blogPost) => this.loadComments(blogPost.id))
     } else {
       this.state = {
         id: this.props.id,
@@ -43,7 +34,6 @@ export default class BlogPost extends React.Component {
         tags: this.props.tags,
         url: this.props.url
       }
-      this.loadComments(this.props.id)
     }
   }
 
@@ -64,16 +54,6 @@ export default class BlogPost extends React.Component {
       <div className='datePosted'>Posted on {formatDate(this.state.created)}</div>
       <div ref='blogDiv' dangerouslySetInnerHTML={{__html: this.state.body}}/>
       <div className='tags'>{this.state.tags.map(tag => <Tag key={tag} name={tag}/>)}</div>
-      { !this.state.comments
-        ? null : <div className='commentsContainer'>
-        <h2>Comments</h2>
-        <AddComment blogPostId={this.state.id}
-          reloadComments={this.loadComments.bind(this, this.state.id)}/>
-        <Comments blogPostId={this.state.id}
-          comments={this.state.comments}
-          reloadComments={this.loadComments.bind(this, this.state.id)}/>
-      </div>
-      }
     </article>
   }
 }

@@ -9,13 +9,10 @@ import {setupRedirects} from './redirects.js'
 import {cookiePassword, adminModePassword} from './secrets.js'
 import {reloadData, blogPosts, blogPostsByYear, blogPostsByTag, blogPostById, rssByTag, feed, sitemap, resumeHTML, resumePDF, tags, robotsTXT} from './cache.js'
 import {slicePostsForPage, newFeedFromTag} from './helpers.js'
-import {initRedis, addComment, getComments, removeComment} from './datastore.js'
-import {newCaptcha} from './captcha.js'
 import {sendAdminEmail} from './sendEmail.js'
 import {pageTitleByPath} from './titleByPath.js'
 const siteName = 'Brian R. Bondy'
 
-initRedis(process.env.REDIS_PORT)
 reloadData()
 
 let server = new Hapi.Server({
@@ -131,15 +128,6 @@ server.route({
 
 server.route({
   method: 'GET',
-  path: '/captcha/test',
-  handler: function (request, reply) {
-    let {solution, textToDisplay} = newCaptcha()
-    reply(`Solution: ${solution}, text: ${textToDisplay}`).type('text/html').code(200)
-  }
-})
-
-server.route({
-  method: 'GET',
   path: '/resume/html',
   handler: function (request, reply) {
     reply(resumeHTML).type('text/html').code(200)
@@ -169,79 +157,6 @@ server.route({
   handler: function (request, reply) {
     let posts = blogPostsByTag[request.params.tag] || []
     reply(slicePostsForPage(posts, request.query.page)).code(200)
-  }
-})
-
-server.route({
-  method: 'POST',
-  path: '/api/blog/{id}/comments',
-  handler: function (request, reply) {
-    let id = request.params.id
-    if (request.payload.captcha.toLowerCase() !== String(request.yar.get(`${id}-captcha`, true).key).toLowerCase()) {
-      reply('wrong captcha!').code(405)
-      return
-    }
-    delete request.payload.captcha
-    request.payload.datePosted = new Date().toISOString()
-
-    let email = request.payload.email.toLowerCase().trim()
-    request.payload.gravatarHash = md5(email)
-    delete request.payload.email
-
-    let blogPost = blogPostById(id)
-    let url = blogPost ? `https://brianbondy.com/${blogPost.url}` : `https://brianbondy.com/blog/${id}`
-    let title = blogPost ? blogPost.title : url
-
-    addComment(id, request.payload)
-      .then(() => reply('').code(200))
-      .then(() => {
-        let html = `<div><p>A new comment was added to blog post: <a href='${url}'>${title}</a>.</p>\n\n
-        <p><strong>name</strong>: ${request.payload.name}</p>\n\n
-        <p><strong>email</strong>: ${email}</p>\n\n
-        <p><strong>webpage</strong>: ${request.payload.webpage}</p>\n\n
-        <p><strong>body</strong>: ${request.payload.body}</p>\n\n
-        </div>
-        `
-        sendAdminEmail(`New comment posted on blog id: ${id}`, striptags(html), html)
-      })
-      .catch(() => reply('Error posting comment to Redis').code(500))
-  }
-})
-
-server.route({
-  method: 'DELETE',
-  path: '/api/blog/{id}/comment',
-  handler: function (request, reply) {
-    if (request.query.adminModePass !== adminModePassword) {
-      reply('wrong admin mode password!').code(405)
-    }
-    let id = request.params.id
-    removeComment(id, request.payload)
-      .then(() => reply('').code(200))
-      .catch(() => reply('Error deleting comment from Redis').code(500))
-  }
-})
-
-server.route({
-  method: 'GET',
-  path: '/api/blog/{id}/comments',
-  handler: function (request, reply) {
-    getComments(request.params.id)
-      .then((comments) => {
-        comments = comments.sort((comment1, comment2) => new Date(comment1.datePosted).getTime() - new Date(comment2.datePosted).getTime())
-        reply(comments).code(200)
-      })
-      .catch(() => reply('Error obtaining comments from Redis').code(500))
-  }
-})
-
-server.route({
-  method: 'GET',
-  path: '/api/captcha/{id}',
-  handler: function (request, reply) {
-    let {solution, textToDisplay} = newCaptcha()
-    request.yar.set(`${request.params.id}-captcha`, { key: solution })
-    reply(textToDisplay).code(200)
   }
 })
 
