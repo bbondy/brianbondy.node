@@ -256,7 +256,7 @@ const provision = async () => {
 
   const onRequest = function (request, reply) {
     if (request.info.host === 'www.brianbondy.com') {
-      return reply.redirect('https://brianbondy.com' + (request.url.path || ''))
+      return reply.redirect('https://brianbondy.com' + (request.url.path || '')).takeover()
     } else {
       return reply.continue
     }
