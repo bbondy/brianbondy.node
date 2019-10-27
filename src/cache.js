@@ -50,7 +50,6 @@ export function reloadData () {
       sitemapItemFromSlug('advice'),
       sitemapItemFromSlug('mozilla'),
       sitemapItemFromSlug('mozilla/new'),
-      sitemapItemFromSlug('universityClasses'),
       sitemapItemFromSlug('braille'),
       sitemapItemFromSlug('morseCode'),
       sitemapItemFromSlug('running'),

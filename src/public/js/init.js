@@ -15,7 +15,6 @@ window.addEventListener('load', () => {
         <Redirect exact from='/other/articles' to='/articles' />
         <Redirect exact from='/other/advice' to='/advice' />
         <Redirect exact from='/other/mozilla' to='/mozilla' />
-        <Redirect exact from='/other/universityClasses' to='/universityClasses' />
         <Redirect exact from='/other/morseCode' to='/morseCode' />
         <Redirect exact from='/other/stackexchange' to='/stackexchange' />
       </Switch>

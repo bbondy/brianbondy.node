@@ -12,4 +12,3 @@
 - [Resume](/resume)
 - [Running](/running)
 - [Stack Exchange](/stackexchange)
-- [University Classes](/universityClasses)
