@@ -42,9 +42,7 @@ export function titleByPath (pathname) {
     '/math/numberTheory': 'Number theory',
     '/math/graphTheory': 'Graph theory',
     '/math/mathTricks': 'Math tricks',
-    '/morseCode': 'Morse code',
-    '/mozilla': 'Mozilla',
-    '/mozilla/new': 'New to Mozilla'
+    '/morseCode': 'Morse code'
   }[pathname] || ''
   if (path) {
     path += ' - '

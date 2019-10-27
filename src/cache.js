@@ -48,8 +48,6 @@ export function reloadData () {
       sitemapItemFromSlug('books'),
       sitemapItemFromSlug('articles'),
       sitemapItemFromSlug('advice'),
-      sitemapItemFromSlug('mozilla'),
-      sitemapItemFromSlug('mozilla/new'),
       sitemapItemFromSlug('braille'),
       sitemapItemFromSlug('morseCode'),
       sitemapItemFromSlug('running')

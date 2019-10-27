@@ -14,7 +14,6 @@ window.addEventListener('load', () => {
         <Redirect exact from='/other/books' to='/books' />
         <Redirect exact from='/other/articles' to='/articles' />
         <Redirect exact from='/other/advice' to='/advice' />
-        <Redirect exact from='/other/mozilla' to='/mozilla' />
         <Redirect exact from='/other/morseCode' to='/morseCode' />
       </Switch>
     </BrowserRouter>, document.getElementById('mountPoint'))

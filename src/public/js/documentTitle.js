@@ -46,9 +46,7 @@ export default class DocumentTitle extends React.Component {
       '/math/numberTheory': 'Number theory',
       '/math/graphTheory': 'Graph theory',
       '/math/mathTricks': 'Math tricks',
-      '/morseCode': 'Morse code',
-      '/mozilla': 'Mozilla',
-      '/mozilla/new': 'New to Mozilla'
+      '/morseCode': 'Morse code'
     }[this.props.pathname] || ''
     if (path) {
       path += ' - '

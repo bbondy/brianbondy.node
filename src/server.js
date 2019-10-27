@@ -34,7 +34,6 @@ const indexPaths = [
   '/other/{name}',
   '/compression/{name}',
   '/math/{name}',
-  '/mozilla/new',
   '/running',
   '/',
   '/blog',

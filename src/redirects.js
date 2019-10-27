@@ -49,14 +49,6 @@ export function setupRedirects (server) {
     }
   })
 
-  server.route({
-    method: 'GET',
-    path: '/mozilla/cheatsheet',
-    handler: function (request, reply) {
-      return reply.redirect('http://www.codefirefox.com/cheatsheet').permanent()
-    }
-  })
-
   // Note that I'm intentionally not using the stripTrailingSlash: true option because it
   // simply serves a second endpoint which is bad for PR juice.  301 is better.
   const maxDepth = 6

@@ -8,6 +8,5 @@
 - [Khan Academy](/khanacademy)
 - [Mathematics](/math)
 - [Morse Code](/morseCode)
-- [Mozilla](/mozilla)
 - [Resume](/resume)
 - [Running](/running)
