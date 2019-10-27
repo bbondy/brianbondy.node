@@ -5,7 +5,6 @@
 - [Books](/books)
 - [Braille](/braille)
 - [Compression](/compression)
-- [F.A.Q.](/faq)
 - [Khan Academy](/khanacademy)
 - [Mathematics](/math)
 - [Morse Code](/morseCode)
