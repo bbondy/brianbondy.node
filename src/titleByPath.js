@@ -37,7 +37,6 @@ export function titleByPath (pathname) {
     '/compression/PPM': 'Prediction by partial matching',
     '/faq': 'F.A.Q.',
     '/khanacademy': 'Khan Academy',
-    '/links': 'Links',
     '/math': 'Mathematics',
     '/math/pi': 'Pi',
     '/math/primes': 'Primes',

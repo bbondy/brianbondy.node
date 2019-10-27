@@ -7,7 +7,6 @@
 - [Compression](/compression)
 - [F.A.Q.](/faq)
 - [Khan Academy](/khanacademy)
-- [Links](/links)
 - [Mathematics](/math)
 - [Morse Code](/morseCode)
 - [Mozilla](/mozilla)

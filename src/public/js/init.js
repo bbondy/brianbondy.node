@@ -12,7 +12,6 @@ window.addEventListener('load', () => {
         <Redirect exact from='/other/compression' to='/compression' />
         <Redirect exact from='/other/faq' to='/faq' />
         <Redirect exact from='/other/khanacademy' to='/khanacademy' />
-        <Redirect exact from='/other/links' to='/links' />
         <Redirect exact from='/other/books' to='/books' />
         <Redirect exact from='/other/articles' to='/articles' />
         <Redirect exact from='/other/advice' to='/advice' />

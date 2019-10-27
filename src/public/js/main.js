@@ -37,7 +37,6 @@ export default class Main extends React.Component {
 
             <Route path='/faq' exact component={RemoteViewer} />
             <Route path='/khanacademy' exact component={RemoteViewer} />
-            <Route path='/links' exact component={RemoteViewer} />
             <Route path='/books' exact component={RemoteViewer} />
             <Route path='/articles' exact component={RemoteViewer} />
             <Route path='/advice' exact component={RemoteViewer} />
