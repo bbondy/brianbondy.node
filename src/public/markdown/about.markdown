@@ -3,19 +3,20 @@
 ## General Information
 
 <img src="//www.brianbondy.com/static/img/family2.jpg" style="float:left; margin-right:20px; border: 1px solid black" height="250" width="375">
-I live in Windsor, Ontario, Canada where I lived (other than University) since I was born on March 01, 1981.
+I live in Belle River, Ontario, Canada.
 
-I spend most of my time reading various books, programming, and doing work. My greatest fields of interest are P2P, digital image processing, number theory, compression, and changing diapers.
+I spend most of my time with my family, running, reading various books, programming, and doing work.
+My greatest fields of interest are P2P, digital image processing, number theory, compression.
 
-I am a primarily a C++, C#, Python, and JavaScript software developer.
+I am a primarily a C++, Python, Rust, Go, C#, and JavaScript software developer.
 
 Other than work and geek things, I also spend a lot of time with my wife Shannon, and 3 sons: Link, Ronnie, and Asher.
 
-I used to work full time on Mozilla's Firefox browser (2011-2014), I remain a Mozilla community member and contributor (Mozillian).
+I used to work full time on Mozilla's Firefox browser (2011-2014).
 
 From April 21, 2014 - May 2015 I worked full time for an amazing company called Khan Academy.
 
-In 2015 onward I'm co-founding a business named [Brave](https://www.brave.com) with Brendan Eich.
+From 2015 onward, I co-founded [Brave Software](https://www.brave.com) with Brendan Eich.
 
 <br class="clearfloat">
 
@@ -26,10 +27,12 @@ In 2015 onward I'm co-founding a business named [Brave](https://www.brave.com) w
 - I drink a lot of coffee and usually spill it on myself
 - I'm married to the beautiful Shannon L. Bondy (Formerly Gray)
 - I have twins and one singleton, all boys
-- I have a red tri-colored border collie named "Leia". (and yes that's after Star Wars)
+- I have a red tri-colored border collie named "Leia". (Star Wars)
+- I have an Australian Shepherd named Nymeria (Nym for shart, direwolf from Game of Thrones)
+- I've run several ultramarathons, my highest distance is 106mi as of 2019.
 - I have a bachelors degree in Computer Science Honors in the Faculty of Mathematics at Waterloo University
 - I have a black belt (Shodan) in Meibukan Goju Ryu Karate
-- I work on Gecko (Engine that runs Firefox) and love it
+- I used to work on Gecko (Engine that runs Firefox)
 - My favorite teacher is Salman Khan, and I plan to learn for life from his teachings on every subject
 - My favorite music artist is Ray Charles
 - My favorite movies are Braveheart, The Last Samurai, Ray
@@ -42,6 +45,7 @@ In 2015 onward I'm co-founding a business named [Brave](https://www.brave.com) w
 - I was born and raised on a farm. I'm convinced that I'm a hard worker because of that.
 - I'm a home body, but I do like to go out.  I'd love to do constructive things with my time.
 - I love to learn.  If I'm not learning, then I lose interest quick.  I need to be challenged.
-- I have ownership in 2 companies which I co-founded: ROBOBAK and VisionWorks Solutions Inc. in the company that acquired ROBOBAK
+- I love to push and discover my limits, that's why I run.
+- I co-founded 2 companies before Brave: ROBOBAK and VisionWorks Solutions Inc.
 - I was awarded a Microsoft MVP award for Visual C++ July 2010 - July 2011
 - It is a dream of mine to one day be a winner of the Hutter Prize
