@@ -44,8 +44,7 @@ export function titleByPath (pathname) {
     '/math/mathTricks': 'Math tricks',
     '/morseCode': 'Morse code',
     '/mozilla': 'Mozilla',
-    '/mozilla/new': 'New to Mozilla',
-    '/stackexchange': 'Stack Exchange'
+    '/mozilla/new': 'New to Mozilla'
   }[pathname] || ''
   if (path) {
     path += ' - '

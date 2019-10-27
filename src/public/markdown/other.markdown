@@ -11,4 +11,3 @@
 - [Mozilla](/mozilla)
 - [Resume](/resume)
 - [Running](/running)
-- [Stack Exchange](/stackexchange)

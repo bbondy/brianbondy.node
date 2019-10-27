@@ -52,8 +52,7 @@ export function reloadData () {
       sitemapItemFromSlug('mozilla/new'),
       sitemapItemFromSlug('braille'),
       sitemapItemFromSlug('morseCode'),
-      sitemapItemFromSlug('running'),
-      sitemapItemFromSlug('stackexchange')
+      sitemapItemFromSlug('running')
     ]
   })
 

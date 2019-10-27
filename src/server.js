@@ -43,10 +43,7 @@ const indexPaths = [
   '/blog/tagged/{tag}',
   '/page/{page}',
   '/blog/posted/{year}/page/{page}',
-  '/blog/tagged/{tag}/page/{page}',
-  '/stackexchange-twitter/{page}',
-  '/stackexchange-linkedin/{page}',
-  '/stackexchange-facebook/{page}'
+  '/blog/tagged/{tag}/page/{page}'
 ]
 
 const provision = async () => {

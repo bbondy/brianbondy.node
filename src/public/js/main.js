@@ -8,7 +8,6 @@ import Compression from './compression.js'
 import Resume from './resume.js'
 import Math from './math.js'
 import RemoteViewer from './remoteViewer.js'
-import StackExchangeListViewer from './stackExchangeListViewer.js'
 
 export default class Main extends React.Component {
   render () {
@@ -44,10 +43,6 @@ export default class Main extends React.Component {
             <Route path='/braille' exact component={RemoteViewer} />
             <Route path='/morseCode' exact component={RemoteViewer} />
             <Route path='/running' exact component={RemoteViewer} />
-            <Route path='/stackexchange' exact component={RemoteViewer} />
-            <Route path='/stackexchange-:social/:page' exact component={StackExchangeListViewer} />
-            <Route path='/stackexchange-:social/:page' exact component={StackExchangeListViewer} />
-            <Route path='/stackexchange-:social/:page' exact component={StackExchangeListViewer} />
           </Switch>
         </div>
       </div>)
