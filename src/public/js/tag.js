@@ -9,4 +9,3 @@ export default class Tag extends React.Component {
     return <a href={this.tagUrl} className='tag'>{this.props.name}</a>
   }
 }
-Tag.propTypes = { name: React.PropTypes.string.isRequired }

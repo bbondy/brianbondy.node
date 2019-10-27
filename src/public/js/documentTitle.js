@@ -2,24 +2,24 @@ import React from 'react'
 
 export default class DocumentTitle extends React.Component {
   get titleByPath () {
-    let suffix = 'Brian R. Bondy'
-    let parts = window.location.pathname.substring(1).split('/')
+    const suffix = 'Brian R. Bondy'
+    const parts = window.location.pathname.substring(1).split('/')
     if (this.props.pathname.startsWith('/blog/tagged/')) {
-      let tag = parts[2]
+      const tag = parts[2]
       let page = ''
       if (parts[3] === 'page') {
         page = ` page ${parts[4]}`
       }
       return `Posts tagged ${tag}${page} - ${suffix}`
     } else if (this.props.pathname.startsWith('/blog/posted/')) {
-      let year = parts[2]
+      const year = parts[2]
       let page = ''
       if (parts[3] === 'page') {
         page = ` page ${parts[4]}`
       }
       return `Posted in ${year}${page} - ${suffix}`
     } else if (this.props.pathname.startsWith('/page/')) {
-      let page = parts[1]
+      const page = parts[1]
       return `Blog posts page ${page}`
     }
 
@@ -73,5 +73,3 @@ export default class DocumentTitle extends React.Component {
     return null
   }
 }
-
-DocumentTitle.propTypes = { pathname: React.PropTypes.string }

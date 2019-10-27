@@ -7,7 +7,11 @@ The main goal of this server was to be as low touch as possible.  Blog posts are
 
 ## Setup
 
-- Run `npm install`
+- Run `yarn install`
+
+`npm` is known to not work properly and run into a linting bug.
+
+> "TypeError: Cannot read property 'range' of null"
 
 ## Running
 
@@ -18,7 +22,3 @@ Then build and start the web server:
 ## Refreshing data
 
 Just load `/refresh`.
-
-## Admin mode
-
-It's enabled by running `adminMode('password-here')`.

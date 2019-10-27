@@ -5,7 +5,9 @@ Listed below are some of the projects I've worked on throughout my career.  Some
 ---
 
 <img src='/img/projects/brave.png' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
+
 ### [Brave macOS, Windows, and Linux browser](https://github.com/brave/browser-laptop)
+
 Brave browser blocks all the greed and ugliness on the Web that slows you down and invades your privacy.
 Then we put clean ads back, to fund website owners and Brave users alike.
 <br><br>
@@ -14,6 +16,7 @@ Then we put clean ads back, to fund website owners and Brave users alike.
 ---
 
 <img src='/img/projects/link-bubble.png' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
+
 ### [Link Bubble Browser](https://play.google.com/store/apps/details?id=com.linkbubble.playstore&hl=en)
 Link Bubble makes the Android mobile web more efficient. When you click on a link in any app, Link Bubble loads that webpage in the background and presents it in a floating bubble, leaving you free to continue using your current app.
 Unique amongst Android web browsers, it saves precious time normally spent watching pages load.
@@ -23,6 +26,7 @@ Unique amongst Android web browsers, it saves precious time normally spent watch
 ---
 
 <img src='/img/logo/logo.png' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
+
 ### [brianbondy.com](https://github.com/bbondy/brianbondy.node)
 The current website you're visiting.  This website is written in Node, Hapi, Redis React, and ES6 transpiled with Babel.
 This website has been redone several times before.  Previous versions were written in [Google App Engine](https://github.com/bbondy/brianbondy.gae), Django, ASP .NET (C#), Flash / ActionScript, and the original one was generated from C++ code.
@@ -33,6 +37,7 @@ Only the last couple sites were open source.
 ---
 
 <img src='/img/projects/abp.png' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
+
 ### [Brave Ad Block Engine (C++)](https://www.npmjs.com/package/abp-filter-parser)
 Adblock Plus filter parsing and matching for lists like EasyList.
 This library allows users to prevent page elements, such as advertisements, from being downloaded and displayed.
@@ -44,6 +49,7 @@ It just parses the same rules as Adblock Plus does.  It does it significantly fa
 ---
 
 <img src='/img/projects/babel.jpg' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
+
 ### [Babel JSM module formatter](https://www.npmjs.com/package/babel-jsm-plugin)
 Babel plugin for converting ES6 modules into JavaScript code modules (JSM).
 JavaScript code modules let multiple privileged JavaScript scopes share code. For example, a module could be used by Firefox itself as well as by extensions, in order to avoid code duplication.
@@ -53,6 +59,7 @@ JavaScript code modules let multiple privileged JavaScript scopes share code. Fo
 ---
 
 <img src='/img/projects/ec2.jpg' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
+j
 ### [Simple AWS EC2 wrapper library](https://www.npmjs.com/package/simple-ec2)
 Simple AWS SDK wrapper library for starting, stopping, listing, and executing commands on Amazon Elastic Compute Cloud (EC2)instances.
 EC2 is a central part of Amazon.com's cloud computing platform, Amazon Web Services (AWS).
@@ -63,6 +70,7 @@ EC2 allows users to rent virtual computers on which to run their own computer ap
 ---
 
 <img src='/img/projects/ka-fxos.png' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
+
 ### [Khan Academy app for FirefoxOS](https://github.com/bbondy/khan-academy-fxos)
 Lead and primary developer for the Khan Academy app for Firefox OS.
 Khan Academy allows you to learn almost anything for free.
@@ -73,6 +81,7 @@ The Firefox OS app is the best way to view Khan Academy’s complete library of 
 ---
 
 <img src='/img/projects/firefox.png' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
+
 ### [Code Firefox](https://github.com/bbondy/codefirefox)
 
 Becoming a Mozilla contributor can be intimidating. There's a lot of information to consume, and that information can be dispersed in a variety of different places. This site aim to outline the process of becoming a Mozilla contributor, from start to finish, with gentle, short, consumable 2-10 minute videos.
@@ -82,6 +91,7 @@ Becoming a Mozilla contributor can be intimidating. There's a lot of information
 ---
 
 <img src='/img/projects/js.png' style='float:left; height: 96px; margin-top: 15px; margin-right: 20px;'>
+
 ### [JS abstract syntax tree grader](https://github.com/bbondy/codecheckjs)
 Check JavaScript code structure against a set of goals in JavaScript.
 codecheckjs is based on Acorn - a small, fast, JavaScript-based JavaScript parser.
@@ -92,6 +102,7 @@ Amongst other things, codecheckjs matches a desired template javascript code in 
 ---
 
 <img src='/img/projects/ka-fxos.png' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
+
 ### [Khan Academy app for Windows 8](https://github.com/Khan/khan-windows)
 Contributed a significant amount of contributions to the Khan Academy Modern UI Windows Store app.
 Khan Academy allows you to learn almost anything for free.  Our Windows app is the best way to view Khan Academy’s complete library of over 6000 videos on your Windows device.
@@ -101,6 +112,7 @@ Khan Academy allows you to learn almost anything for free.  Our Windows app is t
 ---
 
 <img src='/img/projects/firefox.png' style='float:left; height: 96px; margin-top: 25px; margin-right: 20px;'>
+
 ### [Gecko / Firefox](https://github.com/mozilla/gecko-dev)
 I started contributing to Firefox around when I started full time in 2011. I worked mostly on Windows related code in C++, but also XUL, XBL, Javascript, CSS, Python, and more.
 Some features I worked on were the Windows 8 Metro Firefox browser, the installer, silent updates, hundreds of fixes, and enhancements.
@@ -109,24 +121,28 @@ Some features I worked on were the Windows 8 Metro Firefox browser, the installe
 ---
 
 <img src='/img/projects/robobak.png' style='float:right; height: 40px; margin-top: 40px; margin-left: 20px;'>
+
 ### ROBOBAK
 Enterprise level Windows backup software made in C++ which offers remote office branch office (ROBO) backup with features such as deduplication, agentless backup, replication, and more. Offers a WCF HTTP REST based SDK. Was acquired in 2011.
 
 ---
 
 <img src='/img/projects/vb.jpg' style='float:left; height: 96px; margin-top: 25px; margin-right: 20px;'>
+
 ### Vision Backup
 Micro business backup of any hard drive, network computer, or FTP/FTPS/SFTP site to another hard drive, FTP/FTPS/SFTP location, CD/DVD/BluRay, or tape drive. SQL Server, Exchange Server, and many other plug-in based applications supported.  Was acquired in 2011.
 
 ---
 
 <img src='/img/projects/cryptex.jpg' style='float:right; height: 96px; margin-top: 20px; margin-left: 20px;'>
+
 ### Cryptex
 Cryptex was designed to keep your data safe by creating an encrypted vault on your hard drive.  The encrypted drive showed up as a new hard drive which allowed you to drag and dropping files in and out of it. It only used as much space as the files took up.  When it was locked, the drive would disappear from view. Was acquired in 2011.
 
 ---
 
 <img src='/img/projects/nullftp.jpg' style='float:left; height: 96px; margin-top: 25px; margin-right: 20px;'>
+
 ### Null FTP
 FTP, FTPS (FTP over SSL), SFTP (FTP over SSH), HTTP, WebDAV server and client software. The client and server were 2 distinct products.  I still use it today as my primary FTP client and whenever I need an FTP server. The client and server was acquired along with the other vwsolutions products in 2011.
 

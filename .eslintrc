@@ -1,0 +1,7 @@
+{
+  "extends": ["standard", "standard-react"]
+  "rules": {
+    "template-curly-spacing": "off",
+    "indent": "off"
+  }
+}

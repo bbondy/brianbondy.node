@@ -1,6 +1,6 @@
+import marked from './marked.js'
 var RSS = require('rss')
 var fs = require('fs')
-import marked from './marked.js'
 
 export const postsPerPage = 3
 
@@ -44,10 +44,10 @@ export function sitemapItemFromSlug (slug) {
 
 export function newFeedFromTag (tag) {
   return new RSS({
-    title: `Brian R. Bondy\'s feed for tag ${tag}`,
+    title: `Brian R. Bondy's feed for tag ${tag}`,
     description: `Blog posts tagged ${tag} by Brian R. Bondy`,
-    'feed_url': `https://brianbondy.com/feeds/rss/${tag}`,
-    'site_url': `https://brianbondy.com/blog/tagged/${tag}`,
-    'image_url': 'https://brianbondy.com/img/logo.png'
+    feed_url: `https://brianbondy.com/feeds/rss/${tag}`,
+    site_url: `https://brianbondy.com/blog/tagged/${tag}`,
+    image_url: 'https://brianbondy.com/img/logo.png'
   })
 }

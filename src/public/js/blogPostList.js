@@ -1,5 +1,5 @@
 import React from 'react'
-import {fetchBlogPosts} from './client.js'
+import { fetchBlogPosts } from './client.js'
 import BlogPost from './blogPost.js'
 import NavigationButton from './navigationButton.js'
 
@@ -9,11 +9,11 @@ export default class BlogPostList extends React.Component {
     this.state = {}
   }
 
-  componentWillMount () {
+  componentDidMount () {
     fetchBlogPosts({
-      year: this.props.params.year,
-      tag: this.props.params.tag,
-      page: this.props.params.page
+      year: this.props.match.params.year,
+      tag: this.props.match.params.tag,
+      page: this.props.match.params.page
     }).then((blogPosts) =>
       this.setState({
         blogPosts
@@ -25,17 +25,17 @@ export default class BlogPostList extends React.Component {
     if (page !== 1) {
       pageSuffix = `/page/${page}`
     }
-    if (this.props.params.year) {
-      return `/blog/posted/${this.props.params.year}${pageSuffix}`
-    } else if (this.props.params.tag) {
-      return `/blog/tagged/${this.props.params.tag}${pageSuffix}`
+    if (this.props.match.params.year) {
+      return `/blog/posted/${this.props.match.params.year}${pageSuffix}`
+    } else if (this.props.match.params.tag) {
+      return `/blog/tagged/${this.props.match.params.tag}${pageSuffix}`
     } else {
       return `${pageSuffix}`
     }
   }
 
   get page () {
-    return Number(this.props.params.page || 1)
+    return Number(this.props.match.params.page || 1)
   }
 
   get nextUrl () {
@@ -51,24 +51,30 @@ export default class BlogPostList extends React.Component {
       return null
     }
 
-    return <div>
-      {
-        this.state.blogPosts.map(blogPost =>
-          <BlogPost title={blogPost.title}
-            key={blogPost.id}
-            body={blogPost.body}
-            created={blogPost.created}
-            tags={blogPost.tags}
-            id={blogPost.id}
-            url={blogPost.url}
-          />)
-      }
-    { this.page > 1
-      ? <NavigationButton text='Previous page' src={this.prevUrl}/> : null }
-    { this.state.blogPosts.length === 3
-      ? <NavigationButton text='Next page' src={this.nextUrl}/> : null }
-    </div>
+    if (this.state.blogPosts.length === 0) {
+      return (
+        <div> No blog posts for this query</div>
+      )
+    }
+
+    return (
+      <div>
+        {
+          this.state.blogPosts.map(blogPost =>
+            <BlogPost
+              title={blogPost.title}
+              key={blogPost.id}
+              body={blogPost.body}
+              created={blogPost.created}
+              tags={blogPost.tags}
+              id={blogPost.id}
+              url={blogPost.url}
+            />)
+        }
+        {this.page > 1
+          ? <NavigationButton text='Previous page' src={this.prevUrl} /> : null}
+        {this.state.blogPosts.length === 3
+          ? <NavigationButton text='Next page' src={this.nextUrl} /> : null}
+      </div>)
   }
 }
-
-BlogPostList.propTypes = { year: React.PropTypes.any, tag: React.PropTypes.any, page: React.PropTypes.any, params: React.PropTypes.object }

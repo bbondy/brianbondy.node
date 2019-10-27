@@ -1,11 +1,11 @@
+import marked from './marked.js'
+import slugify from './slugify.js'
+import { feedItemFromBlogPost, sitemapItemFromBlogPost, sitemapItemFromSlug, newFeedFromTag } from './helpers.js'
+
 var fs = require('fs')
 var sm = require('sitemap')
 var RSS = require('rss')
 var _ = require('underscore')
-
-import marked from './marked.js'
-import slugify from './slugify.js'
-import {feedItemFromBlogPost, sitemapItemFromBlogPost, sitemapItemFromSlug, newFeedFromTag} from './helpers.js'
 
 export let blogPosts, blogPostsByYear, blogPostsById, blogPostsByTag, rssByTag, feed, resumeHTML, resumePDF, tags, sitemap, robotsTXT
 
@@ -18,9 +18,9 @@ export function reloadData () {
   feed = new RSS({
     title: 'Brian R. Bondy\'s Feed',
     description: 'Blog posts by Brian R. Bondy',
-    'feed_url': 'https://brianbondy.com/feeds/rss',
-    'site_url': 'https://brianbondy.com',
-    'image_url': 'https://brianbondy.com/img/logo.png'
+    feed_url: 'https://brianbondy.com/feeds/rss',
+    site_url: 'https://brianbondy.com',
+    image_url: 'https://brianbondy.com/img/logo.png'
   })
 
   sitemap = sm.createSitemap({
@@ -57,7 +57,8 @@ export function reloadData () {
       sitemapItemFromSlug('morseCode'),
       sitemapItemFromSlug('running'),
       sitemapItemFromSlug('stackexchange')
-    ]})
+    ]
+  })
 
   delete require.cache[require.resolve('./blogPostManifest.js')]
   blogPosts = require('./blogPostManifest.js').default
@@ -71,7 +72,7 @@ export function reloadData () {
   blogPostsByTag = {}
   rssByTag = {}
   _(blogPosts).sortBy(blogPost => -blogPost.id).forEach(blogPost => {
-    let rssItem = feedItemFromBlogPost(blogPost)
+    const rssItem = feedItemFromBlogPost(blogPost)
     sitemap.add(sitemapItemFromBlogPost(blogPost))
     feed.item(rssItem)
     _(blogPost.tags).each(tag => {

@@ -1,4 +1,4 @@
-let getByType = (method, type, requestContentType, postData, url) => {
+const getByType = (method, type, requestContentType, postData, url) => {
   return new Promise((resolve, reject) => {
     var xhr = new window.XMLHttpRequest()
     xhr.open(method, url, true)
@@ -27,11 +27,9 @@ let getByType = (method, type, requestContentType, postData, url) => {
   })
 }
 
-let getJSON = getByType.bind(null, 'GET', 'json', undefined, undefined)
-let postJSON = getByType.bind(null, 'POST', 'json', 'application/json')
-let getText = getByType.bind(null, 'GET', 'text', undefined, undefined)
-let deleteJSON = getByType.bind(null, 'DELETE', 'json', 'application/json')
-let getHtml = getText
+const getJSON = getByType.bind(null, 'GET', 'json', undefined, undefined)
+const getText = getByType.bind(null, 'GET', 'text', undefined, undefined)
+const getHtml = getText
 
 /**
  * Fetch a single blog post

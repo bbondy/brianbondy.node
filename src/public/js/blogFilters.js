@@ -2,7 +2,7 @@ import React from 'react'
 import * as Immutable from 'immutable'
 import Tag from './tag.js'
 import YearTag from './yearTag.js'
-import {fetchTags} from './client.js'
+import { fetchTags } from './client.js'
 
 export default class BlogFilters extends React.Component {
   constructor () {
@@ -12,7 +12,7 @@ export default class BlogFilters extends React.Component {
     }
   }
 
-  componentWillMount () {
+  componentDidMount () {
     fetchTags().then((tags) => {
       this.setState({
         tags
@@ -21,15 +21,16 @@ export default class BlogFilters extends React.Component {
   }
 
   render () {
-    return <div>
-      <h1>Blog posts by year</h1>
-      {new Immutable.Range(new Date().getFullYear(), 2005, -1)
-        .map(year => <YearTag key={year} year={year}/>).toJS()}
-      <h1>Blog posts by tag</h1>
-      <div className='tagContainer'>
-      {this.state.tags
-        .map(tag => <div key={tag.name + '-continer'}> <Tag name={tag.name}/> x {tag.count}</div>)}
-      </div>
-    </div>
+    return (
+      <div>
+        <h1>Blog posts by year</h1>
+        {new Immutable.Range(new Date().getFullYear(), 2005, -1)
+          .map(year => <YearTag key={year} year={year} />).toJS()}
+        <h1>Blog posts by tag</h1>
+        <div className='tagContainer'>
+          {this.state.tags
+            .map(tag => <div key={tag.name + '-continer'}> <Tag name={tag.name} /> x {tag.count}</div>)}
+        </div>
+      </div>)
   }
 }

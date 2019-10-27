@@ -1,3 +1,2 @@
 User-agent: *
 Sitemap: https://brianbondy.com/sitemap.xml
-Disallow: /admin

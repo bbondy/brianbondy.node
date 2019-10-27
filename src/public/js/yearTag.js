@@ -9,4 +9,3 @@ export default class YearTag extends React.Component {
     return <a href={this.yearUrl} className='yearTag'>{this.props.year}</a>
   }
 }
-YearTag.propTypes = { year: React.PropTypes.any }
