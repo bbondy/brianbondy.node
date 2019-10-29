@@ -38,7 +38,6 @@ export default class DocumentTitle extends React.Component {
       '/compression/huffman': 'Huffman compression',
       '/compression/BWT': 'Burrows-Wheeler',
       '/compression/PPM': 'Prediction by partial matching',
-      '/khanacademy': 'Khan Academy',
       '/math': 'Mathematics',
       '/math/pi': 'Pi',
       '/math/primes': 'Primes',

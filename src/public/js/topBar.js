@@ -22,14 +22,10 @@ export default class TopBar extends React.Component {
           <Link to='/about'><li className={cx({ current: this.basePath === 'about' })}>About</li></Link>
           <Link to='/contact'><li className={cx({ current: this.basePath === 'contact' })}>Contact</li></Link>
 
-          <a href='https://twitter.com/brianbondy' target='_blank' rel='noopener noreferrer'><li className='social'><span title='Twitter' className='fa fa-twitter' /></li></a>
           <a href='/feeds/rss' target='_blank' rel='noopener noreferrer'><li className='social'><span title='RSS' className='fa fa-rss' /></li></a>
-          <a href='https://keybase.io/bbondy' target='_blank' rel='noopener noreferrer'><li className='social'><span title='Keybase' className='fa fa-key' /></li></a>
-
+          <a href='https://twitter.com/brianbondy' target='_blank' rel='noopener noreferrer'><li className='social'><span title='Twitter' className='fa fa-twitter' /></li></a>
           <a href='https://github.com/bbondy' target='_blank' rel='noopener noreferrer'><li className='social'><span title='GitHub' className='fa fa-github' /></li></a>
-
           <a href='https://www.linkedin.com/in/bbondy' target='_blank' rel='noopener noreferrer'><li className='social'><span title='LinkedIn' className='fa fa-linkedin' /></li></a>
-          <a href='https://stackoverflow.com/users/3153/brian-r-bondy' target='_blank' rel='noopener noreferrer'><li className='social'><span title='StackOverflow' className='fa fa fa-stack-overflow' /></li></a>
         </ul>
       </div>)
   }
