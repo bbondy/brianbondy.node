@@ -28,7 +28,6 @@ export function titleByPath (pathname) {
     '/about': 'About',
     '/contact': 'Contact',
     '/advice': 'Advice',
-    '/articles': 'Articles',
     '/books': 'Books',
     '/braille': 'Braille',
     '/compression': 'Compression',

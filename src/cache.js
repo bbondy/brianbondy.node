@@ -46,7 +46,6 @@ export function reloadData () {
       sitemapItemFromSlug('math/mathTricks'),
       sitemapItemFromSlug('khanacademy'),
       sitemapItemFromSlug('books'),
-      sitemapItemFromSlug('articles'),
       sitemapItemFromSlug('advice'),
       sitemapItemFromSlug('braille'),
       sitemapItemFromSlug('morseCode'),

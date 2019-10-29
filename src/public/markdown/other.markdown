@@ -1,7 +1,6 @@
 # Other
 
 - [Advice](/advice)
-- [Articles](/articles)
 - [Books](/books)
 - [Braille](/braille)
 - [Compression](/compression)

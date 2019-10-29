@@ -32,7 +32,6 @@ export default class DocumentTitle extends React.Component {
       '/about': 'About',
       '/contact': 'Contact',
       '/advice': 'Advice',
-      '/articles': 'Articles',
       '/books': 'Books',
       '/braille': 'Braille',
       '/compression': 'Compression',
