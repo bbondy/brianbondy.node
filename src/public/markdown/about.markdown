@@ -3,20 +3,20 @@
 ## General Information
 
 <img src="//www.brianbondy.com/static/img/family2.jpg" style="float:left; margin-right:20px; border: 1px solid black" height="250" width="375">
-I live in Belle River, Ontario, Canada.
 
-I spend most of my time with my family, running, reading various books, programming, and doing work.
-My greatest fields of interest are P2P, digital image processing, number theory, compression.
+Family is my "raison d'être".  My wife Shannon and I have 3 sons: Link, Ronnie, and Asher.
 
-I am a primarily a C++, Python, Rust, Go, C#, and JavaScript software developer.
+When I'm not working, I'm usually running while listening to audiobooks.
+My longest runs were in 2019 with 2 runs just over 100 miles.
 
-Other than work and geek things, I also spend a lot of time with my wife Shannon, and 3 sons: Link, Ronnie, and Asher.
+I am a professional C++, Python, Rust, Go, C#, and JavaScript software developer.
+I like reading about new technologies and other nerdy things.
 
-I used to work full time on Mozilla's Firefox browser (2011-2014).
+From 2015 onward, I co-founded [Brave Software](https://www.brave.com) with the guy that created Mozilla and JavaScript: Brendan Eich.
+I'm serving as CTO and a member of the board at Brave Software.
 
-From April 21, 2014 - May 2015 I worked full time for an amazing company called Khan Academy.
+I used to work at some pretty cool places including Khan Academy, Mozilla, and Evernote.
 
-From 2015 onward, I co-founded [Brave Software](https://www.brave.com) with Brendan Eich.
 
 <br class="clearfloat">
 
@@ -49,3 +49,4 @@ From 2015 onward, I co-founded [Brave Software](https://www.brave.com) with Bren
 - I co-founded 2 companies before Brave: ROBOBAK and VisionWorks Solutions Inc.
 - I was awarded a Microsoft MVP award for Visual C++ July 2010 - July 2011
 - It is a dream of mine to one day be a winner of the Hutter Prize
+- I live in Belle River, Ontario, Canada.
