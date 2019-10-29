@@ -13,7 +13,7 @@ I am a professional C++, Python, Rust, Go, C#, and JavaScript software developer
 I like reading about new technologies and other nerdy things.
 
 From 2015 onward, I co-founded [Brave Software](https://www.brave.com) with the guy that created Mozilla and JavaScript: Brendan Eich.
-I'm serving as CTO and a member of the board at Brave Software.
+I'm serving as CTO and as a member of the board at Brave Software.
 
 I used to work at some pretty cool places including Khan Academy, Mozilla, and Evernote.
 
@@ -28,7 +28,7 @@ I used to work at some pretty cool places including Khan Academy, Mozilla, and E
 - I'm married to the beautiful Shannon L. Bondy (Formerly Gray)
 - I have twins and one singleton, all boys
 - I have a red tri-colored border collie named "Leia". (Star Wars)
-- I have an Australian Shepherd named Nymeria (Nym for shart, direwolf from Game of Thrones)
+- I have an Australian Shepherd named Nymeria (Nym for short, direwolf from Game of Thrones)
 - I've run several ultramarathons, my highest distance is 106mi as of 2019.
 - I have a bachelors degree in Computer Science Honors in the Faculty of Mathematics at Waterloo University
 - I have a black belt (Shodan) in Meibukan Goju Ryu Karate
