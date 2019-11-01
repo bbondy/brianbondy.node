@@ -167,10 +167,6 @@ function babelNode () {
   }
 }
 
-function copyPublicStaticAndRefresh () {
-  return gulp.series(copyPublicStatic, refresh)
-}
-
 /**
  * Watch for changes on the file system, and rebuild if so.
  */
@@ -179,7 +175,7 @@ function watch () {
   gulp.watch([SRC_ROOT_PUBLIC_JS + '**/*'], gulp.series(lint, bundleJS))
   gulp.watch([SRC_ROOT_PUBLIC_LESS + '**/*'], lessTask)
   gulp.watch([TEST_ROOT + '**/*'], lint)
-  gulp.watch(COPY_WEB_APP_FILES, copyPublicStaticAndRefresh)
+  gulp.watch(COPY_WEB_APP_FILES, gulp.series(copyPublicStatic, refresh))
 }
 
 /**
