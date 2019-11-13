@@ -246,7 +246,7 @@ We forked Electron into a project named Muon which was more secure by turning on
 We added extension support and made various other changes as well.
 
 It took only 1 month and 5 days, and we were able to fill the gaps we were missing and ship the browser code base that started on Graphene with Muon.
-We had a beta-quality desktop browser, and while it didn't even have bookmarks yet, on January 20th 2019, Brave went out of stealth mode and we [shared our plans with the world](https://brianbondy.com/blog/172/brave-software).
+We had a beta-quality desktop browser, and while it didn't even have bookmarks yet, on January 20th 2016, Brave went out of stealth mode and we [shared our plans with the world](https://brianbondy.com/blog/172/brave-software).
 
 The second iteration of our iOS browser was based on Firefox iOS.  Firefox iOS used WKWebView but we couldn't achieve the blocking we wanted with it, so we switched it to the older Apple-supported embeddable WebKit engine, UIWebView.
 This gave us the APIs we needed for Brave Shields. A month later, in February 19, 2016, we shipped our first iOS browser.
