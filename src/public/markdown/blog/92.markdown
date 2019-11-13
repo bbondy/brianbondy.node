@@ -126,7 +126,7 @@ C# gets around pure virtual function calls though, but arguably in a worse way.
         }
     }
 
-`Dog::Speak()` will be called in the destructor of `Animal` even know Dog is already destructed.  Obviously this can lead to many problems.
+`Dog::Speak()` will be called in the destructor of `Animal` even though Dog is already destructed.  Obviously this can lead to many problems.
 
 ---
 

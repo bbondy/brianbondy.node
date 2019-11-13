@@ -43,7 +43,7 @@ The only way to receive email is to use POP3. (Actually there is also IMAPv4, bu
 
 SMTP communication is present on your computer, no matter what email client you use.  Any time an email is sent out, your computer uses SMTP to send the email.  It doesn’t matter if you're using Eudora, Outlook, Outlook Express, Mozilla Thunderbird, or a custom made program.  All programs use SMTP to send emails.  
 
-By using standards you are guaranteed that, even know user A uses Outlook, and user B uses Eudora, and they both have different SMTP servers both of the users will be able to communicate.
+By using standards you are guaranteed that, even though user A uses Outlook, and user B uses Eudora, and they both have different SMTP servers both of the users will be able to communicate.
 
 ## What is HTTP?
 

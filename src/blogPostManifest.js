@@ -1,5 +1,11 @@
 export default [
   {
+    id: 174,
+    title: 'The road to Brave 1.0',
+    created: new Date('2019/11/13'),
+    tags: ['brave', 'mozilla', 'khan-academy']
+  },
+  {
     id: 173,
     title: 'Shutting down Code Firefox',
     created: new Date('2016/07/08'),

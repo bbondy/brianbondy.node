@@ -35,7 +35,7 @@ Full screen mode in Firefox works the same as previous versions currently.  If y
 
 If you start Internet Explorer from the tablet mode you'll see a full screen app with no switch to Desktop.  It has a nice interface and allows you to pin any web page to your Tablet interface as a tile.
 
-The problem with this is that even know I set Firefox as my default browser, through the Windows interface, it still launches IE for these shortcut tiles.
+The problem with this is that even though I set Firefox as my default browser, through the Windows interface, it still launches IE for these shortcut tiles.
 
 Here is a tile created on the far left from a pinned page in IE of the mozilla.org page:
 
