@@ -7,6 +7,9 @@ The list below is incomplete but contains some books that I considered good book
 
 ## The books and year that I read them
 
+- Endure: Mind, Body, and the Curiously Elastic by Alex Hutchinson (Read in 2019)
+- Peace Is Every Step by Thich Nhat Hanh (Read in 2019)
+- Switch: How to Change Things When Change Is Hard by Chip Heath and Dan Heath (Read in 2019)
 - Masters of Doom by David Kushner (Read in 2019)
 - Talking to Strangers by Malcolm Gladwell (Read in 2019)
 - North by Scott Jurek, Jenny Jurek (Read in 2019)
