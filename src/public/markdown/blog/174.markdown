@@ -161,27 +161,27 @@ We decided right there, that obviously the right direction was... the lightning 
 
 But after it was rendered and rasterized, we decided to go back and pick a different direction.
 
-<img src="/static/img/blogpost_174/logo-1.png" style="margin-left: 40px; margin-bottom: 5px; width:64px">
+<img src="/static/img/blogpost_174/logo-1.png" style="margin-left: 40px; margin-bottom: 5px; padding: 20px; width:64px">
 
 Our next step was to launch a crowdspring contest with a description asking for something that invoked a lion in imagery.
 
-<img src="/static/img/blogpost_174/logo-2.png" style="margin-left: 50px; margin-bottom: 5px; width:128px">
+<img src="/static/img/blogpost_174/logo-2.png" style="margin-left: 40px; margin-bottom: 5px; padding: 20px; width:128px">
 
 We kept making tweaks to it but we were never happy with it.
 
-<img src="/static/img/blogpost_174/logo-3.png" style="margin-left: 40px; margin-bottom: 5px; width:64px">
+<img src="/static/img/blogpost_174/logo-3.png" style="margin-left: 40px; margin-bottom: 5px; padding: 20px; width:64px">
 
 When Brad started working at Brave, we assigned the logo to him. He knocked it out of the park and we loved what he came up with.
 
-<img src="/static/img/blogpost_174/logo-4.png" style="margin-left: 40px; margin-bottom: 5px; width:64px">
+<img src="/static/img/blogpost_174/logo-4.png" style="margin-left: 40px; margin-bottom: 5px; padding: 20px; width:64px">
 
 Which was later revised to:
 
-<img src="/static/img/blogpost_174/logo-5.png" style="margin-left: 40px; margin-bottom: 5px; width:64px">
+<img src="/static/img/blogpost_174/logo-5.png" style="margin-left: 40px; margin-bottom: 5px; padding: 20px; width:64px">
 
 Bonus: I picked up one of the runner-up submission icons as my website logo.
 
-<img src="/static/img/blogpost_174/logo-brianbondy.png" style="margin-left: 40px; margin-bottom: 5px; width:64px">
+<img src="/static/img/blogpost_174/logo-brianbondy.png" style="margin-left: 40px; margin-bottom: 5px; padding: 20px; width:64px">
 
 
 # First attempt at a desktop browser
@@ -280,7 +280,7 @@ Android is currently nearing completion of its revision 3 rewrite, a move to the
 
 # Basic Attention Token
 
-<img src="/static/img/blogpost_174/bat-logo.png" style="float:left; margin-right: 40px; margin-bottom: 5px; width:128px">
+<img src="/static/img/blogpost_174/bat-logo.png" style="float:left; margin-right: 40px; margin-bottom: 5px; padding: 20px; width:128px">
 
 We added tipping support first with Bitcoin and later with an ERC-20 token named Basic Attention Token (BAT).
 We created BAT largely with the help of a developer named Scott, as well as Marshall, on May 31, 2017.
