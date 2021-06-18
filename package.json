@@ -30,7 +30,7 @@
     "recast": "^0.18.5",
     "rss": "^1.2.2",
     "sitemap": "^5.0.1",
-    "striptags": "~3.1.1",
+    "striptags": "~3.2.0",
     "through": "^2.3.8",
     "through2": "^3.0.1",
     "uglify-js": "^3.6.4",
